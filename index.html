@@ -309,6 +309,13 @@
   .form-two{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
   @media (max-width:560px){ .form-two{grid-template-columns:1fr;} }
 
+  .bento-duo{grid-template-columns:1.3fr 1fr;}
+  @media (max-width:520px){ .bento-duo{grid-template-columns:1fr;} }
+  @media (max-width:480px){
+    .hero-proof-strip{flex-direction:column;align-items:stretch;}
+    .hero-proof-stat{border-right:none;border-bottom:1px solid var(--border);margin-right:0;margin-bottom:10px;padding:0 0 10px;}
+    .hero-proof-stat:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+  }
   .cal-placeholder{border:2px solid var(--green);border-radius:var(--radius);background:var(--green-tint);padding:40px 24px;text-align:center;}
   .cal-placeholder .icn{width:44px;height:44px;border-radius:50%;background:var(--bg);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:20px;}
   .cal-placeholder h3{font-size:16px;margin-bottom:8px;}
@@ -492,7 +499,7 @@
   </section>
 
   <section class="stats">
-    <div class="wrap bento" style="grid-template-columns:1.3fr 1fr;">
+    <div class="wrap bento bento-duo">
       <div class="bento-cell big reveal">
         <div class="stat-num" data-count="92" data-suffix="%">0%</div>
         <div class="stat-label">unserer vermittelten Fachkräfte bleiben länger als drei Jahre</div>

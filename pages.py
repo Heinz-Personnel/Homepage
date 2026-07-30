@@ -127,7 +127,7 @@ index_body = '''
   </section>
 
   <section class="stats">
-    <div class="wrap bento" style="grid-template-columns:1.3fr 1fr;">
+    <div class="wrap bento bento-duo">
       <div class="bento-cell big reveal">
         <div class="stat-num" data-count="92" data-suffix="%">0%</div>
         <div class="stat-label">unserer vermittelten Fachkräfte bleiben länger als drei Jahre</div>
