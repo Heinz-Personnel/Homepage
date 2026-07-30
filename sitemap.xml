@@ -7,7 +7,19 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.pflegekraftvermittlung.com/index-en.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.pflegekraftvermittlung.com/fuer-einrichtungen.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pflegekraftvermittlung.com/fuer-einrichtungen-en.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -19,7 +31,19 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.pflegekraftvermittlung.com/fuer-fachkraefte-en.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.pflegekraftvermittlung.com/ueber-uns.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pflegekraftvermittlung.com/ueber-uns-en.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -31,7 +55,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.pflegekraftvermittlung.com/blog-en.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.pflegekraftvermittlung.com/blog-post-1.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.pflegekraftvermittlung.com/blog-post-1-en.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -43,7 +79,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.pflegekraftvermittlung.com/blog-post-2-en.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.pflegekraftvermittlung.com/blog-post-3.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.pflegekraftvermittlung.com/blog-post-3-en.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -55,7 +103,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.pflegekraftvermittlung.com/blog-post-4-en.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.pflegekraftvermittlung.com/blog-post-5.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.pflegekraftvermittlung.com/blog-post-5-en.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -67,7 +127,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.pflegekraftvermittlung.com/blog-post-6-en.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.pflegekraftvermittlung.com/blog-post-7.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.pflegekraftvermittlung.com/blog-post-7-en.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -79,7 +151,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.pflegekraftvermittlung.com/faq-en.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.pflegekraftvermittlung.com/kontakt.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.pflegekraftvermittlung.com/kontakt-en.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -91,7 +175,19 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://www.pflegekraftvermittlung.com/downloads-en.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://www.pflegekraftvermittlung.com/beschwerdeformular.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pflegekraftvermittlung.com/beschwerdeformular-en.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -103,7 +199,19 @@
     <priority>0.1</priority>
   </url>
   <url>
+    <loc>https://www.pflegekraftvermittlung.com/impressum-en.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
     <loc>https://www.pflegekraftvermittlung.com/datenschutz.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://www.pflegekraftvermittlung.com/datenschutz-en.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
