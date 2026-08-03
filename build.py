@@ -24,12 +24,14 @@ MODULES = [
     "pages4",      # faq, kontakt, impressum, datenschutz, beschwerdeformular, downloads
     "pages6",      # blog-post-2/3/4.html
     "pages7",      # blog-post-5/6/7.html
+    "pages_presse",    # presse.html
     "pages_en",    # index-en.html
     "pages2_en",   # fuer-einrichtungen-en.html, fuer-fachkraefte-en.html
     "pages3_en",   # ueber-uns-en.html, blog-en.html, blog-post-1-en.html
     "pages4_en",   # faq-en, kontakt-en, impressum-en, datenschutz-en, beschwerdeformular-en, downloads-en
     "pages6_en",   # blog-post-2/3/4-en.html
     "pages7_en",   # blog-post-5/6/7-en.html
+    "pages_presse_en", # presse-en.html
 ]
 
 def main():

@@ -429,14 +429,14 @@ def footer(lang="de"):
     e = "" if lang == "de" else "-en"
     if lang == "de":
         quick = [("index.html","Home"),("ueber-uns.html","Über uns"),("fuer-einrichtungen.html","Für Arbeitgeber"),
-                 ("fuer-fachkraefte.html","Für Fachkräfte"),("blog.html","Blog"),("faq.html","FAQ"),("downloads.html","Downloads")]
+                 ("fuer-fachkraefte.html","Für Fachkräfte"),("blog.html","Blog"),("faq.html","FAQ"),("downloads.html","Downloads"),("presse.html","Presse")]
         legal_h, kontakt_h = "Rechtliches", "Kontakt"
         legal = [("impressum.html","Impressum"),("datenschutz.html","Datenschutzerklärung"),("beschwerdeformular.html","Beschwerdeverfahren (RAL)")]
         kontakt = [("kontakt.html","Kontaktseite"),("mailto:info@hpstalent.de","info@hpstalent.de")]
         quicklinks_h = "Quick Links"
     else:
         quick = [("index-en.html","Home"),("ueber-uns-en.html","About Us"),("fuer-einrichtungen-en.html","For Employers"),
-                 ("fuer-fachkraefte-en.html","For Professionals"),("blog-en.html","Blog"),("faq-en.html","FAQ"),("downloads-en.html","Downloads")]
+                 ("fuer-fachkraefte-en.html","For Professionals"),("blog-en.html","Blog"),("faq-en.html","FAQ"),("downloads-en.html","Downloads"),("presse-en.html","Press")]
         legal_h, kontakt_h = "Legal", "Contact"
         legal = [("impressum-en.html","Legal Notice (Impressum)"),("datenschutz-en.html","Privacy Policy"),("beschwerdeformular-en.html","Complaints Procedure (RAL)")]
         kontakt = [("kontakt-en.html","Contact page"),("mailto:info@hpstalent.de","info@hpstalent.de")]
