@@ -115,6 +115,27 @@ einrichtungen_body_en = '''
   </div>
 </section>
 
+<section>
+  <div class="wrap">
+    <div class="section-head reveal"><h2>A guarantee we communicate openly.</h2><p style="font-size:15.5px;margin-top:10px;">We build trust through transparent terms.</p></div>
+    <div class="win-grid">
+      <div class="win-card reveal">
+        <h3>92% stay</h3>
+        <p>92% of our placed professionals stay longer than three years at their facility.</p>
+      </div>
+      <div class="win-card reveal" style="transition-delay:.08s">
+        <h3>18 months free replacement</h3>
+        <p>If the employment relationship ends within the first 18 months after arrival because the international professional resigns, we quickly find you an alternative, at no extra cost.</p>
+      </div>
+      <div class="win-card reveal" style="transition-delay:.16s">
+        <h3>Payment only on success</h3>
+        <p>No upfront payment. You only pay once we deliver.</p>
+      </div>
+    </div>
+    <p style="font-size:12.5px;color:var(--ink-mute);margin-top:20px;max-width:760px;">The replacement guarantee applies when the professional resigns on their own accord. It does not apply if the facility terminates the contract, or if the professional leaves due to problems in the workplace.</p>
+  </div>
+</section>
+
 <section id="prozess">
   <div class="wrap">
     <div class="section-head reveal"><h2>Our process in detail</h2><p style="font-size:15.5px;margin-top:10px;">A path you can follow: from the first needs assessment to long-term integration.</p></div>
