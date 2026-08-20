@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Besetzung. Die bleibt. — Heinz Personnel Solutions</title>
+<meta name="description" content="Internationale Pflegefachkräfte für Ihre Einrichtung: 92% bleiben länger als drei Jahre, 98% erfolgreiche Berufsanerkennungen. RAL-zertifiziert.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --hbo-dunkel:#1B2B99;
+    --hbo-basis:var(--hbo-dunkel); /* alias: konsolidiert auf 2 Blautoene (dunkel + flieder/mittel) */
+    --hbo-mittel:#7C8CFF;
+    --hbo-hell:#D6DBFF;
+    --orange:#FF5A1F;
+    --schwarz:#0B0B0B;
+    --charcoal:#161616;
+    --beton:#E7E3DC;
+    --weiss:#FFFFFF;
+    --display: 'Anton', sans-serif;
+    --body: 'Inter', -apple-system, sans-serif;
+    --maxw: 1200px;
+    --text-body: 1rem;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--body);
+    background:var(--beton);
+    color:var(--schwarz);
+    line-height:1.55;
+    font-size:var(--text-body);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  @media(min-width:768px){.wrap{padding:0 48px;}}
+  @media(min-width:1280px){.wrap{padding:0 64px;}}
+
+  .eyebrow{
+    font-family:var(--body);font-weight:700;font-size:.72rem;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--hbo-basis);display:block;margin-bottom:14px;
+  }
+  .eyebrow--onblue{color:var(--hbo-hell);}
+  .eyebrow--onblack{color:var(--weiss);}
+
+  .btn, .hero-path, .body-text, p{font-size:var(--text-body);}
+
+  .btn{
+    display:flex;align-items:center;justify-content:center;width:100%;
+    font-family:var(--body);font-weight:700;padding:18px 30px;
+    background:var(--hbo-basis);color:var(--weiss);text-decoration:none;
+    border:2px solid var(--hbo-basis);
+    transition:background .18s ease, color .18s ease, transform .12s ease;
+  }
+  .btn:hover{background:transparent;color:var(--hbo-basis);}
+  .btn:active{transform:translateY(1px);}
+  .btn:focus-visible{outline:3px solid var(--hbo-mittel);outline-offset:3px;}
+  .btn--onblack{border-color:var(--weiss);color:var(--schwarz);background:var(--weiss);}
+  .btn--onblack:hover{background:transparent;color:var(--weiss);}
+  .btn--big{padding:26px 40px;font-size:1.25rem;}
+
+  section{padding:56px 0;}
+  @media(min-width:768px){section{padding:84px 0;}}
+
+  .section-head{max-width:760px;margin-bottom:36px;}
+
+  h2.headline{
+    font-family:var(--display);text-transform:uppercase;font-weight:400;
+    letter-spacing:.01em;line-height:.98;font-size:clamp(2.1rem, 6vw, 3.6rem);
+  }
+
+  /* -------- Nav -------- */
+  header.nav{position:sticky;top:0;z-index:50;background:var(--beton);border-bottom:1px solid rgba(11,11,11,.1);}
+  .nav-inner{display:flex;align-items:center;padding-top:20px;padding-bottom:20px;}
+  .nav-left{display:flex;align-items:center;gap:40px;flex-shrink:1;min-width:0;}
+  .logo{
+    font-family:var(--display);font-size:1.35rem;letter-spacing:.02em;
+    text-transform:uppercase;text-decoration:none;color:var(--schwarz);flex-shrink:0;white-space:nowrap;
+  }
+  .logo span{color:#1F4D3D;}
+  .nav-links{display:none;gap:22px;font-weight:600;font-size:.88rem;white-space:nowrap;}
+  .nav-links a{text-decoration:none;padding:4px 0;border-bottom:2px solid transparent;}
+  .nav-links a:hover, .nav-links a.is-active{border-color:var(--hbo-basis);}
+  @media(min-width:1040px){.nav-links{display:flex;align-items:center;}}
+  .nav-cta{display:none;}
+  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;margin-left:auto;}}
+
+  .nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;margin-left:auto;cursor:pointer;background:none;border:none;padding:0;flex-shrink:0;}
+  @media(min-width:1040px){.nav-toggle{display:none;}}
+  .nav-toggle-bars{position:relative;width:22px;height:2px;background:var(--schwarz);transition:background .15s ease;}
+  .nav-toggle-bars::before,.nav-toggle-bars::after{content:"";position:absolute;left:0;width:22px;height:2px;background:var(--schwarz);transition:transform .2s ease;}
+  .nav-toggle-bars::before{top:-7px;}
+  .nav-toggle-bars::after{top:7px;}
+  .nav-toggle-input{display:none;}
+  .nav-toggle-input:checked ~ .nav-inner .nav-toggle-bars{background:transparent;}
+  .nav-toggle-input:checked ~ .nav-inner .nav-toggle-bars::before{transform:translateY(7px) rotate(45deg);}
+  .nav-toggle-input:checked ~ .nav-inner .nav-toggle-bars::after{transform:translateY(-7px) rotate(-45deg);}
+  .mobile-nav{max-height:0;overflow:hidden;transition:max-height .25s ease;display:flex;flex-direction:column;}
+  @media(min-width:1040px){.mobile-nav{display:none;}}
+  .nav-toggle-input:checked ~ .mobile-nav{max-height:400px;padding-bottom:20px;}
+  .mobile-nav a{display:block;padding:12px 0;text-decoration:none;color:var(--schwarz);font-weight:600;font-size:.95rem;border-top:1px solid rgba(11,11,11,.1);}
+  .mobile-nav a.btn{margin-top:16px;padding:12px 22px;border-top:none;}
+
+  /* -------- Hero -------- */
+  .hero{background:var(--schwarz);color:var(--weiss);padding:64px 0 72px;overflow:hidden;}
+  @media(min-width:768px){.hero{padding:96px 0 100px;}}
+  .hero-eyebrow{font-weight:700;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--weiss);margin-bottom:28px;}
+  .hero-headline{font-family:var(--display);text-transform:uppercase;font-weight:400;line-height:1.02;letter-spacing:.005em;}
+  .hero-line1{font-size:clamp(2.4rem, 8.5vw, 5.6rem);color:var(--weiss);display:block;overflow-wrap:break-word;}
+  .hero-bar{height:6px;width:64px;background:var(--hbo-basis);margin-top:28px;}
+  .hero-sub{font-weight:500;font-size:1.1rem;color:var(--beton);max-width:56ch;margin-top:36px;}
+  .hero-sub strong{color:var(--weiss);}
+  .hero-actions{margin-top:44px;display:flex;flex-wrap:wrap;gap:12px;}
+  .hero-actions .btn{width:auto;flex:1;min-width:220px;}
+  .hero-path{
+    text-decoration:none;color:var(--weiss);font-weight:700;text-align:center;padding:18px 14px;
+    border:2px solid rgba(255,255,255,.5);flex:1;min-width:220px;display:flex;align-items:center;justify-content:center;
+    transition:background .18s ease, border-color .18s ease;
+  }
+  .hero-path:hover{background:var(--weiss);color:var(--schwarz);border-color:var(--weiss);}
+
+  /* -------- Kennzahlen -------- */
+  .kennzahlen{background:var(--hbo-dunkel);color:var(--weiss);}
+  .kennzahlen .eyebrow{color:var(--hbo-hell);}
+  .kennzahlen h2.headline{color:var(--weiss);}
+  .kz-grid{display:grid;grid-template-columns:1fr;gap:40px;margin-top:48px;}
+  @media(min-width:640px){.kz-grid{grid-template-columns:repeat(3,1fr);}}
+  .kz-num{font-family:var(--display);font-size:clamp(3.4rem, 9vw, 5.5rem);line-height:.9;color:var(--weiss);}
+  .kz-label{font-size:1rem;font-weight:600;color:var(--hbo-hell);margin-top:12px;max-width:26ch;}
+  .kz-certs{
+    margin-top:56px;background:var(--weiss);display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+    gap:40px;padding:20px 28px;width:100%;
+  }
+  .kz-certs img{height:70px;width:auto;display:block;object-fit:contain;}
+
+  /* -------- Warum wir -------- */
+  .warum h2.headline{margin-bottom:20px;}
+  .warum .body-text{max-width:64ch;}
+  .warum .body-text + .body-text{margin-top:14px;}
+  .warum .body-text strong{color:var(--hbo-dunkel);}
+
+  /* -------- Vergleich -------- */
+  .vergleich{background:var(--schwarz);color:var(--weiss);}
+  .vergleich .eyebrow{color:var(--weiss);}
+  .vergleich h2.headline{color:var(--weiss);}
+  .vgl-grid{
+    display:grid;grid-template-columns:1fr;gap:1px;background:rgba(255,255,255,.16);
+    margin-top:40px;border:1px solid rgba(255,255,255,.16);
+  }
+  @media(min-width:768px){.vgl-grid{grid-template-columns:1fr 1fr 1fr;}}
+  .vgl-card{background:var(--schwarz);padding:36px 28px;}
+  .vgl-card.is-us{background:var(--hbo-dunkel);}
+  .vgl-card h3{
+    font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:1.3rem;
+    color:var(--orange);margin-bottom:14px;
+  }
+  .vgl-card.is-us h3{color:var(--weiss);}
+  .vgl-card .body-text{color:var(--beton);}
+
+  /* -------- Prozess (ehrlich) -------- */
+  .ehrlich{background:var(--weiss);}
+  .ehrlich .eyebrow{color:var(--hbo-dunkel);}
+  .ehrlich h2.headline{color:var(--schwarz);margin-bottom:20px;}
+  .ehrlich .body-text{max-width:68ch;font-size:1.05rem;}
+  .ehrlich .body-text + .body-text{margin-top:14px;}
+  .ehrlich .body-text strong{color:var(--hbo-dunkel);}
+
+  .prozess .section-head{margin-bottom:16px;}
+  .prozess .body-text{max-width:56ch;margin-bottom:56px;}
+  .route{position:relative;}
+  .route-line{display:none;}
+  .route-grid{position:relative;display:grid;grid-template-columns:1fr;gap:36px;}
+  @media(min-width:640px){.route-grid{grid-template-columns:repeat(2,1fr);gap:40px 32px;}}
+  @media(min-width:860px){.route-grid{grid-template-columns:repeat(3,1fr);gap:48px 32px;}}
+  .route-step{display:flex;flex-direction:column;gap:14px;}
+  .route-icon{
+    width:78px;height:78px;flex-shrink:0;background:var(--beton);border:2px solid var(--schwarz);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;z-index:2;
+  }
+  .route-icon .num{font-family:var(--display);color:var(--orange);font-size:2rem;line-height:1;}
+  .route-icon .accent{width:22px;height:5px;background:var(--orange);margin-top:10px;}
+  .route-step .step-title{font-weight:800;font-size:1.05rem;}
+  .route-step .step-time{font-weight:600;font-size:.85rem;opacity:.7;margin-top:-8px;}
+  .route-step .step-text{font-size:.92rem;opacity:.85;max-width:32ch;}
+
+  /* -------- Garantie -------- */
+  .garantie{background:var(--schwarz);color:var(--weiss);}
+  .garantie .eyebrow{color:var(--weiss);}
+  .garantie h2.headline{color:var(--weiss);}
+  .garantie-sub{max-width:60ch;margin-top:16px;color:var(--beton);}
+  .garantie-grid{
+    display:grid;grid-template-columns:1fr;gap:1px;background:rgba(255,255,255,.16);
+    margin-top:40px;border:1px solid rgba(255,255,255,.16);
+  }
+  @media(min-width:768px){.garantie-grid{grid-template-columns:1fr 1fr 1fr;}}
+  .garantie-card{background:var(--schwarz);padding:36px 28px;}
+  .garantie-card .num{font-family:var(--display);font-size:2.4rem;color:var(--orange);display:block;margin-bottom:10px;}
+  .garantie-card h3{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:1.2rem;color:var(--weiss);margin-bottom:12px;}
+  .garantie-card .body-text{color:var(--beton);font-size:.94rem;}
+  .garantie-footnote{margin-top:24px;font-size:.82rem;color:rgba(231,227,220,.65);max-width:76ch;}
+
+  /* -------- HEINZ Modell (detailliert) -------- */
+  .heinz .section-head{margin-bottom:16px;}
+  .heinz .body-text{max-width:64ch;margin-bottom:48px;}
+  .heinz-table{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:640px){.heinz-table{grid-template-columns:repeat(2,1fr);}}
+  @media(min-width:900px){.heinz-table{grid-template-columns:repeat(3,1fr);}}
+  @media(min-width:1180px){.heinz-table{grid-template-columns:repeat(6,1fr);}}
+  .heinz-col{display:flex;flex-direction:column;border:1px solid rgba(11,11,11,.14);}
+  .heinz-head{background:var(--schwarz);color:var(--weiss);padding:20px 18px;display:flex;align-items:center;gap:10px;}
+  .heinz-head .letter{font-family:var(--display);color:var(--orange);font-size:1.9rem;line-height:1;}
+  .heinz-head .label{font-weight:800;font-size:.9rem;line-height:1.2;}
+  .heinz-col--phase0 .heinz-head{background:var(--weiss);color:var(--schwarz);border:2px dashed var(--schwarz);}
+  .heinz-sub{background:var(--weiss);font-style:italic;font-weight:600;font-size:.88rem;color:var(--hbo-dunkel);padding:20px 18px;flex:1;}
+  .heinz-means{background:var(--hbo-hell);color:var(--hbo-dunkel);font-size:.82rem;font-weight:700;padding:14px 18px;}
+  .heinz-fundament{
+    margin-top:16px;background:var(--hbo-dunkel);color:var(--weiss);text-align:center;
+    padding:20px 24px;font-size:.9rem;font-weight:600;line-height:1.5;
+  }
+  .heinz-fundament strong{font-weight:800;color:var(--orange);}
+  .heinz-stat{margin-top:48px;border-left:6px solid var(--orange);padding-left:28px;}
+  .heinz-stat .num{font-family:var(--display);font-size:clamp(2.4rem, 6vw, 3.6rem);color:var(--hbo-dunkel);display:block;line-height:1;margin-bottom:10px;}
+  .heinz-stat .body-text{max-width:52ch;margin-bottom:0;}
+
+  /* -------- Footer CTA -------- */
+  .footer-cta{background:var(--hbo-basis);color:var(--weiss);text-align:left;}
+  .footer-cta .headline{color:var(--weiss);margin-bottom:32px;}
+  .footer-cta .btn{background:var(--schwarz);border-color:var(--schwarz);max-width:360px;}
+  .footer-cta .btn:hover{background:transparent;color:var(--schwarz);border-color:var(--schwarz);}
+
+  /* -------- Footer -------- */
+  footer.site-footer{background:var(--schwarz);color:var(--beton);padding:64px 0 36px;}
+  .footer-grid{display:grid;gap:36px;grid-template-columns:1fr;}
+  @media(min-width:768px){.footer-grid{grid-template-columns:1.2fr 1fr 1fr 1fr;}}
+  footer .logo{color:var(--weiss);}
+  footer .fcol h5{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--weiss);margin-bottom:16px;}
+  footer .fcol a{display:block;text-decoration:none;color:var(--beton);font-size:.92rem;margin-bottom:10px;opacity:.85;}
+  footer .fcol a:hover{opacity:1;text-decoration:underline;}
+  .footer-bottom{
+    margin-top:56px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14);
+    font-size:.82rem;opacity:.6;display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;
+  }
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .5s ease, transform .5s ease;}
+  .reveal.is-in{opacity:1;transform:translateY(0);}
+  @media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none;}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+  <div class="wrap nav-inner">
+    <div class="nav-left">
+      <a href="index.html" class="logo">HEINZ<span>.</span></a>
+      <nav class="nav-links">
+        <a href="fuer-einrichtungen.html" class="is-active">Für Arbeitgeber</a>
+        <a href="fuer-fachkraefte.html">Für Fachkräfte</a>
+        <a href="ueber-uns.html">Team</a>
+        <a href="blog.html">Hintergründe</a>
+      </nav>
+    </div>
+    <a href="#kontakt" class="btn nav-cta">Sprechen wir.</a>
+    <label for="nav-toggle" class="nav-toggle" aria-label="Menü öffnen">
+      <span class="nav-toggle-bars"></span>
+    </label>
+  </div>
+  <nav class="mobile-nav wrap">
+    <a href="fuer-einrichtungen.html" class="is-active">Für Arbeitgeber</a>
+    <a href="fuer-fachkraefte.html">Für Fachkräfte</a>
+    <a href="ueber-uns.html">Team</a>
+    <a href="blog.html">Hintergründe</a>
+    <a href="#kontakt" class="btn">Sprechen wir.</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="wrap">
+      <span class="hero-eyebrow">Für Kliniken &amp; Pflegeeinrichtungen</span>
+      <p class="hero-headline">
+        <span class="hero-line1">Besetzung. Die bleibt.</span>
+      </p>
+      <div class="hero-bar"></div>
+      <p class="hero-sub">Für uns ist eine Vermittlung nicht erfolgreich, wenn ein Vertrag unterschrieben ist.</p>
+      <p class="hero-sub" style="margin-top:12px;">Sie ist erfolgreich, wenn Ihre Fachkraft <strong>Jahre später noch im Team ist.</strong></p>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn">Sprechen wir.</a>
+        <a href="#garantie" class="hero-path">Garantie.</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- KENNZAHLEN -->
+  <section class="kennzahlen">
+    <div class="wrap">
+      <span class="eyebrow reveal">Fakten</span>
+      <h2 class="headline reveal">Diese Zahlen bleiben.</h2>
+
+      <div class="kz-grid">
+        <div class="reveal">
+          <div class="kz-num">92%</div>
+          <p class="kz-label">bleiben länger als drei Jahre.</p>
+        </div>
+        <div class="reveal">
+          <div class="kz-num">400+</div>
+          <p class="kz-label">erfolgreich vermittelte Fachkräfte.</p>
+        </div>
+        <div class="reveal">
+          <div class="kz-num">98%</div>
+          <p class="kz-label">erfolgreiche Berufsanerkennungen.</p>
+        </div>
+      </div>
+
+      <div class="kz-certs reveal">
+        <img src="images/logo-ral-guetezeichen.png" alt="RAL-Gütezeichen Faire Anwerbung Pflege">
+        <img src="images/logo-gapa.png" alt="GAPA">
+        <img src="images/logo-bvifg.png" alt="Mitglied im Bundesverband Internationale Fachkräftegewinnung (bvifg)">
+      </div>
+    </div>
+  </section>
+
+  <!-- WARUM WIR -->
+  <section class="warum">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Warum wir</span>
+        <h2 class="headline">Wir tragen das Risiko. Nicht Sie.</h2>
+        <p class="body-text">Über 30 Jahre Erfahrung im Gesundheitswesen. Seit 2018 fokussiert auf internationale Pflegefachkräfte. Wir kennen die Anerkennungsverfahren. Die Behörden. Die Sprachschulen. Und die Menschen, die am Ende den Unterschied machen.</p>
+        <p class="body-text">Das Ergebnis ist kein Zufall. Es ist System, entwickelt aus Erfahrung und wissenschaftlichen Erkenntnissen. <strong>92% unserer vermittelten Fachkräfte bleiben länger als drei Jahre.</strong> Weil wir vom ersten Gespräch an auf Bindung arbeiten.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERGLEICH -->
+  <section class="vergleich">
+    <div class="wrap">
+      <span class="eyebrow reveal">Der Unterschied</span>
+      <h2 class="headline reveal">Warum wir statt Zeitarbeit oder Social-Media-Recruiting?</h2>
+
+      <div class="vgl-grid reveal">
+        <div class="vgl-card">
+          <h3>Zeitarbeit</h3>
+          <p class="body-text">Löst akute Engpässe kurzfristig. Aber ohne Bindung ans Team. Hohe Fluktuation. Wiederkehrender Aufwand. Keine echte Integration in Ihre Einrichtung.</p>
+        </div>
+        <div class="vgl-card">
+          <h3>Social-Media-Recruiting</h3>
+          <p class="body-text">Erreicht viele Bewerber:innen. Aber ohne strukturierten Anerkennungs- und Integrationsprozess bleibt das Risiko einer Fehlbesetzung bei Ihnen.</p>
+        </div>
+        <div class="vgl-card is-us">
+          <h3>Unser Ansatz</h3>
+          <p class="body-text">Erfahrene internationale Pflegefachkräfte, begleitet von der ersten Kontaktaufnahme bis weit über den ersten Arbeitstag hinaus. Ergebnis: 92% bleiben länger als drei Jahre.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EHRLICHKEIT -->
+  <section class="ehrlich">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Ohne Umschweife</span>
+        <h2 class="headline">Einfach wird es nicht. Machen wir es trotzdem.</h2>
+        <p class="body-text">Seien wir ehrlich. Bürokratie. Anerkennungsverfahren. Sprachbarrieren. Wartezeiten bei Behörden. Der Weg zu einer internationalen Pflegefachkraft ist kein Selbstläufer. Wer Ihnen etwas anderes erzählt, verkauft Ihnen ein Märchen.</p>
+        <p class="body-text">Aber genau das ist unser Job. Wir kennen jede Hürde, weil wir sie seit 2018 hundertfach genommen haben. <strong>Wir übernehmen die Komplexität. Sie übernehmen Ihre Einrichtung.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROZESS -->
+  <section class="prozess">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Ablauf</span>
+        <h2 class="headline">Unser Prozess. Aus Ihrer Sicht.</h2>
+      </div>
+
+      <p class="body-text reveal">Durchschnittlich 6 Monate bis zum ersten Arbeitstag. Möglich macht das unser Pool: mehrere hundert geprüfte und sprachlich vorbereitete Kandidat:innen. Das verkürzt Ihre Prozesszeit spürbar. Ihr eigener Aufwand bleibt überschaubar.</p>
+
+      <div class="route reveal">
+        <div class="route-line"></div>
+        <div class="route-grid">
+
+          <div class="route-step">
+            <div class="route-icon" aria-hidden="true"><span class="num">01</span><span class="accent"></span></div>
+            <span class="step-title">Bedarfsanalyse</span>
+            <span class="step-time">Tag 1 · 1 Gespräch mit Ihnen</span>
+            <p class="step-text body-text">Wir stimmen uns persönlich mit Ihnen ab. Und klären, wer wirklich zu Ihrer Einrichtung passt.</p>
+          </div>
+
+          <div class="route-step">
+            <div class="route-icon" aria-hidden="true"><span class="num">02</span><span class="accent"></span></div>
+            <span class="step-title">Digital-Setup &amp; Team-Schulung</span>
+            <span class="step-time">ab Woche 1 · parallel zum Matching</span>
+            <p class="step-text body-text">Digitaler Prozess mit Ankaadia. Team-Schulung parallel dazu.</p>
+          </div>
+
+          <div class="route-step">
+            <div class="route-icon" aria-hidden="true"><span class="num">03</span><span class="accent"></span></div>
+            <span class="step-title">Matching aus dem Pool</span>
+            <span class="step-time">ab Woche 2 · Sie entscheiden</span>
+            <p class="step-text body-text">Wir schlagen passende Kandidat:innen aus unserem bestehenden, bereits vorqualifizierten Pool vor. Kein Start bei null.</p>
+          </div>
+
+          <div class="route-step">
+            <div class="route-icon" aria-hidden="true"><span class="num">04</span><span class="accent"></span></div>
+            <span class="step-title">Anerkennung &amp; Visum</span>
+            <span class="step-time">4–6 Monate · wir übernehmen</span>
+            <p class="step-text body-text">Sprachprozess und Anerkennung laufen parallel. Gleichzeitig bereiten wir das Willkommen vor: Wohnung. Behördentermine. Einreise.</p>
+          </div>
+
+          <div class="route-step">
+            <div class="route-icon" aria-hidden="true"><span class="num">05</span><span class="accent"></span></div>
+            <span class="step-title">Willkommen</span>
+            <span class="step-time">Einreise</span>
+            <p class="step-text body-text">Empfang vor Ort. Begleitung ins neue Zuhause. Umfeld kennenlernen. Einkaufen gehen. Behördengänge machen. Ankommen.</p>
+          </div>
+
+          <div class="route-step">
+            <div class="route-icon" aria-hidden="true"><span class="num">06</span><span class="accent"></span></div>
+            <span class="step-title">Integration &amp; Begleitung</span>
+            <span class="step-time">ab Einreise · dauerhaft</span>
+            <p class="step-text body-text">Ansprechpartner sein. Begleitung, so lange sie gebraucht wird.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GARANTIE -->
+  <section class="garantie" id="garantie">
+    <div class="wrap">
+      <span class="eyebrow reveal">Unsere Garantie</span>
+      <h2 class="headline reveal">Eine Garantie. Offen kommuniziert.</h2>
+      <p class="garantie-sub reveal">Wir schaffen Vertrauen durch transparente Konditionen.</p>
+
+      <div class="garantie-grid reveal">
+        <div class="garantie-card">
+          <span class="num">92%</span>
+          <h3>Bleiben</h3>
+          <p class="body-text">92% unserer vermittelten Fachkräfte bleiben länger als drei Jahre in ihrer Einrichtung.</p>
+        </div>
+        <div class="garantie-card">
+          <span class="num">18</span>
+          <h3>Monate Sicherheit</h3>
+          <p class="body-text">Kündigt die Fachkraft innerhalb der ersten 18 Monate von sich aus. Dann übernehmen wir die neue Suche komplett. Ohne zusätzliche Kosten für Sie.</p>
+        </div>
+        <div class="garantie-card">
+          <span class="num">50/50</span>
+          <h3>Klare Konditionen</h3>
+          <p class="body-text">Zahlung nur bei Erfolg: 50% der Vermittlungsgebühr nach erfolgreicher Vermittlung. 50% nach erfolgreichem Arbeitsstart.</p>
+        </div>
+      </div>
+
+      <p class="garantie-footnote reveal">Die Sicherheit gilt bei Eigenkündigung der Fachkraft. Ausgenommen sind Fälle, in denen die Einrichtung selbst kündigt oder die Fachkraft die Stelle wegen Problemen im Arbeitsumfeld verlässt.</p>
+    </div>
+  </section>
+
+  <!-- HEINZ MODELL -->
+  <section class="heinz">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Unser System</span>
+        <h2 class="headline">Kein Zufall. Ein System.</h2>
+      </div>
+      <p class="body-text reveal">Wir verlassen uns nicht auf Glück. Unser Integrationsmodell heißt HEINZ. Entwickelt mit Student:innen und Professor:innen der Leuphana Universität. Geschärft durch unsere Erfahrung seit 2018. Fünf Erfolgsfaktoren entscheiden, ob eine Integration wirklich hält.</p>
+
+      <div class="heinz-table reveal">
+        <div class="heinz-col heinz-col--phase0">
+          <div class="heinz-head"><span class="letter">0</span><span class="label">Phase 0 – Anbahnung</span></div>
+          <p class="heinz-sub">Bevor die Journey beginnt</p>
+          <p class="heinz-means">Sorgfältige Anbahnung verhindert Enttäuschungen auf beiden Seiten.</p>
+        </div>
+        <div class="heinz-col">
+          <div class="heinz-head"><span class="letter">H</span><span class="label">Handlungssicherheit</span></div>
+          <p class="heinz-sub">Orientierung &amp; Onboarding</p>
+          <p class="heinz-means">Gute Einarbeitung senkt die Fluktuation spürbar.</p>
+        </div>
+        <div class="heinz-col">
+          <div class="heinz-head"><span class="letter">E</span><span class="label">Erwartungen matchen</span></div>
+          <p class="heinz-sub">Transparenz &amp; Placement</p>
+          <p class="heinz-means">Realistische Erwartungen verhindern frühe Abbrüche.</p>
+        </div>
+        <div class="heinz-col">
+          <div class="heinz-head"><span class="letter">I</span><span class="label">Inklusion &amp; Respekt</span></div>
+          <p class="heinz-sub">Employer-Coaching</p>
+          <p class="heinz-means">Respektvoller Umgang im Team fördert Zufriedenheit und Verbleib.</p>
+        </div>
+        <div class="heinz-col">
+          <div class="heinz-head"><span class="letter">N</span><span class="label">Navigation ermöglichen</span></div>
+          <p class="heinz-sub">Sprache &amp; System</p>
+          <p class="heinz-means">Gute Sprachkenntnisse erleichtern den Alltag im Job.</p>
+        </div>
+        <div class="heinz-col">
+          <div class="heinz-head"><span class="letter">Z</span><span class="label">Zukunft &amp; Verwurzelung</span></div>
+          <p class="heinz-sub">Settlement &amp; Karriere</p>
+          <p class="heinz-means">Familienpräsenz ist zentraler Bleibtreiber.</p>
+        </div>
+      </div>
+
+      <div class="heinz-fundament reveal"><strong>FUNDAMENT: Führung</strong> — trägt alle sechs Bausteine. Benannter Retention-Owner beim Arbeitgeber, Stay-Interviews nach 6/12/24 Monaten, tägliche Präsenz.</div>
+
+      <div class="heinz-stat reveal">
+        <span class="num">36%</span>
+        <p class="body-text">So viel sinkt die Abbruchquote durch strukturierte Orientierung und Erwartungsmanagement in den ersten Wochen. Mehr zum HEINZ-Modell im persönlichen Gespräch.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER CTA -->
+  <section class="footer-cta" id="kontakt">
+    <div class="wrap">
+      <h2 class="headline reveal">Die nächste Besetzung, die bleibt.</h2>
+      <a href="mailto:info@hpstalent.de" class="btn btn--big reveal">Sprechen wir.</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="fcol">
+        <a href="index.html" class="logo">HEINZ<span style="color:#1F4D3D;">.</span></a>
+        <p style="margin-top:16px;font-size:.92rem;opacity:.75;">info@hpstalent.de</p>
+      </div>
+      <div class="fcol">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a>
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="fuer-einrichtungen.html">Für Arbeitgeber</a>
+        <a href="fuer-fachkraefte.html">Für Fachkräfte</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="presse.html">Presse</a>
+      </div>
+      <div class="fcol">
+        <h5>Rechtliches</h5>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutzerklärung</a>
+        <a href="beschwerdeformular.html">Beschwerdeverfahren (RAL)</a>
+      </div>
+      <div class="fcol">
+        <h5>Kontakt</h5>
+        <a href="kontakt.html">Kontaktseite</a>
+        <a href="mailto:info@hpstalent.de">info@hpstalent.de</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Heinz Personnel Solutions GmbH</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reveals = document.querySelectorAll('.reveal');
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if ('IntersectionObserver' in window && !reduceMotion){
+    var revealObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){
+          entry.target.classList.add('is-in');
+          revealObs.unobserve(entry.target);
+        }
+      });
+    }, {threshold: .15});
+    reveals.forEach(function(el){ revealObs.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('is-in'); });
+  }
+})();
+</script>
+
+</body>
+</html>

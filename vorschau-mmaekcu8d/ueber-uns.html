@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keine Nummern. Nur Menschen. — Heinz Personnel Solutions</title>
+<meta name="description" content="Lernen Sie das Team von Heinz Personnel Solutions kennen: echte Menschen, echte Geschichten, seit 2018 im Einsatz für faire Fachkräftevermittlung.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --hbo-dunkel:#1B2B99;
+    --hbo-basis:var(--hbo-dunkel); /* alias: konsolidiert auf 2 Blautoene (dunkel + flieder/mittel) */
+    --hbo-mittel:#7C8CFF;
+    --hbo-hell:#D6DBFF;
+    --orange:#FF5A1F;
+    --schwarz:#0B0B0B;
+    --charcoal:#161616;
+    --beton:#E7E3DC;
+    --weiss:#FFFFFF;
+    --display: 'Anton', sans-serif;
+    --body: 'Inter', -apple-system, sans-serif;
+    --maxw: 1200px;
+    --text-body: 1rem;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--body);
+    background:var(--beton);
+    color:var(--schwarz);
+    line-height:1.55;
+    font-size:var(--text-body);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  @media(min-width:768px){.wrap{padding:0 48px;}}
+  @media(min-width:1280px){.wrap{padding:0 64px;}}
+
+  .eyebrow{
+    font-family:var(--body);font-weight:700;font-size:.72rem;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--hbo-basis);display:block;margin-bottom:14px;
+  }
+  .eyebrow--onblue{color:var(--hbo-hell);}
+  .eyebrow--onblack{color:var(--weiss);}
+
+  .btn, .hero-path, .body-text, p{font-size:var(--text-body);}
+
+  .btn{
+    display:flex;align-items:center;justify-content:center;width:100%;
+    font-family:var(--body);font-weight:700;padding:18px 30px;
+    background:var(--hbo-basis);color:var(--weiss);text-decoration:none;
+    border:2px solid var(--hbo-basis);
+    transition:background .18s ease, color .18s ease, transform .12s ease;
+  }
+  .btn:hover{background:transparent;color:var(--hbo-basis);}
+  .btn:active{transform:translateY(1px);}
+  .btn:focus-visible{outline:3px solid var(--hbo-mittel);outline-offset:3px;}
+  .btn--onblack{border-color:var(--weiss);color:var(--schwarz);background:var(--weiss);}
+  .btn--onblack:hover{background:transparent;color:var(--weiss);}
+  .btn--big{padding:26px 40px;font-size:1.25rem;}
+
+  section{padding:56px 0;}
+  @media(min-width:768px){section{padding:84px 0;}}
+
+  .section-head{max-width:760px;margin-bottom:36px;}
+
+  h2.headline{
+    font-family:var(--display);text-transform:uppercase;font-weight:400;
+    letter-spacing:.01em;line-height:.98;font-size:clamp(2.1rem, 6vw, 3.6rem);
+  }
+
+  /* -------- Nav -------- */
+  header.nav{position:sticky;top:0;z-index:50;background:var(--beton);border-bottom:1px solid rgba(11,11,11,.1);}
+  .nav-inner{display:flex;align-items:center;padding-top:20px;padding-bottom:20px;}
+  .nav-left{display:flex;align-items:center;gap:40px;flex-shrink:1;min-width:0;}
+  .logo{
+    font-family:var(--display);font-size:1.35rem;letter-spacing:.02em;
+    text-transform:uppercase;text-decoration:none;color:var(--schwarz);flex-shrink:0;white-space:nowrap;
+  }
+  .logo span{color:#FF5A1F;}
+  .nav-links{display:none;gap:22px;font-weight:600;font-size:.88rem;white-space:nowrap;}
+  .nav-links a{text-decoration:none;padding:4px 0;border-bottom:2px solid transparent;}
+  .nav-links a:hover, .nav-links a.is-active{border-color:var(--hbo-basis);}
+  @media(min-width:1040px){.nav-links{display:flex;align-items:center;}}
+  .nav-cta{display:none;}
+  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;margin-left:auto;}}
+
+  .nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;margin-left:auto;cursor:pointer;background:none;border:none;padding:0;flex-shrink:0;}
+  @media(min-width:1040px){.nav-toggle{display:none;}}
+  .nav-toggle-bars{position:relative;width:22px;height:2px;background:var(--schwarz);transition:background .15s ease;}
+  .nav-toggle-bars::before,.nav-toggle-bars::after{content:"";position:absolute;left:0;width:22px;height:2px;background:var(--schwarz);transition:transform .2s ease;}
+  .nav-toggle-bars::before{top:-7px;}
+  .nav-toggle-bars::after{top:7px;}
+  .nav-toggle-input{display:none;}
+  .nav-toggle-input:checked ~ .nav-inner .nav-toggle-bars{background:transparent;}
+  .nav-toggle-input:checked ~ .nav-inner .nav-toggle-bars::before{transform:translateY(7px) rotate(45deg);}
+  .nav-toggle-input:checked ~ .nav-inner .nav-toggle-bars::after{transform:translateY(-7px) rotate(-45deg);}
+  .mobile-nav{max-height:0;overflow:hidden;transition:max-height .25s ease;display:flex;flex-direction:column;}
+  @media(min-width:1040px){.mobile-nav{display:none;}}
+  .nav-toggle-input:checked ~ .mobile-nav{max-height:400px;padding-bottom:20px;}
+  .mobile-nav a{display:block;padding:12px 0;text-decoration:none;color:var(--schwarz);font-weight:600;font-size:.95rem;border-top:1px solid rgba(11,11,11,.1);}
+  .mobile-nav a.btn{margin-top:16px;padding:12px 22px;border-top:none;}
+
+  /* -------- Hero -------- */
+  .hero{background:var(--schwarz);color:var(--weiss);padding:64px 0 72px;overflow:hidden;}
+  @media(min-width:768px){.hero{padding:96px 0 100px;}}
+  .hero-eyebrow{font-weight:700;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--weiss);margin-bottom:28px;}
+  .hero-headline{font-family:var(--display);text-transform:uppercase;font-weight:400;line-height:1.02;letter-spacing:.005em;}
+  .hero-line1{font-size:clamp(2.4rem, 8.5vw, 5.6rem);color:var(--weiss);display:block;overflow-wrap:break-word;}
+  .hero-bar{height:6px;width:64px;background:var(--hbo-basis);margin-top:28px;}
+  .hero-sub{font-weight:500;font-size:1.1rem;color:var(--beton);max-width:56ch;margin-top:36px;}
+  .hero-sub strong{color:var(--weiss);}
+  .hero-actions{margin-top:44px;display:flex;flex-wrap:wrap;gap:12px;}
+  .hero-actions .btn{width:auto;flex:1;min-width:220px;}
+  .hero-path{
+    text-decoration:none;color:var(--weiss);font-weight:700;text-align:center;padding:18px 14px;
+    border:2px solid rgba(255,255,255,.5);flex:1;min-width:220px;display:flex;align-items:center;justify-content:center;
+    transition:background .18s ease, border-color .18s ease;
+  }
+  .hero-path:hover{background:var(--weiss);color:var(--schwarz);border-color:var(--weiss);}
+
+  /* -------- Warum wir das tun -------- */
+  .warum h2.headline{margin-bottom:20px;}
+  .warum .body-text{max-width:64ch;}
+  .warum .body-text + .body-text{margin-top:14px;}
+  .warum .body-text strong{color:var(--hbo-dunkel);}
+
+  .quote{
+    margin-top:40px;max-width:68ch;border-left:6px solid var(--orange);padding-left:28px;
+  }
+  .quote p{font-family:var(--display);font-weight:400;font-size:clamp(1.3rem, 2.6vw, 1.8rem);line-height:1.25;text-transform:none;letter-spacing:0;}
+  .quote cite{display:block;margin-top:16px;font-style:normal;font-weight:600;font-size:.88rem;opacity:.7;}
+
+  /* -------- Wie alles begann -------- */
+  .historie{background:var(--weiss);}
+  .historie h2.headline{margin-bottom:20px;}
+  .historie .body-text{max-width:66ch;}
+  .historie .body-text + .body-text{margin-top:14px;}
+  .historie .body-text strong{color:var(--hbo-dunkel);}
+
+  /* -------- Echte Momente -------- */
+  .momente{background:var(--schwarz);color:var(--weiss);}
+  .momente .eyebrow{color:var(--weiss);}
+  .momente h2.headline{color:var(--weiss);}
+  .momente-grid{margin-top:48px;display:grid;grid-template-columns:1fr;gap:24px;}
+  @media(min-width:640px){.momente-grid{grid-template-columns:1fr 1fr;}}
+  @media(min-width:960px){.momente-grid{grid-template-columns:repeat(3,1fr);}}
+  .momente-photo{aspect-ratio:4/5;overflow:hidden;background:var(--charcoal);}
+  .momente-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+  .momente-caption{padding:16px 4px;font-weight:700;font-size:.95rem;color:var(--weiss);}
+
+  /* -------- Presse -------- */
+  .presse{background:var(--weiss);}
+  .presse .section-head{margin-bottom:8px;}
+  .presse-list{margin-top:32px;display:grid;grid-template-columns:1fr;gap:1px;background:rgba(11,11,11,.1);border:1px solid rgba(11,11,11,.1);}
+  @media(min-width:768px){.presse-list{grid-template-columns:1fr 1fr 1fr;}}
+  .presse-item{background:var(--weiss);padding:24px 28px;}
+  .presse-item .tag{display:block;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--hbo-basis);margin-bottom:10px;}
+  .presse-item a{font-weight:800;text-decoration:none;font-size:1rem;line-height:1.3;}
+  .presse-item a:hover{text-decoration:underline;text-underline-offset:3px;}
+  .presse-item p{margin-top:8px;font-size:.88rem;opacity:.7;}
+
+  /* -------- Team -------- */
+  .team .section-head .body-text{max-width:52ch;margin-top:16px;}
+  .team-grid{
+    margin-top:48px;
+    display:grid;grid-template-columns:1fr;gap:1px;
+    background:rgba(11,11,11,.14);border:1px solid rgba(11,11,11,.14);
+  }
+  @media(min-width:600px){.team-grid{grid-template-columns:1fr 1fr;}}
+  @media(min-width:960px){.team-grid{grid-template-columns:1fr 1fr 1fr 1fr;}}
+  .team-card{background:var(--beton);}
+  .team-photo{width:100%;aspect-ratio:1/1;overflow:hidden;background:var(--hbo-dunkel);}
+  .team-photo img{width:100%;height:100%;object-fit:cover;}
+  .team-info{padding:24px;}
+  .team-info .name{font-weight:800;font-size:1.05rem;}
+  .team-info .role{
+    font-size:.85rem;font-weight:600;color:var(--hbo-dunkel);
+    text-transform:uppercase;letter-spacing:.04em;margin:6px 0 14px;
+  }
+  .team-info .body-text{font-size:.92rem;opacity:.85;}
+  .team-footnote{margin-top:32px;max-width:64ch;font-size:.94rem;opacity:.75;}
+
+  /* -------- Footer CTA -------- */
+  .footer-cta{background:var(--hbo-basis);color:var(--weiss);text-align:left;}
+  .footer-cta .headline{color:var(--weiss);margin-bottom:20px;}
+  .footer-cta .body-text{color:var(--hbo-hell);max-width:56ch;font-size:1.05rem;margin-bottom:32px;}
+  .footer-cta .btn{background:var(--schwarz);border-color:var(--schwarz);max-width:360px;}
+  .footer-cta .btn:hover{background:transparent;color:var(--schwarz);border-color:var(--schwarz);}
+
+  /* -------- Footer -------- */
+  footer.site-footer{background:var(--schwarz);color:var(--beton);padding:64px 0 36px;}
+  .footer-grid{display:grid;gap:36px;grid-template-columns:1fr;}
+  @media(min-width:768px){.footer-grid{grid-template-columns:1.2fr 1fr 1fr 1fr;}}
+  footer .logo{color:var(--weiss);}
+  footer .fcol h5{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--weiss);margin-bottom:16px;}
+  footer .fcol a{display:block;text-decoration:none;color:var(--beton);font-size:.92rem;margin-bottom:10px;opacity:.85;}
+  footer .fcol a:hover{opacity:1;text-decoration:underline;}
+  .footer-bottom{
+    margin-top:56px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14);
+    font-size:.82rem;opacity:.6;display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;
+  }
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .5s ease, transform .5s ease;}
+  .reveal.is-in{opacity:1;transform:translateY(0);}
+  @media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none;}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+  <div class="wrap nav-inner">
+    <div class="nav-left">
+      <a href="index.html" class="logo">HEINZ<span>.</span></a>
+      <nav class="nav-links">
+        <a href="fuer-einrichtungen.html">Für Arbeitgeber</a>
+        <a href="fuer-fachkraefte.html">Für Fachkräfte</a>
+        <a href="ueber-uns.html" class="is-active">Team</a>
+        <a href="blog.html">Hintergründe</a>
+      </nav>
+    </div>
+    <a href="#kontakt" class="btn nav-cta">Sprechen wir.</a>
+    <label for="nav-toggle" class="nav-toggle" aria-label="Menü öffnen">
+      <span class="nav-toggle-bars"></span>
+    </label>
+  </div>
+  <nav class="mobile-nav wrap">
+    <a href="fuer-einrichtungen.html">Für Arbeitgeber</a>
+    <a href="fuer-fachkraefte.html">Für Fachkräfte</a>
+    <a href="ueber-uns.html" class="is-active">Team</a>
+    <a href="blog.html">Hintergründe</a>
+    <a href="#kontakt" class="btn">Sprechen wir.</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="wrap">
+      <span class="hero-eyebrow">Menschen im Mittelpunkt</span>
+      <p class="hero-headline">
+        <span class="hero-line1">Keine Nummern. Nur Menschen.</span>
+      </p>
+      <div class="hero-bar"></div>
+      <p class="hero-sub">Wir vermitteln keine Fachkräfte-Nummern. Wir bringen Menschen zusammen. Ein digitales Team, ein persönlicher Prozess.</p>
+      <p class="hero-sub" style="margin-top:12px;"><strong>Am Ende jeder Zahl steht ein echter Mensch mit einer echten Geschichte.</strong></p>
+      <p class="hero-sub" style="margin-top:12px;">Auf beiden Seiten.</p>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn">Sprechen wir.</a>
+        <a href="#team" class="hero-path">Das Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WARUM WIR DAS TUN -->
+  <section class="warum">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Warum wir das tun</span>
+        <h2 class="headline">Nicht die Zahl zählt. Das, was danach passiert.</h2>
+        <p class="body-text">Seit 2018 vermitteln wir internationale Pflegefachkräfte an deutsche Kliniken und Pflegeeinrichtungen. 400+ Vermittlungen. Für uns zählt trotzdem nicht diese Zahl, sondern das, was danach passiert.</p>
+        <p class="body-text">Integration ist keine Einbahnstraße. Internationale Kolleg:innen und bestehende Teams müssen aktiv aufeinander zugehen, mit offen besprochenen Erwartungen, bevor Missverständnisse entstehen. Deshalb begleiten wir Fachkräfte und Einrichtungen gemeinsam, so lange es dauert. <strong>92 % unserer Vermittlungen bleiben länger als drei Jahre.</strong> Nicht aus Glück, sondern weil aus einem Arbeitsvertrag eine echte, langfristige Zusammenarbeit wird.</p>
+
+        <blockquote class="quote">
+          <p>„Integration beginnt beim ersten Kennenlernen. Das Ankommen in einem neuen Land ist eher ein Marathon als ein Sprint.“</p>
+          <cite>Ivo Straßenburg</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- WIE ALLES BEGANN -->
+  <section class="historie">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Wie alles begann</span>
+        <h2 class="headline">Aus einer persönlichen Verbindung. Keine Marktkalkulation.</h2>
+        <p class="body-text">Heinz Personnel Solutions wurde von Herrn und Frau Heinz gegründet. Sie stammt von den Philippinen, er ist Unternehmer im Gesundheitswesen. Aus dieser persönlichen Verbindung entstand der Fokus auf philippinische Pflegefachkräfte. <strong>Nicht aus einer reinen Marktkalkulation.</strong></p>
+        <p class="body-text">Seit 2024 verantwortet Ivo Straßenburg die Geschäftsführung. Herr und Frau Heinz sind dem Unternehmen bis heute eng verbunden: Sören Heinz ist weiterhin als Key Account und Vertrieb aktiv. Frau Heinz unterstützt im Hintergrund mit ihren gewachsenen Beziehungen auf die Philippinen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECHTE MOMENTE -->
+  <section class="momente">
+    <div class="wrap">
+      <span class="eyebrow reveal">Echte Momente</span>
+      <h2 class="headline reveal">Keine Stockfotos. So sieht unsere Arbeit wirklich aus.</h2>
+
+      <div class="momente-grid reveal">
+        <div class="momente-item">
+          <div class="momente-photo"><img src="images/heinz-team-abflug-philippinen.jpg" alt="Team beim Abflug auf den Philippinen" loading="lazy"></div>
+          <p class="momente-caption">Abflug. Der erste Schritt nach Deutschland.</p>
+        </div>
+        <div class="momente-item">
+          <div class="momente-photo"><img src="images/heinz-willkommen-flughafen.jpg" alt="Willkommen am Flughafen in Deutschland" loading="lazy"></div>
+          <p class="momente-caption">Willkommen in Deutschland.</p>
+        </div>
+        <div class="momente-item">
+          <div class="momente-photo"><img src="images/heinz-ankunft-strasse.jpg" alt="Die neue Umgebung kennenlernen" loading="lazy"></div>
+          <p class="momente-caption">Die neue Umgebung kennenlernen.</p>
+        </div>
+        <div class="momente-item">
+          <div class="momente-photo"><img src="images/heinz-sprachschule-gruppe.jpg" alt="Sprachschule, gemeinsam lernen" loading="lazy"></div>
+          <p class="momente-caption">Sprachschule. Gemeinsam lernen.</p>
+        </div>
+        <div class="momente-item">
+          <div class="momente-photo"><img src="images/heinz-team-selfie-flughafen.jpg" alt="Team-Selfie am Flughafen" loading="lazy"></div>
+          <p class="momente-caption">Der erste Tag. Gemeinsam mit dem Team.</p>
+        </div>
+        <div class="momente-item">
+          <div class="momente-photo"><img src="images/heinz-lieblingsfarbe-sommerfest.jpg" alt="Sommerfest mit dem Team" loading="lazy"></div>
+          <p class="momente-caption">Sommerfest mit dem Team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESSE & ANERKENNUNG -->
+  <section class="presse">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Presse &amp; Anerkennung</span>
+        <h2 class="headline">Was andere über uns schreiben.</h2>
+      </div>
+
+      <div class="presse-list reveal">
+        <div class="presse-item">
+          <span class="tag">Presse</span>
+          <a href="blog-post-4.html">Damit internationale Pflegekräfte bleiben</a>
+          <p>Ivo im Gespräch mit care konkret. Interview.</p>
+        </div>
+        <div class="presse-item">
+          <span class="tag">RAL-Siegel</span>
+          <a href="https://www.faire-anwerbung-pflege-deutschland.de/heinz-personnel-solutions-gmbh" target="_blank" rel="noopener">Heinz Personnel Solutions erhält das RAL-Gütezeichen</a>
+          <p>Ausführlicher Artikel.</p>
+        </div>
+        <div class="presse-item">
+          <span class="tag">Verband</span>
+          <a href="https://www.bvifg.de/wer-wir-sind" target="_blank" rel="noopener">Mitglied im Bundesverband Internationale Fachkräftegewinnung</a>
+          <p>Ausführlicher Artikel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Ein schlankes, effizientes Team</span>
+        <h2 class="headline">Ansprechbar. Schnell. Kompetent.</h2>
+        <p class="body-text">Kurze Abstimmungswege machen uns schnell. Der Einsatz neuester Technik macht uns effizient, damit wir uns persönlich um die menschlichen Themen kümmern können.</p>
+      </div>
+
+      <div class="team-grid reveal">
+        <div class="team-card">
+          <div class="team-photo"><img src="images/team-ivo.jpg" alt="Ivo Straßenburg" loading="lazy"></div>
+          <div class="team-info">
+            <div class="name">Ivo Straßenburg</div>
+            <div class="role">Geschäftsführung</div>
+            <p class="body-text">Verantwortet Strategie und Partnerschaften. Für Ivo zählt vor allem eines: dass eine Vermittlung sich auch nach drei Jahren noch richtig anfühlt.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo"><img src="images/team-soeren.jpg" alt="Sören Heinz" loading="lazy"></div>
+          <div class="team-info">
+            <div class="name">Sören Heinz</div>
+            <div class="role">Key Account &amp; Vertrieb</div>
+            <p class="body-text">Erster Kontakt für Arbeitgeber, die klären wollen, ob und wie eine Zusammenarbeit passt.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo"><img src="images/team-tabeia.jpg" alt="Tabeia Antonio" loading="lazy"></div>
+          <div class="team-info">
+            <div class="name">Tabeia Antonio</div>
+            <div class="role">Integrationsmanagerin</div>
+            <p class="body-text">Verantwortet die Integration unserer Fachkräfte. Von der Ankunft bis zum festen Platz im Team.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo"><img src="images/team-tanja.jpg" alt="Tanja Grabow" loading="lazy"></div>
+          <div class="team-info">
+            <div class="name">Tanja Grabow</div>
+            <div class="role">Fachkräftebetreuung · Freiberuflich</div>
+            <p class="body-text">Unterstützt uns freiberuflich bei der Integration unserer Fachkräfte. Von der Ankunft bis zum Alltag im Team.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="team-footnote reveal">Neben Ivo, Sören, Tabeia und Tanja arbeiten je nach Projekt weitere Kolleg:innen im Hintergrund für Sie. Lernen Sie das gesamte Team gern in einem persönlichen Gespräch kennen.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER CTA -->
+  <section class="footer-cta" id="kontakt">
+    <div class="wrap">
+      <h2 class="headline reveal">Sprechen wir persönlich.</h2>
+      <p class="body-text reveal">In einem unverbindlichen Erstgespräch klären wir, ob und wie wir zusammenarbeiten können.</p>
+      <a href="kontakt.html" class="btn btn--big reveal">Sprechen wir.</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="fcol">
+        <a href="index.html" class="logo">HEINZ<span style="color:#FF5A1F;">.</span></a>
+        <p style="margin-top:16px;font-size:.92rem;opacity:.75;">info@hpstalent.de</p>
+      </div>
+      <div class="fcol">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a>
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="fuer-einrichtungen.html">Für Arbeitgeber</a>
+        <a href="fuer-fachkraefte.html">Für Fachkräfte</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="presse.html">Presse</a>
+      </div>
+      <div class="fcol">
+        <h5>Rechtliches</h5>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutzerklärung</a>
+        <a href="beschwerdeformular.html">Beschwerdeverfahren (RAL)</a>
+      </div>
+      <div class="fcol">
+        <h5>Kontakt</h5>
+        <a href="kontakt.html">Kontaktseite</a>
+        <a href="mailto:info@hpstalent.de">info@hpstalent.de</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Heinz Personnel Solutions GmbH</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reveals = document.querySelectorAll('.reveal');
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if ('IntersectionObserver' in window && !reduceMotion){
+    var revealObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){
+          entry.target.classList.add('is-in');
+          revealObs.unobserve(entry.target);
+        }
+      });
+    }, {threshold: .15});
+    reveals.forEach(function(el){ revealObs.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('is-in'); });
+  }
+})();
+</script>
+
+</body>
+</html>
