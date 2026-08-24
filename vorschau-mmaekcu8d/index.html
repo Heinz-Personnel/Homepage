@@ -4,8 +4,8 @@
   <meta name="robots" content="noindex, nofollow">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Heinz Personnel Solutions. Kein Fachkräftemangel. Mit uns.</title>
-<meta name="description" content="Internationale Pflegefachkräfte für deutsche Kliniken und Pflegeheime. 92% bleiben länger als drei Jahre. Seit 2018.">
+<title>Heinz Personnel Solutions. Vermittlung internationaler Pflegefachkräfte.</title>
+<meta name="description" content="Vermittlung internationaler Pflegefachkräfte für deutsche Kliniken und Pflegeheime. 92% bleiben länger als drei Jahre. Seit 2018.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -136,7 +136,7 @@
   .mobile-nav a.btn{margin-top:16px;padding:12px 22px;border-top:none;}
 
   /* -------- Hero -------- */
-  .hero{background:var(--schwarz);color:var(--weiss);padding:64px 0 72px;overflow:hidden;}
+  .hero{background:var(--hbo-dunkel);color:var(--weiss);padding:64px 0 72px;overflow:hidden;}
   @media(min-width:768px){.hero{padding:96px 0 100px;}}
 
   .hero-eyebrow{
@@ -157,7 +157,7 @@
   .hero-line2-wrap{display:block;margin-top:.08em;min-height:1.15em;}
   .hero-line2{
     font-size:clamp(2.4rem, 8.5vw, 5.6rem);
-    color:var(--hbo-basis);
+    color:var(--weiss);
     display:inline-block;
     opacity:0;
     transform:translateY(14px);
@@ -166,15 +166,22 @@
   }
   .hero-line2.is-visible{opacity:1;transform:translateY(0);}
 
-  .hero-bar{height:6px;width:64px;background:var(--hbo-basis);margin-top:28px;}
+  .hero-bar{height:6px;width:64px;background:var(--orange);margin-top:28px;}
 
   .hero-sub{
     font-weight:500;
     font-size:1.05rem;
     color:var(--beton);
-    max-width:44ch;
-    margin-top:36px;
+    max-width:48ch;
+    margin-top:0;
   }
+
+  .hero-cert-row{
+    display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:36px;
+  }
+  .hero-cert-row img{height:128px;width:auto;object-fit:contain;flex-shrink:0;background:var(--weiss);padding:8px;}
+  .hero-cert-text{display:flex;flex-direction:column;gap:12px;}
+  .hero-cert-text .hero-sub{margin-top:0;}
 
   .hero-cert-strip{
     margin-top:28px;
@@ -225,7 +232,7 @@
   .trust-block .cert-logos{
     display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:40px;
   }
-  .trust-block .cert-logos img{height:70px;width:auto;object-fit:contain;}
+  .trust-block .cert-logos img{height:150px;width:auto;object-fit:contain;}
 
   /* -------- Beweis -------- */
   .beweis{background:var(--hbo-dunkel);color:var(--weiss);}
@@ -322,7 +329,7 @@
   .win-card{background:var(--schwarz);padding:36px 28px;}
   .win-card h3{
     font-family:var(--display);text-transform:uppercase;font-weight:400;
-    font-size:1.35rem;color:var(--hbo-basis);margin-bottom:14px;
+    font-size:1.35rem;color:var(--weiss);margin-bottom:14px;
   }
   .win-card .body-text{color:var(--beton);}
 
@@ -380,6 +387,7 @@
   .heinz-stat .body-text{max-width:52ch;}
 
   /* -------- RAL -------- */
+  .ral{background:var(--weiss);}
   .ral h2.headline{margin-bottom:20px;}
   .ral .body-text{max-width:64ch;}
   .ral a{color:var(--hbo-dunkel);font-weight:700;text-decoration:underline;text-underline-offset:3px;}
@@ -502,7 +510,7 @@
         <a href="blog.html">Hintergründe</a>
       </nav>
     </div>
-    <a href="#kontakt" class="btn nav-cta">Sprechen wir.</a>
+    <a href="#kontakt" class="btn nav-cta">Kennenlernen.</a>
     <label for="nav-toggle" class="nav-toggle" aria-label="Menü öffnen">
       <span class="nav-toggle-bars"></span>
     </label>
@@ -512,7 +520,7 @@
     <a href="fuer-fachkraefte.html">Für Fachkräfte</a>
     <a href="ueber-uns.html">Team</a>
     <a href="blog.html">Hintergründe</a>
-    <a href="#kontakt" class="btn">Sprechen wir.</a>
+    <a href="#kontakt" class="btn">Kennenlernen.</a>
   </nav>
 </header>
 
@@ -524,18 +532,23 @@
       <span class="hero-eyebrow">Heinz Personnel Solutions</span>
 
       <p class="hero-headline">
-        <span class="hero-line1" id="line1">Kein Fachkräftemangel.</span>
+        <span class="hero-line1" id="line1">Wir beenden:</span>
         <span class="hero-line2-wrap">
-          <span class="hero-line2" id="rotator">Nur schlechte Vermittler.</span>
+          <span class="hero-line2" id="rotator">Fachkräftemangel.</span>
         </span>
       </p>
       <div class="hero-bar"></div>
 
-      <p class="hero-sub">Seit 2018. Digital. Menschlich. Transparent.</p>
-      <p class="hero-sub" style="margin-top:12px;">Ergebnisse statt Versprechen.</p>
+      <div class="hero-cert-row">
+        <img src="images/logo-ral-guetezeichen.png" alt="RAL-Gütezeichen Faire Anwerbung Pflege Deutschland">
+        <div class="hero-cert-text">
+          <p class="hero-sub">Vermittlung internationaler Pflegefachkräfte für deutsche Kliniken und Pflegeheime. Seit 2018.</p>
+          <p class="hero-sub">Digital organisiert. Persönlich begleitet. Ehrlich beraten. Ergebnisse statt leere Versprechen.</p>
+        </div>
+      </div>
 
       <div class="hero-actions">
-        <a href="#kontakt" class="btn">Sprechen wir.</a>
+        <a href="#kontakt" class="btn btn--onblack">Kennenlernen.</a>
       </div>
 
       <div class="hero-paths">
@@ -550,10 +563,10 @@
     <div class="wrap">
       <div class="section-head reveal">
         <span class="eyebrow">Das Problem</span>
-        <h2 class="headline">Der Fachkräftemangel spitzt sich zu.</h2>
+        <h2 class="headline">Der Fachkräftemangel spitzt sich zu. Wir lösen ihn international.</h2>
         <p class="body-text">Freie Stellen, die niemand besetzt. Kolleginnen am Limit. Patientenversorgung, die trotzdem laufen muss.</p>
         <p class="body-text"><strong>690.000</strong> fehlende Pflegekräfte bis 2049. Sagt das Statistische Bundesamt.</p>
-        <p class="body-text">Der Arbeitsmarkt schließt die Lücke nicht. <strong class="accent-blue">Wir schon.</strong></p>
+        <p class="body-text">Der deutsche Arbeitsmarkt schafft das allein nicht. <strong class="accent-blue">Wir vermitteln internationale Pflegefachkräfte aus den Philippinen und Indien.</strong> Passgenau, mit Fokus auf Integration.</p>
       </div>
     </div>
   </section>
@@ -598,7 +611,6 @@
     <div class="wrap reveal">
       <img class="cert-full" src="images/ral-guetezeichen-zertifikat-voll.svg" alt="RAL-Gütezeichen Faire Anwerbung Pflege, vollständiges Zertifikat">
       <div class="cert-logos">
-        <img src="images/logo-ral-guetezeichen.png" alt="RAL-Gütezeichen Faire Anwerbung Pflege">
         <img src="images/logo-gapa.png" alt="GAPA">
         <img src="images/logo-bvifg.png" alt="Mitglied im Bundesverband Internationale Fachkräftegewinnung (bvifg)">
       </div>
@@ -645,7 +657,7 @@
               <span class="accent"></span>
             </div>
             <span class="step-title">Anerkennung &amp; Visum</span>
-            <span class="step-time">4–6 Monate</span>
+            <span class="step-time">4 bis 6 Monate</span>
             <p class="step-text body-text">Sprachprozess und Anerkennung laufen für unseren Pool bereits parallel. Das verkürzt Ihre Wartezeit spürbar.</p>
           </div>
 
@@ -668,7 +680,7 @@
   <section class="win">
     <div class="wrap">
       <span class="eyebrow reveal">Warum wir</span>
-      <h2 class="headline reveal">Fair für alle Seiten. Punkt.</h2>
+      <h2 class="headline reveal">Fair für alle Seiten.</h2>
 
       <div class="win-grid reveal">
         <div class="win-card">
@@ -683,22 +695,6 @@
           <h3>Für die Zusammenarbeit</h3>
           <p class="body-text">Transparente, digitale Prozesse. Ergänzt durch persönliche Betreuung.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ANKUNFT -->
-  <section class="ankunft">
-    <div class="wrap">
-      <div class="ankunft-img reveal">
-        <img src="images/ankunft-flughafen.jpg" alt="Ankunft einer neuen Gruppe am Flughafen, empfangen von unserem Team">
-      </div>
-      <div class="ankunft-text reveal">
-        <h2 class="headline">Kein Shuttle-Service. Sondern ein vertrautes Gesicht.</h2>
-        <p class="body-text">Ankunft ist für uns kein Verwaltungsakt. Wenn eine neue Gruppe landet, steht ein bekanntes Teammitglied am Gate.</p>
-        <p class="body-text">Unser Team begleitet unsere Fachkräfte vom ersten Kennenlernen, über den Spracherwerb, die Ankunft bis zur echten Integration. Immer dieselbe Person. Nie wechselnde Gesichter.</p>
-        <p class="body-text">Wir sind auch nach Jahren noch aktiver Ansprechpartner.</p>
-        <p class="payoff">So entsteht Vertrauen.</p>
       </div>
     </div>
   </section>
@@ -743,6 +739,23 @@
       <div class="heinz-stat reveal">
         <span class="num">36%</span>
         <p class="body-text">So viel sinkt die Abbruchquote durch strukturierte Orientierung und Erwartungsmanagement in den ersten Wochen. Mehr zum HEINZ-Modell im persönlichen Gespräch.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANKUNFT (konkretes Beispiel aus dem HEINZ-Modell) -->
+  <section class="ankunft">
+    <div class="wrap">
+      <div class="ankunft-img reveal">
+        <img src="images/ankunft-flughafen.jpg" alt="Ankunft einer neuen Gruppe am Flughafen, empfangen von unserem Team">
+      </div>
+      <div class="ankunft-text reveal">
+        <span class="eyebrow">So sieht das in der Praxis aus</span>
+        <h2 class="headline">Ein vertrautes Gesicht wartet am Gate.</h2>
+        <p class="body-text">Ankunft ist für uns ein persönlicher Moment. Wenn eine neue Gruppe landet, steht ein bekanntes Teammitglied am Gate.</p>
+        <p class="body-text">Unser Team begleitet unsere Fachkräfte vom ersten Kennenlernen, über den Spracherwerb, die Ankunft bis zur echten Integration. Immer dieselbe Person. Nie wechselnde Gesichter.</p>
+        <p class="body-text">Wir sind auch nach Jahren noch aktiver Ansprechpartner.</p>
+        <p class="payoff">So entsteht Vertrauen.</p>
       </div>
     </div>
   </section>
@@ -805,7 +818,7 @@
     <div class="wrap">
       <div class="section-head reveal">
         <span class="eyebrow">Ein schlankes, effizientes Team</span>
-        <h2 class="headline">Ansprechbar. Schnell. Kompetent.</h2>
+        <h2 class="headline">Schnell. Persönlich. Ansprechbar.</h2>
         <p class="body-text">Kurze Abstimmungswege machen uns schnell. Der Einsatz neuester Technik macht uns effizient, damit wir uns persönlich um die menschlichen Themen kümmern können.</p>
       </div>
 
@@ -850,19 +863,19 @@
   <section class="insights" id="insights">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="eyebrow">Einblicke</span>
-        <h2 class="headline">Kompetenz, kein Bauchgefühl.</h2>
+        <span class="eyebrow">Hintergründe</span>
+        <h2 class="headline">Wir verbinden Praxiserfahrung mit fundierter Wissenschaft.</h2>
       </div>
 
       <div class="insights-list reveal">
         <a href="blog-post-4.html" class="insight-row">
           <span class="t">Interview mit Ivo Straßenburg in care konkret</span>
         </a>
+        <a href="fuer-einrichtungen.html#heinz-modell" class="insight-row">
+          <span class="t">Das HEINZ-Integrationsmodell im Überblick</span>
+        </a>
         <a href="blog-post-1.html" class="insight-row">
           <span class="t">Was das RAL-Gütezeichen wirklich bedeutet</span>
-        </a>
-        <a href="blog-post-3.html" class="insight-row">
-          <span class="t">Integration: unser Guide für Einrichtungen</span>
         </a>
       </div>
     </div>
@@ -872,7 +885,7 @@
   <section class="footer-cta" id="kontakt">
     <div class="wrap">
       <h2 class="headline reveal">Der nächste Schritt.</h2>
-      <a href="mailto:info@hpstalent.de" class="btn btn--big reveal">Sprechen wir.</a>
+      <a href="mailto:info@hpstalent.de" class="btn btn--big reveal">Kennenlernen.</a>
     </div>
   </section>
 
@@ -882,7 +895,7 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="fcol">
-        <a href="#top" class="logo">HEINZ<span style="color:#1B2B99;">.</span></a>
+        <a href="#top" class="logo">HEINZ<span style="color:var(--orange);">.</span></a>
         <p style="margin-top:16px;font-size:.92rem;opacity:.75;">info@hpstalent.de</p>
       </div>
       <div class="fcol">
@@ -920,11 +933,10 @@
   var rotator = document.getElementById('rotator');
   var hero = document.getElementById('hero');
 
-  // Two loops of three "negative" phrases, each closing on "Mit uns.",
-  // with a longer breathing pause after each "Mit uns." before continuing.
-  var loop1 = ['Nur schlechte Vermittler.', 'Nur zu viel Bürokratie.', 'Nur zu wenig Tempo.', 'Mit uns.'];
-  var loop2 = ['Nur langsame Anerkennung.', 'Nur leere Versprechen.', 'Nur fehlende Integration.', 'Mit uns.'];
-  var sequence = loop1.concat(loop2);
+  // "Wir beenden:" + rotating list of problems HPS actually solves.
+  // The loop always comes back around to "Fachkräftemangel.", the
+  // umbrella problem, and pauses there a beat longer before restarting.
+  var sequence = ['Fachkräftemangel.', 'Zu viel Bürokratie.', 'Langsame Anerkennung.', 'Schlechte Sprachniveaus.', 'fehlende Integration.', 'Fachkräftemangel.'];
 
   var started = false;
   var stepMs = 1500;
@@ -932,7 +944,7 @@
   var pauseAfterMitUns = 2600;
 
   function showStatic(){
-    rotator.textContent = 'Mit uns.';
+    rotator.textContent = 'Fachkräftemangel.';
     rotator.classList.add('is-visible');
   }
 
@@ -950,14 +962,15 @@
     function step(){
       rotator.classList.remove('is-visible');
       setTimeout(function(){
-        var phrase = sequence[i % sequence.length];
+        var idx = i % sequence.length;
+        var phrase = sequence[idx];
         rotator.textContent = phrase;
         requestAnimationFrame(function(){
           rotator.classList.add('is-visible');
         });
 
-        var isMitUns = phrase === 'Mit uns.';
-        var wait = isMitUns ? pauseAfterMitUns : stepMs;
+        var isPause = idx === sequence.length - 1;
+        var wait = isPause ? pauseAfterMitUns : stepMs;
         i++;
         setTimeout(step, wait);
       }, fadeMs);
