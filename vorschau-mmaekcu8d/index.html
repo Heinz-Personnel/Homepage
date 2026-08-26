@@ -25,6 +25,9 @@
     --maxw: 1200px;
     /* one consistent "body" text size used everywhere outside eyebrows/headlines */
     --text-body: 1rem;
+    /* spacing scale: use these for new/changed spacing instead of one-off px values */
+    --sp-1:8px; --sp-2:16px; --sp-3:24px; --sp-4:32px;
+    --sp-5:48px; --sp-6:64px; --sp-7:96px; --sp-8:128px;
   }
 
   *{margin:0;padding:0;box-sizing:border-box;}
@@ -199,26 +202,25 @@
   .hero-actions{margin-top:44px;}
 
   .hero-paths{
-    margin-top:16px;
+    margin-top:28px;
     display:flex;
-    gap:12px;
-    width:100%;
+    gap:28px;
+    flex-wrap:wrap;
   }
   .hero-path{
-    flex:1;
-    text-decoration:none;
-    color:var(--weiss);
-    font-weight:700;
-    text-align:center;
-    padding:16px 14px;
-    border:2px solid rgba(255,255,255,.5);
-    transition:background .18s ease, border-color .18s ease;
+    text-decoration:underline;
+    text-underline-offset:4px;
+    color:rgba(255,255,255,.8);
+    font-weight:600;
+    font-size:.92rem;
+    transition:color .18s ease;
   }
-  .hero-path:hover{background:var(--weiss);color:var(--schwarz);border-color:var(--weiss);}
+  .hero-path:hover{color:var(--weiss);}
 
   /* -------- Problem -------- */
-  .problem h2.headline{margin-bottom:24px;}
-  .problem .body-text{max-width:52ch;}
+  .problem .section-head{max-width:960px;}
+  .problem h2.headline{margin-bottom:24px;font-size:clamp(1.9rem, 4.4vw, 2.5rem);line-height:1.15;}
+  .problem .body-text{max-width:60ch;}
   .problem .body-text + .body-text{margin-top:14px;}
   .problem .body-text strong{color:var(--hbo-dunkel);}
   .accent-blue{color:var(--hbo-basis)!important;font-weight:800;}
@@ -252,18 +254,31 @@
   }
   .beweis-label{font-size:1.05rem;font-weight:600;color:var(--hbo-hell);margin-top:12px;max-width:26ch;}
 
-  .beweis-quote{
-    margin-top:64px;
-    border-left:6px solid var(--hbo-basis);
-    padding-left:28px;
+  /* -------- Zitat (elevated testimonial) -------- */
+  .zitat{background:var(--beton);color:var(--schwarz);}
+  .zitat .wrap{
+    display:grid;grid-template-columns:1fr;gap:var(--sp-4);align-items:center;
   }
-  .beweis-quote p{
-    font-family:var(--display);text-transform:none;font-weight:400;
-    font-size:clamp(1.25rem, 3vw, 1.75rem);line-height:1.32;letter-spacing:0;
+  @media(min-width:900px){
+    .zitat .wrap{grid-template-columns:260px 1fr;gap:var(--sp-7);}
   }
-  .beweis-quote-who{
-    font-family:var(--body) !important;font-size:.85rem !important;font-weight:600;
-    text-align:right;margin-top:16px;opacity:.75;
+  .zitat-img img{width:100%;height:auto;display:block;}
+  .zitat-mark{
+    font-family:var(--display);color:var(--hbo-dunkel);
+    font-size:clamp(2.75rem, 7vw, 4.5rem);line-height:1;display:block;margin-bottom:var(--sp-1);
+  }
+  .zitat-text{
+    font-family:var(--body);font-weight:700;
+    font-size:clamp(1.3rem, 2.8vw, 1.85rem);line-height:1.42;color:var(--schwarz);
+  }
+  .zitat-who{
+    font-family:var(--body);font-size:.95rem;font-weight:700;margin-top:var(--sp-3);
+  }
+  .zitat-who span{display:block;font-weight:500;opacity:.65;font-size:.85rem;margin-top:2px;}
+  .zitat-cta{margin-top:var(--sp-3);}
+  .zitat-cta a{
+    font-family:var(--body);font-weight:700;color:var(--hbo-dunkel);
+    text-decoration:underline;text-underline-offset:4px;
   }
 
   /* -------- Prozess -------- */
@@ -327,7 +342,7 @@
     border:1px solid rgba(255,255,255,.16);
   }
   @media(min-width:768px){.win-grid{grid-template-columns:1fr 1fr 1fr;}}
-  .win-card{background:var(--schwarz);padding:36px 28px;}
+  .win-card{background:var(--schwarz);padding:36px 28px;border-top:3px solid var(--orange);}
   .win-card h3{
     font-family:var(--display);text-transform:uppercase;font-weight:400;
     font-size:1.35rem;color:var(--weiss);margin-bottom:14px;
@@ -589,9 +604,20 @@
         </div>
       </div>
 
-      <div class="beweis-quote reveal">
-        <p>„Wir können Integrationsarbeit. Aber wir sind alle Menschen. Wenn es also einmal nicht passt, kümmern wir uns. Ohne Wenn und Aber, ohne zusätzliche Kosten."</p>
-        <p class="beweis-quote-who">Ivo Straßenburg</p>
+    </div>
+  </section>
+
+  <!-- ZITAT (elevated testimonial) -->
+  <section class="zitat">
+    <div class="wrap">
+      <div class="zitat-img reveal">
+        <img src="images/team-ivo.jpg" alt="Ivo Straßenburg, Geschäftsführer Heinz Personnel Solutions">
+      </div>
+      <div class="zitat-body reveal">
+        <span class="zitat-mark">„</span>
+        <p class="zitat-text">Wir können Integrationsarbeit. Aber wir sind alle Menschen. Wenn es also einmal nicht passt, kümmern wir uns. Ohne Wenn und Aber, ohne zusätzliche Kosten.</p>
+        <p class="zitat-who">Ivo Straßenburg<span>Geschäftsführer, Heinz Personnel Solutions</span></p>
+        <p class="zitat-cta"><a href="#kontakt">Selbst erleben. Jetzt Gespräch vereinbaren.</a></p>
       </div>
     </div>
   </section>

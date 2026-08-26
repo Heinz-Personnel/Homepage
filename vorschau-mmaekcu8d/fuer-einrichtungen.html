@@ -110,20 +110,23 @@
   /* -------- Hero -------- */
   .hero{background:var(--hbo-dunkel);color:var(--weiss);padding:64px 0 72px;overflow:hidden;}
   @media(min-width:768px){.hero{padding:96px 0 100px;}}
-  .hero-eyebrow{font-weight:700;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--weiss);margin-bottom:28px;}
-  .hero-headline{font-family:var(--display);text-transform:uppercase;font-weight:400;line-height:1.02;letter-spacing:.005em;}
+  .hero-eyebrow{font-weight:700;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--weiss);margin-bottom:28px;position:relative;top:-20px;}
+  .hero-headline{font-family:var(--display);text-transform:uppercase;font-weight:400;line-height:1.1;letter-spacing:.005em;}
   .hero-line1{font-size:clamp(2.4rem, 8.5vw, 5.6rem);color:var(--weiss);display:block;overflow-wrap:break-word;}
   .hero-bar{height:6px;width:64px;background:var(--orange);margin-top:28px;}
   .hero-sub{font-weight:500;font-size:1.1rem;color:var(--beton);max-width:56ch;margin-top:36px;}
   .hero-sub strong{color:var(--weiss);}
-  .hero-actions{margin-top:44px;display:flex;flex-wrap:wrap;gap:12px;}
+  .hero-actions{margin-top:44px;display:flex;flex-wrap:wrap;align-items:center;gap:24px;}
   .hero-actions .btn{width:auto;flex:1;min-width:220px;}
   .hero-path{
-    text-decoration:none;color:var(--weiss);font-weight:700;text-align:center;padding:18px 14px;
-    border:2px solid rgba(255,255,255,.5);flex:1;min-width:220px;display:flex;align-items:center;justify-content:center;
-    transition:background .18s ease, border-color .18s ease;
+    text-decoration:underline;text-underline-offset:4px;color:rgba(255,255,255,.8);
+    font-weight:600;font-size:.92rem;transition:color .18s ease;
   }
-  .hero-path:hover{background:var(--weiss);color:var(--schwarz);border-color:var(--weiss);}
+  .hero-path:hover{color:var(--weiss);}
+  .hero-cert-row{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:36px;}
+  .hero-cert-row img{height:128px;width:auto;object-fit:contain;flex-shrink:0;background:var(--weiss);padding:8px;}
+  .hero-cert-text{display:flex;flex-direction:column;gap:12px;}
+  .hero-cert-text .hero-sub{margin-top:0;}
 
   /* -------- Kennzahlen -------- */
   .kennzahlen{background:var(--hbo-dunkel);color:var(--weiss);}
@@ -153,15 +156,21 @@
     display:grid;grid-template-columns:1fr;gap:1px;background:rgba(255,255,255,.16);
     margin-top:40px;border:1px solid rgba(255,255,255,.16);
   }
-  @media(min-width:768px){.vgl-grid{grid-template-columns:1fr 1fr 1fr;}}
-  .vgl-card{background:var(--schwarz);padding:36px 28px;}
-  .vgl-card.is-us{background:var(--hbo-dunkel);}
+  @media(min-width:768px){.vgl-grid{grid-template-columns:1fr 1fr 1.3fr;align-items:stretch;}}
+  .vgl-card{background:var(--schwarz);padding:32px 26px;}
+  .vgl-card.is-us{background:var(--hbo-dunkel);padding:40px 32px;}
   .vgl-card h3{
-    font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:1.3rem;
+    font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:1.2rem;
     color:var(--orange);margin-bottom:14px;
   }
-  .vgl-card.is-us h3{color:var(--weiss);}
+  .vgl-card.is-us h3{color:var(--weiss);font-size:1.5rem;margin-bottom:16px;}
   .vgl-card .body-text{color:var(--beton);}
+  .vgl-card.is-us .body-text{color:var(--weiss);font-size:1.05rem;}
+  .vgl-card-label{
+    display:inline-block;font-family:var(--body);font-weight:700;font-size:.72rem;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--orange);
+    background:rgba(255,255,255,.1);padding:4px 10px;margin-bottom:16px;
+  }
 
   /* -------- Prozess (ehrlich) -------- */
   .ehrlich{background:var(--weiss);}
@@ -290,11 +299,17 @@
         <span class="hero-line1">Besetzung. Die bleibt.</span>
       </p>
       <div class="hero-bar"></div>
-      <p class="hero-sub">Für uns ist eine Vermittlung nicht erfolgreich, wenn ein Vertrag unterschrieben ist.</p>
-      <p class="hero-sub" style="margin-top:12px;">Sie ist erfolgreich, wenn Ihre Fachkraft <strong>Jahre später noch im Team ist.</strong></p>
+
+      <div class="hero-cert-row">
+        <img src="images/logo-ral-guetezeichen.png" alt="RAL-Gütezeichen Faire Anwerbung Pflege Deutschland">
+        <div class="hero-cert-text">
+          <p class="hero-sub">Für uns ist eine Vermittlung nicht erfolgreich, wenn ein Vertrag unterschrieben ist.</p>
+          <p class="hero-sub">Sie ist erfolgreich, wenn Ihre Fachkraft <strong>Jahre später noch im Team ist.</strong></p>
+        </div>
+      </div>
+
       <div class="hero-actions">
         <a href="#kontakt" class="btn btn--onblack">Rufen Sie durch.</a>
-        <a href="#garantie" class="hero-path">Garantie.</a>
       </div>
     </div>
   </section>
@@ -356,6 +371,7 @@
           <p class="body-text">Erreicht viele Bewerber:innen. Aber ohne strukturierten Anerkennungs- und Integrationsprozess bleibt das Risiko einer Fehlbesetzung bei Ihnen.</p>
         </div>
         <div class="vgl-card is-us">
+          <span class="vgl-card-label">Heinz Personnel Solutions</span>
           <h3>Unser Ansatz</h3>
           <p class="body-text">Erfahrene internationale Pflegefachkräfte, begleitet von der ersten Kontaktaufnahme bis weit über den ersten Arbeitstag hinaus. Ergebnis: 92% bleiben länger als drei Jahre.</p>
         </div>
