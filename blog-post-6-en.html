@@ -77,7 +77,11 @@
   .nav-links a:hover, .nav-links a.is-active{border-color:var(--hbo-basis);}
   @media(min-width:1040px){.nav-links{display:flex;align-items:center;}}
   .nav-cta{display:none;}
-  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;margin-left:auto;}}
+  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;}}
+  .nav-right{display:none;align-items:center;gap:18px;margin-left:auto;}
+  @media(min-width:1040px){.nav-right{display:flex;align-items:center;}}
+  .nav-lang{text-decoration:none;font-weight:600;font-size:.88rem;color:var(--schwarz);opacity:.6;padding:4px 0;border-bottom:2px solid transparent;}
+  .nav-lang:hover{opacity:1;border-color:var(--hbo-basis);}
   .nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;margin-left:auto;cursor:pointer;background:none;border:none;padding:0;flex-shrink:0;}
   @media(min-width:1040px){.nav-toggle{display:none;}}
   .nav-toggle-bars{position:relative;width:22px;height:2px;background:var(--schwarz);transition:background .15s ease;}
@@ -282,10 +286,12 @@
         <a href="fuer-fachkraefte-en.html">For Professionals</a>
         <a href="ueber-uns-en.html">Team</a>
         <a href="blog-en.html" class="is-active">Insights</a>
-        <a href="blog-post-6.html" style="opacity:.6;">DE</a>
       </nav>
     </div>
-    <a href="kontakt-en.html" class="btn nav-cta">Let's talk.</a>
+    <div class="nav-right">
+      <a href="blog-post-6.html" class="nav-lang">DE</a>
+      <a href="kontakt-en.html" class="btn nav-cta">Let's talk.</a>
+    </div>
     <label for="nav-toggle" class="nav-toggle" aria-label="Open menu">
       <span class="nav-toggle-bars"></span>
     </label>
@@ -350,6 +356,7 @@
         <a href="faq-en.html">FAQ</a>
         <a href="downloads-en.html">Downloads</a>
         <a href="presse-en.html">Press</a>
+        <a href="wechsel.html">Wechseln</a>
       </div>
       <div class="fcol">
         <h5>Legal</h5>

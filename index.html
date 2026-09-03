@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; form-action 'self' https://formspree.io; frame-ancestors 'self'; base-uri 'self';">
 <meta name="google-site-verification" content="4ih2UXl47iAqhL2-UGvUgYXGfVS-HxsPBSvBsj9QTIY">
-  <meta name="google-site-verification" content="16UsU5qSSifCbd7MgkLhvnnQRRyxKp39rGLglHd2QTU" />
+<meta name="google-site-verification" content="16UsU5qSSifCbd7MgkLhvnnQRRyxKp39rGLglHd2QTU" />
 <title>Heinz Personnel Solutions. Vermittlung internationaler Pflegefachkräfte.</title>
 <meta name="description" content="Vermittlung internationaler Pflegefachkräfte für Kliniken und Pflegeheime in Berlin, Brandenburg und Hessen. 92% bleiben länger als drei Jahre. Seit 2018.">
 <link rel="canonical" href="https://www.pflegekraftvermittlung.com/">
@@ -139,7 +139,11 @@
   .nav-links a:hover{border-color:var(--hbo-basis);}
   @media(min-width:1040px){.nav-links{display:flex;align-items:center;}}
   .nav-cta{display:none;}
-  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;margin-left:auto;}}
+  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;}}
+  .nav-right{display:none;align-items:center;gap:18px;margin-left:auto;}
+  @media(min-width:1040px){.nav-right{display:flex;align-items:center;}}
+  .nav-lang{text-decoration:none;font-weight:600;font-size:.88rem;color:var(--schwarz);opacity:.6;padding:4px 0;border-bottom:2px solid transparent;}
+  .nav-lang:hover{opacity:1;border-color:var(--hbo-basis);}
 
   .nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;margin-left:auto;cursor:pointer;background:none;border:none;padding:0;flex-shrink:0;}
   @media(min-width:1040px){.nav-toggle{display:none;}}
@@ -388,13 +392,14 @@
   /* -------- HEINZ Modell -------- */
   .heinz .body-text{max-width:60ch;margin-bottom:48px;}
   .heinz-grid{
-    display:grid;grid-template-columns:repeat(2,1fr);gap:16px;
+    display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;
   }
-  @media(min-width:700px){.heinz-grid{grid-template-columns:repeat(5,1fr);}}
+  @media(min-width:700px){.heinz-grid{grid-template-columns:repeat(5,minmax(0,1fr));}}
   .heinz-box{
     border:2px solid var(--hbo-basis);
     padding:24px 16px;
     text-align:center;
+    min-width:0;
   }
   .heinz-box .letter{
     font-family:var(--display);
@@ -404,7 +409,7 @@
     line-height:1;
     margin-bottom:14px;
   }
-  .heinz-box .label{font-weight:800;font-size:.88rem;}
+  .heinz-box .label{font-weight:800;font-size:.88rem;overflow-wrap:break-word;}
   .heinz-box .sub{font-size:.8rem;opacity:.7;margin-top:4px;}
 
   .heinz-stat{
@@ -609,10 +614,12 @@
         <a href="fuer-fachkraefte.html">Für Fachkräfte</a>
         <a href="ueber-uns.html">Team</a>
         <a href="blog.html">Hintergründe</a>
-        <a href="index-en.html" style="opacity:.6;">EN</a>
       </nav>
     </div>
-    <a href="kontakt.html" class="btn nav-cta">Kennenlernen.</a>
+    <div class="nav-right">
+      <a href="index-en.html" class="nav-lang">EN</a>
+      <a href="kontakt.html" class="btn nav-cta">Kennenlernen.</a>
+    </div>
     <label for="nav-toggle" class="nav-toggle" aria-label="Menü öffnen">
       <span class="nav-toggle-bars"></span>
     </label>
@@ -645,7 +652,7 @@
       <div class="hero-cert-row">
         <img src="images/logo-ral-guetezeichen.png" alt="RAL-Gütezeichen Faire Anwerbung Pflege Deutschland">
         <div class="hero-cert-text">
-          <p class="hero-sub">Vermittlung internationaler Pflegefachkräfte für Kliniken und Pflegeheime in Berlin, Brandenburg und Hessen. Seit 2018.</p>
+          <p class="hero-sub">Vermittlung internationaler Pflegefachkräfte für Kliniken und Pflegeheime seit 2018.</p>
           <p class="hero-sub">Digital organisiert. Persönlich begleitet. Ehrlich beraten. Ergebnisse statt leere Versprechen.</p>
         </div>
       </div>
@@ -668,7 +675,7 @@
         <span class="eyebrow">Das Problem</span>
         <h2 class="headline">Der Fachkräftemangel spitzt sich zu. Wir lösen ihn international.</h2>
         <p class="body-text">Freie Stellen, die niemand besetzt. Kolleginnen am Limit. Patientenversorgung, die trotzdem laufen muss.</p>
-        <p class="body-text"><strong>690.000</strong> fehlende Pflegekräfte bis 2049. Sagt das Statistische Bundesamt.</p>
+        <p class="body-text"><strong>690.000</strong> fehlende Pflegekräfte bis 2049, sagt das Statistische Bundesamt.</p>
         <p class="body-text">Der deutsche Arbeitsmarkt schafft das allein nicht. <strong class="accent-blue">Wir vermitteln internationale Pflegefachkräfte aus den Philippinen und Indien.</strong> Passgenau, mit Fokus auf Integration.</p>
       </div>
     </div>
@@ -739,7 +746,7 @@
         <h2 class="headline">Unser Prozess. Planbar statt endlos.</h2>
       </div>
 
-      <p class="body-text reveal">Durchschnittlich 6 Monate bis zum ersten Arbeitstag. Möglich macht das unser Pool: mehrere hundert geprüfte, sprachlich vorbereitete Kandidat:innen. Das verkürzt Ihre Prozesszeit spürbar.</p>
+      <p class="body-text reveal">6 Monate bis zum ersten Arbeitstag, im Schnitt. Möglich, weil hinter jedem Profil bei uns eine Geschichte steht: geprüfte Qualifikation, erlerntes und geprüftes Deutsch, geklärte Erwartungen. Wir stellen die Person vor, die wirklich zu Ihnen und Ihrer Station passt.</p>
 
       <div class="route reveal">
         <div class="route-line"></div>
@@ -760,7 +767,7 @@
               <span class="num">02</span>
               <span class="accent"></span>
             </div>
-            <span class="step-title">Matching aus dem Pool</span>
+            <span class="step-title">Matching</span>
             <span class="step-time">ab Woche 2</span>
             <p class="step-text body-text">Wir schlagen passende Kandidat:innen aus unserem bestehenden, bereits vorqualifizierten Pool vor. Kein Start bei null.</p>
           </div>
@@ -772,7 +779,7 @@
             </div>
             <span class="step-title">Anerkennung &amp; Visum</span>
             <span class="step-time">4 bis 6 Monate</span>
-            <p class="step-text body-text">Sprachprozess und Anerkennung laufen für unseren Pool bereits parallel. Das verkürzt Ihre Wartezeit spürbar.</p>
+            <p class="step-text body-text">So wenig Bürokratie wie möglich für Sie: Wir kümmern uns um alle Anträge und eine beschleunigte Bearbeitung.</p>
           </div>
 
           <div class="route-step">
@@ -933,7 +940,7 @@
       <div class="section-head reveal">
         <span class="eyebrow">Ein schlankes, effizientes Team</span>
         <h2 class="headline">Schnell. Persönlich. Ansprechbar.</h2>
-        <p class="body-text">Kurze Abstimmungswege machen uns schnell. Der Einsatz neuester Technik macht uns effizient, damit wir uns persönlich um die menschlichen Themen kümmern können.</p>
+        <p class="body-text">Kurze Abstimmungswege machen uns schnell. Kompetente Teammitglieder machen uns stark. Der Einsatz neuester Technik macht uns effizient. So haben wir Zeit, uns auf die menschlichen Themen zu konzentrieren.</p>
       </div>
 
       <div class="team-grid reveal">
@@ -1022,6 +1029,7 @@
         <a href="faq.html">FAQ</a>
         <a href="downloads.html">Downloads</a>
         <a href="presse.html">Presse</a>
+        <a href="wechsel.html">Wechseln</a>
       </div>
       <div class="fcol">
         <h5>Rechtliches</h5>
@@ -1047,7 +1055,7 @@
   var rotator = document.getElementById('rotator');
   var hero = document.getElementById('hero');
 
-  // "Wir lösen:" + rotating list of problems HPS actually solves.
+  // "Wir lösen:" + rotating list of problems Heinz actually solves.
   // The loop always comes back around to "Fachkräftemangel.", the
   // umbrella problem, and pauses there a beat longer before restarting.
   var sequence = ['Fachkräftemangel.', 'Zu viel Bürokratie.', 'Langsame Anerkennung.', 'Schlechte Sprachniveaus.', 'fehlende Integration.', 'Fachkräftemangel.'];

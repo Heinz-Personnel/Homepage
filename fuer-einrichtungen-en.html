@@ -108,7 +108,11 @@
   .nav-links a:hover, .nav-links a.is-active{border-color:var(--hbo-basis);}
   @media(min-width:1040px){.nav-links{display:flex;align-items:center;}}
   .nav-cta{display:none;}
-  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;margin-left:auto;}}
+  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;}}
+  .nav-right{display:none;align-items:center;gap:18px;margin-left:auto;}
+  @media(min-width:1040px){.nav-right{display:flex;align-items:center;}}
+  .nav-lang{text-decoration:none;font-weight:600;font-size:.88rem;color:var(--schwarz);opacity:.6;padding:4px 0;border-bottom:2px solid transparent;}
+  .nav-lang:hover{opacity:1;border-color:var(--hbo-basis);}
 
   .nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;margin-left:auto;cursor:pointer;background:none;border:none;padding:0;flex-shrink:0;}
   @media(min-width:1040px){.nav-toggle{display:none;}}
@@ -204,10 +208,14 @@
   .prozess .body-text{max-width:56ch;margin-bottom:56px;}
   .route{position:relative;}
   .route-line{display:none;}
+  @media(min-width:1100px){
+    .route-line{display:block;position:absolute;top:34px;left:0;right:0;height:2px;background:var(--hbo-basis);opacity:.35;}
+  }
   .route-grid{position:relative;display:grid;grid-template-columns:1fr;gap:36px;}
-  @media(min-width:640px){.route-grid{grid-template-columns:repeat(2,1fr);gap:40px 32px;}}
-  @media(min-width:860px){.route-grid{grid-template-columns:repeat(3,1fr);gap:48px 32px;}}
-  .route-step{display:flex;flex-direction:column;gap:14px;}
+  @media(min-width:640px){.route-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 32px;}}
+  @media(min-width:860px){.route-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:48px 32px;}}
+  @media(min-width:1100px){.route-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:20px;}}
+  .route-step{display:flex;flex-direction:column;gap:14px;min-width:0;}
   .route-icon{
     width:78px;height:78px;flex-shrink:0;background:var(--beton);border:2px solid var(--schwarz);
     display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;z-index:2;
@@ -324,10 +332,12 @@
         <a href="fuer-fachkraefte-en.html">For Professionals</a>
         <a href="ueber-uns-en.html">Team</a>
         <a href="blog-en.html">Insights</a>
-        <a href="fuer-einrichtungen.html" style="opacity:.6;">DE</a>
       </nav>
     </div>
-    <a href="kontakt-en.html" class="btn nav-cta">Call us directly.</a>
+    <div class="nav-right">
+      <a href="fuer-einrichtungen.html" class="nav-lang">DE</a>
+      <a href="kontakt-en.html" class="btn nav-cta">Call us directly.</a>
+    </div>
     <label for="nav-toggle" class="nav-toggle" aria-label="Open menu">
       <span class="nav-toggle-bars"></span>
     </label>
@@ -421,7 +431,7 @@
         </div>
         <div class="vgl-card">
           <h3>Social media recruiting</h3>
-          <p class="body-text">Reaches many applicants. But without a structured recognition and integration process, the risk of a bad hire stays with you.</p>
+          <p class="body-text">Reaches many applicants. But the hurdles of the process and the effort stay with you.</p>
         </div>
         <div class="vgl-card is-us">
           <span class="vgl-card-label">Heinz Personnel Solutions</span>
@@ -452,7 +462,7 @@
         <h2 class="headline">Our process. From your point of view.</h2>
       </div>
 
-      <p class="body-text reveal">On average, 6 months to the first working day. That's possible thanks to our pool: several hundred vetted, language-prepared candidates. It noticeably shortens your process time. Your own effort stays manageable.</p>
+      <p class="body-text reveal">6 months to the first working day, on average. Possible because behind every profile with us stands a story: verified qualifications, learned and tested German, clarified expectations. We introduce the person who really fits you and your ward.</p>
 
       <div class="route reveal">
         <div class="route-line"></div>
@@ -474,7 +484,7 @@
 
           <div class="route-step">
             <div class="route-icon" aria-hidden="true"><span class="num">03</span><span class="accent"></span></div>
-            <span class="step-title">Matching from the pool</span>
+            <span class="step-title">Matching</span>
             <span class="step-time">from week 2 &middot; you decide</span>
             <p class="step-text body-text">We propose suitable candidates from our existing, already pre-qualified pool. No starting from zero.</p>
           </div>
@@ -483,7 +493,7 @@
             <div class="route-icon" aria-hidden="true"><span class="num">04</span><span class="accent"></span></div>
             <span class="step-title">Recognition &amp; visa</span>
             <span class="step-time">4 to 6 months &middot; we handle it</span>
-            <p class="step-text body-text">Language training and recognition run in parallel. At the same time, we prepare the welcome: housing, appointments with authorities, entry into Germany.</p>
+            <p class="step-text body-text">As little red tape as possible for you: we take care of every application and push for accelerated processing.</p>
           </div>
 
           <div class="route-step">
@@ -509,19 +519,19 @@
   <section class="garantie" id="garantie">
     <div class="wrap">
       <span class="eyebrow reveal">Our Guarantee</span>
-      <h2 class="headline reveal">A guarantee. Openly communicated.</h2>
+      <h2 class="headline reveal">What we offer. Openly communicated.</h2>
       <p class="garantie-sub reveal">We build trust through transparent terms.</p>
 
       <div class="garantie-grid reveal">
         <div class="garantie-card">
+          <span class="num">18 months</span>
+          <h3>Security</h3>
+          <p class="body-text">If the professional resigns on their own within the first 18 months, we take over the new search completely. At no extra cost to you.</p>
+        </div>
+        <div class="garantie-card">
           <span class="num">92%</span>
           <h3>Stay</h3>
           <p class="body-text">92% of the professionals we place stay longer than three years at their organization.</p>
-        </div>
-        <div class="garantie-card">
-          <span class="num">18</span>
-          <h3>Months of security</h3>
-          <p class="body-text">If the professional resigns on their own within the first 18 months, we take over the new search completely. At no extra cost to you.</p>
         </div>
         <div class="garantie-card">
           <span class="num">50/50</span>
@@ -588,7 +598,7 @@
   <!-- FOOTER CTA -->
   <section class="footer-cta" id="kontakt">
     <div class="wrap">
-      <h2 class="headline reveal">The next placement that stays.</h2>
+      <h2 class="headline reveal">We fill your open positions.</h2>
       <a href="kontakt-en.html" class="btn btn--big reveal">Call us directly.</a>
     </div>
   </section>
@@ -612,6 +622,7 @@
         <a href="faq-en.html">FAQ</a>
         <a href="downloads-en.html">Downloads</a>
         <a href="presse-en.html">Press</a>
+        <a href="wechsel.html">Wechseln</a>
       </div>
       <div class="fcol">
         <h5>Legal</h5>

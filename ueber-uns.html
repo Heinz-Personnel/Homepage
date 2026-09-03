@@ -107,7 +107,11 @@
   .nav-links a:hover, .nav-links a.is-active{border-color:var(--hbo-basis);}
   @media(min-width:1040px){.nav-links{display:flex;align-items:center;}}
   .nav-cta{display:none;}
-  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;margin-left:auto;}}
+  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;}}
+  .nav-right{display:none;align-items:center;gap:18px;margin-left:auto;}
+  @media(min-width:1040px){.nav-right{display:flex;align-items:center;}}
+  .nav-lang{text-decoration:none;font-weight:600;font-size:.88rem;color:var(--schwarz);opacity:.6;padding:4px 0;border-bottom:2px solid transparent;}
+  .nav-lang:hover{opacity:1;border-color:var(--hbo-basis);}
 
   .nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;margin-left:auto;cursor:pointer;background:none;border:none;padding:0;flex-shrink:0;}
   @media(min-width:1040px){.nav-toggle{display:none;}}
@@ -307,10 +311,12 @@
         <a href="fuer-fachkraefte.html">Für Fachkräfte</a>
         <a href="ueber-uns.html" class="is-active">Team</a>
         <a href="blog.html">Hintergründe</a>
-        <a href="ueber-uns-en.html" style="opacity:.6;">EN</a>
       </nav>
     </div>
-    <a href="kontakt.html" class="btn nav-cta">Rufen Sie durch.</a>
+    <div class="nav-right">
+      <a href="ueber-uns-en.html" class="nav-lang">EN</a>
+      <a href="kontakt.html" class="btn nav-cta">Rufen Sie durch.</a>
+    </div>
     <label for="nav-toggle" class="nav-toggle" aria-label="Menü öffnen">
       <span class="nav-toggle-bars"></span>
     </label>
@@ -335,13 +341,61 @@
         <span class="hero-line1">Echte Menschen. Ehrliche Geschichten.</span>
       </h1>
       <div class="hero-bar"></div>
-      <p class="hero-sub">Wir vermitteln keine Nummern. Wir bringen Menschen zusammen.</p>
-      <p class="hero-sub" style="margin-top:12px;">Dabei setzen wir auf einen digitalen Prozess, ein menschliches Team und auf ehrliche Kommunikation.</p>
+      <p class="hero-sub">Wir bringen Menschen zusammen.</p>
+      <p class="hero-sub" style="margin-top:12px;">Dabei setzen wir auf einen digitalen Prozess, ein qualifiziertes Team und ehrliche Kommunikation.</p>
       <p class="hero-sub" style="margin-top:12px;"><strong>Das ist wichtig, denn am Ende stehen echte Menschen mit einer echten Geschichte. Auf beiden Seiten.</strong></p>
       <div class="hero-actions">
         <a href="kontakt.html" class="btn btn--onblack">Rufen Sie durch.</a>
         <a href="#team" class="hero-path">Das Team</a>
       </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Ein schlankes, effizientes Team</span>
+        <h2 class="headline">Schnell. Persönlich. Ansprechbar.</h2>
+        <p class="body-text">Kurze Abstimmungswege machen uns schnell. Der Einsatz neuester Technik macht uns effizient, damit wir uns persönlich um die menschlichen Themen kümmern können.</p>
+      </div>
+
+      <div class="team-grid reveal">
+        <div class="team-card">
+          <div class="team-photo"><img src="images/team-ivo.jpg" alt="Ivo Straßenburg" loading="lazy"></div>
+          <div class="team-info">
+            <div class="name">Ivo Straßenburg</div>
+            <div class="role">Geschäftsführung</div>
+            <p class="body-text">Verantwortet Strategie und Partnerschaften. Für Ivo zählt vor allem eines: dass eine Vermittlung sich auch nach drei Jahren noch richtig anfühlt.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo"><img src="images/team-soeren.jpg" alt="Sören Heinz" loading="lazy"></div>
+          <div class="team-info">
+            <div class="name">Sören Heinz</div>
+            <div class="role">Key Account &amp; Vertrieb</div>
+            <p class="body-text">Erster Kontakt für Arbeitgeber, die klären wollen, ob und wie eine Zusammenarbeit passt.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo"><img src="images/team-tabeia.jpg" alt="Tabeia Antonio" loading="lazy"></div>
+          <div class="team-info">
+            <div class="name">Tabeia Antonio</div>
+            <div class="role">Integrationsmanagerin</div>
+            <p class="body-text">Verantwortet die Integration unserer Fachkräfte. Von der Ankunft bis zum festen Platz im Team.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo"><img src="images/team-tanja.jpg" alt="Tanja Grabow" loading="lazy"></div>
+          <div class="team-info">
+            <div class="name">Tanja Grabow</div>
+            <div class="role">Fachkräftebetreuung · Freiberuflich</div>
+            <p class="body-text">Unterstützt uns freiberuflich bei der Integration unserer Fachkräfte. Von der Ankunft bis zum Alltag im Team.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="team-footnote reveal">Neben Ivo, Sören, Tabeia und Tanja arbeiten je nach Projekt weitere Kolleg:innen im Hintergrund für Sie. Lernen Sie das gesamte Team gern in einem persönlichen Gespräch kennen.</p>
     </div>
   </section>
 
@@ -425,54 +479,6 @@
     </div>
   </section>
 
-  <!-- TEAM -->
-  <section class="team" id="team">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Ein schlankes, effizientes Team</span>
-        <h2 class="headline">Schnell. Persönlich. Ansprechbar.</h2>
-        <p class="body-text">Kurze Abstimmungswege machen uns schnell. Der Einsatz neuester Technik macht uns effizient, damit wir uns persönlich um die menschlichen Themen kümmern können.</p>
-      </div>
-
-      <div class="team-grid reveal">
-        <div class="team-card">
-          <div class="team-photo"><img src="images/team-ivo.jpg" alt="Ivo Straßenburg" loading="lazy"></div>
-          <div class="team-info">
-            <div class="name">Ivo Straßenburg</div>
-            <div class="role">Geschäftsführung</div>
-            <p class="body-text">Verantwortet Strategie und Partnerschaften. Für Ivo zählt vor allem eines: dass eine Vermittlung sich auch nach drei Jahren noch richtig anfühlt.</p>
-          </div>
-        </div>
-        <div class="team-card">
-          <div class="team-photo"><img src="images/team-soeren.jpg" alt="Sören Heinz" loading="lazy"></div>
-          <div class="team-info">
-            <div class="name">Sören Heinz</div>
-            <div class="role">Key Account &amp; Vertrieb</div>
-            <p class="body-text">Erster Kontakt für Arbeitgeber, die klären wollen, ob und wie eine Zusammenarbeit passt.</p>
-          </div>
-        </div>
-        <div class="team-card">
-          <div class="team-photo"><img src="images/team-tabeia.jpg" alt="Tabeia Antonio" loading="lazy"></div>
-          <div class="team-info">
-            <div class="name">Tabeia Antonio</div>
-            <div class="role">Integrationsmanagerin</div>
-            <p class="body-text">Verantwortet die Integration unserer Fachkräfte. Von der Ankunft bis zum festen Platz im Team.</p>
-          </div>
-        </div>
-        <div class="team-card">
-          <div class="team-photo"><img src="images/team-tanja.jpg" alt="Tanja Grabow" loading="lazy"></div>
-          <div class="team-info">
-            <div class="name">Tanja Grabow</div>
-            <div class="role">Fachkräftebetreuung · Freiberuflich</div>
-            <p class="body-text">Unterstützt uns freiberuflich bei der Integration unserer Fachkräfte. Von der Ankunft bis zum Alltag im Team.</p>
-          </div>
-        </div>
-      </div>
-
-      <p class="team-footnote reveal">Neben Ivo, Sören, Tabeia und Tanja arbeiten je nach Projekt weitere Kolleg:innen im Hintergrund für Sie. Lernen Sie das gesamte Team gern in einem persönlichen Gespräch kennen.</p>
-    </div>
-  </section>
-
   <!-- FOOTER CTA -->
   <section class="footer-cta" id="kontakt">
     <div class="wrap">
@@ -501,6 +507,7 @@
         <a href="faq.html">FAQ</a>
         <a href="downloads.html">Downloads</a>
         <a href="presse.html">Presse</a>
+        <a href="wechsel.html">Wechseln</a>
       </div>
       <div class="fcol">
         <h5>Rechtliches</h5>

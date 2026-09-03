@@ -76,7 +76,11 @@
   .nav-links a:hover, .nav-links a.is-active{border-color:var(--hbo-basis);}
   @media(min-width:1040px){.nav-links{display:flex;align-items:center;}}
   .nav-cta{display:none;}
-  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;margin-left:auto;}}
+  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;}}
+  .nav-right{display:none;align-items:center;gap:18px;margin-left:auto;}
+  @media(min-width:1040px){.nav-right{display:flex;align-items:center;}}
+  .nav-lang{text-decoration:none;font-weight:600;font-size:.88rem;color:var(--schwarz);opacity:.6;padding:4px 0;border-bottom:2px solid transparent;}
+  .nav-lang:hover{opacity:1;border-color:var(--hbo-basis);}
   .nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;margin-left:auto;cursor:pointer;background:none;border:none;padding:0;flex-shrink:0;}
   @media(min-width:1040px){.nav-toggle{display:none;}}
   .nav-toggle-bars{position:relative;width:22px;height:2px;background:var(--schwarz);transition:background .15s ease;}
@@ -299,10 +303,12 @@
         <a href="fuer-fachkraefte.html">Für Fachkräfte</a>
         <a href="ueber-uns.html">Team</a>
         <a href="blog.html">Hintergründe</a>
-        <a href="presse-en.html" style="opacity:.6;">EN</a>
       </nav>
     </div>
-    <a href="kontakt.html" class="btn nav-cta">Kennenlernen.</a>
+    <div class="nav-right">
+      <a href="presse-en.html" class="nav-lang">EN</a>
+      <a href="kontakt.html" class="btn nav-cta">Kennenlernen.</a>
+    </div>
     <label for="nav-toggle" class="nav-toggle" aria-label="Menü öffnen">
       <span class="nav-toggle-bars"></span>
     </label>
@@ -340,11 +346,11 @@
         </div>
         <div class="presse-tab">
           <h3>Kurzfassung</h3>
-          <p>Heinz Personnel Solutions GmbH (HPS) vermittelt seit 2018 internationale Pflegefachkräfte, vor allem aus den Philippinen und Indien, an deutsche Kliniken und Pflegeeinrichtungen. Über 400 Fachkräfte wurden bereits erfolgreich vermittelt, 92 % bleiben länger als drei Jahre. HPS trägt das RAL-Gütezeichen „Faire Anwerbung Pflege Deutschland“ und ist Mitglied im Bundesverband Internationale Fachkräftegewinnung (bvifg).</p>
+          <p>Heinz Personnel Solutions GmbH vermittelt seit 2018 internationale Pflegefachkräfte, vor allem aus den Philippinen und Indien, an deutsche Kliniken und Pflegeeinrichtungen. Über 400 Fachkräfte wurden bereits erfolgreich vermittelt, 92 % bleiben länger als drei Jahre. Heinz trägt das RAL-Gütezeichen „Faire Anwerbung Pflege Deutschland“ und ist Mitglied im Bundesverband Internationale Fachkräftegewinnung (bvifg).</p>
         </div>
         <div class="presse-tab">
           <h3>Ausführlich</h3>
-          <p>Heinz Personnel Solutions GmbH (HPS) mit Sitz in Berlin vermittelt seit 2018 internationale Pflegefachkräfte, vor allem aus den Philippinen und Indien, an deutsche Kliniken und Pflegeeinrichtungen. Im Mittelpunkt steht nicht die einzelne Vermittlung, sondern die nachhaltige Integration: 92 % der über 400 bislang vermittelten Fachkräfte bleiben länger als drei Jahre in ihrer Einrichtung. HPS trägt das RAL-Gütezeichen „Faire Anwerbung Pflege Deutschland“ und ist Mitglied im Bundesverband Internationale Fachkräftegewinnung (bvifg). Das Unternehmen arbeitet nach dem Prinzip des Triple-Win: faire Konditionen für Einrichtung, Fachkraft und Vermittler, ohne versteckte Kosten und ohne Rückzahlungsmodelle für die Fachkräfte. Geschäftsführer ist Ivo Straßenburg.</p>
+          <p>Heinz Personnel Solutions GmbH mit Sitz in Berlin vermittelt seit 2018 internationale Pflegefachkräfte, vor allem aus den Philippinen und Indien, an deutsche Kliniken und Pflegeeinrichtungen. Im Mittelpunkt steht nicht die einzelne Vermittlung, sondern die nachhaltige Integration: 92 % der über 400 bislang vermittelten Fachkräfte bleiben länger als drei Jahre in ihrer Einrichtung. Heinz trägt das RAL-Gütezeichen „Faire Anwerbung Pflege Deutschland“ und ist Mitglied im Bundesverband Internationale Fachkräftegewinnung (bvifg). Das Unternehmen arbeitet nach dem Prinzip des Triple-Win: faire Konditionen für Einrichtung, Fachkraft und Vermittler, ohne versteckte Kosten und ohne Rückzahlungsmodelle für die Fachkräfte. Geschäftsführer ist Ivo Straßenburg.</p>
         </div>
       </div>
 
@@ -459,6 +465,7 @@
         <a href="faq.html">FAQ</a>
         <a href="downloads.html">Downloads</a>
         <a href="presse.html">Presse</a>
+        <a href="wechsel.html">Wechseln</a>
       </div>
       <div class="fcol">
         <h5>Rechtliches</h5>

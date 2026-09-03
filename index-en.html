@@ -139,7 +139,11 @@
   .nav-links a:hover{border-color:var(--hbo-basis);}
   @media(min-width:1040px){.nav-links{display:flex;align-items:center;}}
   .nav-cta{display:none;}
-  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;margin-left:auto;}}
+  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;}}
+  .nav-right{display:none;align-items:center;gap:18px;margin-left:auto;}
+  @media(min-width:1040px){.nav-right{display:flex;align-items:center;}}
+  .nav-lang{text-decoration:none;font-weight:600;font-size:.88rem;color:var(--schwarz);opacity:.6;padding:4px 0;border-bottom:2px solid transparent;}
+  .nav-lang:hover{opacity:1;border-color:var(--hbo-basis);}
 
   .nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;margin-left:auto;cursor:pointer;background:none;border:none;padding:0;flex-shrink:0;}
   @media(min-width:1040px){.nav-toggle{display:none;}}
@@ -388,13 +392,14 @@
   /* -------- HEINZ Modell -------- */
   .heinz .body-text{max-width:60ch;margin-bottom:48px;}
   .heinz-grid{
-    display:grid;grid-template-columns:repeat(2,1fr);gap:16px;
+    display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;
   }
-  @media(min-width:700px){.heinz-grid{grid-template-columns:repeat(5,1fr);}}
+  @media(min-width:700px){.heinz-grid{grid-template-columns:repeat(5,minmax(0,1fr));}}
   .heinz-box{
     border:2px solid var(--hbo-basis);
     padding:24px 16px;
     text-align:center;
+    min-width:0;
   }
   .heinz-box .letter{
     font-family:var(--display);
@@ -404,7 +409,7 @@
     line-height:1;
     margin-bottom:14px;
   }
-  .heinz-box .label{font-weight:800;font-size:.88rem;}
+  .heinz-box .label{font-weight:800;font-size:.88rem;overflow-wrap:break-word;}
   .heinz-box .sub{font-size:.8rem;opacity:.7;margin-top:4px;}
 
   .heinz-stat{
@@ -592,10 +597,12 @@
         <a href="fuer-fachkraefte-en.html">For Professionals</a>
         <a href="ueber-uns-en.html">Team</a>
         <a href="blog-en.html">Insights</a>
-        <a href="index.html" style="opacity:.6;">DE</a>
       </nav>
     </div>
-    <a href="kontakt-en.html" class="btn nav-cta">Let's talk.</a>
+    <div class="nav-right">
+      <a href="index.html" class="nav-lang">DE</a>
+      <a href="kontakt-en.html" class="btn nav-cta">Let's talk.</a>
+    </div>
     <label for="nav-toggle" class="nav-toggle" aria-label="Open menu">
       <span class="nav-toggle-bars"></span>
     </label>
@@ -628,7 +635,7 @@
       <div class="hero-cert-row">
         <img src="images/logo-ral-guetezeichen.png" alt="RAL Quality Seal Fair Recruitment Nursing Germany">
         <div class="hero-cert-text">
-          <p class="hero-sub">Placement of international nursing professionals for hospitals and care homes in Berlin, Brandenburg and Hesse. Since 2018.</p>
+          <p class="hero-sub">Placement of international nursing professionals for hospitals and care homes since 2018.</p>
           <p class="hero-sub">Digitally organized. Personally supported. Honestly advised. Results, not empty promises.</p>
         </div>
       </div>
@@ -651,7 +658,7 @@
         <span class="eyebrow">The Problem</span>
         <h2 class="headline">The nursing shortage is getting worse. We solve it internationally.</h2>
         <p class="body-text">Open positions nobody fills. Colleagues at their limit. Patient care that still has to run.</p>
-        <p class="body-text"><strong>690,000</strong> missing nursing professionals by 2049. According to Germany's Federal Statistical Office.</p>
+        <p class="body-text"><strong>690,000</strong> missing nursing professionals by 2049, according to Germany's Federal Statistical Office.</p>
         <p class="body-text">The German labor market can't close that gap alone. <strong class="accent-blue">We place international nursing professionals from the Philippines and India.</strong> A precise match, with a clear focus on integration.</p>
       </div>
     </div>
@@ -722,7 +729,7 @@
         <h2 class="headline">Our process. Predictable, not endless.</h2>
       </div>
 
-      <p class="body-text reveal">On average, 6 months to the first working day. That's possible thanks to our pool: several hundred vetted, language-prepared candidates. It noticeably shortens your process time.</p>
+      <p class="body-text reveal">6 months to the first working day, on average. Possible because behind every profile with us stands a story: verified qualifications, learned and tested German, clarified expectations. We introduce the person who really fits you and your ward.</p>
 
       <div class="route reveal">
         <div class="route-line"></div>
@@ -743,7 +750,7 @@
               <span class="num">02</span>
               <span class="accent"></span>
             </div>
-            <span class="step-title">Matching from the pool</span>
+            <span class="step-title">Matching</span>
             <span class="step-time">from week 2</span>
             <p class="step-text body-text">We propose suitable candidates from our existing, already pre-qualified pool. No starting from zero.</p>
           </div>
@@ -755,7 +762,7 @@
             </div>
             <span class="step-title">Recognition &amp; visa</span>
             <span class="step-time">4 to 6 months</span>
-            <p class="step-text body-text">Language training and professional recognition already run in parallel for our pool. That noticeably shortens your wait.</p>
+            <p class="step-text body-text">As little red tape as possible for you: we take care of every application and push for accelerated processing.</p>
           </div>
 
           <div class="route-step">
@@ -916,7 +923,7 @@
       <div class="section-head reveal">
         <span class="eyebrow">A lean, efficient team</span>
         <h2 class="headline">Fast. Personal. Reachable.</h2>
-        <p class="body-text">Short internal paths make us fast. Modern technology makes us efficient, so we can focus personally on what matters: the people.</p>
+        <p class="body-text">Short internal paths make us fast. Skilled team members make us strong. The latest technology makes us efficient. That gives us time to focus on what matters most: the people.</p>
       </div>
 
       <div class="team-grid reveal">
@@ -1005,6 +1012,7 @@
         <a href="faq-en.html">FAQ</a>
         <a href="downloads-en.html">Downloads</a>
         <a href="presse-en.html">Press</a>
+        <a href="wechsel.html">Wechseln</a>
       </div>
       <div class="fcol">
         <h5>Legal</h5>

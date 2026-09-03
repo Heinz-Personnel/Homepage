@@ -76,7 +76,11 @@
   .nav-links a:hover, .nav-links a.is-active{border-color:var(--hbo-basis);}
   @media(min-width:1040px){.nav-links{display:flex;align-items:center;}}
   .nav-cta{display:none;}
-  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;margin-left:auto;}}
+  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;}}
+  .nav-right{display:none;align-items:center;gap:18px;margin-left:auto;}
+  @media(min-width:1040px){.nav-right{display:flex;align-items:center;}}
+  .nav-lang{text-decoration:none;font-weight:600;font-size:.88rem;color:var(--schwarz);opacity:.6;padding:4px 0;border-bottom:2px solid transparent;}
+  .nav-lang:hover{opacity:1;border-color:var(--hbo-basis);}
   .nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;margin-left:auto;cursor:pointer;background:none;border:none;padding:0;flex-shrink:0;}
   @media(min-width:1040px){.nav-toggle{display:none;}}
   .nav-toggle-bars{position:relative;width:22px;height:2px;background:var(--schwarz);transition:background .15s ease;}
@@ -336,10 +340,12 @@
         <a href="fuer-fachkraefte.html">Für Fachkräfte</a>
         <a href="ueber-uns.html">Team</a>
         <a href="blog.html" class="is-active">Hintergründe</a>
-        <a href="blog-post-1-en.html" style="opacity:.6;">EN</a>
       </nav>
     </div>
-    <a href="kontakt.html" class="btn nav-cta">Rufen Sie durch.</a>
+    <div class="nav-right">
+      <a href="blog-post-1-en.html" class="nav-lang">EN</a>
+      <a href="kontakt.html" class="btn nav-cta">Rufen Sie durch.</a>
+    </div>
     <label for="nav-toggle" class="nav-toggle" aria-label="Menü öffnen">
       <span class="nav-toggle-bars"></span>
     </label>
@@ -388,7 +394,7 @@
       <p>Für uns bedeutet faire Anwerbung mehr als ein einzelner Vermittlungsschritt. Wir verstehen internationale Pflegekräftevermittlung als langfristige Begleitung: von der ersten Beratung über Sprachvorbereitung, Anerkennung und Einreise bis hin zur nachhaltigen Integration in Deutschland. Die RAL-Zertifizierung bestätigt uns darin, diesen Weg konsequent weiterzugehen.</p>
 
       <h2>Ergänzend: Mitgliedschaft im bvifg</h2>
-      <p>Zusätzlich zum RAL-Siegel ist HPS Mitglied im <a href="https://www.bvifg.de/wer-wir-sind" target="_blank" rel="noopener">Bundesverband Internationale Fachkräftegewinnung (bvifg)</a>. Gemeinsam mit anderen Mitgliedern arbeiten wir an einheitlichen Standards für faire Fachkräftemigration in der Pflegebranche.</p>
+      <p>Zusätzlich zum RAL-Siegel ist Heinz Mitglied im <a href="https://www.bvifg.de/wer-wir-sind" target="_blank" rel="noopener">Bundesverband Internationale Fachkräftegewinnung (bvifg)</a>. Gemeinsam mit anderen Mitgliedern arbeiten wir an einheitlichen Standards für faire Fachkräftemigration in der Pflegebranche.</p>
 
       <div class="article-back"><a href="blog.html">&larr; Zurück zum Blog</a></div>
     </div>
@@ -413,6 +419,7 @@
         <a href="faq.html">FAQ</a>
         <a href="downloads.html">Downloads</a>
         <a href="presse.html">Presse</a>
+        <a href="wechsel.html">Wechseln</a>
       </div>
       <div class="fcol">
         <h5>Rechtliches</h5>

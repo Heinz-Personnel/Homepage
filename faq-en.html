@@ -77,7 +77,11 @@
   .nav-links a:hover, .nav-links a.is-active{border-color:var(--hbo-basis);}
   @media(min-width:1040px){.nav-links{display:flex;align-items:center;}}
   .nav-cta{display:none;}
-  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;margin-left:auto;}}
+  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;}}
+  .nav-right{display:none;align-items:center;gap:18px;margin-left:auto;}
+  @media(min-width:1040px){.nav-right{display:flex;align-items:center;}}
+  .nav-lang{text-decoration:none;font-weight:600;font-size:.88rem;color:var(--schwarz);opacity:.6;padding:4px 0;border-bottom:2px solid transparent;}
+  .nav-lang:hover{opacity:1;border-color:var(--hbo-basis);}
   .nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;margin-left:auto;cursor:pointer;background:none;border:none;padding:0;flex-shrink:0;}
   @media(min-width:1040px){.nav-toggle{display:none;}}
   .nav-toggle-bars{position:relative;width:22px;height:2px;background:var(--schwarz);transition:background .15s ease;}
@@ -263,10 +267,10 @@
     },
     {
       "@type": "Question",
-      "name": "Is HPS officially certified?",
+      "name": "Is Heinz officially certified?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. HPS holds the RAL quality seal \"Fair Recruitment Nursing Germany\" and is a member of the Bundesverband Internationale Fachkraeftegewinnung (bvifg)."
+        "text": "Yes. Heinz holds the RAL quality seal \"Fair Recruitment Nursing Germany\" and is a member of the Bundesverband Internationale Fachkraeftegewinnung (bvifg)."
       }
     },
     {
@@ -413,10 +417,12 @@
         <a href="fuer-fachkraefte-en.html">For Professionals</a>
         <a href="ueber-uns-en.html">Team</a>
         <a href="blog-en.html">Insights</a>
-        <a href="faq.html" style="opacity:.6;">DE</a>
       </nav>
     </div>
-    <a href="kontakt-en.html" class="btn nav-cta">Let's talk.</a>
+    <div class="nav-right">
+      <a href="faq.html" class="nav-lang">DE</a>
+      <a href="kontakt-en.html" class="btn nav-cta">Let's talk.</a>
+    </div>
     <label for="nav-toggle" class="nav-toggle" aria-label="Open menu">
       <span class="nav-toggle-bars"></span>
     </label>
@@ -446,7 +452,7 @@
     <div class="wrap" style="max-width:820px;">
       <div class="faq-group">
         <h2>Employers</h2>
-        <details class="faq-item"><summary>How long does a placement take, from inquiry to the first day of work?</summary><p>For professionals from our existing, already pre-qualified pool, we typically expect around 6 months from the needs analysis to the first day of work. Language training and recognition procedures run in parallel and are already well advanced or complete for these candidates.</p></details><details class="faq-item"><summary>What's the difference between a placement from your pool and a fully new recruitment?</summary><p>For candidates from our pool, language training and recognition are already underway, so it's faster for organizations. If a professional is recruited entirely from scratch, we expect around 12 to 13 months from the first application to entry, since language training (6 to 9 months) and recognition procedures (6 to 12 months depending on the state) run in parallel, but start from zero.</p></details><details class="faq-item"><summary>Which organizations do you already work with?</summary><p>We work with, among others, Sana Kliniken AG, Diakonie, Helios, AWO, DRK, and Main-Kinzig-Kliniken. On request, we're happy to provide further references.</p></details><details class="faq-item"><summary>Which countries do the placed nursing professionals come from?</summary><p>Our focus is on the Philippines and India. We've been actively placing international nursing professionals from these regions since 2018.</p></details><details class="faq-item"><summary>Is HPS officially certified?</summary><p>Yes. HPS holds the RAL quality seal "Fair Recruitment Nursing Germany" and is a member of the Bundesverband Internationale Fachkraeftegewinnung (bvifg).</p></details>
+        <details class="faq-item"><summary>How long does a placement take, from inquiry to the first day of work?</summary><p>For professionals from our existing, already pre-qualified pool, we typically expect around 6 months from the needs analysis to the first day of work. Language training and recognition procedures run in parallel and are already well advanced or complete for these candidates.</p></details><details class="faq-item"><summary>What's the difference between a placement from your pool and a fully new recruitment?</summary><p>For candidates from our pool, language training and recognition are already underway, so it's faster for organizations. If a professional is recruited entirely from scratch, we expect around 12 to 13 months from the first application to entry, since language training (6 to 9 months) and recognition procedures (6 to 12 months depending on the state) run in parallel, but start from zero.</p></details><details class="faq-item"><summary>Which organizations do you already work with?</summary><p>We work with, among others, Sana Kliniken AG, Diakonie, Helios, AWO, DRK, and Main-Kinzig-Kliniken. On request, we're happy to provide further references.</p></details><details class="faq-item"><summary>Which countries do the placed nursing professionals come from?</summary><p>Our focus is on the Philippines and India. We've been actively placing international nursing professionals from these regions since 2018.</p></details><details class="faq-item"><summary>Is Heinz officially certified?</summary><p>Yes. Heinz holds the RAL quality seal "Fair Recruitment Nursing Germany" and is a member of the Bundesverband Internationale Fachkraeftegewinnung (bvifg).</p></details>
       </div>
       <div class="faq-group">
         <h2>Costs & Fair Recruitment</h2>
@@ -494,6 +500,7 @@
         <a href="faq-en.html">FAQ</a>
         <a href="downloads-en.html">Downloads</a>
         <a href="presse-en.html">Press</a>
+        <a href="wechsel.html">Wechseln</a>
       </div>
       <div class="fcol">
         <h5>Legal</h5>

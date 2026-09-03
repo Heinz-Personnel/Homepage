@@ -77,7 +77,11 @@
   .nav-links a:hover, .nav-links a.is-active{border-color:var(--hbo-basis);}
   @media(min-width:1040px){.nav-links{display:flex;align-items:center;}}
   .nav-cta{display:none;}
-  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;margin-left:auto;}}
+  @media(min-width:1040px){.nav-cta{display:flex;width:auto;flex-shrink:0;padding:11px 22px;font-size:.9rem;white-space:nowrap;}}
+  .nav-right{display:none;align-items:center;gap:18px;margin-left:auto;}
+  @media(min-width:1040px){.nav-right{display:flex;align-items:center;}}
+  .nav-lang{text-decoration:none;font-weight:600;font-size:.88rem;color:var(--schwarz);opacity:.6;padding:4px 0;border-bottom:2px solid transparent;}
+  .nav-lang:hover{opacity:1;border-color:var(--hbo-basis);}
   .nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;margin-left:auto;cursor:pointer;background:none;border:none;padding:0;flex-shrink:0;}
   @media(min-width:1040px){.nav-toggle{display:none;}}
   .nav-toggle-bars{position:relative;width:22px;height:2px;background:var(--schwarz);transition:background .15s ease;}
@@ -259,10 +263,12 @@
         <a href="fuer-fachkraefte-en.html">For Professionals</a>
         <a href="ueber-uns-en.html">Team</a>
         <a href="blog-en.html">Insights</a>
-        <a href="presse.html" style="opacity:.6;">DE</a>
       </nav>
     </div>
-    <a href="kontakt-en.html" class="btn nav-cta">Let's talk.</a>
+    <div class="nav-right">
+      <a href="presse.html" class="nav-lang">DE</a>
+      <a href="kontakt-en.html" class="btn nav-cta">Let's talk.</a>
+    </div>
     <label for="nav-toggle" class="nav-toggle" aria-label="Open menu">
       <span class="nav-toggle-bars"></span>
     </label>
@@ -300,11 +306,11 @@
         </div>
         <div class="presse-tab">
           <h3>Short version</h3>
-          <p>Heinz Personnel Solutions GmbH (HPS) has placed international nursing professionals, primarily from the Philippines and India, with German hospitals and care organizations since 2018. Over 400 professionals have already been successfully placed, 92% stay longer than three years. HPS holds the RAL quality seal "Fair Recruitment Nursing Germany" and is a member of the Bundesverband Internationale Fachkraeftegewinnung (bvifg).</p>
+          <p>Heinz Personnel Solutions GmbH has placed international nursing professionals, primarily from the Philippines and India, with German hospitals and care organizations since 2018. Over 400 professionals have already been successfully placed, 92% stay longer than three years. Heinz holds the RAL quality seal "Fair Recruitment Nursing Germany" and is a member of the Bundesverband Internationale Fachkraeftegewinnung (bvifg).</p>
         </div>
         <div class="presse-tab">
           <h3>Full version</h3>
-          <p>Heinz Personnel Solutions GmbH (HPS), based in Berlin, has placed international nursing professionals, primarily from the Philippines and India, with German hospitals and care organizations since 2018. The focus isn't on the individual placement, but on sustainable integration: 92% of the more than 400 professionals placed so far stay longer than three years at their organization. HPS holds the RAL quality seal "Fair Recruitment Nursing Germany" and is a member of the Bundesverband Internationale Fachkraeftegewinnung (bvifg). The company works on a triple-win principle: fair terms for the organization, the professional, and the agency, with no hidden costs and no repayment schemes for the professionals. Managing Director is Ivo Strassenburg.</p>
+          <p>Heinz Personnel Solutions GmbH, based in Berlin, has placed international nursing professionals, primarily from the Philippines and India, with German hospitals and care organizations since 2018. The focus isn't on the individual placement, but on sustainable integration: 92% of the more than 400 professionals placed so far stay longer than three years at their organization. Heinz holds the RAL quality seal "Fair Recruitment Nursing Germany" and is a member of the Bundesverband Internationale Fachkraeftegewinnung (bvifg). The company works on a triple-win principle: fair terms for the organization, the professional, and the agency, with no hidden costs and no repayment schemes for the professionals. Managing Director is Ivo Strassenburg.</p>
         </div>
       </div>
 
@@ -419,6 +425,7 @@
         <a href="faq-en.html">FAQ</a>
         <a href="downloads-en.html">Downloads</a>
         <a href="presse-en.html">Press</a>
+        <a href="wechsel.html">Wechseln</a>
       </div>
       <div class="fcol">
         <h5>Legal</h5>
