@@ -336,4 +336,9 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.pflegekraftvermittlung.com/blog-post-9-en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pflegekraftvermittlung.com/blog-post-9.html"/>
   </url>
+  <url>
+    <loc>https://www.pflegekraftvermittlung.com/wechsel.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <priority>0.8</priority>
+  </url>
 </urlset>
