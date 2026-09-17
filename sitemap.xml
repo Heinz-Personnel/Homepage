@@ -337,6 +337,27 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pflegekraftvermittlung.com/blog-post-9.html"/>
   </url>
   <url>
+    <loc>https://www.pflegekraftvermittlung.com/blog-post-10.html</loc>
+    <lastmod>2026-09-17</lastmod>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pflegekraftvermittlung.com/blog-post-10.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pflegekraftvermittlung.com/blog-post-10-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pflegekraftvermittlung.com/blog-post-10.html"/>
+  </url>
+  <url>
+    <loc>https://www.pflegekraftvermittlung.com/blog-post-10-en.html</loc>
+    <lastmod>2026-09-17</lastmod>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pflegekraftvermittlung.com/blog-post-10.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pflegekraftvermittlung.com/blog-post-10-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pflegekraftvermittlung.com/blog-post-10.html"/>
+  </url>
+  <url>
+    <loc>https://www.pflegekraftvermittlung.com/pflegefachkraefte-berlin-brandenburg.html</loc>
+    <lastmod>2026-09-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.pflegekraftvermittlung.com/wechsel.html</loc>
     <lastmod>2026-09-04</lastmod>
     <priority>0.8</priority>
