@@ -1,17 +1,37 @@
+# robots.txt für pflegekraftvermittlung.com
+# Erlaubt klassischen Suchmaschinen und KI-Assistenten den Zugriff,
+# damit Heinz sowohl bei Google als auch bei ChatGPT, Claude und Perplexity
+# korrekt gefunden und zitiert werden kann.
+# TODO: falls einzelne Verzeichnisse (z. B. /wp-admin, interne Tools)
+# ausgeschlossen werden sollen, hier ergänzen.
+
 User-agent: *
 Allow: /
 
-# KI-Suchassistenten / Answer Engines - explizit erlaubt
+# Klassische Suchmaschinen
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# KI-Crawler und Assistenten (explizit erlauben, sonst oft automatisch geblockt)
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: ClaudeBot
 Allow: /
 
 User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
 Allow: /
 
 User-agent: anthropic-ai
@@ -26,10 +46,7 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-User-agent: Applebot-Extended
-Allow: /
-
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://www.pflegekraftvermittlung.com/sitemap.xml
+Sitemap: https://pflegekraftvermittlung.com/sitemap.xml
