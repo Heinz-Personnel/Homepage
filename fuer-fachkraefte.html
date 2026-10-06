@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<!-- Google Ads Conversion-Tracking: laedt erst nach Cookie-Einwilligung, siehe js/cookie-consent.js -->
+<!-- Google Ads Conversion-Tracking: lädt erst nach Cookie-Einwilligung, siehe js/cookie-consent.js -->
 <script src="js/cookie-consent.js"></script>
 
 <meta charset="UTF-8">
@@ -248,6 +248,33 @@
   .links-item a:hover{text-decoration:underline;text-underline-offset:3px;}
   .links-item p{margin-top:8px;font-size:.88rem;opacity:.7;}
 
+
+  /* -------- Entscheidungskompass -------- */
+  .kompass{background:var(--hbo-dunkel);color:var(--weiss);}
+  .kompass .eyebrow{color:var(--weiss);}
+  .kompass h2.headline{color:var(--weiss);margin-bottom:20px;max-width:22ch;}
+  .kompass .body-text{max-width:64ch;font-size:1.05rem;color:var(--weiss);}
+  .kompass-tag{display:inline-block;border:1px solid var(--weiss);padding:6px 12px;font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:20px;}
+  .kompass .kompass-lead{font-weight:700;font-size:1.15rem;max-width:56ch;margin-bottom:16px;}
+  .kompass-grid{
+    margin-top:40px;display:grid;grid-template-columns:1fr;gap:1px;
+    background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.22);
+  }
+  @media(min-width:768px){.kompass-grid{grid-template-columns:repeat(4,1fr);}}
+  .kompass-fact{background:var(--hbo-dunkel);padding:24px 22px;}
+  .kompass-num{font-family:var(--display);font-size:2.6rem;line-height:1;color:var(--weiss);display:block;margin-bottom:10px;}
+  .kompass-fact p{font-size:.92rem;line-height:1.5;color:var(--weiss);opacity:.9;}
+  .kompass-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px;}
+  .kompass-actions .btn{width:auto;flex:1;min-width:220px;max-width:340px;background:var(--weiss);border-color:var(--weiss);color:var(--hbo-dunkel);}
+  .kompass-actions .btn:hover{background:transparent;color:var(--weiss);}
+  .kompass-actions .btn-ghost{
+    flex:1;min-width:220px;max-width:340px;display:flex;align-items:center;justify-content:center;text-align:center;
+    text-decoration:none;font-weight:700;padding:18px 30px;color:var(--weiss);
+    background:transparent;border:2px solid var(--weiss);transition:background .18s ease, color .18s ease;
+  }
+  .kompass-actions .btn-ghost:hover{background:var(--weiss);color:var(--hbo-dunkel);}
+  .kompass .kompass-source{margin-top:20px;font-size:.82rem;opacity:.75;max-width:64ch;}
+
   /* -------- Footer CTA -------- */
   .footer-cta{background:var(--hbo-basis);color:var(--weiss);text-align:left;}
   .footer-cta .headline{color:var(--weiss);margin-bottom:20px;}
@@ -454,6 +481,30 @@
         <p class="body-text">Seien wir ehrlich. Besonders die Sprachausbildung braucht Zeit, Disziplin und einen langen Atem. Wer Ihnen etwas anderes erzählt, verspricht zu viel.</p>
         <p class="body-text">Aber es lohnt sich. <strong>Sie gehen diesen Weg gemeinsam mit uns, von der ersten Vokabel bis zum Arbeitsalltag, und darüber hinaus.</strong></p>
       </div>
+    </div>
+  </section>
+
+    <!-- ENTSCHEIDUNGSKOMPASS -->
+  <section class="kompass" id="kompass">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="kompass-tag">Für Auszubildende</span>
+        <span class="eyebrow">Noch am Anfang? Starten Sie hier.</span>
+        <h2 class="headline">Passt die Pflegeausbildung zu Ihnen? Finden Sie es heraus.</h2>
+        <p class="body-text kompass-lead">Neben Pflegefachkräften unterstützen wir auch Auszubildende bei ihrem Weg nach Deutschland.</p>
+        <p class="body-text">Sie überlegen, in Deutschland eine Ausbildung zu beginnen, zum Beispiel zur Pflegefachperson, und wollen vorher wissen, was auf Sie zukommt? Dafür gibt es den Berufsorientierenden Entscheidungskompass der Gütegemeinschaft Faire Anwerbung Pflege Deutschland, die auch das RAL-Gütezeichen vergibt. Der Selbsttest richtet sich an junge Menschen aus Drittstaaten, die eine Ausbildung in Betracht ziehen, und hilft Ihnen, ehrlich für sich zu klären, ob dieser Weg zu Ihnen passt.</p>
+      </div>
+      <div class="kompass-grid reveal">
+        <div class="kompass-fact"><span class="kompass-num">19</span><p>Themenbereiche zeigen, was die Ausbildung wirklich bedeutet: von Vergütung und Lebenshaltungskosten bis zu Schichtdienst, Deutschlernen und Heimweh.</p></div>
+        <div class="kompass-fact"><span class="kompass-num">60</span><p>Fragen in rund 15 Minuten zum Pflegeberuf, zum Leben in einem fremden Land und zu dem, was die Entscheidung für Sie persönlich bedeutet.</p></div>
+        <div class="kompass-fact"><span class="kompass-num">11</span><p>Sprachen stehen zur Auswahl, darunter Arabisch, Vietnamesisch, Ukrainisch und Farsi.</p></div>
+        <div class="kompass-fact"><span class="kompass-num">PDF</span><p>Die Auswertung kommt ohne Punktwert aus. Sie zeigt, wo Sie sich sicher sind und wo noch Fragen offen sind. Speichern Sie sie und besprechen Sie sie in Ruhe.</p></div>
+      </div>
+      <div class="kompass-actions reveal">
+        <a href="https://www.faire-anwerbung-pflege-deutschland.de/entscheidungskompass" class="btn" target="_blank" rel="noopener">Zum Entscheidungskompass</a>
+        <a href="kontakt.html" class="btn-ghost">Ergebnis mit uns besprechen</a>
+      </div>
+      <p class="body-text kompass-source reveal">Der Selbsttest ist anonym und unverbindlich. Nach Angaben der Gütegemeinschaft werden die Antworten nicht gespeichert, nicht weitergegeben und haben keinen Einfluss auf Vermittlungsentscheidungen.</p>
     </div>
   </section>
 

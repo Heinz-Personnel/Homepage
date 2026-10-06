@@ -1,5 +1,5 @@
 /* Heinz Personnel Solutions – Cookie-Consent (Google Ads Conversion-Tracking)
-   Laedt das Google-Tag (AW-18457911738) erst nach ausdruecklicher Einwilligung. */
+   Lädt das Google-Tag (AW-18457911738) erst nach ausdrücklicher Einwilligung. */
 (function () {
   var GADS_ID = 'AW-18457911738';
   var CONSENT_KEY = 'heinz_cookie_consent';
@@ -7,11 +7,11 @@
 
   var texts = {
     de: {
-      message: 'Wir verwenden Cookies fuer das Google Ads Conversion-Tracking, um zu sehen, welche Anzeigen zu einer Kontaktaufnahme fuehren. Diese Cookies setzen wir nur mit Ihrer Einwilligung.',
+      message: 'Wir verwenden Cookies für das Google Ads Conversion-Tracking, um zu sehen, welche Anzeigen zu einer Kontaktaufnahme führen. Diese Cookies setzen wir nur mit Ihrer Einwilligung.',
       accept: 'Akzeptieren',
       decline: 'Ablehnen',
       settings: 'Cookie-Einstellungen',
-      privacy: 'Datenschutzerklaerung',
+      privacy: 'Datenschutzerklärung',
       privacyHref: 'datenschutz.html'
     },
     en: {
