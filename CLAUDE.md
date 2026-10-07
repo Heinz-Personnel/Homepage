@@ -38,6 +38,9 @@ Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
   Englisch: "Call us directly." / "Let's talk.". "Sprechen wir." nicht mehr verwenden.
 - **"Digital"** nie als alleinstehendes Wort, immer mit Nutzen (Tempo, Transparenz).
 - Buttons nie in derselben Farbe wie ihr Hintergrund. Kein Flieder-Ton.
+- **Niemals Schwarz auf Blau**, auch nicht im Hover-Zustand: keine schwarze Schrift, kein schwarzer Rahmen und
+  kein schwarzer Button auf blauen Flächen. Auf Blau gilt: weißer Button mit dunkelblauer Schrift, Hover
+  transparent mit weißer Schrift und weißem Rahmen (oder umgekehrt). Bei jeder Änderung auch `:hover` prüfen.
 
 ## 4. Feste Fakten (nur diese Zahlen verwenden)
 
@@ -78,6 +81,12 @@ Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
 - **Google Ads (AW-18457911738)** wird ausschließlich über `js/cookie-consent.js` nach Einwilligung geladen.
   Das Google-Tag nie direkt in eine Seite einbauen. Neue externe Skripte brauchen eine CSP-Anpassung und
   eine Prüfung, ob die Datenschutzerklärung sie abdeckt.
+- **Telefon:** Nummer nur auf `fuer-einrichtungen`, `ausbildung`, `pflegefachkraefte-berlin-brandenburg` und `kontakt`
+  (jeweils DE/EN), nie in Header, Footer, Fachkräfte-Seiten, Blog, JSON-LD oder `llms.txt`. Sie steht nie im Klartext im Code:
+  Baustein `.phone-box` mit Button `data-phone-reveal`, die Nummer liegt verschlüsselt in `js/phone.js` (Liste `D`).
+  Auf der Website steht die Telekom-030-Festnetznummer (dauerhaft). Das Umleitungsziel wird bei der Telekom geändert,
+  nicht auf der Website. Nummer ändern: nur `js/phone.js` neu verschlüsseln.
+  Telefonzeiten auf der Seite: Mo bis Fr, 9 bis 17 Uhr.
 - **Formulare:** Formspree. Kontakt `xwvgzjkz`, Beschwerde `xqerjoee`.
 - **Bewerbung Fachkräfte:** Ankaadia-Link auf `fuer-fachkraefte.html`.
 - **Neue Seite?** Dann zusätzlich: Eintrag in `sitemap.xml` (mit hreflang), Eintrag in `llms.txt`,

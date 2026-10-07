@@ -190,8 +190,8 @@
   .footer-cta{background:var(--hbo-basis);color:var(--weiss);text-align:left;}
   .footer-cta .headline{color:var(--weiss);margin-bottom:20px;}
   .footer-cta .body-text{color:var(--hbo-hell);max-width:56ch;font-size:1.05rem;margin-bottom:32px;}
-  .footer-cta .btn{background:var(--schwarz);border-color:var(--schwarz);max-width:360px;}
-  .footer-cta .btn:hover{background:transparent;color:var(--schwarz);border-color:var(--schwarz);}
+  .footer-cta .btn{background:var(--weiss);border-color:var(--weiss);color:var(--hbo-dunkel);max-width:360px;}
+  .footer-cta .btn:hover{background:transparent;color:var(--weiss);border-color:var(--weiss);}
 
   /* -------- Footer -------- */
   footer.site-footer{background:var(--schwarz);color:var(--beton);padding:64px 0 36px;}
@@ -208,6 +208,11 @@
   @media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none;}}
 
 
+
+  /* -------- Telefon im Termin-Kasten (gleicher Aufbau wie "Termin online buchen") -------- */
+  .booking-card .btn{width:100%;max-width:280px;font-size:var(--text-body);line-height:1.55;cursor:pointer;}
+  .booking-phone{margin-top:36px;padding-top:36px;border-top:1px solid rgba(255,255,255,.25);}
+  .booking-card p a{color:var(--weiss);font-weight:700;text-underline-offset:3px;}
 </style>
 <script type="application/ld+json">
 {
@@ -335,6 +340,12 @@
           <h3>Termin online buchen</h3>
           <p>Wählen Sie direkt online einen freien Termin für ein unverbindliches Erstgespräch, ganz ohne Wartezeit auf eine Antwort.</p>
           <a href="https://calendar.app.google/zBSR58vMimhxW8pEA" class="btn" target="_blank" rel="noopener">Termin auswählen</a>
+          <div class="booking-phone">
+            <span class="eyebrow eyebrow--onblack">Direkt anrufen</span>
+            <h3>Rufen Sie durch.</h3>
+            <p>Für Kliniken, Pflegeeinrichtungen und Ausbildungsbetriebe, Mo bis Fr von 9 bis 17 Uhr. Bewerber:innen nutzen am besten das <a href="fuer-fachkraefte.html#kontakt">Bewerbungsformular</a>.</p>
+            <button type="button" class="btn" data-phone-reveal>Nummer anzeigen</button>
+          </div>
         </div>
         <form class="form-card" action="https://formspree.io/f/xwvgzjkz" method="POST">
           <h3>Oder schreiben Sie uns</h3>
@@ -431,5 +442,6 @@
 })();
 </script>
 
+<script src="js/phone.js" defer></script>
 </body>
 </html>

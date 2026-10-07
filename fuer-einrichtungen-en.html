@@ -271,8 +271,8 @@
   /* -------- Footer CTA -------- */
   .footer-cta{background:var(--hbo-basis);color:var(--weiss);text-align:left;}
   .footer-cta .headline{color:var(--weiss);margin-bottom:32px;}
-  .footer-cta .btn{background:var(--schwarz);border-color:var(--schwarz);max-width:360px;}
-  .footer-cta .btn:hover{background:transparent;color:var(--schwarz);border-color:var(--schwarz);}
+  .footer-cta .btn{background:var(--weiss);border-color:var(--weiss);color:var(--hbo-dunkel);max-width:360px;}
+  .footer-cta .btn:hover{background:transparent;color:var(--weiss);border-color:var(--weiss);}
 
   /* -------- Footer -------- */
   footer.site-footer{background:var(--schwarz);color:var(--beton);padding:64px 0 36px;}
@@ -290,6 +290,20 @@
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .5s ease, transform .5s ease;}
   .reveal.is-in{opacity:1;transform:translateY(0);}
   @media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none;}}
+
+  /* -------- Telefon (Nummer erst nach Klick, siehe js/phone.js) -------- */
+  .phone-box{margin-top:36px;padding-top:28px;border-top:1px solid rgba(255,255,255,.25);color:var(--weiss);}
+  .phone-box p{margin:0;max-width:none;}
+  .phone-box .phone-label{font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--weiss);margin-bottom:8px;}
+  .phone-box .phone-for{color:var(--weiss);font-size:1rem;margin-bottom:16px;}
+  .phone-reveal{display:flex;align-items:center;justify-content:center;width:100%;max-width:360px;font-family:var(--body);font-size:1.25rem;font-weight:700;line-height:1.55;padding:26px 40px;cursor:pointer;background:transparent;color:var(--weiss);border:2px solid var(--weiss);text-decoration:none;transition:background .18s ease,color .18s ease;}
+  .phone-reveal:hover,.phone-reveal.is-revealed{background:var(--weiss);color:var(--hbo-dunkel);}
+  .phone-reveal:focus-visible{outline:3px solid var(--orange);outline-offset:3px;}
+  .phone-reveal{white-space:nowrap;text-align:center;}
+  .phone-reveal.is-revealed{padding-left:16px;padding-right:16px;letter-spacing:.02em;}
+  .phone-box .phone-hours{margin-top:12px;font-size:.9rem;color:var(--weiss);opacity:.85;}
+  .phone-box .phone-note{margin-top:6px;font-size:.85rem;color:var(--weiss);opacity:.8;}
+  .phone-box .phone-note a{color:var(--weiss);font-weight:700;text-underline-offset:3px;}
 </style>
 <script type="application/ld+json">
 {
@@ -605,6 +619,13 @@
     <div class="wrap">
       <h2 class="headline reveal">We fill your open positions.</h2>
       <a href="kontakt-en.html" class="btn btn--big reveal">Call us directly.</a>
+      <div class="phone-box reveal">
+        <p class="phone-label">Prefer to call?</p>
+        <p class="phone-for">For hospitals, care facilities and training companies.</p>
+        <button type="button" class="phone-reveal" data-phone-reveal>Show number</button>
+        <p class="phone-hours">Mon to Fri, 9 am to 5 pm</p>
+        <p class="phone-note">Applicants reach us fastest via the <a href="fuer-fachkraefte-en.html#kontakt">application form</a>.</p>
+      </div>
     </div>
   </section>
 
@@ -668,5 +689,6 @@
 })();
 </script>
 
+<script src="js/phone.js" defer></script>
 </body>
 </html>
