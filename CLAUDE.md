@@ -1,0 +1,106 @@
+# CLAUDE.md – Website Heinz Personnel Solutions
+
+Diese Datei liest Claude (Claude Code und Cowork) bei jeder Arbeit an diesem Repo zuerst.
+Sie ist die verbindliche Arbeitsgrundlage. Bei Widersprüchen gilt: Anweisung von Ivo im Chat > diese Datei > alles andere.
+
+## 1. Projekt in Kürze
+
+- Website: https://www.pflegekraftvermittlung.com (GitHub Pages, Domain über `CNAME`)
+- Inhaber / Ansprechpartner: Ivo Straßenburg (Geschäftsführung), nicht technisch, braucht klare Schritt-für-Schritt-Anleitungen
+- Technik: statisches HTML, kein Build-Schritt. Jede Seite ist eine eigenständige Datei mit eigenem `<style>`-Block im `<head>`. Kein externes Stylesheet, kein Framework.
+- Alles, was auf `main` gepusht wird, geht automatisch live.
+
+## 2. Arbeitsweise (wer macht was)
+
+1. **Konzept, Texte, Recherche:** Ivo stimmt Änderungen mit Claude in Cowork ab.
+2. **Umsetzung:** Cowork bearbeitet die Dateien direkt in diesem lokalen Ordner
+   (`~/Documents/GitHub/Homepage`) und führt die Pflicht-Checks aus Abschnitt 6 aus.
+3. **Veröffentlichen:** Ivo öffnet GitHub Desktop, prüft die geänderten Dateien, schreibt eine kurze
+   Beschreibung, klickt **Commit to main** und dann **Push origin**.
+4. **Kleine Änderungen über Claude Code im Browser** sind möglich. Danach muss Ivo in GitHub Desktop
+   **Fetch origin / Pull** klicken, bevor Cowork wieder lokal arbeitet. Sonst entstehen Konflikte.
+
+Hinweis für Cowork: Im Sandbox-Container **keine git-Befehle** ausführen (auch nicht `git status`).
+Die Sandbox kann `.git/index.lock` anlegen, aber nicht löschen, das blockiert GitHub Desktop.
+Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
+
+## 3. Markenregeln (verbindlich, keine Ausnahmen)
+
+- **Keine Gedankenstriche:** weder `—` noch `–`, nirgends. Satz neu bauen (Punkt, Komma, Doppelpunkt),
+  Zahlenspannen mit "bis" ("3 bis 6 Monate"), Titel-Trenner `|`.
+- **Firmenname im Text immer "Heinz"**, niemals "HPS". Juristisch voll: "Heinz Personnel Solutions GmbH".
+- **Sie-Anrede** auf Deutsch. Ton: ehrlich, menschlich, anpackend, direkt, warm. Kein Agentur-Deutsch,
+  keine Buzzwords (ganzheitlich, auf Augenhöhe, maßgeschneidert, Synergien), keine Kampf-Rhetorik.
+- **Positive Direktaussagen statt Verneinung.** Kontrastformel "Kein X. Nur Y." höchstens 1 bis 2 Mal pro Seite.
+- **Beweis statt Behauptung:** Jede Qualitätsaussage braucht Zahl, Siegel oder konkreten Prozessschritt.
+  Fehlende Fakten nie erfinden, sondern Ivo fragen.
+- **CTA-Texte:** "Rufen Sie durch." (eher Arbeitgeber) und "Kennenlernen." (eher Fachkräfte/allgemein).
+  Englisch: "Call us directly." / "Let's talk.". "Sprechen wir." nicht mehr verwenden.
+- **"Digital"** nie als alleinstehendes Wort, immer mit Nutzen (Tempo, Transparenz).
+- Buttons nie in derselben Farbe wie ihr Hintergrund. Kein Flieder-Ton.
+
+## 4. Feste Fakten (nur diese Zahlen verwenden)
+
+- Heinz Personnel Solutions GmbH, Am Eichenhain 32, 13465 Berlin · info@hpstalent.de
+- Geschäftsführung: Ivo Straßenburg · Team: Sören Heinz (Key Account & Vertrieb), Tabeia Antonio (Integrationsmanagerin), Tanja Grabow (Fachkräftebetreuung)
+- 30 Jahre Erfahrung im Gesundheitswesen, seit 2018 internationale Vermittlung
+- 400+ vermittelte Pflegefachkräfte · 92 % bleiben länger als 3 Jahre · 98 % erfolgreiche Berufsanerkennungen
+- RAL-Gütezeichen "Faire Anwerbung Pflege" (vergeben durch GAPA) · Mitglied im bvifg
+- Garantie: 18 Monate (neue Suche ohne Zusatzkosten bei Eigenkündigung) · Zahlung 50/50 (nach Vermittlung / nach Start)
+- Triple-Win, Employer-pays-Prinzip: Fachkräfte und Auszubildende zahlen nichts, keine Rückzahlungsklauseln
+- Fachkräfte überwiegend aus den Philippinen und Indien
+- **Auszubildende** (Pflege und Handwerk, z. B. Zimmerer): aus Asien, Deutsch B2, Wohnungssuche bei Bedarf,
+  ca. 3 bis 6 Monate von Auswahl bis Ausbildungsstart, gleiche Garantie und Konditionen.
+  Wichtig: Das RAL-Siegel gilt für die Anwerbung von Pflegefachkräften. Für Azubis nur "Dieselben Grundsätze gelten
+  bei uns auch für die Vermittlung von Auszubildenden", nie eine RAL-Zertifizierung der Azubi-Vermittlung behaupten.
+  Die 92 % gelten für Fachkräfte, nicht auf Azubis übertragen.
+- Kunden (Auswahl): Sana Kliniken, Diakonie, Helios, AWO, DRK, Main-Kinzig-Kliniken
+- Partner: Lingoda, Ankaadia, Akademie der Gesundheit Berlin/Brandenburg, GAPA
+
+## 5. Aufbau der Website
+
+- **Sprachpaare:** Jede Seite gibt es auf Deutsch (`seite.html`) und Englisch (`seite-en.html`).
+  Ausnahmen (nur DE): `wechsel.html`, `pflegefachkraefte-berlin-brandenburg.html`.
+  Inhaltliche Änderungen immer in **beiden** Sprachen.
+- **Hauptseiten:** `index`, `fuer-einrichtungen` (Für Arbeitgeber), `ausbildung` (Ausbildung für Betriebe),
+  `fuer-fachkraefte`, `ueber-uns`, `blog` + `blog-post-1` bis `blog-post-10`, `faq`, `downloads`, `presse`,
+  `kontakt`, `impressum`, `datenschutz`, `beschwerdeformular`.
+- **Navigation** steht in **jeder** HTML-Datei dreimal: `.nav-links` (Desktop), `.mobile-nav`, Footer "Quick Links".
+  Neue Menüpunkte in allen Dateien ergänzen. Aktive Seite bekommt `class="is-active"`.
+- **Bilder** liegen in `images/`. Die Bild- und `.py`-Dateien im Hauptordner sind Altbestand: nicht löschen,
+  ohne Ivo zu fragen, aber auch nicht für neue Seiten verwenden.
+- **Kopf jeder Seite** (Reihenfolge beibehalten):
+  1. `<script src="js/cookie-consent.js"></script>` direkt nach `<head>`
+  2. Meta charset/viewport, Content-Security-Policy, google-site-verification
+  3. title, description, canonical, hreflang (de/en/x-default), Open Graph, Twitter
+  4. Google Fonts (Anton, Inter), `<style>`
+  5. JSON-LD: EmploymentAgency (`@id …/#organization`), BreadcrumbList, je nach Seite Article / FAQPage / Service
+- **Google Ads (AW-18457911738)** wird ausschließlich über `js/cookie-consent.js` nach Einwilligung geladen.
+  Das Google-Tag nie direkt in eine Seite einbauen. Neue externe Skripte brauchen eine CSP-Anpassung und
+  eine Prüfung, ob die Datenschutzerklärung sie abdeckt.
+- **Formulare:** Formspree. Kontakt `xwvgzjkz`, Beschwerde `xqerjoee`.
+- **Bewerbung Fachkräfte:** Ankaadia-Link auf `fuer-fachkraefte.html`.
+- **Neue Seite?** Dann zusätzlich: Eintrag in `sitemap.xml` (mit hreflang), Eintrag in `llms.txt`,
+  Menü/Footer-Links prüfen, Blogkarte in `blog.html`/`blog-en.html` bei Artikeln.
+
+## 6. Pflicht-Checks vor jedem Push
+
+```bash
+# 1. HTML parsebar
+python3 -c "import glob,lxml.html as l; [l.fromstring(open(f,encoding='utf-8').read()) for f in glob.glob('*.html')]; print('HTML ok')"
+# 2. Sitemap gültig
+python3 -c "import lxml.etree as e; e.parse('sitemap.xml'); print('Sitemap ok')"
+# 3. Keine Gedankenstriche, kein HPS im sichtbaren Text
+grep -l -- "—\|–" *.html llms.txt || echo "Keine Gedankenstriche"
+python3 -c "import glob,re; print([f for f in glob.glob('*.html') if re.search(r'\bHPS\b', re.sub(r'<[^>]+>','',open(f,encoding='utf-8').read()))] or 'Kein HPS')"
+# 4. Jede DE-Seite hat ihr EN-Gegenstück (außer den DE-only-Seiten)
+```
+
+Zusätzlich: geänderte Seiten am Handy und am Desktop ansehen, Umlaute korrekt (ä ö ü ß, nie ae/oe/ue).
+
+## 7. Offene Punkte
+
+- Bewerberseite für Ausbildungsplätze (`ausbildung-bewerbung.html`, DE/EN) ist geplant. Bis dahin verlinkt
+  `ausbildung.html` für Bewerber:innen auf `fuer-fachkraefte.html#kompass`. Offen: eigener Bewerbungslink?
+- Wert "Lebensunterhalt 1.048 € brutto" (Visum § 16a, Stand Juni 2026) auf `ausbildung(-en).html` jährlich prüfen.
+- Wohnraum-Absatz auf `pflegefachkraefte-berlin-brandenburg.html` noch allgemein gehalten.
