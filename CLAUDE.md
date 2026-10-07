@@ -38,6 +38,8 @@ Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
   Englisch: "Call us directly." / "Let's talk.". "Sprechen wir." nicht mehr verwenden.
 - **"Digital"** nie als alleinstehendes Wort, immer mit Nutzen (Tempo, Transparenz).
 - Buttons nie in derselben Farbe wie ihr Hintergrund. Kein Flieder-Ton.
+- **Nebeneinanderliegende Blöcke schließen immer bündig ab** (gleiche Höhe, gleiche Ober- und Unterkante).
+  Bei Grids `align-items:stretch`, nie `start`. Gleich gemeinte Buttons haben gleiche Größe und Abmaße.
 - **Niemals Schwarz auf Blau**, auch nicht im Hover-Zustand: keine schwarze Schrift, kein schwarzer Rahmen und
   kein schwarzer Button auf blauen Flächen. Auf Blau gilt: weißer Button mit dunkelblauer Schrift, Hover
   transparent mit weißer Schrift und weißem Rahmen (oder umgekehrt). Bei jeder Änderung auch `:hover` prüfen.
@@ -78,6 +80,12 @@ Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
   3. title, description, canonical, hreflang (de/en/x-default), Open Graph, Twitter
   4. Google Fonts (Anton, Inter), `<style>`
   5. JSON-LD: EmploymentAgency (`@id …/#organization`), BreadcrumbList, je nach Seite Article / FAQPage / Service
+- **Einwilligungsbanner** (`js/cookie-consent.js`): erste Ebene "Alle akzeptieren" und "Nur notwendige Cookies"
+  gleich groß und gleich gestaltet, dazu "Einstellungen". Kategorien: Notwendig (nur die Auswahl selbst in localStorage
+  `heinz_consent`, 12 Monate) und Marketing (Google Ads Conversion-Tracking, Checkbox nie vorausgewählt).
+  Google Consent Mode v2 Basis-Modus, `ad_personalization` immer `denied` (kein Remarketing).
+  "Cookie-Einstellungen" im Footer jeder Seite (`data-cookie-settings`) und als Button unten links.
+  Banner-Text und Datenschutzerklärung Ziffer 6 müssen immer zusammenpassen.
 - **Google Ads (AW-18457911738)** wird ausschließlich über `js/cookie-consent.js` nach Einwilligung geladen.
   Das Google-Tag nie direkt in eine Seite einbauen. Neue externe Skripte brauchen eine CSP-Anpassung und
   eine Prüfung, ob die Datenschutzerklärung sie abdeckt.
@@ -113,3 +121,7 @@ Zusätzlich: geänderte Seiten am Handy und am Desktop ansehen, Umlaute korrekt 
   `ausbildung.html` für Bewerber:innen auf `fuer-fachkraefte.html#kompass`. Offen: eigener Bewerbungslink?
 - Wert "Lebensunterhalt 1.048 € brutto" (Visum § 16a, Stand Juni 2026) auf `ausbildung(-en).html` jährlich prüfen.
 - Wohnraum-Absatz auf `pflegefachkraefte-berlin-brandenburg.html` noch allgemein gehalten.
+- Google Fonts werden noch von Google-Servern geladen (ohne Einwilligung, IP-Übermittlung). Empfehlung: Schriften
+  Anton und Inter lokal in `fonts/` hosten, dann CSP und Datenschutzerklärung Ziffer 7 anpassen.
+- Datenschutzerklärung Ziffer 7 nennt Dienste, die aktuell nicht eingebunden sind (Google Analytics, Maps, HubSpot,
+  Vimeo, Social-Plugins). Mit Datenschutzberatung prüfen und bereinigen.
