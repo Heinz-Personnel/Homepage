@@ -128,13 +128,13 @@
   @media(min-width:900px){.form-grid{grid-template-columns:1fr 1fr;}}
   .booking-card{background:var(--hbo-dunkel);color:var(--weiss);padding:40px 36px;}
   .booking-card h3{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:1.4rem;margin-bottom:12px;}
-  .booking-card p{color:var(--hbo-hell);margin-bottom:24px;max-width:48ch;}
+  .booking-card p{color:var(--weiss);margin-bottom:24px;max-width:48ch;}
   .booking-card .btn{max-width:280px;width:auto;background:var(--weiss);color:var(--hbo-dunkel);border-color:var(--weiss);}
   .booking-card .btn:hover{background:transparent;color:var(--weiss);}
   .form-card{background:var(--beton);padding:36px 32px;}
-  .form-card h3{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:1.4rem;margin-bottom:24px;}
+  .form-card h3{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:1.4rem;margin-bottom:12px;}
   .form-field{margin-bottom:20px;}
-  .form-field label{display:block;font-weight:700;font-size:.82rem;margin-bottom:8px;text-transform:uppercase;letter-spacing:.04em;}
+  .form-field label{display:block;font-weight:600;font-size:.95rem;margin-bottom:8px;}
   .form-field input, .form-field textarea, .form-field select{
     width:100%;padding:14px 16px;border:2px solid rgba(11,11,11,.2);background:var(--weiss);
     font-family:var(--body);font-size:1rem;color:var(--schwarz);
@@ -215,7 +215,7 @@
   /* -------- Telefon im Termin-Kasten (gleicher Aufbau wie "Termin online buchen") -------- */
   .booking-card .btn{width:100%;max-width:280px;font-size:var(--text-body);line-height:1.55;cursor:pointer;}
   .booking-phone{margin-top:36px;padding-top:36px;border-top:1px solid rgba(255,255,255,.25);}
-  .booking-card p a{color:var(--weiss);font-weight:700;text-underline-offset:3px;}
+  .booking-card p a{color:var(--weiss);text-underline-offset:3px;}
 
   /* -------- Navigation: Aufklappmenü "Für Arbeitgeber" -------- */
   .nav-drop{position:relative;display:flex;align-items:center;}
@@ -335,13 +335,11 @@
     <div class="wrap">
       <div class="form-grid">
         <div class="booking-card">
-          <span class="eyebrow eyebrow--onblack">Book directly</span>
           <h3>Book a call online</h3>
           <p>Choose an available slot online for a no-obligation first conversation, with no waiting for a reply.</p>
           <a href="https://calendar.app.google/zBSR58vMimhxW8pEA" class="btn" target="_blank" rel="noopener">Choose a time</a>
           <div class="booking-phone">
-            <span class="eyebrow eyebrow--onblack">Call directly</span>
-            <h3>Call us directly.</h3>
+            <h3>Call directly</h3>
             <p>For hospitals, care facilities and training companies, Mon to Fri from 9 am to 5 pm. Applicants are best served by our <a href="fuer-fachkraefte-en.html#kontakt">application form</a>.</p>
             <button type="button" class="btn" data-phone-reveal>Show number</button>
           </div>

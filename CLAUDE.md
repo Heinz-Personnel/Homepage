@@ -46,6 +46,10 @@ Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
 - **Neben breiten CTA-Buttons stehen NIEMALS Textlinks.** Zusätzliche Links (z. B. "Passt die Pflege zu mir?",
   "So läuft es ab") gehören immer in eine eigene Zeile darunter (`.hero-paths`), nie in dieselbe Zeile wie der Button
   (`.hero-actions`, `.cta-actions`, `.cta-row` enthalten nur Buttons).
+- **Ruhige Typografie, wenig Wechsel:** Anton in Großbuchstaben nur für Überschriften. Alles andere Inter:
+  Fließtext normal, Buttons und Formular-Beschriftungen halbfett, in normaler Schreibweise (keine Großbuchstaben,
+  kein Sperrsatz). Über einer Kasten-Überschrift keine zusätzliche kleine Großbuchstaben-Zeile, die dasselbe sagt.
+  Links im Text normal unterstrichen, nicht fett.
 - **Niemals Schwarz auf Blau**, auch nicht im Hover-Zustand: keine schwarze Schrift, kein schwarzer Rahmen und
   kein schwarzer Button auf blauen Flächen. Auf Blau gilt: weißer Button mit dunkelblauer Schrift, Hover
   transparent mit weißer Schrift und weißem Rahmen (oder umgekehrt). Bei jeder Änderung auch `:hover` prüfen.
