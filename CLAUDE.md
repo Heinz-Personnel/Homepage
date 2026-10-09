@@ -119,6 +119,12 @@ Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
   nicht auf der Website. Nummer ändern: nur `js/phone.js` neu verschlüsseln.
   Telefonzeiten auf der Seite: Mo bis Fr, 9 bis 17 Uhr.
 - **Formulare:** Formspree. Kontakt `xwvgzjkz`, Beschwerde `xqerjoee`.
+- **Conversion-Tracking** (`js/conversions.js`, eingebunden auf `kontakt` und `kontakt-en`): meldet nur mit
+  Marketing-Einwilligung zwei Google-Ads-Conversions: "Kontaktformular gesendet" (`AW-18457911738/usTaCLPe1JYdELrDteFE`,
+  primär) nach erfolgreichem Absenden und "Terminbuchung geklickt" (`AW-18457911738/EH2oCLbe1JYdELrDteFE`, sekundär)
+  beim Klick auf den Google-Kalender-Link. Formulare mit `data-conversion="lead"` werden per fetch an Formspree
+  geschickt (deshalb `https://formspree.io` in `connect-src` der CSP), danach erscheint `.form-success`.
+  Fällt fetch aus, wird klassisch abgeschickt. Neues Lead-Formular: `data-conversion="lead"`, Skript einbinden, CSP prüfen.
 - **Bewerbung Fachkräfte:** Ankaadia-Link auf `fuer-fachkraefte.html`.
 - **Neue Seite?** Dann zusätzlich: Eintrag in `sitemap.xml` (mit hreflang), Eintrag in `llms.txt`,
   Menü/Footer-Links prüfen, Blogkarte in `blog.html`/`blog-en.html` bei Artikeln.

@@ -6,7 +6,7 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://*.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://www.google.com https://www.google.de; connect-src 'self' https://*.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://www.google.com https://www.google.de; form-action 'self' https://formspree.io; frame-ancestors 'self'; base-uri 'self';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://*.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://www.google.com https://www.google.de; connect-src 'self' https://formspree.io https://*.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://www.google.com https://www.google.de; form-action 'self' https://formspree.io; frame-ancestors 'self'; base-uri 'self';">
 <meta name="google-site-verification" content="4ih2UXl47iAqhL2-UGvUgYXGfVS-HxsPBSvBsj9QTIY">
 <title>Kontakt | Heinz Personnel Solutions</title>
 <meta name="description" content="Nehmen Sie Kontakt zu Heinz Personnel Solutions auf: unverbindliches Erstgespräch zur internationalen Pflegekräftevermittlung.">
@@ -132,6 +132,8 @@
   .booking-card .btn:hover{background:transparent;color:var(--weiss);}
   .form-card{background:var(--beton);padding:36px 32px;}
   .form-card h3{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:1.4rem;margin-bottom:12px;}
+  .form-success p{font-size:1rem;line-height:1.6;}
+  .form-success:focus{outline:none;}
   .form-field{margin-bottom:20px;}
   .form-field label{display:block;font-weight:600;font-size:.95rem;margin-bottom:8px;}
   .form-field input, .form-field textarea, .form-field select{
@@ -384,7 +386,7 @@
             <button type="button" class="btn" data-phone-reveal>Nummer anzeigen</button>
           </div>
         </div>
-        <form class="form-card" action="https://formspree.io/f/xwvgzjkz" method="POST">
+        <form class="form-card" action="https://formspree.io/f/xwvgzjkz" method="POST" data-conversion="lead">
           <h3>Oder schreiben Sie uns</h3>
           <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="form-field">
@@ -484,5 +486,6 @@
 </script>
 
 <script src="js/phone.js" defer></script>
+<script src="js/conversions.js" defer></script>
 </body>
 </html>
