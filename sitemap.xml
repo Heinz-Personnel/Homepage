@@ -378,4 +378,20 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.pflegekraftvermittlung.com/ausbildung-en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pflegekraftvermittlung.com/ausbildung.html"/>
   </url>
+  <url>
+    <loc>https://www.pflegekraftvermittlung.com/ausbildung-bewerbung.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pflegekraftvermittlung.com/ausbildung-bewerbung.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pflegekraftvermittlung.com/ausbildung-bewerbung-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pflegekraftvermittlung.com/ausbildung-bewerbung.html"/>
+  </url>
+  <url>
+    <loc>https://www.pflegekraftvermittlung.com/ausbildung-bewerbung-en.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pflegekraftvermittlung.com/ausbildung-bewerbung.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pflegekraftvermittlung.com/ausbildung-bewerbung-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pflegekraftvermittlung.com/ausbildung-bewerbung.html"/>
+  </url>
 </urlset>

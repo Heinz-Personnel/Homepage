@@ -97,7 +97,7 @@
   .nav-toggle-input:checked ~ .nav-inner .nav-toggle-bars::after{transform:translateY(-7px) rotate(-45deg);}
   .mobile-nav{max-height:0;overflow:hidden;transition:max-height .25s ease;display:flex;flex-direction:column;}
   @media(min-width:1040px){.mobile-nav{display:none;}}
-  .nav-toggle-input:checked ~ .mobile-nav{max-height:400px;padding-bottom:20px;}
+  .nav-toggle-input:checked ~ .mobile-nav{max-height:560px;padding-bottom:20px;}
   .mobile-nav a{display:block;padding:12px 0;text-decoration:none;color:var(--schwarz);font-weight:600;font-size:.95rem;border-top:1px solid rgba(11,11,11,.1);}
   .mobile-nav a.btn{margin-top:16px;padding:12px 22px;border-top:none;color:var(--weiss);}
   .mobile-nav a.lang-switch{border-top:none;display:inline-flex;width:auto;align-self:flex-start;margin:4px 0 4px;padding:6px 14px;border:1px solid rgba(11,11,11,.25);border-radius:999px;font-size:.8rem;font-weight:600;color:var(--hbo-basis);}
@@ -197,7 +197,9 @@
   /* -------- Footer -------- */
   footer.site-footer{background:var(--schwarz);color:var(--beton);padding:64px 0 36px;}
   .footer-grid{display:grid;gap:36px;grid-template-columns:1fr;}
-  @media(min-width:768px){.footer-grid{grid-template-columns:1.2fr 1fr 1fr 1fr;}}
+  @media(min-width:768px){.footer-grid{grid-template-columns:1fr 1fr 1fr;}}
+  @media(min-width:1100px){.footer-grid{grid-template-columns:1.2fr repeat(4,1fr);}}
+  footer .fcol a.fcol-first{margin-top:12px;}
   footer .logo{color:var(--weiss);}
   footer .fcol h5{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--weiss);margin-bottom:16px;}
   footer .fcol a{display:block;text-decoration:none;color:var(--beton);font-size:.92rem;margin-bottom:10px;opacity:.85;}
@@ -209,6 +211,25 @@
   @media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none;}}
 
 
+
+  /* -------- Navigation: Aufklappmenü "Für Arbeitgeber" -------- */
+  .nav-drop{position:relative;display:flex;align-items:center;}
+  .nav-drop-toggle{display:inline-flex;align-items:center;gap:7px;}
+  .nav-caret{display:inline-block;width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .18s ease;}
+  .nav-drop:hover .nav-caret,.nav-drop:focus-within .nav-caret{transform:translateY(1px) rotate(225deg);}
+  .nav-drop-menu{position:absolute;top:100%;left:-18px;padding-top:14px;z-index:60;opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity .16s ease,transform .16s ease,visibility .16s;}
+  .nav-drop:hover .nav-drop-menu,.nav-drop:focus-within .nav-drop-menu{opacity:1;visibility:visible;transform:none;}
+  .nav-drop-panel{background:var(--weiss);border:1px solid rgba(11,11,11,.12);box-shadow:0 14px 34px rgba(11,11,11,.12);min-width:280px;display:flex;flex-direction:column;}
+  .nav-links .nav-drop-panel a{display:block;white-space:normal;padding:16px 20px;border-bottom:1px solid rgba(11,11,11,.08);box-shadow:inset 3px 0 0 transparent;}
+  .nav-links .nav-drop-panel a:last-child{border-bottom:none;}
+  .nav-links .nav-drop-panel a:hover,.nav-links .nav-drop-panel a.is-current{background:var(--beton);border-color:rgba(11,11,11,.08);box-shadow:inset 3px 0 0 var(--orange);}
+  .nav-drop-panel strong{display:block;font-weight:700;font-size:.95rem;color:var(--schwarz);}
+  .nav-drop-panel span{display:block;font-weight:500;font-size:.8rem;color:var(--schwarz);opacity:.65;margin-top:3px;}
+  .mobile-nav .mobile-group{display:block;padding:14px 0 4px;font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--hbo-dunkel);border-top:1px solid rgba(11,11,11,.1);}
+  .mobile-nav a.mobile-sub{padding-left:16px;border-top:none;}
+  .mobile-nav a.mobile-sub + a.mobile-sub{border-top:1px solid rgba(11,11,11,.06);}
+  .mobile-nav a.btn{display:flex;justify-content:center;}
+  .mobile-nav a.is-active{color:var(--hbo-dunkel);box-shadow:inset 3px 0 0 var(--orange);}
 </style>
 <script type="application/ld+json">
 {
@@ -250,9 +271,24 @@
     <div class="nav-left">
       <a href="index-en.html" class="logo">HEINZ<span>.</span></a>
       <nav class="nav-links">
-        <a href="fuer-einrichtungen-en.html">For Employers</a>
-        <a href="ausbildung-en.html">Training</a>
-        <a href="fuer-fachkraefte-en.html">For Professionals</a>
+        <div class="nav-drop">
+          <a href="fuer-einrichtungen-en.html" class="nav-drop-toggle" aria-haspopup="true">Employers<span class="nav-caret" aria-hidden="true"></span></a>
+          <div class="nav-drop-menu">
+            <div class="nav-drop-panel">
+              <a href="fuer-einrichtungen-en.html"><strong>Qualified nurses</strong><span>For hospitals and care facilities</span></a>
+              <a href="ausbildung-en.html"><strong>Trainees</strong><span>For example care, trades, logistics</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-drop" data-nav="talent">
+          <a href="fuer-fachkraefte-en.html" class="nav-drop-toggle" aria-haspopup="true">Talent<span class="nav-caret" aria-hidden="true"></span></a>
+          <div class="nav-drop-menu">
+            <div class="nav-drop-panel">
+              <a href="fuer-fachkraefte-en.html"><strong>Qualified nurses</strong><span>Qualified, moving to Germany</span></a>
+              <a href="ausbildung-bewerbung-en.html"><strong>Trainees</strong><span>Training in many occupations</span></a>
+            </div>
+          </div>
+        </div>
         <a href="ueber-uns-en.html">Team</a>
         <a href="blog-en.html">Insights</a>
       </nav>
@@ -266,9 +302,12 @@
     </label>
   </div>
   <nav class="mobile-nav wrap">
-    <a href="fuer-einrichtungen-en.html">For Employers</a>
-    <a href="ausbildung-en.html">Training</a>
-    <a href="fuer-fachkraefte-en.html">For Professionals</a>
+    <span class="mobile-group">Employers</span>
+    <a href="fuer-einrichtungen-en.html" class="mobile-sub">Qualified nurses</a>
+    <a href="ausbildung-en.html" class="mobile-sub">Trainees</a>
+    <span class="mobile-group">Talent</span>
+    <a href="fuer-fachkraefte-en.html" class="mobile-sub">Qualified nurses</a>
+    <a href="ausbildung-bewerbung-en.html" class="mobile-sub">Trainees</a>
     <a href="ueber-uns-en.html">Team</a>
     <a href="blog-en.html">Insights</a>
     <a href="datenschutz.html" class="lang-switch">Deutsch</a>
@@ -340,20 +379,27 @@
     <div class="footer-grid">
       <div class="fcol">
         <a href="index-en.html" class="logo">HEINZ<span style="color:var(--orange);">.</span></a>
-        <p style="margin-top:16px;font-size:.92rem;opacity:.75;">info@hpstalent.de</p>
+        <a href="kontakt-en.html" class="fcol-first">Get in touch</a>
+        <a href="mailto:info@hpstalent.de">info@hpstalent.de</a>
       </div>
       <div class="fcol">
-        <h5>Quick Links</h5>
-        <a href="index-en.html">Home</a>
+        <h5>Employers</h5>
+        <a href="fuer-einrichtungen-en.html">Qualified nurses</a>
+        <a href="ausbildung-en.html">Trainees</a>
+      </div>
+      <div class="fcol">
+        <h5>Talent</h5>
+        <a href="fuer-fachkraefte-en.html">Qualified nurses</a>
+        <a href="ausbildung-bewerbung-en.html">Trainees</a>
+        <a href="wechsel.html">Change jobs (in German)</a>
+      </div>
+      <div class="fcol">
+        <h5>Heinz</h5>
         <a href="ueber-uns-en.html">About us</a>
-        <a href="fuer-einrichtungen-en.html">For Employers</a>
-        <a href="ausbildung-en.html">Training</a>
-        <a href="fuer-fachkraefte-en.html">For Professionals</a>
-        <a href="blog-en.html">Blog</a>
+        <a href="blog-en.html">Insights</a>
         <a href="faq-en.html">FAQ</a>
         <a href="downloads-en.html">Downloads</a>
         <a href="presse-en.html">Press</a>
-        <a href="wechsel.html">Wechseln</a>
       </div>
       <div class="fcol">
         <h5>Legal</h5>
@@ -361,11 +407,6 @@
         <a href="datenschutz-en.html">Privacy Policy</a>
         <a href="#" data-cookie-settings>Cookie settings</a>
         <a href="beschwerdeformular-en.html">Complaints Procedure (RAL)</a>
-      </div>
-      <div class="fcol">
-        <h5>Contact</h5>
-        <a href="kontakt-en.html">Contact page</a>
-        <a href="mailto:info@hpstalent.de">info@hpstalent.de</a>
       </div>
     </div>
     <div class="footer-bottom">

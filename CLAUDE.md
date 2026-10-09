@@ -40,6 +40,9 @@ Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
 - Buttons nie in derselben Farbe wie ihr Hintergrund. Kein Flieder-Ton.
 - **Nebeneinanderliegende Blöcke schließen immer bündig ab** (gleiche Höhe, gleiche Ober- und Unterkante).
   Bei Grids `align-items:stretch`, nie `start`. Gleich gemeinte Buttons haben gleiche Größe und Abmaße.
+- **Neben breiten CTA-Buttons stehen NIEMALS Textlinks.** Zusätzliche Links (z. B. "Passt die Pflege zu mir?",
+  "So läuft es ab") gehören immer in eine eigene Zeile darunter (`.hero-paths`), nie in dieselbe Zeile wie der Button
+  (`.hero-actions`, `.cta-actions`, `.cta-row` enthalten nur Buttons).
 - **Niemals Schwarz auf Blau**, auch nicht im Hover-Zustand: keine schwarze Schrift, kein schwarzer Rahmen und
   kein schwarzer Button auf blauen Flächen. Auf Blau gilt: weißer Button mit dunkelblauer Schrift, Hover
   transparent mit weißer Schrift und weißem Rahmen (oder umgekehrt). Bei jeder Änderung auch `:hover` prüfen.
@@ -54,8 +57,11 @@ Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
 - Garantie: 18 Monate (neue Suche ohne Zusatzkosten bei Eigenkündigung) · Zahlung 50/50 (nach Vermittlung / nach Start)
 - Triple-Win, Employer-pays-Prinzip: Fachkräfte und Auszubildende zahlen nichts, keine Rückzahlungsklauseln
 - Fachkräfte überwiegend aus den Philippinen und Indien
-- **Auszubildende** (Pflege und Handwerk, z. B. Zimmerer): aus Asien, Deutsch B2, Wohnungssuche bei Bedarf,
+- **Auszubildende** in vielen Ausbildungsberufen, auf der Seite immer nur als Beispiele genannt: Pflege, Handwerk
+  (z. B. Zimmerei), Logistik. Andere Berufe nie ausschließen. aus Asien, Deutsch B2, Wohnungssuche bei Bedarf,
   ca. 3 bis 6 Monate von Auswahl bis Ausbildungsstart, gleiche Garantie und Konditionen.
+  Für Bewerber:innen empfiehlt Heinz 12 Jahre Schule (Empfehlung, keine Pflicht; gesetzlich gilt für die Pflege
+  10 Jahre Schule nach § 11 PflBG, für duale Ausbildungen entscheidet der Betrieb). Deutschkurs bis B2 organisiert Heinz, kostenfrei.
   Wichtig: Das RAL-Siegel gilt für die Anwerbung von Pflegefachkräften. Für Azubis nur "Dieselben Grundsätze gelten
   bei uns auch für die Vermittlung von Auszubildenden", nie eine RAL-Zertifizierung der Azubi-Vermittlung behaupten.
   Die 92 % gelten für Fachkräfte, nicht auf Azubis übertragen.
@@ -70,8 +76,17 @@ Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
 - **Hauptseiten:** `index`, `fuer-einrichtungen` (Für Arbeitgeber), `ausbildung` (Ausbildung für Betriebe),
   `fuer-fachkraefte`, `ueber-uns`, `blog` + `blog-post-1` bis `blog-post-10`, `faq`, `downloads`, `presse`,
   `kontakt`, `impressum`, `datenschutz`, `beschwerdeformular`.
-- **Navigation** steht in **jeder** HTML-Datei dreimal: `.nav-links` (Desktop), `.mobile-nav`, Footer "Quick Links".
+- **Navigation** steht in **jeder** HTML-Datei dreimal: `.nav-links` (Desktop), `.mobile-nav` und im Footer.
+  Footer (5 Spalten, gleiche Gliederung wie oben): Logo + Kontakt · Arbeitgeber · Zukunftskräfte (inkl. "Stelle wechseln")
+  · Heinz (Über uns, Hintergründe, FAQ, Downloads, Presse) · Rechtliches (inkl. Cookie-Einstellungen).
   Neue Menüpunkte in allen Dateien ergänzen. Aktive Seite bekommt `class="is-active"`.
+  Oben genau 4 Punkte: **Arbeitgeber ▾** · **Zukunftskräfte ▾** · Team · Hintergründe (EN: Employers ▾ · Talent ▾ · Team · Insights).
+  Beide sind Aufklappmenüs `.nav-drop` mit je "Pflegefachkräfte" und "Auszubildende":
+  Arbeitgeber → `fuer-einrichtungen` / `ausbildung`; Zukunftskräfte (`data-nav="talent"`) → `fuer-fachkraefte` /
+  `ausbildung-bewerbung` (Bewerberseite für Auszubildende). Aktueller Unterpunkt `class="is-current"`.
+  "Zukunftskräfte" ist das eigene Heinz-Wort für Bewerber:innen (statt "Talente"), nur als Oberbegriff, nie als Unterpunkt.
+  Mobil: Gruppen `.mobile-group` mit je zwei `.mobile-sub`-Links. Alles bleibt auf pflegekraftvermittlung.com
+  (Entscheidung Ivo, Oktober 2026: keine eigene Domain/Seite für Ausbildung).
 - **Bilder** liegen in `images/`. Die Bild- und `.py`-Dateien im Hauptordner sind Altbestand: nicht löschen,
   ohne Ivo zu fragen, aber auch nicht für neue Seiten verwenden.
 - **Kopf jeder Seite** (Reihenfolge beibehalten):
@@ -117,8 +132,9 @@ Zusätzlich: geänderte Seiten am Handy und am Desktop ansehen, Umlaute korrekt 
 
 ## 7. Offene Punkte
 
-- Bewerberseite für Ausbildungsplätze (`ausbildung-bewerbung.html`, DE/EN) ist geplant. Bis dahin verlinkt
-  `ausbildung.html` für Bewerber:innen auf `fuer-fachkraefte.html#kompass`. Offen: eigener Bewerbungslink?
+- Bewerberseite `ausbildung-bewerbung(-en).html`: "Jetzt bewerben" geht vorläufig per E-Mail an recruiting@hpstalent.de.
+  Sobald das Ankaadia-Formular für Auszubildende steht, beide Buttons (Hero und Abschluss, DE/EN) auf den neuen Link umstellen.
+  Der Entscheidungskompass (nur Pflege) liegt jetzt dort; auf `fuer-fachkraefte` steht nur noch ein Hinweis mit Link.
 - Wert "Lebensunterhalt 1.048 € brutto" (Visum § 16a, Stand Juni 2026) auf `ausbildung(-en).html` jährlich prüfen.
 - Wohnraum-Absatz auf `pflegefachkraefte-berlin-brandenburg.html` noch allgemein gehalten.
 - Google Fonts werden noch von Google-Servern geladen (ohne Einwilligung, IP-Übermittlung). Empfehlung: Schriften

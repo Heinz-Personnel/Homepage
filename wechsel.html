@@ -89,13 +89,14 @@ section{padding:72px 0}
 /* -------- Footer (identisch zum Rest der Website) -------- */
 footer.site-footer{background:var(--black);color:var(--off);padding:64px 0 36px}
 .footer-grid{display:grid;gap:36px;grid-template-columns:1fr}
-@media(min-width:768px){.footer-grid{grid-template-columns:1.2fr 1fr 1fr 1fr}}
+@media(min-width:768px){.footer-grid{grid-template-columns:1fr 1fr 1fr}}@media(min-width:1100px){.footer-grid{grid-template-columns:1.2fr repeat(4,1fr)}}
 footer .logo{font-family:'Anton',sans-serif;font-size:1.35rem;letter-spacing:.02em;text-transform:uppercase;text-decoration:none;color:var(--white);white-space:nowrap;display:inline-block}
 footer .logo span{color:var(--orange)}
 footer .fcol h5{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--white);margin-bottom:16px}
 footer .fcol a{display:block;text-decoration:none;color:var(--off);font-size:.92rem;margin-bottom:10px;opacity:.85}
 footer .fcol a:hover{opacity:1;text-decoration:underline}
 .footer-bottom{margin-top:56px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14);font-size:.82rem;opacity:.6;display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between}
+footer .fcol a.fcol-first{margin-top:12px}
 </style>
 </head>
 <body>
@@ -221,21 +222,29 @@ footer .fcol a:hover{opacity:1;text-decoration:underline}
   <div class="wrap">
     <div class="footer-grid">
       <div class="fcol">
-        <a href="index.html" class="logo">HEINZ<span>.</span></a>
-        <p style="margin-top:16px;font-size:.92rem;opacity:.75;">info@hpstalent.de</p>
+        <a href="index.html" class="logo">HEINZ<span style="color:var(--orange);">.</span></a>
+        <a href="kontakt.html" class="fcol-first">Kontakt aufnehmen</a>
+        <a href="mailto:info@hpstalent.de">info@hpstalent.de</a>
       </div>
       <div class="fcol">
-        <h5>Quick Links</h5>
-        <a href="index.html">Home</a>
+        <h5>Arbeitgeber</h5>
+        <a href="fuer-einrichtungen.html">Pflegefachkräfte</a>
+        <a href="ausbildung.html">Auszubildende</a>
+        <a href="pflegefachkraefte-berlin-brandenburg.html">Berlin &amp; Brandenburg</a>
+      </div>
+      <div class="fcol">
+        <h5>Zukunftskräfte</h5>
+        <a href="fuer-fachkraefte.html">Pflegefachkräfte</a>
+        <a href="ausbildung-bewerbung.html">Auszubildende</a>
+        <a href="wechsel.html">Stelle wechseln</a>
+      </div>
+      <div class="fcol">
+        <h5>Heinz</h5>
         <a href="ueber-uns.html">Über uns</a>
-        <a href="fuer-einrichtungen.html">Für Arbeitgeber</a>
-        <a href="ausbildung.html">Ausbildung</a>
-        <a href="fuer-fachkraefte.html">Für Fachkräfte</a>
-        <a href="blog.html">Blog</a>
+        <a href="blog.html">Hintergründe</a>
         <a href="faq.html">FAQ</a>
         <a href="downloads.html">Downloads</a>
         <a href="presse.html">Presse</a>
-        <a href="wechsel.html">Wechseln</a>
       </div>
       <div class="fcol">
         <h5>Rechtliches</h5>
@@ -243,11 +252,6 @@ footer .fcol a:hover{opacity:1;text-decoration:underline}
         <a href="datenschutz.html">Datenschutzerklärung</a>
         <a href="#" data-cookie-settings>Cookie-Einstellungen</a>
         <a href="beschwerdeformular.html">Beschwerdeverfahren (RAL)</a>
-      </div>
-      <div class="fcol">
-        <h5>Kontakt</h5>
-        <a href="kontakt.html">Kontaktseite</a>
-        <a href="mailto:info@hpstalent.de">info@hpstalent.de</a>
       </div>
     </div>
     <div class="footer-bottom">

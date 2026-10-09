@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <!-- Google Ads Conversion-Tracking: lädt erst nach Cookie-Einwilligung, siehe js/cookie-consent.js -->
 <script src="js/cookie-consent.js"></script>
@@ -8,25 +8,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.googleadservices.com; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.googleadservices.com; form-action 'self' https://formspree.io; frame-ancestors 'self'; base-uri 'self';">
 <meta name="google-site-verification" content="4ih2UXl47iAqhL2-UGvUgYXGfVS-HxsPBSvBsj9QTIY">
-<title>Your path to Germany. | Heinz Personnel Solutions</title>
-<meta name="description" content="Fair, transparent, no hidden costs: your path to Germany as a nursing professional. Language course, recognition, visa and personal support.">
-<link rel="canonical" href="https://www.pflegekraftvermittlung.com/fuer-fachkraefte-en.html">
-<link rel="alternate" hreflang="de" href="https://www.pflegekraftvermittlung.com/fuer-fachkraefte.html">
-<link rel="alternate" hreflang="en" href="https://www.pflegekraftvermittlung.com/fuer-fachkraefte-en.html">
-<link rel="alternate" hreflang="x-default" href="https://www.pflegekraftvermittlung.com/fuer-fachkraefte.html">
+<title>Ausbildung in Deutschland für internationale Bewerber | Heinz Personnel Solutions</title>
+<meta name="description" content="Ausbildung in Deutschland, zum Beispiel in Pflege, Handwerk oder Logistik: Deutschkurs bis B2, Visum, Wohnungssuche und Begleitung bis zum Abschluss. Für Bewerber:innen kostenfrei.">
+<link rel="canonical" href="https://www.pflegekraftvermittlung.com/ausbildung-bewerbung.html">
+<link rel="alternate" hreflang="de" href="https://www.pflegekraftvermittlung.com/ausbildung-bewerbung.html">
+<link rel="alternate" hreflang="en" href="https://www.pflegekraftvermittlung.com/ausbildung-bewerbung-en.html">
+<link rel="alternate" hreflang="x-default" href="https://www.pflegekraftvermittlung.com/ausbildung-bewerbung.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Heinz Personnel Solutions">
-<meta property="og:locale" content="en_US">
-<meta property="og:locale:alternate" content="de_DE">
-<meta property="og:url" content="https://www.pflegekraftvermittlung.com/fuer-fachkraefte-en.html">
-<meta property="og:title" content="Your path to Germany. | Heinz Personnel Solutions">
-<meta property="og:description" content="Fair, transparent, no hidden costs: your path to Germany as a nursing professional. Language course, recognition, visa and personal support.">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://www.pflegekraftvermittlung.com/ausbildung-bewerbung.html">
+<meta property="og:title" content="Ausbildung in Deutschland für internationale Bewerber | Heinz Personnel Solutions">
+<meta property="og:description" content="Ausbildung in Deutschland, zum Beispiel in Pflege, Handwerk oder Logistik: Deutschkurs bis B2, Visum, Wohnungssuche und Begleitung bis zum Abschluss. Für Bewerber:innen kostenfrei.">
 <meta property="og:image" content="https://www.pflegekraftvermittlung.com/images/og-default.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Your path to Germany. | Heinz Personnel Solutions">
-<meta name="twitter:description" content="Fair, transparent, no hidden costs: your path to Germany as a nursing professional. Language course, recognition, visa and personal support.">
+<meta name="twitter:title" content="Ausbildung in Deutschland für internationale Bewerber | Heinz Personnel Solutions">
+<meta name="twitter:description" content="Ausbildung in Deutschland, zum Beispiel in Pflege, Handwerk oder Logistik: Deutschkurs bis B2, Visum, Wohnungssuche und Begleitung bis zum Abschluss. Für Bewerber:innen kostenfrei.">
 <meta name="twitter:image" content="https://www.pflegekraftvermittlung.com/images/og-default.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -213,7 +212,7 @@
   .vertrauen h2.headline{color:var(--schwarz);margin-bottom:20px;}
   .vertrauen .body-text{max-width:68ch;font-size:1.05rem;}
   .vertrauen .body-text strong{color:var(--hbo-dunkel);}
-  .vertrauen .btn{width:auto;margin-top:28px;padding:14px 26px;}
+  .vertrauen .btn{display:inline-flex;width:auto;margin-top:28px;padding:14px 26px;}
 
   /* -------- Team -------- */
   .team .section-head .body-text{max-width:56ch;margin-top:16px;}
@@ -327,6 +326,34 @@
   .mobile-nav a.mobile-sub + a.mobile-sub{border-top:1px solid rgba(11,11,11,.06);}
   .mobile-nav a.btn{display:flex;justify-content:center;}
   .mobile-nav a.is-active{color:var(--hbo-dunkel);box-shadow:inset 3px 0 0 var(--orange);}
+  /* -------- Ausbildung: Karten -------- */
+  .cards{display:grid;grid-template-columns:1fr;gap:1px;background:rgba(11,11,11,.14);border:1px solid rgba(11,11,11,.14);margin-top:40px;}
+  @media(min-width:860px){.cards{grid-template-columns:repeat(3,1fr);}}
+  .cards--two{}
+  @media(min-width:860px){.cards--two{grid-template-columns:repeat(2,1fr);}}
+  .card{background:var(--weiss);padding:32px 28px;}
+  .card .card-num{font-family:var(--display);color:var(--orange);font-size:1.6rem;line-height:1;display:block;margin-bottom:16px;}
+  .card h3{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:1.45rem;line-height:1.05;color:var(--schwarz);margin-bottom:14px;}
+  .card .body-text{font-size:.96rem;}
+  .card-label{display:inline-block;font-weight:700;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--weiss);background:var(--hbo-dunkel);padding:5px 10px;margin-bottom:18px;}
+  .card .card-link{display:inline-block;margin-top:18px;font-weight:700;color:var(--hbo-dunkel);text-underline-offset:4px;}
+
+  /* -------- Bewerberseite Ausbildung -------- */
+  .ab-hero-sub{max-width:62ch;margin-top:36px;}
+  .ab-intro{max-width:66ch;margin-top:16px;}
+  .ab-source{margin-top:18px;font-size:.8rem;opacity:.6;}
+  .bereiche-more{margin-top:24px;max-width:70ch;font-weight:600;}
+  .ab-list{list-style:none;margin-top:32px;max-width:76ch;}
+  .ab-list li{border-left:6px solid var(--orange);padding:4px 0 4px 24px;margin-bottom:28px;}
+  .ab-list strong{display:block;font-size:1.1rem;color:var(--schwarz);margin-bottom:6px;}
+  .ab-ehrlich{background:var(--beton);}
+  .ab-ehrlich .body-text + .body-text{margin-top:14px;}
+  .hero-paths{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px 28px;}
+  .ab-ankommen{background:var(--weiss);color:var(--schwarz);}
+  .ab-ankommen .eyebrow{color:var(--hbo-dunkel);}
+  .ab-ankommen h2.headline{color:var(--schwarz);}
+  .ab-ankommen .erfolge-grid{margin-top:36px;}
+  .ab-ankommen .erfolge-caption{color:var(--schwarz);}
 </style>
 <script type="application/ld+json">
 {
@@ -338,15 +365,46 @@
   "logo": "https://www.pflegekraftvermittlung.com/images/logo-ral-guetezeichen-lockup.png",
   "image": "https://www.pflegekraftvermittlung.com/images/og-default.jpg",
   "email": "info@hpstalent.de",
-  "address": { "@type": "PostalAddress", "streetAddress": "Am Eichenhain 32", "postalCode": "13465", "addressLocality": "Berlin", "addressCountry": "DE" },
-  "areaServed": [ { "@type": "State", "name": "Berlin" }, { "@type": "State", "name": "Brandenburg" }, { "@type": "State", "name": "Hessen" } ],
-  "description": "Placement of international nursing professionals for hospitals and care homes in Germany. RAL quality seal 'Fair Recruitment Nursing', member of bvifg.",
-  "hasCredential": [
-    { "@type": "EducationalOccupationalCredential", "name": "RAL Quality Seal Fair Recruitment Nursing Germany" },
-    { "@type": "EducationalOccupationalCredential", "name": "Membership Bundesverband Internationale Fachkraeftegewinnung e.V. (bvifg)" }
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Am Eichenhain 32",
+    "postalCode": "13465",
+    "addressLocality": "Berlin",
+    "addressCountry": "DE"
+  },
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Berlin"
+    },
+    {
+      "@type": "State",
+      "name": "Brandenburg"
+    },
+    {
+      "@type": "State",
+      "name": "Hessen"
+    }
   ],
-  "memberOf": { "@type": "Organization", "name": "Bundesverband Internationale Fachkraeftegewinnung e.V. (bvifg)" },
-  "sameAs": [ "https://www.linkedin.com/company/heinz-personnel-solutions-gmbh/", "https://www.facebook.com/profile.php?id=61558924855712" ]
+  "description": "Vermittlung internationaler Pflegefachkräfte an Kliniken und Pflegeheime in Deutschland. RAL-Gütezeichen 'Faire Anwerbung Pflege', Mitglied im bvifg.",
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "RAL-Gütezeichen Faire Anwerbung Pflege Deutschland"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Mitgliedschaft Bundesverband Internationale Fachkräftegewinnung e.V. (bvifg)"
+    }
+  ],
+  "memberOf": {
+    "@type": "Organization",
+    "name": "Bundesverband Internationale Fachkräftegewinnung e.V. (bvifg)"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/heinz-personnel-solutions-gmbh/",
+    "https://www.facebook.com/profile.php?id=61558924855712"
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -354,8 +412,18 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pflegekraftvermittlung.com/index-en.html" },
-    { "@type": "ListItem", "position": 2, "name": "For Professionals", "item": "https://www.pflegekraftvermittlung.com/fuer-fachkraefte-en.html" }
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Startseite",
+      "item": "https://www.pflegekraftvermittlung.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Ausbildung in Deutschland",
+      "item": "https://www.pflegekraftvermittlung.com/ausbildung-bewerbung.html"
+    }
   ]
 }
 </script>
@@ -366,49 +434,49 @@
   <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
   <div class="wrap nav-inner">
     <div class="nav-left">
-      <a href="index-en.html" class="logo">HEINZ<span>.</span></a>
+      <a href="index.html" class="logo">HEINZ<span>.</span></a>
       <nav class="nav-links">
         <div class="nav-drop">
-          <a href="fuer-einrichtungen-en.html" class="nav-drop-toggle" aria-haspopup="true">Employers<span class="nav-caret" aria-hidden="true"></span></a>
+          <a href="fuer-einrichtungen.html" class="nav-drop-toggle" aria-haspopup="true">Arbeitgeber<span class="nav-caret" aria-hidden="true"></span></a>
           <div class="nav-drop-menu">
             <div class="nav-drop-panel">
-              <a href="fuer-einrichtungen-en.html"><strong>Qualified nurses</strong><span>For hospitals and care facilities</span></a>
-              <a href="ausbildung-en.html"><strong>Trainees</strong><span>For example care, trades, logistics</span></a>
+              <a href="fuer-einrichtungen.html"><strong>Pflegefachkräfte</strong><span>Für Kliniken und Pflegeeinrichtungen</span></a>
+              <a href="ausbildung.html"><strong>Auszubildende</strong><span>Zum Beispiel Pflege, Handwerk, Logistik</span></a>
             </div>
           </div>
         </div>
         <div class="nav-drop" data-nav="talent">
-          <a href="fuer-fachkraefte-en.html" class="nav-drop-toggle is-active" aria-haspopup="true">Talent<span class="nav-caret" aria-hidden="true"></span></a>
+          <a href="fuer-fachkraefte.html" class="nav-drop-toggle is-active" aria-haspopup="true">Zukunftskräfte<span class="nav-caret" aria-hidden="true"></span></a>
           <div class="nav-drop-menu">
             <div class="nav-drop-panel">
-              <a href="fuer-fachkraefte-en.html" class="is-current"><strong>Qualified nurses</strong><span>Qualified, moving to Germany</span></a>
-              <a href="ausbildung-bewerbung-en.html"><strong>Trainees</strong><span>Training in many occupations</span></a>
+              <a href="fuer-fachkraefte.html"><strong>Pflegefachkräfte</strong><span>Mit Abschluss nach Deutschland</span></a>
+              <a href="ausbildung-bewerbung.html" class="is-current"><strong>Auszubildende</strong><span>Ausbildung in vielen Berufen</span></a>
             </div>
           </div>
         </div>
-        <a href="ueber-uns-en.html">Team</a>
-        <a href="blog-en.html">Insights</a>
+        <a href="ueber-uns.html">Team</a>
+        <a href="blog.html">Hintergründe</a>
       </nav>
     </div>
     <div class="nav-right">
-      <a href="fuer-fachkraefte.html" class="nav-lang">DE</a>
-      <a href="kontakt-en.html" class="btn nav-cta">Let's talk.</a>
+      <a href="ausbildung-bewerbung-en.html" class="nav-lang">EN</a>
+      <a href="kontakt.html" class="btn nav-cta">Kennenlernen.</a>
     </div>
-    <label for="nav-toggle" class="nav-toggle" aria-label="Open menu">
+    <label for="nav-toggle" class="nav-toggle" aria-label="Menü öffnen">
       <span class="nav-toggle-bars"></span>
     </label>
   </div>
   <nav class="mobile-nav wrap">
-    <span class="mobile-group">Employers</span>
-    <a href="fuer-einrichtungen-en.html" class="mobile-sub">Qualified nurses</a>
-    <a href="ausbildung-en.html" class="mobile-sub">Trainees</a>
-    <span class="mobile-group">Talent</span>
-    <a href="fuer-fachkraefte-en.html" class="mobile-sub is-active">Qualified nurses</a>
-    <a href="ausbildung-bewerbung-en.html" class="mobile-sub">Trainees</a>
-    <a href="ueber-uns-en.html">Team</a>
-    <a href="blog-en.html">Insights</a>
-    <a href="fuer-fachkraefte.html" class="lang-switch">Deutsch</a>
-    <a href="kontakt-en.html" class="btn">Let's talk.</a>
+    <span class="mobile-group">Arbeitgeber</span>
+    <a href="fuer-einrichtungen.html" class="mobile-sub">Pflegefachkräfte</a>
+    <a href="ausbildung.html" class="mobile-sub">Auszubildende</a>
+    <span class="mobile-group">Zukunftskräfte</span>
+    <a href="fuer-fachkraefte.html" class="mobile-sub">Pflegefachkräfte</a>
+    <a href="ausbildung-bewerbung.html" class="mobile-sub is-active">Auszubildende</a>
+    <a href="ueber-uns.html">Team</a>
+    <a href="blog.html">Hintergründe</a>
+    <a href="ausbildung-bewerbung-en.html" class="lang-switch">English</a>
+    <a href="kontakt.html" class="btn">Kennenlernen.</a>
   </nav>
 </header>
 
@@ -417,87 +485,108 @@
   <!-- HERO -->
   <section class="hero" id="hero">
     <div class="wrap">
-      <span class="hero-eyebrow">For professionals who want to stay in Germany.</span>
+      <span class="hero-eyebrow">Ausbildung in Deutschland</span>
       <h1 class="hero-headline">
-        <span class="hero-line1">Your path to Germany.</span>
+        <span class="hero-line1">Ihre Ausbildung. Ihre Zukunft.</span>
       </h1>
       <div class="hero-bar"></div>
-
-      <div class="hero-cert-row">
-        <img src="images/logo-ral-guetezeichen.png" alt="RAL Quality Seal Fair Recruitment Nursing Germany">
-        <div class="hero-cert-text">
-          <p class="hero-sub">Fair. Transparent. Human.</p>
-          <p class="hero-sub">We support you personally, <strong>from your first inquiry to arriving in your new team.</strong> And beyond.</p>
-        </div>
-      </div>
-
+      <p class="hero-sub ab-hero-sub">Sie möchten in Deutschland eine Ausbildung machen? In der Pflege, im Handwerk, in der Logistik oder in einem anderen Beruf? Wir begleiten Sie vom ersten Deutschkurs bis zum Abschluss. <strong>Für Sie ist das kostenfrei.</strong></p>
       <div class="hero-actions">
-        <a href="https://app.ankaadia.com/candidate-application/4ffb749b-c604-47f5-b04b-f84bdf96bd8e/4eb15342-1f37-4771-bdec-4f7f94f5687a" class="btn btn--onblack" target="_blank" rel="noopener">Apply now</a>
+        <a href="mailto:recruiting@hpstalent.de?subject=Bewerbung%20Ausbildung" class="btn btn--onblack">Jetzt bewerben</a>
+      </div>
+      <div class="hero-paths">
+        <a href="#kompass" class="hero-path">Passt die Pflege zu mir?</a>
       </div>
     </div>
   </section>
 
-  <!-- VERSPRECHEN -->
-  <section class="versprechen">
+  <!-- ANKOMMEN -->
+  <section class="erfolge ab-ankommen">
     <div class="wrap">
-      <span class="eyebrow reveal">Everything included</span>
-      <h2 class="headline reveal">Language. Relocation. Integration. All from one source.</h2>
-      <p class="body-text reveal">We're your full-service agency. Language training, recognition, visa, housing, arriving on the team: we support every step personally. With over 30 years of experience in healthcare. And of course, at no cost to you.</p>
-    </div>
-  </section>
-
-  <!-- ERFOLGSGESCHICHTEN -->
-  <section class="erfolge">
-    <div class="wrap">
-      <span class="eyebrow reveal">Real success stories</span>
-      <h2 class="headline reveal">No AI smiles. This is what it actually looks like.</h2>
-
+      <span class="eyebrow reveal">Ankommen</span>
+      <h2 class="headline reveal">So sieht Ankommen aus.</h2>
       <div class="erfolge-grid reveal">
         <div class="erfolge-item">
-          <div class="erfolge-photo"><img src="images/heinz-team-abflug-philippinen.jpg" alt="Team departing from the Philippines" loading="lazy"></div>
-          <p class="erfolge-caption">Departure. The first step to Germany.</p>
+          <div class="erfolge-photo"><img src="images/heinz-ankunft-arrivals-gruppe.jpg" alt="Gruppe junger Menschen nach der Ankunft am Flughafen in Deutschland" loading="lazy"></div>
+          <p class="erfolge-caption">Angekommen. Die ersten Schritte in Deutschland.</p>
         </div>
         <div class="erfolge-item">
-          <div class="erfolge-photo"><img src="images/heinz-willkommen-flughafen.jpg" alt="Welcome at the airport in Germany" loading="lazy"></div>
-          <p class="erfolge-caption">Arrived. Welcome to Germany.</p>
-        </div>
-        <div class="erfolge-item">
-          <div class="erfolge-photo"><img src="images/heinz-ankunft-strasse.jpg" alt="On the way to the new home" loading="lazy"></div>
-          <p class="erfolge-caption">On the way to a new home.</p>
-        </div>
-        <div class="erfolge-item">
-          <div class="erfolge-photo"><img src="images/heinz-team-selfie-flughafen.jpg" alt="Team selfie at the airport" loading="lazy"></div>
-          <p class="erfolge-caption">Day one. Together with the team.</p>
+          <div class="erfolge-photo"><img src="images/heinz-ankunft-selfie-team.jpg" alt="Heinz holt eine Gruppe am Flughafen ab" loading="lazy"></div>
+          <p class="erfolge-caption">Wir holen Sie ab. Persönlich.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- EHRLICHKEIT -->
+  <!-- WAS SIE ERWARTET -->
+  <section class="ab-vorteil">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Was Sie erwartet</span>
+        <h2 class="headline">Lernen. Verdienen. Bleiben.</h2>
+      </div>
+      <div class="cards reveal">
+        <div class="card">
+          <span class="card-num">01</span>
+          <h3>Ein deutscher Abschluss</h3>
+          <p class="body-text">Sie lernen im Betrieb und an der Berufsschule. Ihr Abschluss gilt in Deutschland ohne Anerkennungsverfahren.</p>
+        </div>
+        <div class="card">
+          <span class="card-num">02</span>
+          <h3>Von Anfang an bezahlt</h3>
+          <p class="body-text">Sie bekommen vom ersten Monat an eine Ausbildungsvergütung. Für das Visum muss sie zum Leben reichen. Das klären wir vorher mit dem Betrieb.</p>
+        </div>
+        <div class="card">
+          <span class="card-num">03</span>
+          <h3>Danach bleiben</h3>
+          <p class="body-text">Nach dem Abschluss können Sie als Fachkraft in Deutschland arbeiten, oft direkt in Ihrem Ausbildungsbetrieb. Nach zwei Jahren Arbeit ist unter weiteren Voraussetzungen eine Niederlassungserlaubnis möglich.</p>
+        </div>
+      </div>
+      <p class="ab-source reveal">Quelle zur Niederlassungserlaubnis: § 18c Abs. 1 AufenthG, Make it in Germany.</p>
+    </div>
+  </section>
+
+  <!-- BERUFE -->
+  <section class="ab-berufe" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Ihre Richtung</span>
+        <h2 class="headline">Viele Berufe. Ein Weg.</h2>
+        <p class="body-text ab-intro">Sagen Sie uns, was Sie interessiert und was Sie gut können. Wir suchen den Betrieb, der zu Ihnen passt. Eine Ausbildung dauert je nach Beruf meist zwei bis dreieinhalb Jahre.</p>
+      </div>
+      <div class="cards reveal">
+        <div class="card">
+          <span class="card-label">Zum Beispiel</span>
+          <h3>Pflege</h3>
+          <p class="body-text">Ausbildung zur Pflegefachfrau oder zum Pflegefachmann, drei Jahre, in Kliniken, Pflegeheimen oder ambulanten Diensten.</p>
+        </div>
+        <div class="card">
+          <span class="card-label">Zum Beispiel</span>
+          <h3>Handwerk</h3>
+          <p class="body-text">Zum Beispiel in der Zimmerei und in weiteren Gewerken. Sie lernen mit den Händen und sehen jeden Tag, was Sie geschafft haben.</p>
+        </div>
+        <div class="card">
+          <span class="card-label">Zum Beispiel</span>
+          <h3>Logistik</h3>
+          <p class="body-text">In Lager und Versand. Sie lernen, wie Waren schnell und sicher dorthin kommen, wo sie gebraucht werden.</p>
+        </div>
+      </div>
+      <p class="body-text reveal bereiche-more">Ihr Wunschberuf ist ein anderer? Sprechen Sie uns an. Wir vermitteln Ausbildungsplätze in vielen weiteren Berufen.</p>
+    </div>
+  </section>
+
+  <!-- VORAUSSETZUNGEN -->
   <section class="ehrlich">
     <div class="wrap">
       <div class="reveal">
-        <span class="eyebrow">No detours</span>
-        <h2 class="headline">It won't be easy. But it's worth it.</h2>
-        <p class="body-text">Let's be honest. Language training especially takes time, discipline and stamina. Anyone who tells you otherwise is promising too much.</p>
-        <p class="body-text">But it's worth it. <strong>You walk this path together with us, from your first vocabulary word to everyday work, and beyond.</strong></p>
+        <span class="eyebrow">Was Sie mitbringen</span>
+        <h2 class="headline">Gut vorbereitet starten.</h2>
       </div>
-    </div>
-  </section>
-
-    <!-- TRAINING NOTE -->
-  <section class="kompass" id="kompass">
-    <div class="wrap">
-      <div class="reveal">
-        <span class="kompass-tag">For trainees</span>
-        <span class="eyebrow">No qualification yet?</span>
-        <h2 class="headline">Then vocational training is your path.</h2>
-        <p class="body-text kompass-lead">Alongside qualified nurses, we also support trainees on their way to Germany.</p>
-        <p class="body-text">Whether care, skilled trades, logistics or another occupation: we organise your German course up to B2, find the right company and support you until you qualify. It is free of charge for you. You will also find the decision compass for nursing training there.</p>
-      </div>
-      <div class="kompass-actions reveal">
-        <a href="ausbildung-bewerbung-en.html" class="btn">Go to vocational training</a>
-      </div>
+      <ul class="ab-list reveal">
+        <li><strong>Wir empfehlen 12 Jahre Schule.</strong><p class="body-text">Damit starten Sie gut vorbereitet in Berufsschule und Deutschkurs. Ihre Zeugnisse schauen wir uns gemeinsam mit Ihnen an.</p></li>
+        <li><strong>Die Bereitschaft, Deutsch zu lernen.</strong><p class="body-text">Den Deutschkurs bis B2 organisieren wir für Sie. Ihr Einsatz entscheidet, wie schnell es vorangeht.</p></li>
+        <li><strong>Lust auf einen Beruf und auf Deutschland.</strong><p class="body-text">Eine Ausbildung ist ein großer Schritt. Wenn Sie wissen, warum Sie ihn gehen, kommen Sie gut an.</p></li>
+      </ul>
     </div>
   </section>
 
@@ -505,201 +594,108 @@
   <section class="weg" id="weg">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="eyebrow">Your Path</span>
-        <h2 class="headline">Step by step to Germany.</h2>
+        <span class="eyebrow">Ihr Weg</span>
+        <h2 class="headline">Schritt für Schritt nach Deutschland.</h2>
       </div>
-
-      <p class="body-text reveal">We stay with you from the first conversation to the day you arrive on the team, and through everything that comes after. Language training and recognition run in parallel. From your application to your start in Germany, expect 12 to 18 months. Most of that time goes into your German, and you are never on your own with it.</p>
-
+      <p class="body-text reveal">Wie lange es bis zum Start dauert, hängt vor allem davon ab, wie schnell Sie Deutsch lernen. Wir begleiten Sie auf jedem Schritt.</p>
       <div class="timeline reveal">
-
         <div class="tl-step">
           <div class="tl-num" aria-hidden="true">01</div>
           <div class="tl-body">
-            <span class="tl-title">Getting to know each other &amp; application</span>
-            <span class="tl-time">Day 1</span>
-            <p class="tl-text">We get to know each other personally. And talk about your experience, your goals, and possible organizations.</p>
-            <ul class="tl-list">
-              <li>Video or in-person conversation with our team</li>
-              <li>Recording your qualification and work experience</li>
-              <li>Introduction to suitable organizations. Matching begins.</li>
-            </ul>
+            <span class="tl-title">Bewerbung und Kennenlernen</span>
+            <p class="tl-text">Sie bewerben sich, und wir lernen Sie persönlich kennen. Wir sprechen über Ihre Wünsche und den passenden Beruf.</p>
           </div>
         </div>
-
         <div class="tl-step">
           <div class="tl-num" aria-hidden="true">02</div>
           <div class="tl-body">
-            <span class="tl-title">Language training A1 to B2</span>
-            <span class="tl-time">from month 1 &middot; 6 to 9 months</span>
-            <p class="tl-text">In-person German lessons with top-trained teachers. Organized through our local partner, up to a solid B2 level.</p>
-            <ul class="tl-list">
-              <li>Placement test and individual learning plan</li>
-              <li>Weekly in-person lessons</li>
-              <li>Interim exams at A2 and B1 level</li>
-            </ul>
+            <span class="tl-title">Deutsch bis B2</span>
+            <p class="tl-text">Vor der Einreise lernen Sie Deutsch bis B2. Den Kurs organisieren wir, denn in der Berufsschule wird Deutsch gesprochen.</p>
           </div>
         </div>
-
         <div class="tl-step">
           <div class="tl-num" aria-hidden="true">03</div>
           <div class="tl-body">
-            <span class="tl-title">Recognition &amp; labor market access</span>
-            <span class="tl-time">from month 9 &middot; parallel to the language course</span>
-            <p class="tl-text">We coordinate the deficiency notice, professional recognition, and labor market access. In parallel with the language course.</p>
-            <ul class="tl-list">
-              <li>Credential evaluation and deficiency notice from the state authority</li>
-              <li>If needed: adaptation measure or knowledge exam</li>
-              <li>Application for professional recognition and labor market access</li>
-            </ul>
+            <span class="tl-title">Ausbildungsplatz und Visum</span>
+            <p class="tl-text">Wir bringen Sie mit einem passenden Betrieb zusammen und kümmern uns um die Anträge für Ihr Visum.</p>
           </div>
         </div>
-
         <div class="tl-step">
           <div class="tl-num" aria-hidden="true">04</div>
           <div class="tl-body">
-            <span class="tl-title">Visa &amp; entry</span>
-            <span class="tl-time">from month 13</span>
-            <p class="tl-text">We support the visa process. And organize the trip. On arrival day, we pick you up personally.</p>
-            <ul class="tl-list">
-              <li>Appointment and documents for the German mission abroad</li>
-              <li>Organizing travel and first accommodation</li>
-              <li>Personal pickup at the airport</li>
-            </ul>
+            <span class="tl-title">Ankommen</span>
+            <p class="tl-text">Wir holen Sie ab, helfen bei der Wohnungssuche, bei Behördengängen und bei der Kontoeröffnung.</p>
           </div>
         </div>
-
         <div class="tl-step">
           <div class="tl-num" aria-hidden="true">05</div>
           <div class="tl-body">
-            <span class="tl-title">Arrival &amp; integration</span>
-            <span class="tl-time">from entry &middot; ongoing</span>
-            <p class="tl-text">Housing. Errands with authorities. Opening a bank account. The first weeks on the team. Support for as long as it's needed.</p>
-            <ul class="tl-list">
-              <li>Registration with the residents' registration office, bank account, health insurance</li>
-              <li>Introduction and support on the new team</li>
-              <li>Ongoing support from our integration management</li>
-            </ul>
+            <span class="tl-title">Begleitung bis zum Abschluss</span>
+            <p class="tl-text">Wir bleiben während Ihrer gesamten Ausbildung ansprechbar, für Sie und für Ihren Betrieb.</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- VERTRAUEN / RAL -->
+    <!-- FAIR -->
   <section class="vertrauen">
     <div class="wrap">
       <div class="reveal">
-        <span class="eyebrow">Independently verified transparency and fairness</span>
-        <h2 class="headline">RAL quality seal. Fair recruitment.</h2>
-        <p class="body-text">We hold the RAL quality seal "Fair Recruitment Nursing Germany" and are a member of the Bundesverband Internationale Fachkraeftegewinnung (bvifg). <strong>Independently audited, fair recruitment standards.</strong> Verifiable by you. With a clear complaints process if something doesn't go as planned.</p>
-        <a href="beschwerdeformular-en.html" class="btn">Complaints form</a>
-      </div>
-      <div class="promise-certs reveal">
-        <span class="promise-certs-label">Recognized and verified</span>
-        <div class="promise-certs-row">
-          <img src="images/logo-ral-guetezeichen.png" alt="RAL Quality Seal Fair Recruitment Nursing">
-          <img src="images/logo-bvifg.png" alt="Member of the Bundesverband Internationale Fachkraeftegewinnung (bvifg)">
-          <img src="images/logo-gapa.png" alt="GAPA">
-        </div>
+        <span class="eyebrow">Fair für Sie</span>
+        <h2 class="headline">Für Sie kostenfrei.</h2>
+        <p class="body-text">Bei uns zahlt der Betrieb, nicht Sie. Sie zahlen keine Gebühren und unterschreiben keine Rückzahlungsklauseln. Heinz trägt das RAL-Gütezeichen „Faire Anwerbung Pflege“. <strong>Dieselben Grundsätze gelten bei uns auch für die Vermittlung von Auszubildenden.</strong> Wenn einmal etwas nicht nach Plan läuft, nutzen Sie unser Beschwerdeformular.</p>
+        <a href="beschwerdeformular.html" class="btn">Beschwerdeformular</a>
       </div>
     </div>
   </section>
 
-  <!-- TEAM -->
-  <section class="team">
+  <!-- ENTSCHEIDUNGSKOMPASS -->
+  <section class="kompass" id="kompass">
     <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Your points of contact</span>
-        <h2 class="headline">Personal. Reachable.</h2>
-        <p class="body-text">No ticket numbers. No call transfers. With us, you talk to the people who actually manage your integration.</p>
+      <div class="reveal">
+        <span class="kompass-tag">Für die Pflege</span>
+        <span class="eyebrow">Interesse an der Pflege?</span>
+        <h2 class="headline">Passt die Pflegeausbildung zu Ihnen? Finden Sie es heraus.</h2>
+        <p class="body-text kompass-lead">Sie interessieren sich für eine Ausbildung in der Pflege? Dann hilft Ihnen dieser Selbsttest bei der Entscheidung.</p>
+        <p class="body-text">Dafür gibt es den Berufsorientierenden Entscheidungskompass der Gütegemeinschaft Faire Anwerbung Pflege Deutschland, die auch das RAL-Gütezeichen vergibt. Der Selbsttest richtet sich an junge Menschen aus Drittstaaten, die eine Pflegeausbildung in Betracht ziehen, und hilft Ihnen, ehrlich für sich zu klären, ob dieser Weg zu Ihnen passt.</p>
       </div>
-
-      <div class="team-grid reveal">
-        <div class="team-card">
-          <div class="team-photo"><img src="images/team-tabeia.jpg" alt="Tabeia Antonio" loading="lazy"></div>
-          <div class="team-info">
-            <div class="name">Tabeia Antonio</div>
-            <div class="role">Integration Manager</div>
-            <p class="body-text">Supports you from recruitment to a firm place on the team.</p>
-          </div>
-        </div>
-        <div class="team-card">
-          <div class="team-photo"><img src="images/team-tanja.jpg" alt="Tanja Grabow" loading="lazy"></div>
-          <div class="team-info">
-            <div class="name">Tanja Grabow</div>
-            <div class="role">Staff Support</div>
-            <p class="body-text">Supports you from finding housing to your first day at work.</p>
-          </div>
-        </div>
+      <div class="kompass-grid reveal">
+        <div class="kompass-fact"><span class="kompass-num">19</span><p>Themenbereiche zeigen, was die Ausbildung wirklich bedeutet: von Vergütung und Lebenshaltungskosten bis zu Schichtdienst, Deutschlernen und Heimweh.</p></div>
+        <div class="kompass-fact"><span class="kompass-num">60</span><p>Fragen in rund 15 Minuten zum Pflegeberuf, zum Leben in einem fremden Land und zu dem, was die Entscheidung für Sie persönlich bedeutet.</p></div>
+        <div class="kompass-fact"><span class="kompass-num">11</span><p>Sprachen stehen zur Auswahl, darunter Arabisch, Vietnamesisch, Ukrainisch und Farsi.</p></div>
+        <div class="kompass-fact"><span class="kompass-num">PDF</span><p>Die Auswertung kommt ohne Punktwert aus. Sie zeigt, wo Sie sich sicher sind und wo noch Fragen offen sind. Speichern Sie sie und besprechen Sie sie in Ruhe.</p></div>
       </div>
+      <div class="kompass-actions reveal">
+        <a href="https://www.faire-anwerbung-pflege-deutschland.de/entscheidungskompass" class="btn" target="_blank" rel="noopener">Zum Entscheidungskompass</a>
+        <a href="kontakt.html" class="btn-ghost">Ergebnis mit uns besprechen</a>
+      </div>
+      <p class="body-text kompass-source reveal">Der Selbsttest ist anonym und unverbindlich. Nach Angaben der Gütegemeinschaft werden die Antworten nicht gespeichert, nicht weitergegeben und haben keinen Einfluss auf Vermittlungsentscheidungen.</p>
     </div>
   </section>
 
-  <!-- WICHTIGE LINKS -->
-  <section class="links-section">
+  <!-- OHNE UMSCHWEIFE -->
+  <section class="ehrlich ab-ehrlich">
     <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">For your planning</span>
-        <h2 class="headline">Important links.</h2>
-      </div>
-
-      <div class="links-list reveal">
-        <div class="links-item">
-          <div class="links-icon"><img src="images/logo-ral-guetezeichen.png" alt=""></div>
-          <div class="links-body">
-            <a href="https://www.faire-anwerbung-pflege-deutschland.de/" target="_blank" rel="noopener">RAL Quality Association Fair Recruitment Nursing</a>
-            <p>The official body behind the RAL quality seal. Independent verification of fair recruitment.</p>
-          </div>
-        </div>
-        <div class="links-item">
-          <div class="links-icon mono"><span>F</span></div>
-          <div class="links-body">
-            <a href="https://fair-recruitment-nurse.com/" target="_blank" rel="noopener">fair-recruitment-nurse.com</a>
-            <p>Information on how to recognize certified, fair recruitment agencies.</p>
-          </div>
-        </div>
-        <div class="links-item">
-          <div class="links-icon mono"><span>A</span></div>
-          <div class="links-body">
-            <a href="https://www.anerkennung-in-deutschland.de/" target="_blank" rel="noopener">Recognition in Germany</a>
-            <p>The German government's official portal for recognizing foreign professional qualifications.</p>
-          </div>
-        </div>
-        <div class="links-item">
-          <div class="links-icon mono"><span>M</span></div>
-          <div class="links-body">
-            <a href="https://www.make-it-in-germany.com/en/" target="_blank" rel="noopener">Make it in Germany</a>
-            <p>The German government's official portal for international professionals.</p>
-          </div>
-        </div>
-        <div class="links-item">
-          <div class="links-icon"><img src="images/logo-bvifg.png" alt=""></div>
-          <div class="links-body">
-            <a href="https://www.bvifg.de/" target="_blank" rel="noopener">Bundesverband Internationale Fachkraeftegewinnung</a>
-            <p>National association for fair, transparent international recruitment.</p>
-          </div>
-        </div>
-        <div class="links-item">
-          <div class="links-icon mono"><span>D</span></div>
-          <div class="links-body">
-            <a href="downloads-en.html">Downloads &amp; documents</a>
-            <p>Info brochures, terms and conditions, and our code of conduct to read.</p>
-          </div>
-        </div>
+      <div class="reveal">
+        <span class="eyebrow">Ohne Umschweife</span>
+        <h2 class="headline">Einfach wird es nicht. Aber es lohnt sich.</h2>
+        <p class="body-text">Deutsch lernen braucht Zeit und Disziplin. Die Berufsschule ist auf Deutsch, und Heimweh gehört manchmal dazu.</p>
+        <p class="body-text">Sie gehen diesen Weg mit uns: <strong>Wir sind ansprechbar, vom ersten Kurs bis zum Abschluss.</strong></p>
       </div>
     </div>
   </section>
+
+  
 
   <!-- FOOTER CTA -->
   <section class="footer-cta" id="kontakt">
     <div class="wrap">
-      <h2 class="headline reveal">Interested in a position in Germany?</h2>
-      <p class="body-text reveal">Apply directly or write to us. We'll get back to you personally.</p>
+      <h2 class="headline reveal">Bereit für Ihre Ausbildung?</h2>
+      <p class="body-text reveal">Schreiben Sie uns, welcher Beruf Sie interessiert. Wir melden uns persönlich zurück.</p>
       <div class="cta-actions reveal">
-        <a href="https://app.ankaadia.com/candidate-application/4ffb749b-c604-47f5-b04b-f84bdf96bd8e/4eb15342-1f37-4771-bdec-4f7f94f5687a" class="btn" target="_blank" rel="noopener">Apply now</a>
-        <a href="kontakt-en.html" class="btn-ghost">Get in touch</a>
+        <a href="mailto:recruiting@hpstalent.de?subject=Bewerbung%20Ausbildung" class="btn">Jetzt bewerben</a>
+        <a href="kontakt.html" class="btn-ghost">Kennenlernen.</a>
       </div>
     </div>
   </section>
@@ -710,39 +706,40 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="fcol">
-        <a href="index-en.html" class="logo">HEINZ<span style="color:var(--orange);">.</span></a>
-        <a href="kontakt-en.html" class="fcol-first">Get in touch</a>
+        <a href="index.html" class="logo">HEINZ<span style="color:var(--orange);">.</span></a>
+        <a href="kontakt.html" class="fcol-first">Kontakt aufnehmen</a>
         <a href="mailto:info@hpstalent.de">info@hpstalent.de</a>
       </div>
       <div class="fcol">
-        <h5>Employers</h5>
-        <a href="fuer-einrichtungen-en.html">Qualified nurses</a>
-        <a href="ausbildung-en.html">Trainees</a>
+        <h5>Arbeitgeber</h5>
+        <a href="fuer-einrichtungen.html">Pflegefachkräfte</a>
+        <a href="ausbildung.html">Auszubildende</a>
+        <a href="pflegefachkraefte-berlin-brandenburg.html">Berlin &amp; Brandenburg</a>
       </div>
       <div class="fcol">
-        <h5>Talent</h5>
-        <a href="fuer-fachkraefte-en.html">Qualified nurses</a>
-        <a href="ausbildung-bewerbung-en.html">Trainees</a>
-        <a href="wechsel.html">Change jobs (in German)</a>
+        <h5>Zukunftskräfte</h5>
+        <a href="fuer-fachkraefte.html">Pflegefachkräfte</a>
+        <a href="ausbildung-bewerbung.html">Auszubildende</a>
+        <a href="wechsel.html">Stelle wechseln</a>
       </div>
       <div class="fcol">
         <h5>Heinz</h5>
-        <a href="ueber-uns-en.html">About us</a>
-        <a href="blog-en.html">Insights</a>
-        <a href="faq-en.html">FAQ</a>
-        <a href="downloads-en.html">Downloads</a>
-        <a href="presse-en.html">Press</a>
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="blog.html">Hintergründe</a>
+        <a href="faq.html">FAQ</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="presse.html">Presse</a>
       </div>
       <div class="fcol">
-        <h5>Legal</h5>
-        <a href="impressum-en.html">Legal Notice</a>
-        <a href="datenschutz-en.html">Privacy Policy</a>
-        <a href="#" data-cookie-settings>Cookie settings</a>
-        <a href="beschwerdeformular-en.html">Complaints Procedure (RAL)</a>
+        <h5>Rechtliches</h5>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutzerklärung</a>
+        <a href="#" data-cookie-settings>Cookie-Einstellungen</a>
+        <a href="beschwerdeformular.html">Beschwerdeverfahren (RAL)</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&#169; 2026 Heinz Personnel Solutions GmbH</span>
+      <span>© 2026 Heinz Personnel Solutions GmbH</span>
     </div>
   </div>
 </footer>
