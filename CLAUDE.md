@@ -5,7 +5,10 @@ Sie ist die verbindliche Arbeitsgrundlage. Bei Widersprüchen gilt: Anweisung vo
 
 ## 1. Projekt in Kürze
 
-- Website: https://www.pflegekraftvermittlung.com (GitHub Pages, Domain über `CNAME`)
+- Website: https://pflegekraftvermittlung.com (GitHub Pages, Domain über `CNAME`). **Hauptadresse ist OHNE www**:
+  www leitet auf die Adresse ohne www weiter. Canonical, hreflang, Sitemap, og:url und JSON-LD daher immer
+  `https://pflegekraftvermittlung.com/...`, nie mit www (sonst meldet Google "Seite mit Weiterleitung").
+  `wechsel.html` ist bewusst `noindex` und steht deshalb nicht in der Sitemap.
 - Inhaber / Ansprechpartner: Ivo Straßenburg (Geschäftsführung), nicht technisch, braucht klare Schritt-für-Schritt-Anleitungen
 - Technik: statisches HTML, kein Build-Schritt. Jede Seite ist eine eigenständige Datei mit eigenem `<style>`-Block im `<head>`. Kein externes Stylesheet, kein Framework.
 - Alles, was auf `main` gepusht wird, geht automatisch live.
@@ -97,11 +100,12 @@ Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
   5. JSON-LD: EmploymentAgency (`@id …/#organization`), BreadcrumbList, je nach Seite Article / FAQPage / Service
 - **Einwilligungsbanner** (`js/cookie-consent.js`): erste Ebene "Alle akzeptieren" und "Nur notwendige Cookies"
   gleich groß und gleich gestaltet, dazu "Einstellungen". Kategorien: Notwendig (nur die Auswahl selbst in localStorage
-  `heinz_consent`, 12 Monate) und Marketing (Google Ads Conversion-Tracking, Checkbox nie vorausgewählt).
+  `heinz_consent`, 12 Monate), Statistik (Google Analytics 4, Mess-ID G-PB43PKLVEL, ohne Google Signals) und
+  Marketing (Google Ads Conversion-Tracking). Checkboxen nie vorausgewählt. Neue Zwecke = `VERSION` erhöhen (erneute Abfrage).
   Google Consent Mode v2 Basis-Modus, `ad_personalization` immer `denied` (kein Remarketing).
   "Cookie-Einstellungen" im Footer jeder Seite (`data-cookie-settings`) und als Button unten links.
   Banner-Text und Datenschutzerklärung Ziffer 6 müssen immer zusammenpassen.
-- **Google Ads (AW-18457911738)** wird ausschließlich über `js/cookie-consent.js` nach Einwilligung geladen.
+- **Google Ads (AW-18457911738) und Google Analytics (G-PB43PKLVEL)** werden ausschließlich über `js/cookie-consent.js` nach Einwilligung geladen.
   Das Google-Tag nie direkt in eine Seite einbauen. Neue externe Skripte brauchen eine CSP-Anpassung und
   eine Prüfung, ob die Datenschutzerklärung sie abdeckt.
 - **Telefon:** Nummer nur auf `fuer-einrichtungen`, `ausbildung`, `pflegefachkraefte-berlin-brandenburg` und `kontakt`
