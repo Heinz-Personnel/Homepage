@@ -146,6 +146,12 @@ Zusätzlich: geänderte Seiten am Handy und am Desktop ansehen, Umlaute korrekt 
 
 ## 7. Offene Punkte
 
+- **Blog Faith (`blog-post-12(-en).html`) wartet auf Freigabe:** Die Zitate sind Entwürfe von Heinz und müssen von Faith
+  freigegeben werden (z. B. per WhatsApp). Erst danach: `noindex` entfernen, Blogkarte in `blog.html`/`blog-en.html`, Eintrag in
+  `sitemap.xml` und `llms.txt`, Link aus `blog-post-11(-en)` (Abschnitt "Was Heinz übernimmt") ergänzen, CSS-Klasse `.ph` löschen.
+  Ohne Freigabe nicht veröffentlichen. Klinikname wird bewusst nicht genannt ("ein Klinikum in Hessen").
+- Werte in `blog-post-11(-en).html` (1.048 € brutto / 822 € netto, Mindestvergütung 724 €, TVAöD Pflege ca. 1.490 €) jährlich prüfen.
+
 - Bewerberseite `ausbildung-bewerbung(-en).html`: "Jetzt bewerben" geht vorläufig per E-Mail an recruiting@hpstalent.de.
   Sobald das Ankaadia-Formular für Auszubildende steht, beide Buttons (Hero und Abschluss, DE/EN) auf den neuen Link umstellen.
   Der Entscheidungskompass (nur Pflege) liegt jetzt dort; auf `fuer-fachkraefte` steht nur noch ein Hinweis mit Link.
