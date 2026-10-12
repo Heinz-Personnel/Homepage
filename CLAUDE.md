@@ -69,16 +69,20 @@ Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
   ca. 3 bis 6 Monate von Auswahl bis Ausbildungsstart, gleiche Garantie und Konditionen.
   Für Bewerber:innen empfiehlt Heinz 12 Jahre Schule (Empfehlung, keine Pflicht; gesetzlich gilt für die Pflege
   10 Jahre Schule nach § 11 PflBG, für duale Ausbildungen entscheidet der Betrieb). Deutschkurs bis B2 organisiert Heinz, kostenfrei.
-  Wichtig: Das RAL-Siegel gilt für die Anwerbung von Pflegefachkräften. Für Azubis nur "Dieselben Grundsätze gelten
-  bei uns auch für die Vermittlung von Auszubildenden", nie eine RAL-Zertifizierung der Azubi-Vermittlung behaupten.
-  Die 92 % gelten für Fachkräfte, nicht auf Azubis übertragen.
+  Wichtig: Das RAL-Gütezeichen gilt nur für die Anwerbung von Pflegefachkräften. Auf Azubi-Seiten (`ausbildung`,
+  `ausbildung-bewerbung`, Azubi-Blogartikel) KEIN Siegel, kein Badge, keine RAL/GAPA-Logos und kein Siegelbezug im Text.
+  Erlaubt ist nur die Selbstverpflichtung ohne Siegel: "Für Auszubildende gelten bei uns dieselben Grundsätze: keine Kosten
+  für die Auszubildenden, keine Rückzahlungsklauseln und transparente Verträge." Laut Entwurf (KDA, Anforderungskatalog 4.0)
+  wird das Gütezeichen ab 1.1.2027 auf Ausbildungssuchende ausgeweitet, aber erst nach bestandener Prüfung nutzbar.
+  Die 92 % gelten für Fachkräfte, nie im Azubi-Kontext nennen.
+- **Offizielle Schreibweise:** Gütezeichen „Faire Anwerbung Pflege Deutschland" (auch auf Englisch, nie übersetzen).
 - Kunden (Auswahl): Sana Kliniken, Diakonie, Helios, AWO, DRK, Main-Kinzig-Kliniken
 - Partner: Lingoda, Ankaadia, Akademie der Gesundheit Berlin/Brandenburg, GAPA
 
 ## 5. Aufbau der Website
 
 - **Sprachpaare:** Jede Seite gibt es auf Deutsch (`seite.html`) und Englisch (`seite-en.html`).
-  Ausnahmen (nur DE): `wechsel.html`, `pflegefachkraefte-berlin-brandenburg.html`.
+  Ausnahmen (nur DE): `wechsel.html`, `pflegefachkraefte-berlin-brandenburg.html` (hat hreflang de und x-default auf sich selbst).
   Inhaltliche Änderungen immer in **beiden** Sprachen.
 - **Hauptseiten:** `index`, `fuer-einrichtungen` (Für Arbeitgeber), `ausbildung` (Ausbildung für Betriebe),
   `fuer-fachkraefte`, `ueber-uns`, `blog` + `blog-post-1` bis `blog-post-10`, `faq`, `downloads`, `presse`,
@@ -146,16 +150,19 @@ Zusätzlich: geänderte Seiten am Handy und am Desktop ansehen, Umlaute korrekt 
 
 ## 7. Offene Punkte
 
-- **Blog Faith (`blog-post-12(-en).html`) wartet auf Freigabe:** Die Zitate sind Entwürfe von Heinz und müssen von Faith
-  freigegeben werden (z. B. per WhatsApp). Erst danach: `noindex` entfernen, Blogkarte in `blog.html`/`blog-en.html`, Eintrag in
-  `sitemap.xml` und `llms.txt`, Link aus `blog-post-11(-en)` (Abschnitt "Was Heinz übernimmt") ergänzen, CSS-Klasse `.ph` löschen.
-  Ohne Freigabe nicht veröffentlichen. Klinikname wird bewusst nicht genannt ("ein Klinikum in Hessen").
-- Werte in `blog-post-11(-en).html` (1.048 € brutto / 822 € netto, Mindestvergütung 724 €, TVAöD Pflege ca. 1.490 €) jährlich prüfen.
+- **Auftrag v2 (12.10.2026), noch offen:** sameAs um XING, Google Business, wer-liefert-was, Kununu ergänzen (URLs von Ivo);
+  Weiterleitung personnel-solutions.de beim Domain-Anbieter von 302 auf 301 umstellen (nicht im Repo);
+  Bilder nach WebP umwandeln und Lighthouse prüfen; Blogartikel zu Azubis (Ablauf, Pflege-Azubis, unbesetzte Plätze)
+  und Artikel zur Ausweitung des RAL-Gütezeichens (nur Fakten aus dem KDA-Text, mit Quelle und Datum).
+  `wechsel.html` (noindex) wird im Footer verlinkt: Entscheidung Ivo offen, ob das so bleibt.
+
+- Blog Faith (`blog-post-12(-en).html`) ist live (Oktober 2026). Zitate von Faith freigegeben, Name geändert, Klinikname wird bewusst nicht genannt.
+- `blog-post-11(-en).html` ist bewusst allgemein gehalten (Entscheidung Ivo, Oktober 2026: keine rechtlich bindenden Auskünfte, im Zweifel ungenauer). Keine exakten Beträge oder Fristen ergänzen; Hinweis "keine Rechtsberatung" beibehalten. Formulierung "etwas über 1.000 € brutto" jährlich prüfen.
 
 - Bewerberseite `ausbildung-bewerbung(-en).html`: "Jetzt bewerben" geht vorläufig per E-Mail an recruiting@hpstalent.de.
   Sobald das Ankaadia-Formular für Auszubildende steht, beide Buttons (Hero und Abschluss, DE/EN) auf den neuen Link umstellen.
   Der Entscheidungskompass (nur Pflege) liegt jetzt dort; auf `fuer-fachkraefte` steht nur noch ein Hinweis mit Link.
-- Wert "Lebensunterhalt 1.048 € brutto" (Visum § 16a, Stand Juni 2026) auf `ausbildung(-en).html` jährlich prüfen.
+- `ausbildung(-en).html` nennt bewusst keine exakten Rechtswerte mehr ("etwas über 1.000 € brutto", "in der Regel ein niedrigeres Niveau" als B2). Grundsatz (Ivo, Oktober 2026): keine rechtlich bindenden Auskünfte, im Zweifel ungenauer. Jährlich prüfen, ob "etwas über 1.000 €" noch stimmt.
 - Wohnraum-Absatz auf `pflegefachkraefte-berlin-brandenburg.html` noch allgemein gehalten.
 - Google Fonts werden noch von Google-Servern geladen (ohne Einwilligung, IP-Übermittlung). Empfehlung: Schriften
   Anton und Inter lokal in `fonts/` hosten, dann CSP und Datenschutzerklärung Ziffer 7 anpassen.
