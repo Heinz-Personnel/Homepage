@@ -21,13 +21,13 @@
 <meta property="og:url" content="https://pflegekraftvermittlung.com/ausbildung-en.html">
 <meta property="og:title" content="Trainees from abroad for your company | Heinz Personnel Solutions">
 <meta property="og:description" content="Trainees from Asia for your company in Germany, for example in care, skilled trades or logistics: German at B2, all applications handled, support until qualification, 18 months security.">
-<meta property="og:image" content="https://pflegekraftvermittlung.com/images/og-default.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image" content="https://pflegekraftvermittlung.com/images/heinz-ankunft-arrivals-gruppe.jpg">
+<meta property="og:image:width" content="1400">
+<meta property="og:image:height" content="1049">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Trainees from abroad for your company | Heinz Personnel Solutions">
 <meta name="twitter:description" content="Trainees from Asia for your company in Germany, for example in care, skilled trades or logistics: German at B2, all applications handled, support until qualification, 18 months security.">
-<meta name="twitter:image" content="https://pflegekraftvermittlung.com/images/og-default.jpg">
+<meta name="twitter:image" content="https://pflegekraftvermittlung.com/images/heinz-ankunft-arrivals-gruppe.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -391,6 +391,18 @@
   .mobile-nav a.btn{display:flex;justify-content:center;}
   .mobile-nav a.is-active{color:var(--hbo-dunkel);box-shadow:inset 3px 0 0 var(--orange);}
   .bereiche-more{margin-top:24px;max-width:70ch;font-weight:600;}
+
+  /* -------- Fotostreifen (echte Momente) -------- */
+  .photo-band{background:var(--weiss);}
+  .photo-band--beton{background:var(--beton);}
+  .photo-band h2.headline{color:var(--schwarz);}
+  .photo-grid{margin-top:36px;display:grid;grid-template-columns:1fr;gap:24px;align-items:stretch;}
+  @media(min-width:640px){.photo-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(min-width:900px){.photo-grid--3{grid-template-columns:repeat(3,1fr);}}
+  .photo-item{display:flex;flex-direction:column;}
+  .photo-frame{aspect-ratio:4/3;overflow:hidden;background:var(--beton);}
+  .photo-frame img{width:100%;height:100%;object-fit:cover;display:block;}
+  .photo-caption{padding:14px 2px 0;font-weight:600;font-size:.95rem;color:var(--schwarz);}
 </style>
 <script type="application/ld+json">
 {
@@ -596,6 +608,30 @@
     </div>
   </section>
 
+  <!-- FOTOS -->
+  <section class="photo-band">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Real moments</span>
+        <h2 class="headline">People who come to you.</h2>
+      </div>
+      <div class="photo-grid photo-grid--3 reveal">
+        <figure class="photo-item">
+          <div class="photo-frame"><img src="images/heinz-ankunft-arrivals-gruppe.jpg" alt="Group of young people after arriving at the airport in Germany" loading="lazy"></div>
+          <figcaption class="photo-caption">Arrived in Germany.</figcaption>
+        </figure>
+        <figure class="photo-item">
+          <div class="photo-frame"><img src="images/heinz-sprachschule-gruppe.jpg" alt="Group at the language school before departure" loading="lazy"></div>
+          <figcaption class="photo-caption">Learning German before entry.</figcaption>
+        </figure>
+        <figure class="photo-item">
+          <div class="photo-frame"><img src="images/heinz-ankunft-selfie-team.jpg" alt="Heinz picking up a group at the airport" loading="lazy"></div>
+          <figcaption class="photo-caption">Picked up in person.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <!-- LAGE -->
   <section class="kennzahlen">
     <div class="wrap">
@@ -768,6 +804,26 @@
         <li><strong>Vocational school in German is demanding.</strong><p class="body-text">That is why we aim for B2 and provide a fixed contact person when things get difficult.</p></li>
         <li><strong>You need authorisation to train.</strong><p class="body-text">Most companies already have it. If not, your chamber can help.</p></li>
       </ul>
+    </div>
+  </section>
+
+  <!-- FOTOS ANKOMMEN -->
+  <section class="photo-band photo-band--beton">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Arrival</span>
+        <h2 class="headline">Supported. Beyond day one.</h2>
+      </div>
+      <div class="photo-grid reveal">
+        <figure class="photo-item">
+          <div class="photo-frame"><img src="images/heinz-ankunft-strasse.jpg" alt="Group on the way to their new home" loading="lazy"></div>
+          <figcaption class="photo-caption">On the way to a new home.</figcaption>
+        </figure>
+        <figure class="photo-item">
+          <div class="photo-frame"><img src="images/heinz-lieblingsfarbe-sommerfest.jpg" alt="Cheerful group at the Heinz summer party" loading="lazy"></div>
+          <figcaption class="photo-caption">Belonging. At the Heinz summer party.</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 

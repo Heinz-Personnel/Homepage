@@ -20,13 +20,13 @@
 <meta property="og:url" content="https://pflegekraftvermittlung.com/ausbildung.html">
 <meta property="og:title" content="Auszubildende aus dem Ausland für Ihren Betrieb | Heinz Personnel Solutions">
 <meta property="og:description" content="Auszubildende aus Asien für Ihren Betrieb, zum Beispiel in Pflege, Handwerk oder Logistik: Deutsch auf B2, alle Anträge aus einer Hand, Begleitung bis zum Abschluss, 18 Monate Sicherheit.">
-<meta property="og:image" content="https://pflegekraftvermittlung.com/images/og-default.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image" content="https://pflegekraftvermittlung.com/images/heinz-ankunft-arrivals-gruppe.jpg">
+<meta property="og:image:width" content="1400">
+<meta property="og:image:height" content="1049">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Auszubildende aus dem Ausland für Ihren Betrieb | Heinz Personnel Solutions">
 <meta name="twitter:description" content="Auszubildende aus Asien für Ihren Betrieb, zum Beispiel in Pflege, Handwerk oder Logistik: Deutsch auf B2, alle Anträge aus einer Hand, Begleitung bis zum Abschluss, 18 Monate Sicherheit.">
-<meta name="twitter:image" content="https://pflegekraftvermittlung.com/images/og-default.jpg">
+<meta name="twitter:image" content="https://pflegekraftvermittlung.com/images/heinz-ankunft-arrivals-gruppe.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -390,6 +390,18 @@
   .mobile-nav a.btn{display:flex;justify-content:center;}
   .mobile-nav a.is-active{color:var(--hbo-dunkel);box-shadow:inset 3px 0 0 var(--orange);}
   .bereiche-more{margin-top:24px;max-width:70ch;font-weight:600;}
+
+  /* -------- Fotostreifen (echte Momente) -------- */
+  .photo-band{background:var(--weiss);}
+  .photo-band--beton{background:var(--beton);}
+  .photo-band h2.headline{color:var(--schwarz);}
+  .photo-grid{margin-top:36px;display:grid;grid-template-columns:1fr;gap:24px;align-items:stretch;}
+  @media(min-width:640px){.photo-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(min-width:900px){.photo-grid--3{grid-template-columns:repeat(3,1fr);}}
+  .photo-item{display:flex;flex-direction:column;}
+  .photo-frame{aspect-ratio:4/3;overflow:hidden;background:var(--beton);}
+  .photo-frame img{width:100%;height:100%;object-fit:cover;display:block;}
+  .photo-caption{padding:14px 2px 0;font-weight:600;font-size:.95rem;color:var(--schwarz);}
 </style>
 <script type="application/ld+json">
 {
@@ -636,6 +648,30 @@
     </div>
   </section>
 
+  <!-- FOTOS -->
+  <section class="photo-band">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Echte Momente</span>
+        <h2 class="headline">Menschen, die zu Ihnen kommen.</h2>
+      </div>
+      <div class="photo-grid photo-grid--3 reveal">
+        <figure class="photo-item">
+          <div class="photo-frame"><img src="images/heinz-ankunft-arrivals-gruppe.jpg" alt="Gruppe junger Menschen nach der Ankunft am Flughafen in Deutschland" loading="lazy"></div>
+          <figcaption class="photo-caption">Angekommen in Deutschland.</figcaption>
+        </figure>
+        <figure class="photo-item">
+          <div class="photo-frame"><img src="images/heinz-sprachschule-gruppe.jpg" alt="Gruppe in der Sprachschule vor der Ausreise" loading="lazy"></div>
+          <figcaption class="photo-caption">Deutsch lernen vor der Einreise.</figcaption>
+        </figure>
+        <figure class="photo-item">
+          <div class="photo-frame"><img src="images/heinz-ankunft-selfie-team.jpg" alt="Heinz holt eine Gruppe am Flughafen ab" loading="lazy"></div>
+          <figcaption class="photo-caption">Persönlich abgeholt.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <!-- LAGE -->
   <section class="kennzahlen">
     <div class="wrap">
@@ -808,6 +844,26 @@
         <li><strong>Berufsschule auf Deutsch ist anspruchsvoll.</strong><p class="body-text">Deshalb setzen wir auf B2 und auf eine feste Ansprechperson, wenn es hakt.</p></li>
         <li><strong>Sie brauchen eine Ausbildungsberechtigung.</strong><p class="body-text">Die meisten Betriebe haben sie schon. Falls nicht, hilft Ihre Kammer weiter.</p></li>
       </ul>
+    </div>
+  </section>
+
+  <!-- FOTOS ANKOMMEN -->
+  <section class="photo-band photo-band--beton">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Ankommen</span>
+        <h2 class="headline">Begleitet. Auch nach dem ersten Tag.</h2>
+      </div>
+      <div class="photo-grid reveal">
+        <figure class="photo-item">
+          <div class="photo-frame"><img src="images/heinz-ankunft-strasse.jpg" alt="Gruppe auf dem Weg ins neue Zuhause" loading="lazy"></div>
+          <figcaption class="photo-caption">Auf dem Weg ins neue Zuhause.</figcaption>
+        </figure>
+        <figure class="photo-item">
+          <div class="photo-frame"><img src="images/heinz-lieblingsfarbe-sommerfest.jpg" alt="Fröhliche Gruppe beim Sommerfest von Heinz" loading="lazy"></div>
+          <figcaption class="photo-caption">Dazugehören. Beim Sommerfest von Heinz.</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
