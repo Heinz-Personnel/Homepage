@@ -312,7 +312,8 @@
   .garantie-logos img{height:60px;width:auto;object-fit:contain;}
 
   /* -------- Ausbildung: FAQ -------- */
-  .faq-list{margin-top:36px;border-top:1px solid rgba(11,11,11,.18);max-width:860px;}
+  .faq-list{margin-top:36px;max-width:860px;}
+  .faq-group-title + details{border-top:1px solid rgba(11,11,11,.18);margin-top:14px;}
   .faq-list details{border-bottom:1px solid rgba(11,11,11,.18);}
   .faq-list summary{cursor:pointer;list-style:none;padding:22px 44px 22px 0;font-weight:800;font-size:1.05rem;position:relative;}
   .faq-list summary::-webkit-details-marker{display:none;}
@@ -320,6 +321,9 @@
   .faq-list details[open] summary::after{content:"\2212";}
   .faq-list summary:focus-visible{outline:3px solid var(--hbo-mittel);outline-offset:3px;}
   .faq-list details p{padding:0 0 24px;max-width:70ch;}
+  .faq-group-title{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:1.3rem;line-height:1.1;color:var(--hbo-dunkel);margin:48px 0 0;padding-bottom:6px;}
+  .faq-group-title:first-child{margin-top:0;}
+  .faq-note{margin-top:28px;font-size:.9rem;color:rgba(11,11,11,.7);max-width:70ch;}
 
   /* -------- Ausbildung: Abschluss -------- */
   .footer-cta .cta-text{color:var(--weiss);max-width:56ch;font-size:1.08rem;margin-bottom:32px;}
@@ -403,6 +407,8 @@
   .photo-frame{aspect-ratio:4/3;overflow:hidden;background:var(--beton);}
   .photo-frame img{width:100%;height:100%;object-fit:cover;display:block;}
   .photo-caption{padding:14px 2px 0;font-weight:600;font-size:.95rem;color:var(--schwarz);}
+  :where(img){height:auto;}
+  picture{display:contents;}
 </style>
 <script type="application/ld+json">
 {
@@ -411,18 +417,39 @@
   "@id": "https://pflegekraftvermittlung.com/#organization",
   "name": "Heinz Personnel Solutions GmbH",
   "url": "https://pflegekraftvermittlung.com/",
-  "logo": "https://pflegekraftvermittlung.com/images/logo-ral-guetezeichen-lockup.png",
+  "logo": "https://pflegekraftvermittlung.com/images/logo-heinz.png",
   "image": "https://pflegekraftvermittlung.com/images/og-default.jpg",
   "email": "info@hpstalent.de",
-  "address": { "@type": "PostalAddress", "streetAddress": "Am Eichenhain 32", "postalCode": "13465", "addressLocality": "Berlin", "addressCountry": "DE" },
-  "areaServed": [ { "@type": "State", "name": "Berlin" }, { "@type": "State", "name": "Brandenburg" }, { "@type": "State", "name": "Hessen" } ],
-  "description": "Placement of international nursing professionals for hospitals and care homes in Germany. RAL quality seal 'Faire Anwerbung Pflege Deutschland', member of bvifg.",
-  "hasCredential": [
-    { "@type": "EducationalOccupationalCredential", "name": "RAL Quality Seal Faire Anwerbung Pflege Deutschland" },
-    { "@type": "EducationalOccupationalCredential", "name": "Membership Bundesverband Internationale Fachkraeftegewinnung e.V. (bvifg)" }
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Am Eichenhain 32",
+    "postalCode": "13465",
+    "addressLocality": "Berlin",
+    "addressCountry": "DE"
+  },
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Berlin"
+    },
+    {
+      "@type": "State",
+      "name": "Brandenburg"
+    },
+    {
+      "@type": "State",
+      "name": "Hessen"
+    }
   ],
-  "memberOf": { "@type": "Organization", "name": "Bundesverband Internationale Fachkraeftegewinnung e.V. (bvifg)" },
-  "sameAs": [ "https://www.linkedin.com/company/heinz-personnel-solutions-gmbh/", "https://www.facebook.com/profile.php?id=61558924855712" ]
+  "description": "Placement of international nurses and trainees with care providers and companies in Germany. Member of bvifg.",
+  "memberOf": {
+    "@type": "Organization",
+    "name": "Bundesverband Internationale Fachkräftegewinnung e.V. (bvifg)"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/heinz-personnel-solutions-gmbh/",
+    "https://www.facebook.com/profile.php?id=61558924855712"
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -474,6 +501,38 @@
     },
     {
       "@type": "Question",
+      "name": "Are there extra costs that come later?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We disclose all costs to you in full and in writing before the contract is signed. What is written there applies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do the trainees pay?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nothing. Your trainees pay no placement fees, nothing for the German course, and sign no repayment clauses. That protects them and means they start with you by choice and without debt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if someone drops out?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If the trainee resigns on their own within the first 18 months, we take over the new search completely, at no extra cost to you. The details of the guarantee are set out in writing in your contract."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How high must the training pay be?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At least as high as the law or collective agreement provides for your occupation. For the visa, the pay must also cover living costs, currently a little over €1,000 gross per month. If your pay is lower, the gap can be closed, for example with a blocked account. We clarify this together before the search starts."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Where do the trainees come from?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -482,26 +541,26 @@
     },
     {
       "@type": "Question",
+      "name": "How does the selection work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "First we talk about your company, the occupation and your expectations. Then we introduce suitable candidates. You hold the interviews yourself and decide who fits."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How good is their German?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our trainees bring German at B2 level, certified before entry. A lower level is usually sufficient for the training visa. We aim higher because vocational school lessons are held in German."
+        "text": "Our trainees bring German at B2 level, certified before entry. The training visa usually requires a lower level. We aim higher because vocational school lessons are held in German."
       }
     },
     {
       "@type": "Question",
-      "name": "How long until training starts?",
+      "name": "What schooling do the applicants have?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "From selection to the start of training, plan for around 3 to 6 months."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What if someone drops out?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "If the trainee resigns on their own within the first 18 months, we take over the new search completely, at no extra cost to you."
+        "text": "We recommend 12 years of school to our applicants. For some occupations, such as nursing, there are additional legal minimum requirements. We check the certificates in advance."
       }
     },
     {
@@ -514,13 +573,128 @@
     },
     {
       "@type": "Question",
+      "name": "How long until training starts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "From selection to the start of training, plan for around 3 to 6 months. The exact date also depends on when training starts in your occupation and at the vocational school."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which visa do trainees from abroad need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A residence permit for vocational training under Section 16a of the Residence Act. It is based on the training contract with your company. We file the applications and follow them through to the decision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the Federal Employment Agency check?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For in-company training, the Federal Employment Agency approves the visa. Among other things, it checks whether your trainees are hired on the same terms as German trainees. This is an internal procedure between authorities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does our company need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Authorisation to train in the occupation, a training place and pay that covers living costs. If you already train apprentices, you have the authorisation. If not, your responsible chamber can help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do the trainees need a recognition procedure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not for their occupation, because they earn their qualification in Germany. Depending on the occupation and federal state, the foreign school certificate is checked, for example in nursing. We take care of that."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do we have to inform the authorities if training ends early?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. If training ends earlier than planned, the company must report this to the immigration office. Talk to us early in that case, we will support you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who takes care of housing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If housing is needed, we find it. If your company provides accommodation itself, we are happy to coordinate with you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is available during the training?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We stay available until they qualify, for your company and for your trainees. There is a fixed contact person whenever something gets difficult."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if vocational school gets difficult?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That is exactly why we aim for B2 instead of the minimum level. If it still gets tight, let us know. We look for a solution together with you and your trainees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a probationary period?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Like every vocational training in Germany, it starts with a probationary period. The same rules apply as for all other trainees in your occupation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the trainees work on the side?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Secondary employment is allowed to a limited extent and must be independent of the training. With full-time training, there is little time for it in practice."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What happens after the training?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "With the qualification, your trainee can stay with you as a skilled worker. The residence permit is adjusted for this, and we support the process."
+        "text": "With the qualification, your trainee can stay with you as a skilled worker. The residence permit is adjusted for this, and we support the process. After two years of work, permanent residence is possible if further requirements are met."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why trainees instead of skilled workers straight away?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trainees learn your processes from the ground up, earn a German qualification and grow with your company over years. If you need experienced nurses quickly, our placement of qualified nurses is the right path, in the region also with our offer for Berlin and Brandenburg. Often the two complement each other."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we get started?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With a first conversation. Tell us about your company and your occupation, and we will tell you openly whether and how it fits."
       }
     }
-  ]
+  ],
+  "url": "https://pflegekraftvermittlung.com/ausbildung-en.html",
+  "name": "Trainees from abroad for your company | Heinz",
+  "description": "Trainees from abroad for your company, for example in care, skilled trades or logistics. German at B2, all applications handled, 18 months security.",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@id": "https://pflegekraftvermittlung.com/#website"
+  },
+  "about": {
+    "@id": "https://pflegekraftvermittlung.com/#organization"
+  },
+  "@id": "https://pflegekraftvermittlung.com/ausbildung-en.html#webpage"
 }
 </script>
 </head>
@@ -616,15 +790,15 @@
       </div>
       <div class="photo-grid photo-grid--3 reveal">
         <figure class="photo-item">
-          <div class="photo-frame"><img src="images/heinz-ankunft-arrivals-gruppe.jpg" alt="Group of young people after arriving at the airport in Germany" loading="lazy"></div>
+          <div class="photo-frame"><img width="1400" height="1049" src="images/heinz-ankunft-arrivals-gruppe.jpg" alt="Group of young people after arriving at the airport in Germany"></div>
           <figcaption class="photo-caption">Arrived in Germany.</figcaption>
         </figure>
         <figure class="photo-item">
-          <div class="photo-frame"><img src="images/heinz-sprachschule-gruppe.jpg" alt="Group at the language school before departure" loading="lazy"></div>
+          <div class="photo-frame"><picture><source srcset="images/heinz-sprachschule-gruppe.webp" type="image/webp"><img width="1400" height="1050" src="images/heinz-sprachschule-gruppe.jpg" alt="Group at the language school before departure" loading="lazy"></picture></div>
           <figcaption class="photo-caption">Learning German before entry.</figcaption>
         </figure>
         <figure class="photo-item">
-          <div class="photo-frame"><img src="images/heinz-ankunft-selfie-team.jpg" alt="Heinz picking up a group at the airport" loading="lazy"></div>
+          <div class="photo-frame"><picture><source srcset="images/heinz-ankunft-selfie-team.webp" type="image/webp"><img width="1400" height="1086" src="images/heinz-ankunft-selfie-team.jpg" alt="Heinz picking up a group at the airport" loading="lazy"></picture></div>
           <figcaption class="photo-caption">Picked up in person.</figcaption>
         </figure>
       </div>
@@ -707,7 +881,7 @@
           <p class="body-text">For logistics companies looking for new talent in warehousing and shipping. Your trainees learn your processes from the ground up and grow with your company.</p>
         </div>
       </div>
-      <p class="body-text reveal bereiche-more">Your occupation is a different one? Get in touch. We place trainees in many other occupations too.</p>
+      <p class="body-text reveal bereiche-more">Your occupation is a different one, for example an office job? Get in touch. We place trainees in many other occupations too.</p>
     </div>
   </section>
 
@@ -816,11 +990,11 @@
       </div>
       <div class="photo-grid reveal">
         <figure class="photo-item">
-          <div class="photo-frame"><img src="images/heinz-ankunft-strasse.jpg" alt="Group on the way to their new home" loading="lazy"></div>
+          <div class="photo-frame"><picture><source srcset="images/heinz-ankunft-strasse.webp" type="image/webp"><img width="1400" height="1050" src="images/heinz-ankunft-strasse.jpg" alt="Group on the way to their new home" loading="lazy"></picture></div>
           <figcaption class="photo-caption">On the way to a new home.</figcaption>
         </figure>
         <figure class="photo-item">
-          <div class="photo-frame"><img src="images/heinz-lieblingsfarbe-sommerfest.jpg" alt="Cheerful group at the Heinz summer party" loading="lazy"></div>
+          <div class="photo-frame"><picture><source srcset="images/heinz-lieblingsfarbe-sommerfest.webp" type="image/webp"><img width="1050" height="1400" src="images/heinz-lieblingsfarbe-sommerfest.jpg" alt="Cheerful group at the Heinz summer party" loading="lazy"></picture></div>
           <figcaption class="photo-caption">Belonging. At the Heinz summer party.</figcaption>
         </figure>
       </div>
@@ -852,7 +1026,7 @@
       </div>
 
       <p class="garantie-footnote reveal">The security applies if the trainee resigns. It does not cover dismissals by the company or cases where training ends because of problems in the working environment.</p>
-      <p class="garantie-ral reveal">The same principles apply to trainees: no costs for the trainees, no repayment clauses and transparent contracts.</p>
+      <p class="garantie-ral reveal">For trainees, the same principles apply as for our nurses: no costs for the trainees, no repayment clauses, transparent contracts and personal support.</p>
     </div>
   </section>
 
@@ -861,9 +1035,10 @@
     <div class="wrap">
       <div class="section-head reveal">
         <span class="eyebrow">Frequently asked</span>
-        <h2 class="headline">Short answers.</h2>
+        <h2 class="headline">Your questions. Clear answers.</h2>
       </div>
       <div class="faq-list reveal">
+        <h3 class="faq-group-title">Costs and contract</h3>
         <details>
           <summary>What does the placement cost?</summary>
           <p class="body-text">Nothing for your trainees, we work on the employer-pays principle. For your company: payment only on success, 50% after a successful placement and 50% after the start of training. We discuss the exact terms openly in our first conversation.</p>
@@ -873,30 +1048,103 @@
           <p class="body-text">You provide the training, we take care of the rest: selection, language training, visa, entry, finding housing and dealing with the authorities. The training contract, the interviews with candidates and the training in your company stay with you.</p>
         </details>
         <details>
+          <summary>Are there extra costs that come later?</summary>
+          <p class="body-text">We disclose all costs to you in full and in writing before the contract is signed. What is written there applies.</p>
+        </details>
+        <details>
+          <summary>What do the trainees pay?</summary>
+          <p class="body-text">Nothing. Your trainees pay no placement fees, nothing for the German course, and sign no repayment clauses. That protects them and means they start with you by choice and without debt.</p>
+        </details>
+        <details>
+          <summary>What if someone drops out?</summary>
+          <p class="body-text">If the trainee resigns on their own within the first 18 months, we take over the new search completely, at no extra cost to you. The details of the guarantee are set out in writing in your contract.</p>
+        </details>
+        <details>
+          <summary>How high must the training pay be?</summary>
+          <p class="body-text">At least as high as the law or collective agreement provides for your occupation. For the visa, the pay must also cover living costs, currently a little over €1,000 gross per month. If your pay is lower, the gap can be closed, for example with a blocked account. We clarify this together before the search starts.</p>
+        </details>
+        <h3 class="faq-group-title">Selection and language</h3>
+        <details>
           <summary>Where do the trainees come from?</summary>
           <p class="body-text">Our trainees come from Asia.</p>
         </details>
         <details>
+          <summary>How does the selection work?</summary>
+          <p class="body-text">First we talk about your company, the occupation and your expectations. Then we introduce suitable candidates. You hold the interviews yourself and decide who fits.</p>
+        </details>
+        <details>
           <summary>How good is their German?</summary>
-          <p class="body-text">Our trainees bring German at B2 level, certified before entry. A lower level is usually sufficient for the training visa. We aim higher because vocational school lessons are held in German.</p>
+          <p class="body-text">Our trainees bring German at B2 level, certified before entry. The training visa usually requires a lower level. We aim higher because vocational school lessons are held in German.</p>
         </details>
         <details>
-          <summary>How long until training starts?</summary>
-          <p class="body-text">From selection to the start of training, plan for around 3 to 6 months.</p>
-        </details>
-        <details>
-          <summary>What if someone drops out?</summary>
-          <p class="body-text">If the trainee resigns on their own within the first 18 months, we take over the new search completely, at no extra cost to you.</p>
+          <summary>What schooling do the applicants have?</summary>
+          <p class="body-text">We recommend 12 years of school to our applicants. For some occupations, such as nursing, there are additional legal minimum requirements. We check the certificates in advance.</p>
         </details>
         <details>
           <summary>Which occupations do you place trainees in?</summary>
           <p class="body-text">For example care, skilled trades and logistics. Other occupations are explicitly possible. Feel free to ask us about yours.</p>
         </details>
         <details>
+          <summary>How long until training starts?</summary>
+          <p class="body-text">From selection to the start of training, plan for around 3 to 6 months. The exact date also depends on when training starts in your occupation and at the vocational school.</p>
+        </details>
+        <h3 class="faq-group-title">Visa and authorities</h3>
+        <details>
+          <summary>Which visa do trainees from abroad need?</summary>
+          <p class="body-text">A residence permit for vocational training under Section 16a of the Residence Act. It is based on the training contract with your company. We file the applications and follow them through to the decision.</p>
+        </details>
+        <details>
+          <summary>What does the Federal Employment Agency check?</summary>
+          <p class="body-text">For in-company training, the Federal Employment Agency approves the visa. Among other things, it checks whether your trainees are hired on the same terms as German trainees. This is an internal procedure between authorities.</p>
+        </details>
+        <details>
+          <summary>What does our company need?</summary>
+          <p class="body-text">Authorisation to train in the occupation, a training place and pay that covers living costs. If you already train apprentices, you have the authorisation. If not, your responsible chamber can help.</p>
+        </details>
+        <details>
+          <summary>Do the trainees need a recognition procedure?</summary>
+          <p class="body-text">Not for their occupation, because they earn their qualification in Germany. Depending on the occupation and federal state, the foreign school certificate is checked, for example in nursing. We take care of that.</p>
+        </details>
+        <details>
+          <summary>Do we have to inform the authorities if training ends early?</summary>
+          <p class="body-text">Yes. If training ends earlier than planned, the company must report this to the immigration office. Talk to us early in that case, we will support you.</p>
+        </details>
+        <h3 class="faq-group-title">Training and everyday life</h3>
+        <details>
+          <summary>Who takes care of housing?</summary>
+          <p class="body-text">If housing is needed, we find it. If your company provides accommodation itself, we are happy to coordinate with you.</p>
+        </details>
+        <details>
+          <summary>Who is available during the training?</summary>
+          <p class="body-text">We stay available until they qualify, for your company and for your trainees. There is a fixed contact person whenever something gets difficult.</p>
+        </details>
+        <details>
+          <summary>What if vocational school gets difficult?</summary>
+          <p class="body-text">That is exactly why we aim for B2 instead of the minimum level. If it still gets tight, let us know. We look for a solution together with you and your trainees.</p>
+        </details>
+        <details>
+          <summary>Is there a probationary period?</summary>
+          <p class="body-text">Yes. Like every vocational training in Germany, it starts with a probationary period. The same rules apply as for all other trainees in your occupation.</p>
+        </details>
+        <details>
+          <summary>Can the trainees work on the side?</summary>
+          <p class="body-text">Secondary employment is allowed to a limited extent and must be independent of the training. With full-time training, there is little time for it in practice.</p>
+        </details>
+        <h3 class="faq-group-title">After the training</h3>
+        <details>
           <summary>What happens after the training?</summary>
-          <p class="body-text">With the qualification, your trainee can stay with you as a skilled worker. The residence permit is adjusted for this, and we support the process.</p>
+          <p class="body-text">With the qualification, your trainee can stay with you as a skilled worker. The residence permit is adjusted for this, and we support the process. After two years of work, permanent residence is possible if further requirements are met.</p>
+        </details>
+        <details>
+          <summary>Why trainees instead of skilled workers straight away?</summary>
+          <p class="body-text">Trainees learn your processes from the ground up, earn a German qualification and grow with your company over years. If you need experienced nurses quickly, our <a href="fuer-einrichtungen-en.html">placement of qualified nurses</a> is the right path, in the region also with our offer for <a href="pflegefachkraefte-berlin-brandenburg.html">Berlin and Brandenburg</a>. Often the two complement each other.</p>
+        </details>
+        <details>
+          <summary>How do we get started?</summary>
+          <p class="body-text">With a first conversation. Tell us about your company and your occupation, and we will tell you openly whether and how it fits.</p>
         </details>
       </div>
+      <p class="faq-note">General information, not legal advice. In each individual case, the responsible authorities decide. As of October 2026.</p>
     </div>
   </section>
 
@@ -941,7 +1189,7 @@
         <h5>Talent</h5>
         <a href="fuer-fachkraefte-en.html">Qualified nurses</a>
         <a href="ausbildung-bewerbung-en.html">Trainees</a>
-        <a href="wechsel.html">Change jobs (in German)</a>
+        <a href="wechsel.html" rel="nofollow">Change jobs (in German)</a>
       </div>
       <div class="fcol">
         <h5>Heinz</h5>

@@ -65,14 +65,16 @@ Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
 - Triple-Win, Employer-pays-Prinzip: Fachkräfte und Auszubildende zahlen nichts, keine Rückzahlungsklauseln
 - Fachkräfte überwiegend aus den Philippinen und Indien
 - **Auszubildende** in vielen Ausbildungsberufen, auf der Seite immer nur als Beispiele genannt: Pflege, Handwerk
-  (z. B. Zimmerei), Logistik. Andere Berufe nie ausschließen. aus Asien, Deutsch B2, Wohnungssuche bei Bedarf,
+  (z. B. Zimmerei), Logistik, Büro (Entscheidung Ivo, 13.10.2026). Andere Berufe nie ausschließen, "in vielen Berufen" beibehalten. aus Asien, Deutsch B2, Wohnungssuche bei Bedarf,
   ca. 3 bis 6 Monate von Auswahl bis Ausbildungsstart, gleiche Garantie und Konditionen.
   Für Bewerber:innen empfiehlt Heinz 12 Jahre Schule (Empfehlung, keine Pflicht; gesetzlich gilt für die Pflege
   10 Jahre Schule nach § 11 PflBG, für duale Ausbildungen entscheidet der Betrieb). Deutschkurs bis B2 organisiert Heinz, kostenfrei.
   Wichtig: Das RAL-Gütezeichen gilt nur für die Anwerbung von Pflegefachkräften. Auf Azubi-Seiten (`ausbildung`,
   `ausbildung-bewerbung`, Azubi-Blogartikel) KEIN Siegel, kein Badge, keine RAL/GAPA-Logos und kein Siegelbezug im Text.
-  Erlaubt ist nur die Selbstverpflichtung ohne Siegel: "Für Auszubildende gelten bei uns dieselben Grundsätze: keine Kosten
-  für die Auszubildenden, keine Rückzahlungsklauseln und transparente Verträge." Laut Entwurf (KDA, Anforderungskatalog 4.0)
+  Erlaubt ist nur die Selbstverpflichtung ohne Siegel: "Für Auszubildende gelten bei uns dieselben Grundsätze wie bei unseren
+  Pflegefachkräften: keine Kosten für die Auszubildenden, keine Rückzahlungsklauseln, transparente Verträge und persönliche Begleitung."
+  Auf Azubi-Seiten und Azubi-Artikeln (`ausbildung*`, `blog-post-11`, `blog-post-12`) steht im JSON-LD der Firma kein `hasCredential`
+  und keine Siegelaussage in der description. Laut Entwurf (KDA, Anforderungskatalog 4.0)
   wird das Gütezeichen ab 1.1.2027 auf Ausbildungssuchende ausgeweitet, aber erst nach bestandener Prüfung nutzbar.
   Die 92 % gelten für Fachkräfte, nie im Azubi-Kontext nennen.
 - **Offizielle Schreibweise:** Gütezeichen „Faire Anwerbung Pflege Deutschland" (auch auf Englisch, nie übersetzen).
@@ -150,9 +152,14 @@ Zusätzlich: geänderte Seiten am Handy und am Desktop ansehen, Umlaute korrekt 
 
 ## 7. Offene Punkte
 
+- **Downloads:** Die PDFs liegen seit 13.10.2026 in `downloads/` (Dateinamen ohne "HPS") und sind auf `downloads(-en)` verlinkt.
+  Neue Fassung einer Datei: unter demselben Namen ersetzen, dann bleiben alle Links gültig.
+- Blogartikel 1 bis 9, Blog-Übersicht, Downloads und Kontakt haben unter 300 Wörter Inhalt. Nur mit echten Inhalten von Ivo erweitern.
+- Liste alter WordPress-URLs (Ubersuggest, Search Console 404) fehlt noch. Zuordnung alt zu neu vor dem Anlegen mit Ivo abstimmen.
+
 - **Auftrag v2 (12.10.2026), noch offen:** sameAs um XING, Google Business, wer-liefert-was, Kununu ergänzen (URLs von Ivo);
   Weiterleitung personnel-solutions.de beim Domain-Anbieter von 302 auf 301 umstellen (nicht im Repo);
-  Bilder nach WebP umwandeln und Lighthouse prüfen; Blogartikel zu Azubis (Ablauf, Pflege-Azubis, unbesetzte Plätze)
+  Lighthouse/PageSpeed nach dem Push prüfen (WebP ist seit 13.10.2026 umgesetzt); Blogartikel zu Azubis (Ablauf, Pflege-Azubis, unbesetzte Plätze)
   und Artikel zur Ausweitung des RAL-Gütezeichens (nur Fakten aus dem KDA-Text, mit Quelle und Datum).
   `wechsel.html` (noindex) wird im Footer verlinkt: Entscheidung Ivo offen, ob das so bleibt.
 
@@ -168,3 +175,20 @@ Zusätzlich: geänderte Seiten am Handy und am Desktop ansehen, Umlaute korrekt 
   Anton und Inter lokal in `fonts/` hosten, dann CSP und Datenschutzerklärung Ziffer 7 anpassen.
 - Datenschutzerklärung Ziffer 7 nennt Dienste, die aktuell nicht eingebunden sind (Google Analytics, Maps, HubSpot,
   Vimeo, Social-Plugins). Mit Datenschutzberatung prüfen und bereinigen.
+
+## 8. SEO- und Technik-Standards (seit 13.10.2026)
+
+- **Titel:** immer "Seitentitel | Heinz", höchstens 60 Zeichen, keine Duplikate, DE und EN unterschiedlich.
+  og:title und twitter:title = title. **Description:** 70 bis 160 Zeichen, eigene pro Seite, og:/twitter:description identisch.
+- **JSON-LD:** jede indexierbare Seite hat EmploymentAgency + BreadcrumbList + WebPage (bzw. FAQPage mit url, name, isPartOf).
+  Schema-Logo der Firma ist `images/logo-heinz.png` (nie das RAL-Logo). FAQ-Texte im Schema immer wortgleich mit dem sichtbaren Text.
+- **Bilder:** jedes `<img>` mit width/height (Originalmaße) und `loading="lazy"` ab dem zweiten Bild. Fotos in `images/` bekommen
+  eine WebP-Fassung (gleicher Name, `.webp`) und werden als `<picture><source srcset="….webp" type="image/webp"><img …></picture>`
+  eingebunden (CSS `picture{display:contents;}` und `:where(img){height:auto;}` stehen im `<style>`). Dekorative Bilder: `alt=""` und `aria-hidden="true"`.
+- **Prüfskript:** `python3 _werkzeuge/audit.py` erzeugt `_werkzeuge/audit-report.md` (nur lesen). Der Ordner `_werkzeuge` wird von
+  GitHub Pages nicht veröffentlicht. Vor jedem größeren Push laufen lassen.
+- **Hosting GitHub Pages:** keine echten 301. Alte Adressen über `_werkzeuge/weiterleitungen.csv` eintragen und mit
+  `python3 _werkzeuge/weiterleitungen.py --anlegen` Weiterleitungsseiten erzeugen (noindex, canonical, meta refresh). `404.html` ist die
+  Fehlerseite (noindex, alle Links mit führendem `/`).
+- **wechsel.html** wird im Footer mit `rel="nofollow"` verlinkt und bleibt noindex.
+- **Impressum** verweist auf § 5 DDG (nicht mehr TMG).

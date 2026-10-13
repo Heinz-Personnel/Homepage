@@ -8,8 +8,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://*.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://www.google.com https://www.google.de; connect-src 'self' https://*.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://www.google.com https://www.google.de; form-action 'self' https://formspree.io; frame-ancestors 'self'; base-uri 'self';">
 <meta name="google-site-verification" content="4ih2UXl47iAqhL2-UGvUgYXGfVS-HxsPBSvBsj9QTIY">
-<title>Vocational training in Germany for international applicants | Heinz Personnel Solutions</title>
-<meta name="description" content="Vocational training in Germany, for example in care, skilled trades or logistics: German course up to B2, visa, housing search and support until you qualify. Free of charge for applicants.">
+<title>Vocational training in Germany for applicants | Heinz</title>
+<meta name="description" content="Vocational training in Germany, e.g. in care, skilled trades or logistics: German course to B2, visa, housing and support. Free of charge for applicants.">
 <link rel="canonical" href="https://pflegekraftvermittlung.com/ausbildung-bewerbung-en.html">
 <link rel="alternate" hreflang="de" href="https://pflegekraftvermittlung.com/ausbildung-bewerbung.html">
 <link rel="alternate" hreflang="en" href="https://pflegekraftvermittlung.com/ausbildung-bewerbung-en.html">
@@ -19,14 +19,14 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="de_DE">
 <meta property="og:url" content="https://pflegekraftvermittlung.com/ausbildung-bewerbung-en.html">
-<meta property="og:title" content="Vocational training in Germany for international applicants | Heinz Personnel Solutions">
-<meta property="og:description" content="Vocational training in Germany, for example in care, skilled trades or logistics: German course up to B2, visa, housing search and support until you qualify. Free of charge for applicants.">
+<meta property="og:title" content="Vocational training in Germany for applicants | Heinz">
+<meta property="og:description" content="Vocational training in Germany, e.g. in care, skilled trades or logistics: German course to B2, visa, housing and support. Free of charge for applicants.">
 <meta property="og:image" content="https://pflegekraftvermittlung.com/images/og-default.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Vocational training in Germany for international applicants | Heinz Personnel Solutions">
-<meta name="twitter:description" content="Vocational training in Germany, for example in care, skilled trades or logistics: German course up to B2, visa, housing search and support until you qualify. Free of charge for applicants.">
+<meta name="twitter:title" content="Vocational training in Germany for applicants | Heinz">
+<meta name="twitter:description" content="Vocational training in Germany, e.g. in care, skilled trades or logistics: German course to B2, visa, housing and support. Free of charge for applicants.">
 <meta name="twitter:image" content="https://pflegekraftvermittlung.com/images/og-default.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -355,6 +355,23 @@
   .ab-ankommen h2.headline{color:var(--schwarz);}
   .ab-ankommen .erfolge-grid{margin-top:36px;}
   .ab-ankommen .erfolge-caption{color:var(--schwarz);}
+  /* -------- FAQ -------- */
+  .faq-section{background:var(--weiss);}
+  .faq-section .section-head .body-text{margin-top:18px;max-width:70ch;}
+  .faq-list{margin-top:36px;max-width:860px;}
+  .faq-list details{border-bottom:1px solid rgba(11,11,11,.18);}
+  .faq-group-title + details{border-top:1px solid rgba(11,11,11,.18);margin-top:14px;}
+  .faq-list summary{cursor:pointer;list-style:none;padding:22px 44px 22px 0;font-weight:800;font-size:1.05rem;position:relative;}
+  .faq-list summary::-webkit-details-marker{display:none;}
+  .faq-list summary::after{content:"+";position:absolute;right:4px;top:16px;font-family:var(--display);font-size:1.6rem;color:var(--orange);}
+  .faq-list details[open] summary::after{content:"\2212";}
+  .faq-list summary:focus-visible{outline:3px solid var(--hbo-mittel);outline-offset:3px;}
+  .faq-list details p{padding:0 0 24px;max-width:70ch;}
+  .faq-group-title{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:1.3rem;line-height:1.1;color:var(--hbo-dunkel);margin:48px 0 0;padding-bottom:6px;}
+  .faq-group-title:first-child{margin-top:0;}
+  .faq-note{margin-top:28px;font-size:.9rem;color:rgba(11,11,11,.7);max-width:70ch;}
+  :where(img){height:auto;}
+  picture{display:contents;}
 </style>
 <script type="application/ld+json">
 {
@@ -363,18 +380,39 @@
   "@id": "https://pflegekraftvermittlung.com/#organization",
   "name": "Heinz Personnel Solutions GmbH",
   "url": "https://pflegekraftvermittlung.com/",
-  "logo": "https://pflegekraftvermittlung.com/images/logo-ral-guetezeichen-lockup.png",
+  "logo": "https://pflegekraftvermittlung.com/images/logo-heinz.png",
   "image": "https://pflegekraftvermittlung.com/images/og-default.jpg",
   "email": "info@hpstalent.de",
-  "address": { "@type": "PostalAddress", "streetAddress": "Am Eichenhain 32", "postalCode": "13465", "addressLocality": "Berlin", "addressCountry": "DE" },
-  "areaServed": [ { "@type": "State", "name": "Berlin" }, { "@type": "State", "name": "Brandenburg" }, { "@type": "State", "name": "Hessen" } ],
-  "description": "Placement of international nursing professionals for hospitals and care homes in Germany. RAL quality seal 'Faire Anwerbung Pflege Deutschland', member of bvifg.",
-  "hasCredential": [
-    { "@type": "EducationalOccupationalCredential", "name": "RAL Quality Seal Faire Anwerbung Pflege Deutschland" },
-    { "@type": "EducationalOccupationalCredential", "name": "Membership Bundesverband Internationale Fachkraeftegewinnung e.V. (bvifg)" }
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Am Eichenhain 32",
+    "postalCode": "13465",
+    "addressLocality": "Berlin",
+    "addressCountry": "DE"
+  },
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Berlin"
+    },
+    {
+      "@type": "State",
+      "name": "Brandenburg"
+    },
+    {
+      "@type": "State",
+      "name": "Hessen"
+    }
   ],
-  "memberOf": { "@type": "Organization", "name": "Bundesverband Internationale Fachkraeftegewinnung e.V. (bvifg)" },
-  "sameAs": [ "https://www.linkedin.com/company/heinz-personnel-solutions-gmbh/", "https://www.facebook.com/profile.php?id=61558924855712" ]
+  "description": "Placement of international nurses and trainees with care providers and companies in Germany. Member of bvifg.",
+  "memberOf": {
+    "@type": "Organization",
+    "name": "Bundesverband Internationale Fachkräftegewinnung e.V. (bvifg)"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/heinz-personnel-solutions-gmbh/",
+    "https://www.facebook.com/profile.php?id=61558924855712"
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -385,6 +423,201 @@
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pflegekraftvermittlung.com/index-en.html" },
     { "@type": "ListItem", "position": 2, "name": "Vocational training in Germany", "item": "https://pflegekraftvermittlung.com/ausbildung-bewerbung-en.html" }
   ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who can apply?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Young people who would like to do vocational training in Germany, for example in care, skilled trades or logistics. We mainly place applicants from Asia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which school qualification do I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We recommend 12 years of school. This way you start well prepared for vocational school and your German course. For some occupations, such as nursing, there are legal minimum requirements. We look at your certificates together with you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there an age limit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no fixed maximum age for vocational training. Just get in touch, and we will look at your situation personally."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I already need to speak good German?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You do not need B2 to apply. We organise your German course up to B2. How fast you progress depends mainly on your effort."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I choose my occupation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tell us what interests you and what you are good at. We find the company that suits you. Which training places are open depends on the companies we work with."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I apply?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Send an email to recruiting@hpstalent.de and tell us briefly which occupation interests you. We will get back to you personally."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the placement cost me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nothing. With us, the company pays for the placement, not you. You pay no placement fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who pays for the German course?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We organise your German course up to B2, and it is free of charge for you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I have to pay anything back if it does not work out?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. You sign no repayment clauses with us."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why German at B2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because vocational school is taught in German. With B2 you understand lessons, colleagues and everyday life much more easily."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does the German course take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That depends mainly on your prior knowledge and your effort. We support you throughout the course."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which visa do I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A residence permit for vocational training. It is based on your training contract with a company in Germany. We take care of the applications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a blocked account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For the visa, your living costs must be covered, usually by your training pay. If it is not enough, a blocked account may be needed, for example. We clarify this with the company in advance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who helps me when I arrive in Germany?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We support you as you arrive: with finding housing, dealing with authorities and opening a bank account. After that, we stay available throughout your training."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where will I live?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you need housing, we look for it with you. Some companies also provide accommodation themselves."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does vocational training in Germany work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You learn at the company and at a vocational school. Depending on the occupation, training usually takes two to three and a half years and ends with an exam and a German qualification."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do I earn during training?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You receive training pay from the first month. How much depends on the occupation, the company and the year of training. For the visa, it has to cover your living costs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I work on the side?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A side job is allowed to a limited extent. Alongside full-time training, however, there is usually little time for it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can my family come with me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Family reunification is possible under certain conditions. It depends on the individual case. We are happy to discuss this with you personally."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I feel homesick or it does not fit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Talk to us, as early as possible. We stay available throughout your training and look for a solution together. If training ends early, this also affects your residence status. That is why an early conversation matters."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I stay in Germany after my training?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. With your qualification you can work in Germany as a skilled worker, often directly at your training company. If you do not find a position there, you can look for work in Germany for a period of time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I stay permanently at some point?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "After two years of work as a skilled worker, a settlement permit, meaning permanent residence, is possible if further requirements are met."
+      }
+    }
+  ],
+  "url": "https://pflegekraftvermittlung.com/ausbildung-bewerbung-en.html",
+  "name": "Vocational training in Germany for applicants | Heinz",
+  "description": "Vocational training in Germany, e.g. in care, skilled trades or logistics: German course to B2, visa, housing and support. Free of charge for applicants.",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@id": "https://pflegekraftvermittlung.com/#website"
+  },
+  "about": {
+    "@id": "https://pflegekraftvermittlung.com/#organization"
+  },
+  "@id": "https://pflegekraftvermittlung.com/ausbildung-bewerbung-en.html#webpage"
 }
 </script>
 </head>
@@ -467,11 +700,11 @@
       <h2 class="headline reveal">This is what arriving looks like.</h2>
       <div class="erfolge-grid reveal">
         <div class="erfolge-item">
-          <div class="erfolge-photo"><img src="images/heinz-ankunft-arrivals-gruppe.jpg" alt="Group of young people after arriving at the airport in Germany" loading="lazy"></div>
+          <div class="erfolge-photo"><img width="1400" height="1049" src="images/heinz-ankunft-arrivals-gruppe.jpg" alt="Group of young people after arriving at the airport in Germany"></div>
           <p class="erfolge-caption">Arrived. First steps in Germany.</p>
         </div>
         <div class="erfolge-item">
-          <div class="erfolge-photo"><img src="images/heinz-ankunft-selfie-team.jpg" alt="Heinz picking up a group at the airport" loading="lazy"></div>
+          <div class="erfolge-photo"><picture><source srcset="images/heinz-ankunft-selfie-team.webp" type="image/webp"><img width="1400" height="1086" src="images/heinz-ankunft-selfie-team.jpg" alt="Heinz picking up a group at the airport" loading="lazy"></picture></div>
           <p class="erfolge-caption">We pick you up. In person.</p>
         </div>
       </div>
@@ -531,7 +764,8 @@
           <p class="body-text">In warehousing and shipping. You learn how goods get quickly and safely to where they are needed.</p>
         </div>
       </div>
-      <p class="body-text reveal bereiche-more">Your preferred occupation is a different one? Get in touch. We place trainees in many other occupations too.</p>
+      <p class="body-text reveal bereiche-more">Your preferred occupation is a different one, for example an office job? Get in touch. We place trainees in many other occupations too.</p>
+      <p class="body-text reveal bereiche-more">You are a company looking for trainees? Everything for employers is on our <a href="ausbildung-en.html">page for companies</a>.</p>
     </div>
   </section>
 
@@ -648,6 +882,113 @@
 
   
 
+  <!-- FAQ -->
+  <section class="faq-section" id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Frequently asked</span>
+        <h2 class="headline">Your questions. Honest answers.</h2>
+        <p class="body-text">What applicants ask us most often. Is your question missing? Write to us, and we will answer personally.</p>
+      </div>
+      <div class="faq-list reveal">
+        <h3 class="faq-group-title">Application and requirements</h3>
+        <details>
+          <summary>Who can apply?</summary>
+          <p class="body-text">Young people who would like to do vocational training in Germany, for example in care, skilled trades or logistics. We mainly place applicants from Asia.</p>
+        </details>
+        <details>
+          <summary>Which school qualification do I need?</summary>
+          <p class="body-text">We recommend 12 years of school. This way you start well prepared for vocational school and your German course. For some occupations, such as nursing, there are legal minimum requirements. We look at your certificates together with you.</p>
+        </details>
+        <details>
+          <summary>Is there an age limit?</summary>
+          <p class="body-text">There is no fixed maximum age for vocational training. Just get in touch, and we will look at your situation personally.</p>
+        </details>
+        <details>
+          <summary>Do I already need to speak good German?</summary>
+          <p class="body-text">You do not need B2 to apply. We organise your German course up to B2. How fast you progress depends mainly on your effort.</p>
+        </details>
+        <details>
+          <summary>Can I choose my occupation?</summary>
+          <p class="body-text">Tell us what interests you and what you are good at. We find the company that suits you. Which training places are open depends on the companies we work with.</p>
+        </details>
+        <details>
+          <summary>How do I apply?</summary>
+          <p class="body-text">Send an email to recruiting@hpstalent.de and tell us briefly which occupation interests you. We will get back to you personally.</p>
+        </details>
+        <h3 class="faq-group-title">Costs</h3>
+        <details>
+          <summary>What does the placement cost me?</summary>
+          <p class="body-text">Nothing. With us, the company pays for the placement, not you. You pay no placement fees.</p>
+        </details>
+        <details>
+          <summary>Who pays for the German course?</summary>
+          <p class="body-text">We organise your German course up to B2, and it is free of charge for you.</p>
+        </details>
+        <details>
+          <summary>Do I have to pay anything back if it does not work out?</summary>
+          <p class="body-text">No. You sign no repayment clauses with us.</p>
+        </details>
+        <h3 class="faq-group-title">German, visa and arrival</h3>
+        <details>
+          <summary>Why German at B2?</summary>
+          <p class="body-text">Because vocational school is taught in German. With B2 you understand lessons, colleagues and everyday life much more easily.</p>
+        </details>
+        <details>
+          <summary>How long does the German course take?</summary>
+          <p class="body-text">That depends mainly on your prior knowledge and your effort. We support you throughout the course.</p>
+        </details>
+        <details>
+          <summary>Which visa do I need?</summary>
+          <p class="body-text">A residence permit for vocational training. It is based on your training contract with a company in Germany. We take care of the applications.</p>
+        </details>
+        <details>
+          <summary>Do I need a blocked account?</summary>
+          <p class="body-text">For the visa, your living costs must be covered, usually by your training pay. If it is not enough, a blocked account may be needed, for example. We clarify this with the company in advance.</p>
+        </details>
+        <details>
+          <summary>Who helps me when I arrive in Germany?</summary>
+          <p class="body-text">We support you as you arrive: with finding housing, dealing with authorities and opening a bank account. After that, we stay available throughout your training.</p>
+        </details>
+        <details>
+          <summary>Where will I live?</summary>
+          <p class="body-text">If you need housing, we look for it with you. Some companies also provide accommodation themselves.</p>
+        </details>
+        <h3 class="faq-group-title">Training and life in Germany</h3>
+        <details>
+          <summary>How does vocational training in Germany work?</summary>
+          <p class="body-text">You learn at the company and at a vocational school. Depending on the occupation, training usually takes two to three and a half years and ends with an exam and a German qualification.</p>
+        </details>
+        <details>
+          <summary>What do I earn during training?</summary>
+          <p class="body-text">You receive training pay from the first month. How much depends on the occupation, the company and the year of training. For the visa, it has to cover your living costs.</p>
+        </details>
+        <details>
+          <summary>Can I work on the side?</summary>
+          <p class="body-text">A side job is allowed to a limited extent. Alongside full-time training, however, there is usually little time for it.</p>
+        </details>
+        <details>
+          <summary>Can my family come with me?</summary>
+          <p class="body-text">Family reunification is possible under certain conditions. It depends on the individual case. We are happy to discuss this with you personally.</p>
+        </details>
+        <details>
+          <summary>What if I feel homesick or it does not fit?</summary>
+          <p class="body-text">Talk to us, as early as possible. We stay available throughout your training and look for a solution together. If training ends early, this also affects your residence status. That is why an early conversation matters.</p>
+        </details>
+        <h3 class="faq-group-title">After the training</h3>
+        <details>
+          <summary>Can I stay in Germany after my training?</summary>
+          <p class="body-text">Yes. With your qualification you can work in Germany as a skilled worker, often directly at your training company. If you do not find a position there, you can look for work in Germany for a period of time.</p>
+        </details>
+        <details>
+          <summary>Can I stay permanently at some point?</summary>
+          <p class="body-text">After two years of work as a skilled worker, a settlement permit, meaning permanent residence, is possible if further requirements are met.</p>
+        </details>
+      </div>
+      <p class="faq-note">General information, not legal advice. In each individual case, the responsible authorities decide. As of October 2026.</p>
+    </div>
+  </section>
+
   <!-- FOOTER CTA -->
   <section class="footer-cta" id="kontakt">
     <div class="wrap">
@@ -679,7 +1020,7 @@
         <h5>Talent</h5>
         <a href="fuer-fachkraefte-en.html">Qualified nurses</a>
         <a href="ausbildung-bewerbung-en.html">Trainees</a>
-        <a href="wechsel.html">Change jobs (in German)</a>
+        <a href="wechsel.html" rel="nofollow">Change jobs (in German)</a>
       </div>
       <div class="fcol">
         <h5>Heinz</h5>

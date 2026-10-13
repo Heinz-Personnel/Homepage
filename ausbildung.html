@@ -311,7 +311,8 @@
   .garantie-logos img{height:60px;width:auto;object-fit:contain;}
 
   /* -------- Ausbildung: FAQ -------- */
-  .faq-list{margin-top:36px;border-top:1px solid rgba(11,11,11,.18);max-width:860px;}
+  .faq-list{margin-top:36px;max-width:860px;}
+  .faq-group-title + details{border-top:1px solid rgba(11,11,11,.18);margin-top:14px;}
   .faq-list details{border-bottom:1px solid rgba(11,11,11,.18);}
   .faq-list summary{cursor:pointer;list-style:none;padding:22px 44px 22px 0;font-weight:800;font-size:1.05rem;position:relative;}
   .faq-list summary::-webkit-details-marker{display:none;}
@@ -319,6 +320,9 @@
   .faq-list details[open] summary::after{content:"\2212";}
   .faq-list summary:focus-visible{outline:3px solid var(--hbo-mittel);outline-offset:3px;}
   .faq-list details p{padding:0 0 24px;max-width:70ch;}
+  .faq-group-title{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:1.3rem;line-height:1.1;color:var(--hbo-dunkel);margin:48px 0 0;padding-bottom:6px;}
+  .faq-group-title:first-child{margin-top:0;}
+  .faq-note{margin-top:28px;font-size:.9rem;color:rgba(11,11,11,.7);max-width:70ch;}
 
   /* -------- Ausbildung: Abschluss -------- */
   .footer-cta .cta-text{color:var(--weiss);max-width:56ch;font-size:1.08rem;margin-bottom:32px;}
@@ -402,6 +406,8 @@
   .photo-frame{aspect-ratio:4/3;overflow:hidden;background:var(--beton);}
   .photo-frame img{width:100%;height:100%;object-fit:cover;display:block;}
   .photo-caption{padding:14px 2px 0;font-weight:600;font-size:.95rem;color:var(--schwarz);}
+  :where(img){height:auto;}
+  picture{display:contents;}
 </style>
 <script type="application/ld+json">
 {
@@ -410,7 +416,7 @@
   "@id": "https://pflegekraftvermittlung.com/#organization",
   "name": "Heinz Personnel Solutions GmbH",
   "url": "https://pflegekraftvermittlung.com/",
-  "logo": "https://pflegekraftvermittlung.com/images/logo-ral-guetezeichen-lockup.png",
+  "logo": "https://pflegekraftvermittlung.com/images/logo-heinz.png",
   "image": "https://pflegekraftvermittlung.com/images/og-default.jpg",
   "email": "info@hpstalent.de",
   "address": {
@@ -434,17 +440,7 @@
       "name": "Hessen"
     }
   ],
-  "description": "Vermittlung internationaler Pflegefachkräfte an Kliniken und Pflegeheime in Deutschland. RAL-Gütezeichen 'Faire Anwerbung Pflege Deutschland', Mitglied im bvifg.",
-  "hasCredential": [
-    {
-      "@type": "EducationalOccupationalCredential",
-      "name": "RAL-Gütezeichen Faire Anwerbung Pflege Deutschland"
-    },
-    {
-      "@type": "EducationalOccupationalCredential",
-      "name": "Mitgliedschaft Bundesverband Internationale Fachkräftegewinnung e.V. (bvifg)"
-    }
-  ],
+  "description": "Vermittlung internationaler Pflegefachkräfte und Auszubildender an Einrichtungen und Betriebe in Deutschland. Mitglied im bvifg.",
   "memberOf": {
     "@type": "Organization",
     "name": "Bundesverband Internationale Fachkräftegewinnung e.V. (bvifg)"
@@ -514,10 +510,50 @@
     },
     {
       "@type": "Question",
+      "name": "Gibt es Nebenkosten, die später dazukommen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wir legen Ihnen alle Kosten vor Vertragsabschluss vollständig und schriftlich offen. Was dort steht, gilt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was zahlen die Auszubildenden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nichts. Ihre Azubis zahlen keine Vermittlungsgebühren, keinen Deutschkurs und unterschreiben keine Rückzahlungsklauseln. Das schützt sie und sorgt dafür, dass sie freiwillig und ohne Schulden bei Ihnen anfangen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was passiert, wenn jemand die Ausbildung abbricht?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kündigt die oder der Auszubildende innerhalb der ersten 18 Monate von sich aus, übernehmen wir die neue Suche komplett, ohne zusätzliche Kosten für Sie. Die Einzelheiten der Garantie stehen schriftlich in Ihrem Vertrag."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie hoch muss die Ausbildungsvergütung sein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mindestens so hoch, wie Gesetz oder Tarifvertrag es für Ihren Beruf vorsehen. Für das Visum muss die Vergütung außerdem den Lebensunterhalt sichern, derzeit sind das etwas über 1.000 € brutto im Monat. Liegt Ihre Vergütung darunter, lässt sich die Lücke zum Beispiel über ein Sperrkonto schließen. Das klären wir gemeinsam, bevor die Suche startet."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Woher kommen die Auszubildenden?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Unsere Auszubildenden kommen aus Asien."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie läuft die Auswahl ab?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wir sprechen zuerst über Ihren Betrieb, den Beruf und Ihre Erwartungen. Danach stellen wir Ihnen passende Kandidat:innen vor. Sie führen die Gespräche selbst und entscheiden, wer zu Ihnen passt."
       }
     },
     {
@@ -530,18 +566,10 @@
     },
     {
       "@type": "Question",
-      "name": "Wie lange dauert es bis zum Ausbildungsstart?",
+      "name": "Welche Schulbildung bringen die Bewerber:innen mit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Von der Auswahl bis zum Ausbildungsstart rechnen Sie mit rund 3 bis 6 Monaten."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Was, wenn jemand die Ausbildung abbricht?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Kündigt die oder der Auszubildende innerhalb der ersten 18 Monate von sich aus, übernehmen wir die neue Suche komplett, ohne zusätzliche Kosten für Sie."
+        "text": "Wir empfehlen unseren Bewerber:innen 12 Jahre Schule. Für manche Berufe, etwa die Pflege, gibt es zusätzlich gesetzliche Mindestanforderungen. Die Zeugnisse prüfen wir vorab."
       }
     },
     {
@@ -554,13 +582,128 @@
     },
     {
       "@type": "Question",
+      "name": "Wie lange dauert es bis zum Ausbildungsstart?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Von der Auswahl bis zum Ausbildungsstart rechnen Sie mit rund 3 bis 6 Monaten. Der genaue Termin richtet sich auch danach, wann in Ihrem Beruf und an der Berufsschule die Ausbildung beginnt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welches Visum brauchen Auszubildende aus dem Ausland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eine Aufenthaltserlaubnis zur Berufsausbildung nach § 16a Aufenthaltsgesetz. Grundlage ist der Ausbildungsvertrag mit Ihrem Betrieb. Wir stellen die Anträge und behalten sie bis zur Entscheidung im Blick."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was prüft die Bundesagentur für Arbeit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bei einer betrieblichen Ausbildung stimmt die Bundesagentur für Arbeit dem Visum zu. Sie prüft dabei unter anderem, ob Ihre Auszubildenden zu den gleichen Bedingungen eingestellt werden wie deutsche Auszubildende. Das ist ein internes Behördenverfahren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was muss unser Betrieb mitbringen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eine Ausbildungsberechtigung für den Beruf, einen Ausbildungsplatz und eine Vergütung, die den Lebensunterhalt sichert. Wenn Sie bereits ausbilden, haben Sie die Berechtigung. Falls nicht, hilft Ihre zuständige Kammer weiter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Brauchen die Auszubildenden ein Anerkennungsverfahren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Für den Beruf nicht, denn sie machen ihren Abschluss in Deutschland. Je nach Beruf und Bundesland wird der ausländische Schulabschluss geprüft, zum Beispiel in der Pflege. Darum kümmern wir uns."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Müssen wir Behörden informieren, wenn eine Ausbildung vorzeitig endet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Endet die Ausbildung früher als geplant, muss der Betrieb das der Ausländerbehörde mitteilen. Sprechen Sie uns in diesem Fall früh an, wir unterstützen Sie dabei."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wer kümmert sich um die Wohnung?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wenn eine Wohnung gebraucht wird, suchen wir sie. Stellt Ihr Betrieb selbst eine Unterkunft, stimmen wir uns gern mit Ihnen ab."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wer ist während der Ausbildung ansprechbar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wir bleiben bis zum Abschluss ansprechbar, für Ihren Betrieb und für Ihre Auszubildenden. Es gibt eine feste Ansprechperson, wenn es irgendwo hakt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was, wenn es in der Berufsschule schwierig wird?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Genau dafür setzen wir auf B2 statt auf das Mindestniveau. Wird es trotzdem eng, melden Sie sich. Wir suchen gemeinsam mit Ihnen und Ihren Auszubildenden nach einer Lösung."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gibt es eine Probezeit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Wie jede Ausbildung in Deutschland beginnt auch diese mit einer Probezeit. Es gelten dieselben Regeln wie für alle anderen Auszubildenden in Ihrem Beruf."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dürfen die Auszubildenden nebenher arbeiten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In begrenztem Umfang ist eine Nebenbeschäftigung erlaubt, sie muss unabhängig von der Ausbildung sein. Bei einer Vollzeitausbildung bleibt dafür in der Praxis wenig Zeit."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Was passiert nach der Ausbildung?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Mit dem Abschluss kann Ihre Auszubildende oder Ihr Auszubildender als Fachkraft bei Ihnen bleiben. Der Aufenthaltstitel wird dafür angepasst, das begleiten wir."
+        "text": "Mit dem Abschluss kann Ihre Auszubildende oder Ihr Auszubildender als Fachkraft bei Ihnen bleiben. Der Aufenthaltstitel wird dafür angepasst, das begleiten wir. Nach zwei Jahren Arbeit ist unter weiteren Voraussetzungen ein dauerhafter Aufenthalt möglich."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Warum Auszubildende und nicht gleich Fachkräfte?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Auszubildende lernen Ihre Abläufe von Grund auf, machen einen deutschen Abschluss und wachsen über Jahre mit Ihrem Betrieb. Brauchen Sie schnell erfahrene Pflegefachkräfte, ist unsere Fachkräfte-Vermittlung der passende Weg, in der Region auch mit unserem Angebot für Berlin und Brandenburg. Oft ergänzen sich beide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie fangen wir an?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mit einem Erstgespräch. Erzählen Sie uns von Ihrem Betrieb und Ihrem Ausbildungsberuf, wir sagen Ihnen offen, ob und wie es passt."
       }
     }
-  ]
+  ],
+  "url": "https://pflegekraftvermittlung.com/ausbildung.html",
+  "name": "Azubis aus dem Ausland für Ihren Betrieb | Heinz",
+  "description": "Auszubildende aus dem Ausland für Ihren Betrieb, z. B. in Pflege, Handwerk oder Logistik. Deutsch auf B2, alle Anträge aus einer Hand, 18 Monate Garantie.",
+  "inLanguage": "de-DE",
+  "isPartOf": {
+    "@id": "https://pflegekraftvermittlung.com/#website"
+  },
+  "about": {
+    "@id": "https://pflegekraftvermittlung.com/#organization"
+  },
+  "@id": "https://pflegekraftvermittlung.com/ausbildung.html#webpage"
 }
 </script>
 </head>
@@ -656,15 +799,15 @@
       </div>
       <div class="photo-grid photo-grid--3 reveal">
         <figure class="photo-item">
-          <div class="photo-frame"><img src="images/heinz-ankunft-arrivals-gruppe.jpg" alt="Gruppe junger Menschen nach der Ankunft am Flughafen in Deutschland" loading="lazy"></div>
+          <div class="photo-frame"><img width="1400" height="1049" src="images/heinz-ankunft-arrivals-gruppe.jpg" alt="Gruppe junger Menschen nach der Ankunft am Flughafen in Deutschland"></div>
           <figcaption class="photo-caption">Angekommen in Deutschland.</figcaption>
         </figure>
         <figure class="photo-item">
-          <div class="photo-frame"><img src="images/heinz-sprachschule-gruppe.jpg" alt="Gruppe in der Sprachschule vor der Ausreise" loading="lazy"></div>
+          <div class="photo-frame"><picture><source srcset="images/heinz-sprachschule-gruppe.webp" type="image/webp"><img width="1400" height="1050" src="images/heinz-sprachschule-gruppe.jpg" alt="Gruppe in der Sprachschule vor der Ausreise" loading="lazy"></picture></div>
           <figcaption class="photo-caption">Deutsch lernen vor der Einreise.</figcaption>
         </figure>
         <figure class="photo-item">
-          <div class="photo-frame"><img src="images/heinz-ankunft-selfie-team.jpg" alt="Heinz holt eine Gruppe am Flughafen ab" loading="lazy"></div>
+          <div class="photo-frame"><picture><source srcset="images/heinz-ankunft-selfie-team.webp" type="image/webp"><img width="1400" height="1086" src="images/heinz-ankunft-selfie-team.jpg" alt="Heinz holt eine Gruppe am Flughafen ab" loading="lazy"></picture></div>
           <figcaption class="photo-caption">Persönlich abgeholt.</figcaption>
         </figure>
       </div>
@@ -747,7 +890,7 @@
           <p class="body-text">Für Logistikbetriebe, die Nachwuchs für Lager und Versand suchen. Ihre Azubis lernen Ihre Abläufe von Grund auf und wachsen mit Ihrem Betrieb.</p>
         </div>
       </div>
-      <p class="body-text reveal bereiche-more">Ihr Ausbildungsberuf ist ein anderer? Sprechen Sie uns an. Wir vermitteln Auszubildende in vielen weiteren Berufen.</p>
+      <p class="body-text reveal bereiche-more">Ihr Ausbildungsberuf ist ein anderer, zum Beispiel im Büro? Sprechen Sie uns an. Wir vermitteln Auszubildende in vielen weiteren Berufen.</p>
     </div>
   </section>
 
@@ -856,11 +999,11 @@
       </div>
       <div class="photo-grid reveal">
         <figure class="photo-item">
-          <div class="photo-frame"><img src="images/heinz-ankunft-strasse.jpg" alt="Gruppe auf dem Weg ins neue Zuhause" loading="lazy"></div>
+          <div class="photo-frame"><picture><source srcset="images/heinz-ankunft-strasse.webp" type="image/webp"><img width="1400" height="1050" src="images/heinz-ankunft-strasse.jpg" alt="Gruppe auf dem Weg ins neue Zuhause" loading="lazy"></picture></div>
           <figcaption class="photo-caption">Auf dem Weg ins neue Zuhause.</figcaption>
         </figure>
         <figure class="photo-item">
-          <div class="photo-frame"><img src="images/heinz-lieblingsfarbe-sommerfest.jpg" alt="Fröhliche Gruppe beim Sommerfest von Heinz" loading="lazy"></div>
+          <div class="photo-frame"><picture><source srcset="images/heinz-lieblingsfarbe-sommerfest.webp" type="image/webp"><img width="1050" height="1400" src="images/heinz-lieblingsfarbe-sommerfest.jpg" alt="Fröhliche Gruppe beim Sommerfest von Heinz" loading="lazy"></picture></div>
           <figcaption class="photo-caption">Dazugehören. Beim Sommerfest von Heinz.</figcaption>
         </figure>
       </div>
@@ -892,7 +1035,7 @@
       </div>
 
       <p class="garantie-footnote reveal">Die Sicherheit gilt bei Eigenkündigung der oder des Auszubildenden. Ausgenommen sind Kündigungen durch den Betrieb und Fälle, in denen die Ausbildung wegen Problemen im Arbeitsumfeld endet.</p>
-      <p class="garantie-ral reveal">Für Auszubildende gelten bei uns dieselben Grundsätze: keine Kosten für die Auszubildenden, keine Rückzahlungsklauseln und transparente Verträge.</p>
+      <p class="garantie-ral reveal">Für Auszubildende gelten bei uns dieselben Grundsätze wie bei unseren Pflegefachkräften: keine Kosten für die Auszubildenden, keine Rückzahlungsklauseln, transparente Verträge und persönliche Begleitung.</p>
     </div>
   </section>
 
@@ -901,9 +1044,10 @@
     <div class="wrap">
       <div class="section-head reveal">
         <span class="eyebrow">Häufige Fragen</span>
-        <h2 class="headline">Kurz beantwortet.</h2>
+        <h2 class="headline">Ihre Fragen. Klar beantwortet.</h2>
       </div>
       <div class="faq-list reveal">
+        <h3 class="faq-group-title">Kosten und Vertrag</h3>
         <details>
           <summary>Was kostet die Vermittlung?</summary>
           <p class="body-text">Für Ihre Auszubildenden nichts, bei uns gilt das Employer-pays-Prinzip. Für Ihren Betrieb gilt: Zahlung nur bei Erfolg, 50 % nach erfolgreicher Vermittlung und 50 % nach dem Ausbildungsstart. Die genauen Konditionen besprechen wir offen im Erstgespräch.</p>
@@ -913,30 +1057,103 @@
           <p class="body-text">Sie bilden aus, um den Rest kümmern wir uns: Auswahl, Sprachausbildung, Visum, Einreise, Wohnungssuche und Behördengänge. Bei Ihnen bleiben der Ausbildungsvertrag, die Gespräche mit den Kandidat:innen und die Ausbildung im Betrieb.</p>
         </details>
         <details>
+          <summary>Gibt es Nebenkosten, die später dazukommen?</summary>
+          <p class="body-text">Wir legen Ihnen alle Kosten vor Vertragsabschluss vollständig und schriftlich offen. Was dort steht, gilt.</p>
+        </details>
+        <details>
+          <summary>Was zahlen die Auszubildenden?</summary>
+          <p class="body-text">Nichts. Ihre Azubis zahlen keine Vermittlungsgebühren, keinen Deutschkurs und unterschreiben keine Rückzahlungsklauseln. Das schützt sie und sorgt dafür, dass sie freiwillig und ohne Schulden bei Ihnen anfangen.</p>
+        </details>
+        <details>
+          <summary>Was passiert, wenn jemand die Ausbildung abbricht?</summary>
+          <p class="body-text">Kündigt die oder der Auszubildende innerhalb der ersten 18 Monate von sich aus, übernehmen wir die neue Suche komplett, ohne zusätzliche Kosten für Sie. Die Einzelheiten der Garantie stehen schriftlich in Ihrem Vertrag.</p>
+        </details>
+        <details>
+          <summary>Wie hoch muss die Ausbildungsvergütung sein?</summary>
+          <p class="body-text">Mindestens so hoch, wie Gesetz oder Tarifvertrag es für Ihren Beruf vorsehen. Für das Visum muss die Vergütung außerdem den Lebensunterhalt sichern, derzeit sind das etwas über 1.000 € brutto im Monat. Liegt Ihre Vergütung darunter, lässt sich die Lücke zum Beispiel über ein Sperrkonto schließen. Das klären wir gemeinsam, bevor die Suche startet.</p>
+        </details>
+        <h3 class="faq-group-title">Auswahl und Sprache</h3>
+        <details>
           <summary>Woher kommen die Auszubildenden?</summary>
           <p class="body-text">Unsere Auszubildenden kommen aus Asien.</p>
+        </details>
+        <details>
+          <summary>Wie läuft die Auswahl ab?</summary>
+          <p class="body-text">Wir sprechen zuerst über Ihren Betrieb, den Beruf und Ihre Erwartungen. Danach stellen wir Ihnen passende Kandidat:innen vor. Sie führen die Gespräche selbst und entscheiden, wer zu Ihnen passt.</p>
         </details>
         <details>
           <summary>Wie gut ist ihr Deutsch?</summary>
           <p class="body-text">Unsere Auszubildenden bringen Deutsch auf B2-Niveau mit, nachgewiesen vor der Einreise. Für das Ausbildungsvisum genügt in der Regel ein niedrigeres Niveau. Wir setzen höher an, weil der Berufsschulunterricht auf Deutsch stattfindet.</p>
         </details>
         <details>
-          <summary>Wie lange dauert es bis zum Ausbildungsstart?</summary>
-          <p class="body-text">Von der Auswahl bis zum Ausbildungsstart rechnen Sie mit rund 3 bis 6 Monaten.</p>
-        </details>
-        <details>
-          <summary>Was, wenn jemand die Ausbildung abbricht?</summary>
-          <p class="body-text">Kündigt die oder der Auszubildende innerhalb der ersten 18 Monate von sich aus, übernehmen wir die neue Suche komplett, ohne zusätzliche Kosten für Sie.</p>
+          <summary>Welche Schulbildung bringen die Bewerber:innen mit?</summary>
+          <p class="body-text">Wir empfehlen unseren Bewerber:innen 12 Jahre Schule. Für manche Berufe, etwa die Pflege, gibt es zusätzlich gesetzliche Mindestanforderungen. Die Zeugnisse prüfen wir vorab.</p>
         </details>
         <details>
           <summary>Für welche Ausbildungsberufe vermitteln Sie?</summary>
           <p class="body-text">Zum Beispiel für Pflege, Handwerk und Logistik. Andere Ausbildungsberufe sind ausdrücklich möglich. Fragen Sie uns gern zu Ihrem Beruf.</p>
         </details>
         <details>
+          <summary>Wie lange dauert es bis zum Ausbildungsstart?</summary>
+          <p class="body-text">Von der Auswahl bis zum Ausbildungsstart rechnen Sie mit rund 3 bis 6 Monaten. Der genaue Termin richtet sich auch danach, wann in Ihrem Beruf und an der Berufsschule die Ausbildung beginnt.</p>
+        </details>
+        <h3 class="faq-group-title">Visum und Behörden</h3>
+        <details>
+          <summary>Welches Visum brauchen Auszubildende aus dem Ausland?</summary>
+          <p class="body-text">Eine Aufenthaltserlaubnis zur Berufsausbildung nach § 16a Aufenthaltsgesetz. Grundlage ist der Ausbildungsvertrag mit Ihrem Betrieb. Wir stellen die Anträge und behalten sie bis zur Entscheidung im Blick.</p>
+        </details>
+        <details>
+          <summary>Was prüft die Bundesagentur für Arbeit?</summary>
+          <p class="body-text">Bei einer betrieblichen Ausbildung stimmt die Bundesagentur für Arbeit dem Visum zu. Sie prüft dabei unter anderem, ob Ihre Auszubildenden zu den gleichen Bedingungen eingestellt werden wie deutsche Auszubildende. Das ist ein internes Behördenverfahren.</p>
+        </details>
+        <details>
+          <summary>Was muss unser Betrieb mitbringen?</summary>
+          <p class="body-text">Eine Ausbildungsberechtigung für den Beruf, einen Ausbildungsplatz und eine Vergütung, die den Lebensunterhalt sichert. Wenn Sie bereits ausbilden, haben Sie die Berechtigung. Falls nicht, hilft Ihre zuständige Kammer weiter.</p>
+        </details>
+        <details>
+          <summary>Brauchen die Auszubildenden ein Anerkennungsverfahren?</summary>
+          <p class="body-text">Für den Beruf nicht, denn sie machen ihren Abschluss in Deutschland. Je nach Beruf und Bundesland wird der ausländische Schulabschluss geprüft, zum Beispiel in der Pflege. Darum kümmern wir uns.</p>
+        </details>
+        <details>
+          <summary>Müssen wir Behörden informieren, wenn eine Ausbildung vorzeitig endet?</summary>
+          <p class="body-text">Ja. Endet die Ausbildung früher als geplant, muss der Betrieb das der Ausländerbehörde mitteilen. Sprechen Sie uns in diesem Fall früh an, wir unterstützen Sie dabei.</p>
+        </details>
+        <h3 class="faq-group-title">Ausbildung und Alltag</h3>
+        <details>
+          <summary>Wer kümmert sich um die Wohnung?</summary>
+          <p class="body-text">Wenn eine Wohnung gebraucht wird, suchen wir sie. Stellt Ihr Betrieb selbst eine Unterkunft, stimmen wir uns gern mit Ihnen ab.</p>
+        </details>
+        <details>
+          <summary>Wer ist während der Ausbildung ansprechbar?</summary>
+          <p class="body-text">Wir bleiben bis zum Abschluss ansprechbar, für Ihren Betrieb und für Ihre Auszubildenden. Es gibt eine feste Ansprechperson, wenn es irgendwo hakt.</p>
+        </details>
+        <details>
+          <summary>Was, wenn es in der Berufsschule schwierig wird?</summary>
+          <p class="body-text">Genau dafür setzen wir auf B2 statt auf das Mindestniveau. Wird es trotzdem eng, melden Sie sich. Wir suchen gemeinsam mit Ihnen und Ihren Auszubildenden nach einer Lösung.</p>
+        </details>
+        <details>
+          <summary>Gibt es eine Probezeit?</summary>
+          <p class="body-text">Ja. Wie jede Ausbildung in Deutschland beginnt auch diese mit einer Probezeit. Es gelten dieselben Regeln wie für alle anderen Auszubildenden in Ihrem Beruf.</p>
+        </details>
+        <details>
+          <summary>Dürfen die Auszubildenden nebenher arbeiten?</summary>
+          <p class="body-text">In begrenztem Umfang ist eine Nebenbeschäftigung erlaubt, sie muss unabhängig von der Ausbildung sein. Bei einer Vollzeitausbildung bleibt dafür in der Praxis wenig Zeit.</p>
+        </details>
+        <h3 class="faq-group-title">Nach der Ausbildung</h3>
+        <details>
           <summary>Was passiert nach der Ausbildung?</summary>
-          <p class="body-text">Mit dem Abschluss kann Ihre Auszubildende oder Ihr Auszubildender als Fachkraft bei Ihnen bleiben. Der Aufenthaltstitel wird dafür angepasst, das begleiten wir.</p>
+          <p class="body-text">Mit dem Abschluss kann Ihre Auszubildende oder Ihr Auszubildender als Fachkraft bei Ihnen bleiben. Der Aufenthaltstitel wird dafür angepasst, das begleiten wir. Nach zwei Jahren Arbeit ist unter weiteren Voraussetzungen ein dauerhafter Aufenthalt möglich.</p>
+        </details>
+        <details>
+          <summary>Warum Auszubildende und nicht gleich Fachkräfte?</summary>
+          <p class="body-text">Auszubildende lernen Ihre Abläufe von Grund auf, machen einen deutschen Abschluss und wachsen über Jahre mit Ihrem Betrieb. Brauchen Sie schnell erfahrene Pflegefachkräfte, ist unsere <a href="fuer-einrichtungen.html">Fachkräfte-Vermittlung</a> der passende Weg, in der Region auch mit unserem Angebot für <a href="pflegefachkraefte-berlin-brandenburg.html">Berlin und Brandenburg</a>. Oft ergänzen sich beide.</p>
+        </details>
+        <details>
+          <summary>Wie fangen wir an?</summary>
+          <p class="body-text">Mit einem Erstgespräch. Erzählen Sie uns von Ihrem Betrieb und Ihrem Ausbildungsberuf, wir sagen Ihnen offen, ob und wie es passt.</p>
         </details>
       </div>
+      <p class="faq-note">Allgemeine Informationen, keine Rechtsberatung. Verbindlich entscheiden im Einzelfall die zuständigen Behörden. Stand: Oktober 2026.</p>
     </div>
   </section>
 
@@ -982,7 +1199,7 @@
         <h5>Zukunftskräfte</h5>
         <a href="fuer-fachkraefte.html">Pflegefachkräfte</a>
         <a href="ausbildung-bewerbung.html">Auszubildende</a>
-        <a href="wechsel.html">Stelle wechseln</a>
+        <a href="wechsel.html" rel="nofollow">Stelle wechseln</a>
       </div>
       <div class="fcol">
         <h5>Heinz</h5>
