@@ -192,7 +192,7 @@
     display:inline-block;
     opacity:0;
     transform:translateY(14px);
-    transition:opacity .35s ease, transform .35s ease;
+    transition:opacity .6s ease, transform .6s ease;
     overflow-wrap:break-word;
   }
   .hero-line2.is-visible{opacity:1;transform:translateY(0);}
@@ -1152,48 +1152,43 @@
   var hero = document.getElementById('hero');
 
   // "Wir lösen:" + rotating list of problems Heinz actually solves.
-  // The loop always comes back around to "Fachkräftemangel.", the
-  // umbrella problem, and pauses there a beat longer before restarting.
-  var sequence = ['Fachkräftemangel.', 'Zu viel Bürokratie.', 'Langsame Anerkennung.', 'Schlechte Sprachniveaus.', 'fehlende Integration.', 'Fachkräftemangel.'];
+  // Ruhiger Wechsel: jeder Begriff steht knapp 3 Sekunden, der Oberbegriff länger.
+  // Nach zwei Durchläufen bleibt der Oberbegriff stehen.
+  var sequence = ['Fachkräftemangel.', 'Zu viel Bürokratie.', 'Langsame Anerkennung.', 'Schlechte Sprachniveaus.', 'Fehlende Integration.'];
 
   var started = false;
-  var stepMs = 1500;
-  var fadeMs = 350;
-  var pauseAfterMitUns = 2600;
+  var holdMs = 2800;          // so lange steht jeder Begriff
+  var holdHomeMs = 4500;      // längere Pause auf dem Oberbegriff
+  var fadeMs = 600;           // Ausblenden, passend zur CSS-Transition
+  var maxLoops = 2;           // danach bleibt der Oberbegriff stehen
 
   function showStatic(){
-    rotator.textContent = 'Fachkräftemangel.';
+    rotator.textContent = sequence[0];
     rotator.classList.add('is-visible');
   }
 
   function runSequence(){
     if (started) return;
     started = true;
+    showStatic();
+    if (reduceMotion) return;
 
-    if (reduceMotion){
-      showStatic();
-      return;
-    }
+    var i = 0, loops = 0;
 
-    var i = 0;
-
-    function step(){
+    function next(){
       rotator.classList.remove('is-visible');
       setTimeout(function(){
-        var idx = i % sequence.length;
-        var phrase = sequence[idx];
-        rotator.textContent = phrase;
+        i = (i + 1) % sequence.length;
+        if (i === 0) loops++;
+        rotator.textContent = sequence[i];
         requestAnimationFrame(function(){
-          rotator.classList.add('is-visible');
+          requestAnimationFrame(function(){ rotator.classList.add('is-visible'); });
         });
-
-        var isPause = idx === sequence.length - 1;
-        var wait = isPause ? pauseAfterMitUns : stepMs;
-        i++;
-        setTimeout(step, wait);
+        if (i === 0 && loops >= maxLoops) return;
+        setTimeout(next, fadeMs + (i === 0 ? holdHomeMs : holdMs));
       }, fadeMs);
     }
-    step();
+    setTimeout(next, holdHomeMs);
   }
 
   if ('IntersectionObserver' in window){
