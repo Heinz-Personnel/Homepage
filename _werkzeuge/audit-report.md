@@ -1,6 +1,6 @@
 # Audit-Bericht Website Heinz
 
-Erzeugt von `_werkzeuge/audit.py` (nur lesen). 57 HTML-Dateien im Hauptordner (53 indexierbar, 3 noindex, 1 Weiterleitungsseiten), 0 in Unterordnern.
+Erzeugt von `_werkzeuge/audit.py` (nur lesen). 57 HTML-Dateien im Hauptordner (53 indexierbar, 3 noindex, 1 Weiterleitungsseiten), 16 in Unterordnern.
 
 ## Hosting
 
@@ -22,6 +22,22 @@ Erzeugt von `_werkzeuge/audit.py` (nur lesen). 57 HTML-Dateien im Hauptordner (5
 - noindex: consass_Angebot_1.html
 - Weiterleitungsseite: unser-weg.html (noindex: ja, canonical: https://pflegekraftvermittlung.com/fuer-einrichtungen.html)
 - noindex: wechsel.html
+- **Unterordner `ankommen-in-deutschland-gemeinsam-starten-schritt-fur-schritt/`: 1 HTML-Dateien, davon 1 mit noindex.** Wird öffentlich ausgeliefert (doppelte Inhalte möglich).
+- **Unterordner `blog/`: 1 HTML-Dateien, davon 1 mit noindex.** Wird öffentlich ausgeliefert (doppelte Inhalte möglich).
+- **Unterordner `category/allgemein/`: 1 HTML-Dateien, davon 1 mit noindex.** Wird öffentlich ausgeliefert (doppelte Inhalte möglich).
+- **Unterordner `category/arrival/`: 1 HTML-Dateien, davon 1 mit noindex.** Wird öffentlich ausgeliefert (doppelte Inhalte möglich).
+- **Unterordner `cookie-policy-eu/`: 1 HTML-Dateien, davon 1 mit noindex.** Wird öffentlich ausgeliefert (doppelte Inhalte möglich).
+- **Unterordner `datenschutzerklarung/`: 1 HTML-Dateien, davon 1 mit noindex.** Wird öffentlich ausgeliefert (doppelte Inhalte möglich).
+- **Unterordner `downloads/`: 1 HTML-Dateien, davon 1 mit noindex.** Wird öffentlich ausgeliefert (doppelte Inhalte möglich).
+- **Unterordner `fur-fachkrafte/`: 1 HTML-Dateien, davon 1 mit noindex.** Wird öffentlich ausgeliefert (doppelte Inhalte möglich).
+- **Unterordner `hps-faq/`: 1 HTML-Dateien, davon 1 mit noindex.** Wird öffentlich ausgeliefert (doppelte Inhalte möglich).
+- **Unterordner `impressum/`: 1 HTML-Dateien, davon 1 mit noindex.** Wird öffentlich ausgeliefert (doppelte Inhalte möglich).
+- **Unterordner `kontakt/`: 1 HTML-Dateien, davon 1 mit noindex.** Wird öffentlich ausgeliefert (doppelte Inhalte möglich).
+- **Unterordner `loesung/`: 1 HTML-Dateien, davon 1 mit noindex.** Wird öffentlich ausgeliefert (doppelte Inhalte möglich).
+- **Unterordner `partner/`: 1 HTML-Dateien, davon 1 mit noindex.** Wird öffentlich ausgeliefert (doppelte Inhalte möglich).
+- **Unterordner `ral-guetezeichen-faire-anwerbung-pflege/`: 1 HTML-Dateien, davon 1 mit noindex.** Wird öffentlich ausgeliefert (doppelte Inhalte möglich).
+- **Unterordner `service/`: 1 HTML-Dateien, davon 1 mit noindex.** Wird öffentlich ausgeliefert (doppelte Inhalte möglich).
+- **Unterordner `uber-uns/`: 1 HTML-Dateien, davon 1 mit noindex.** Wird öffentlich ausgeliefert (doppelte Inhalte möglich).
 
 ## Title
 
