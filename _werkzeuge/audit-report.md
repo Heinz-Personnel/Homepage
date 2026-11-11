@@ -1,6 +1,6 @@
 # Audit-Bericht Website Heinz
 
-Erzeugt von `_werkzeuge/audit.py` (nur lesen). 61 HTML-Dateien im Hauptordner (57 indexierbar, 3 noindex, 1 Weiterleitungsseiten), 16 in Unterordnern.
+Erzeugt von `_werkzeuge/audit.py` (nur lesen). 63 HTML-Dateien im Hauptordner (57 indexierbar, 5 noindex, 1 Weiterleitungsseiten), 16 in Unterordnern.
 
 ## Hosting
 
@@ -20,6 +20,8 @@ Erzeugt von `_werkzeuge/audit.py` (nur lesen). 61 HTML-Dateien im Hauptordner (5
 - Sitemap-URLs: 57 · indexierbare Seiten im Hauptordner: 57
 - noindex: 404.html
 - noindex: consass_Angebot_1.html
+- noindex: physiotherapie-en.html
+- noindex: physiotherapie.html
 - Weiterleitungsseite: unser-weg.html (noindex: ja, canonical: https://pflegekraftvermittlung.com/fuer-einrichtungen.html)
 - noindex: wechsel.html
 - **Unterordner `ankommen-in-deutschland-gemeinsam-starten-schritt-fur-schritt/`: 1 HTML-Dateien, davon 1 mit noindex.** Wird öffentlich ausgeliefert (doppelte Inhalte möglich).
@@ -64,34 +66,34 @@ Erzeugt von `_werkzeuge/audit.py` (nur lesen). 61 HTML-Dateien im Hauptordner (5
 
 Gezählt: ganzer sichtbarer Text / nur Inhalt ohne Kopf, Navigation und Footer. Aufgeführt sind Seiten unter 300 Wörtern Inhalt.
 
-- 404.html: 114 / 46
-- beschwerdeformular-en.html: 315 / 234
-- beschwerdeformular.html: 269 / 201
-- blog-en.html: 265 / 184
-- blog-post-1-en.html: 344 / 263
-- blog-post-1.html: 297 / 225
-- blog-post-2-en.html: 337 / 256
-- blog-post-2.html: 319 / 251
-- blog-post-4-en.html: 366 / 285
-- blog-post-4.html: 331 / 263
-- blog-post-5-en.html: 367 / 286
-- blog-post-5.html: 343 / 271
-- blog-post-6-en.html: 330 / 249
-- blog-post-6.html: 294 / 226
-- blog-post-7-en.html: 356 / 275
-- blog-post-7.html: 331 / 259
-- blog-post-8-en.html: 362 / 281
-- blog-post-8.html: 326 / 258
-- blog-post-9-en.html: 325 / 244
-- blog-post-9.html: 293 / 221
-- blog.html: 237 / 169
-- downloads-en.html: 303 / 222
-- downloads.html: 262 / 190
-- kontakt-en.html: 196 / 113
-- kontakt.html: 173 / 101
-- Zur Info index.html: 831 / 763
-- Zur Info ausbildung.html: 1776 / 1704
-- Zur Info ausbildung-bewerbung.html: 1501 / 1433
+- 404.html: 121 / 46
+- beschwerdeformular-en.html: 325 / 234
+- beschwerdeformular.html: 276 / 201
+- blog-en.html: 275 / 184
+- blog-post-1-en.html: 354 / 263
+- blog-post-1.html: 304 / 225
+- blog-post-2-en.html: 347 / 256
+- blog-post-2.html: 326 / 251
+- blog-post-4-en.html: 376 / 285
+- blog-post-4.html: 338 / 263
+- blog-post-5-en.html: 377 / 286
+- blog-post-5.html: 350 / 271
+- blog-post-6-en.html: 340 / 249
+- blog-post-6.html: 301 / 226
+- blog-post-7-en.html: 366 / 275
+- blog-post-7.html: 338 / 259
+- blog-post-8-en.html: 372 / 281
+- blog-post-8.html: 333 / 258
+- blog-post-9-en.html: 335 / 244
+- blog-post-9.html: 300 / 221
+- blog.html: 244 / 169
+- downloads-en.html: 313 / 222
+- downloads.html: 269 / 190
+- kontakt-en.html: 206 / 113
+- kontakt.html: 180 / 101
+- Zur Info index.html: 838 / 763
+- Zur Info ausbildung.html: 1783 / 1704
+- Zur Info ausbildung-bewerbung.html: 1508 / 1433
 
 ## Interne Links (href, src)
 
@@ -165,6 +167,8 @@ Gezählt: ganzer sichtbarer Text / nur Inhalt ohne Kopf, Navigation und Footer. 
 - kontakt-en.html: BreadcrumbList, EmploymentAgency, WebPage
 - kontakt.html: BreadcrumbList, EmploymentAgency, WebPage
 - pflegefachkraefte-berlin-brandenburg.html: BreadcrumbList, EmploymentAgency, WebPage
+- physiotherapie-en.html: BreadcrumbList, EmploymentAgency, FAQPage, WebPage
+- physiotherapie.html: BreadcrumbList, EmploymentAgency, FAQPage, WebPage
 - presse-en.html: BreadcrumbList, EmploymentAgency, WebPage
 - presse.html: BreadcrumbList, EmploymentAgency, WebPage
 - ueber-uns-en.html: BreadcrumbList, EmploymentAgency, WebPage
