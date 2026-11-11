@@ -1,6 +1,6 @@
 # Audit-Bericht Website Heinz
 
-Erzeugt von `_werkzeuge/audit.py` (nur lesen). 57 HTML-Dateien im Hauptordner (53 indexierbar, 3 noindex, 1 Weiterleitungsseiten), 16 in Unterordnern.
+Erzeugt von `_werkzeuge/audit.py` (nur lesen). 61 HTML-Dateien im Hauptordner (57 indexierbar, 3 noindex, 1 Weiterleitungsseiten), 16 in Unterordnern.
 
 ## Hosting
 
@@ -17,7 +17,7 @@ Erzeugt von `_werkzeuge/audit.py` (nur lesen). 57 HTML-Dateien im Hauptordner (5
 
 ## Indexierbarkeit und Sitemap
 
-- Sitemap-URLs: 53 · indexierbare Seiten im Hauptordner: 53
+- Sitemap-URLs: 57 · indexierbare Seiten im Hauptordner: 57
 - noindex: 404.html
 - noindex: consass_Angebot_1.html
 - Weiterleitungsseite: unser-weg.html (noindex: ja, canonical: https://pflegekraftvermittlung.com/fuer-einrichtungen.html)
@@ -67,7 +67,7 @@ Gezählt: ganzer sichtbarer Text / nur Inhalt ohne Kopf, Navigation und Footer. 
 - 404.html: 114 / 46
 - beschwerdeformular-en.html: 315 / 234
 - beschwerdeformular.html: 269 / 201
-- blog-en.html: 234 / 153
+- blog-en.html: 265 / 184
 - blog-post-1-en.html: 344 / 263
 - blog-post-1.html: 297 / 225
 - blog-post-2-en.html: 337 / 256
@@ -84,7 +84,7 @@ Gezählt: ganzer sichtbarer Text / nur Inhalt ohne Kopf, Navigation und Footer. 
 - blog-post-8.html: 326 / 258
 - blog-post-9-en.html: 325 / 244
 - blog-post-9.html: 293 / 221
-- blog.html: 208 / 140
+- blog.html: 237 / 169
 - downloads-en.html: 303 / 222
 - downloads.html: 262 / 190
 - kontakt-en.html: 196 / 113
@@ -96,13 +96,13 @@ Gezählt: ganzer sichtbarer Text / nur Inhalt ohne Kopf, Navigation und Footer. 
 ## Interne Links (href, src)
 
 - Keine defekten internen Links.
-- Indexierte Seiten mit Link auf wechsel.html (noindex): 53 (z. B. ausbildung-bewerbung-en.html, ausbildung-bewerbung.html, ausbildung-en.html, ausbildung.html)
+- Indexierte Seiten mit Link auf wechsel.html (noindex): 57 (z. B. ausbildung-bewerbung-en.html, ausbildung-bewerbung.html, ausbildung-en.html, ausbildung.html)
 
 ## Bilder
 
 - ohne width/height: consass_Angebot_1.html (1)
-- Größte Bilddateien: presse-foto-ivo-hires.jpg (792 KB), images/heinz-ankunft-strasse.jpg (542 KB), images/heinz-team-abflug-philippinen.jpg (534 KB), images/moment-sommerfest-garten.jpg (500 KB), images/heinz-ankunft-selfie-team.jpg (480 KB), images/heinz-team-selfie-flughafen.jpg (465 KB), images/heinz-willkommen-flughafen.jpg (465 KB), images/heinz-sprachschule-gruppe.jpg (448 KB)
-- WebP-Dateien: 28
+- Größte Bilddateien: presse-foto-ivo-hires.jpg (792 KB), images/heinz-ankunft-strasse.jpg (542 KB), images/blog-klinik-pflegeheim-gruppe.jpg (536 KB), images/heinz-team-abflug-philippinen.jpg (534 KB), images/moment-sommerfest-garten.jpg (500 KB), images/heinz-ankunft-selfie-team.jpg (480 KB), images/heinz-team-selfie-flughafen.jpg (465 KB), images/heinz-willkommen-flughafen.jpg (465 KB)
+- WebP-Dateien: 30
 
 ## hreflang
 
@@ -126,6 +126,10 @@ Gezählt: ganzer sichtbarer Text / nur Inhalt ohne Kopf, Navigation und Footer. 
 - blog-post-11.html: Article, BreadcrumbList, EmploymentAgency, FAQPage
 - blog-post-12-en.html: Article, BreadcrumbList, EmploymentAgency, WebPage
 - blog-post-12.html: Article, BreadcrumbList, EmploymentAgency, WebPage
+- blog-post-13-en.html: Article, BreadcrumbList, EmploymentAgency, WebPage
+- blog-post-13.html: Article, BreadcrumbList, EmploymentAgency, WebPage
+- blog-post-14-en.html: Article, BreadcrumbList, EmploymentAgency, WebPage
+- blog-post-14.html: Article, BreadcrumbList, EmploymentAgency, WebPage
 - blog-post-2-en.html: Article, BreadcrumbList, EmploymentAgency, WebPage
 - blog-post-2.html: Article, BreadcrumbList, EmploymentAgency, WebPage
 - blog-post-3-en.html: Article, BreadcrumbList, EmploymentAgency, WebPage

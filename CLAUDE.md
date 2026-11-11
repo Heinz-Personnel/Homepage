@@ -87,7 +87,7 @@ Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
   Ausnahmen (nur DE): `wechsel.html`, `pflegefachkraefte-berlin-brandenburg.html` (hat hreflang de und x-default auf sich selbst).
   Inhaltliche Änderungen immer in **beiden** Sprachen.
 - **Hauptseiten:** `index`, `fuer-einrichtungen` (Für Arbeitgeber), `ausbildung` (Ausbildung für Betriebe),
-  `fuer-fachkraefte`, `ueber-uns`, `blog` + `blog-post-1` bis `blog-post-10`, `faq`, `downloads`, `presse`,
+  `fuer-fachkraefte`, `ueber-uns`, `blog` + `blog-post-1` bis `blog-post-14`, `faq`, `downloads`, `presse`,
   `kontakt`, `impressum`, `datenschutz`, `beschwerdeformular`.
 - **Navigation** steht in **jeder** HTML-Datei dreimal: `.nav-links` (Desktop), `.mobile-nav` und im Footer.
   Footer (5 Spalten, gleiche Gliederung wie oben): Logo + Kontakt · Arbeitgeber · Zukunftskräfte (inkl. "Stelle wechseln")
