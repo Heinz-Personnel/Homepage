@@ -17,10 +17,12 @@ Erzeugt von `_werkzeuge/audit.py` (nur lesen). 63 HTML-Dateien im Hauptordner (5
 
 ## Indexierbarkeit und Sitemap
 
-- Sitemap-URLs: 57 · indexierbare Seiten im Hauptordner: 57
+- Sitemap-URLs: 59 · indexierbare Seiten im Hauptordner: 57
 - noindex: 404.html
 - noindex: consass_Angebot_1.html
+- **noindex, steht aber in der Sitemap:** physiotherapie-en.html
 - noindex: physiotherapie-en.html
+- **noindex, steht aber in der Sitemap:** physiotherapie.html
 - noindex: physiotherapie.html
 - Weiterleitungsseite: unser-weg.html (noindex: ja, canonical: https://pflegekraftvermittlung.com/fuer-einrichtungen.html)
 - noindex: wechsel.html
@@ -104,7 +106,7 @@ Gezählt: ganzer sichtbarer Text / nur Inhalt ohne Kopf, Navigation und Footer. 
 
 - ohne width/height: consass_Angebot_1.html (1)
 - Größte Bilddateien: presse-foto-ivo-hires.jpg (792 KB), images/heinz-ankunft-strasse.jpg (542 KB), images/blog-klinik-pflegeheim-gruppe.jpg (536 KB), images/heinz-team-abflug-philippinen.jpg (534 KB), images/moment-sommerfest-garten.jpg (500 KB), images/heinz-ankunft-selfie-team.jpg (480 KB), images/heinz-team-selfie-flughafen.jpg (465 KB), images/heinz-willkommen-flughafen.jpg (465 KB)
-- WebP-Dateien: 30
+- WebP-Dateien: 31
 
 ## hreflang
 

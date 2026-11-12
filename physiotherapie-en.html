@@ -369,6 +369,25 @@
   .faq-item summary::after{content:"+";position:absolute;right:0;top:16px;font-family:var(--display);font-size:1.5rem;color:var(--orange);}
   .faq-item[open] summary::after{content:"\2212";}
   .faq-item p{padding-bottom:20px;max-width:74ch;opacity:.85;}
+  h3.tl-title{margin:0;font-family:inherit;line-height:1.3;}
+  .faq-item summary h3{display:inline;margin:0;font:inherit;line-height:inherit;}
+  .tl-source{margin-top:10px;font-size:.88rem;}
+  .versprechen .quelle{margin:-12px 0 0;font-size:.88rem;opacity:.8;max-width:64ch;}
+  .tl-source a,.quelle a{text-decoration:underline;text-underline-offset:3px;}
+  .kontakt-person,.ivo-wort,.zitat{background:var(--weiss);}
+  .kontakt-person .wrap,.ivo-wort .wrap,.zitat .wrap{padding-top:56px;padding-bottom:56px;}
+  .personen{display:grid;grid-template-columns:1fr;gap:24px;margin-top:24px;}
+  @media(min-width:768px){.personen{grid-template-columns:repeat(2,1fr);}}
+  .person{display:flex;gap:20px;align-items:flex-start;}
+  .person img{width:112px;height:auto;flex:none;}
+  .person strong{display:block;font-weight:800;}
+  .person .rolle{font-size:.9rem;opacity:.75;margin-bottom:8px;}
+  .ivo-wort .ivo-grid{display:grid;grid-template-columns:1fr;gap:28px;align-items:start;}
+  @media(min-width:768px){.ivo-wort .ivo-grid{grid-template-columns:240px 1fr;}}
+  .ivo-wort img{width:100%;max-width:240px;height:auto;}
+  .zitat blockquote{max-width:62ch;font-family:var(--display);font-size:1.6rem;line-height:1.3;}
+  .zitat cite{display:flex;gap:14px;align-items:center;margin-top:20px;font-style:normal;font-size:.95rem;}
+  .zitat cite img{width:56px;height:56px;object-fit:cover;}
   .foto{margin-top:40px;max-width:440px;}
   .foto img{width:100%;}
   .foto figcaption{margin-top:10px;font-size:.85rem;opacity:.65;}
@@ -576,6 +595,19 @@
     </div>
   </section>
 
+  <!-- WORT VON IVO (Platzhalter, versteckt bis Text und Foto vorliegen: 2 bis 3 Sätze) -->
+  <section class="ivo-wort" hidden>
+    <div class="wrap">
+      <div class="ivo-grid reveal">
+        <picture><source srcset="images/ivo-duotone.webp" type="image/webp"><img src="images/ivo-duotone.jpg" width="1049" height="1400" loading="lazy" alt="Ivo Straßenburg, Geschäftsführer von Heinz"></picture>
+        <div>
+          <h2 class="headline">Why Heinz now places physical therapists</h2>
+          <p class="body-text">[TODO: Text von Ivo, 2 bis 3 Sätze]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- BE HONEST -->
   <section class="kompass" id="honest">
     <div class="wrap">
@@ -612,7 +644,7 @@
         <div class="tl-step">
           <div class="tl-num" aria-hidden="true">01</div>
           <div class="tl-body">
-            <span class="tl-title">Selection</span>
+            <h3 class="tl-title">Selection</h3>
             <p class="tl-text">We check your degree, your PRC license and your experience, and we talk to every candidate in person.</p>
           </div>
         </div>
@@ -620,7 +652,7 @@
         <div class="tl-step">
           <div class="tl-num" aria-hidden="true">02</div>
           <div class="tl-body">
-            <span class="tl-title">Documents</span>
+            <h3 class="tl-title">Documents</h3>
             <span class="tl-time">about 1 to 2 months, alongside your German classes</span>
             <p class="tl-text">Degree certificate, PRC license, proof of clinical hours, apostille (the Philippines joined the Apostille Convention in 2019), certified translations, police clearance certificate and a medical certificate. We walk you through the list until everything is complete.</p>
           </div>
@@ -629,7 +661,7 @@
         <div class="tl-step">
           <div class="tl-num" aria-hidden="true">03</div>
           <div class="tl-body">
-            <span class="tl-title">German</span>
+            <h3 class="tl-title">German</h3>
             <span class="tl-time">depends on your starting level</span>
             <p class="tl-text">A2 for the visa, B2 for your full license. We organise your German course.</p>
           </div>
@@ -638,16 +670,17 @@
         <div class="tl-step">
           <div class="tl-num" aria-hidden="true">04</div>
           <div class="tl-body">
-            <span class="tl-title">Recognition</span>
+            <h3 class="tl-title">Recognition</h3>
             <span class="tl-time">up to 4 months, depending on the federal state</span>
             <p class="tl-text">The application goes to the responsible state authority and can be filed from abroad. Depending on your degree, the result is equivalence or a compensation measure: a knowledge test or an adaptation course.</p>
+            <p class="tl-source"><a href="https://www.anerkennung-in-deutschland.de/html/en/index.php" target="_blank" rel="noopener">Official portal: Recognition in Germany</a></p>
           </div>
         </div>
 
         <div class="tl-step">
           <div class="tl-num" aria-hidden="true">05</div>
           <div class="tl-body">
-            <span class="tl-title">Visa and arrival</span>
+            <h3 class="tl-title">Visa and arrival</h3>
             <span class="tl-time">fast-track skilled worker procedure</span>
             <p class="tl-text">We set up the fast-track procedure with your employer: advance approval, a visa appointment within 3 weeks, and usually a decision within another 3 weeks. A familiar face waits for you at the airport.</p>
           </div>
@@ -656,12 +689,37 @@
         <div class="tl-step">
           <div class="tl-num" aria-hidden="true">06</div>
           <div class="tl-body">
-            <span class="tl-title">Exam and license</span>
+            <h3 class="tl-title">Exam and license</h3>
             <span class="tl-time">after arrival</span>
             <p class="tl-text">We support your exam preparation and stay available until your license is issued and everyday life works.</p>
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ANSPRECHPARTNER (Platzhalter, versteckt bis Namen, Fotos und Kontaktweg vorliegen: Tabeia Antonio und Madlen) -->
+  <section class="kontakt-person" hidden>
+    <div class="wrap">
+      <h2 class="headline reveal">Your contacts</h2>
+      <div class="personen reveal">
+        <div class="person">
+          <picture><source srcset="images/team-tabeia.webp" type="image/webp"><img src="images/team-tabeia.jpg" width="993" height="1400" loading="lazy" alt="[TODO: Name, Rolle]"></picture>
+          <div>
+            <strong>[TODO: Name]</strong>
+            <span class="rolle">[TODO: Rolle]</span>
+            <a href="kontakt-en.html">[TODO: Telefon, WhatsApp oder Terminbuchung]</a>
+          </div>
+        </div>
+        <div class="person">
+          <picture><source srcset="images/team-tabeia.webp" type="image/webp"><img src="images/team-tabeia.jpg" width="993" height="1400" loading="lazy" alt="[TODO: Name, Rolle]"></picture>
+          <div>
+            <strong>[TODO: Name]</strong>
+            <span class="rolle">[TODO: Rolle]</span>
+            <a href="kontakt-en.html">[TODO: Telefon, WhatsApp oder Terminbuchung]</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -700,16 +758,49 @@
     </div>
   </section>
 
+  <!-- ZITAT (Platzhalter, versteckt bis Zitat, Name und Foto vorliegen) -->
+  <section class="zitat" hidden>
+    <div class="wrap">
+      <blockquote class="reveal">[TODO: Zitat]</blockquote>
+      <cite class="reveal"><picture><source srcset="images/team-tabeia.webp" type="image/webp"><img src="images/team-tabeia.jpg" width="56" height="56" loading="lazy" alt="[TODO: Name]"></picture><span>[TODO: Name, Rolle]</span></cite>
+    </div>
+  </section>
+
   <!-- FAQ -->
   <section class="faq-section" id="faq">
     <div class="wrap">
       <span class="eyebrow reveal">FAQ</span>
       <h2 class="headline reveal">Questions we hear often.</h2>
-      <details class="faq-item reveal"><summary>Do I pay Heinz to find me a job?</summary><p>No. You never pay a placement fee to Heinz.</p></details>
-      <details class="faq-item reveal"><summary>Is my degree recognised in Germany?</summary><p>The German authority compares your degree with the German training. If there are major differences, you take a knowledge test or an adaptation course. Then you receive your professional license.</p></details>
-      <details class="faq-item reveal"><summary>What German level do I need?</summary><p>A2 to apply for the visa, usually B2 for your professional license.</p></details>
-      <details class="faq-item reveal"><summary>How long does it take?</summary><p>About 6 months until you arrive in Germany, if you start with German at A2 and your documents are complete. Reaching your full professional license takes longer. How long depends on the federal state, the authority and the exam dates.</p></details>
-      <details class="faq-item reveal"><summary>Can I work as a physical therapist right away?</summary><p>No. You need permission to use the professional title first. What is possible until then, we clarify with you case by case before you travel.</p></details>
+      <details class="faq-item reveal"><summary><h3>Do I pay Heinz to find me a job?</h3></summary><p>No. You never pay a placement fee to Heinz.</p></details>
+      <details class="faq-item reveal"><summary><h3>Is my degree recognised in Germany?</h3></summary><p>The German authority compares your degree with the German training. If there are major differences, you take a knowledge test or an adaptation course. Then you receive your professional license.</p></details>
+      <details class="faq-item reveal"><summary><h3>What German level do I need?</h3></summary><p>A2 to apply for the visa, usually B2 for your professional license.</p></details>
+      <details class="faq-item reveal"><summary><h3>How long does it take?</h3></summary><p>About 6 months until you arrive in Germany, if you start with German at A2 and your documents are complete. Reaching your full professional license takes longer. How long depends on the federal state, the authority and the exam dates.</p></details>
+      <details class="faq-item reveal"><summary><h3>Can I work as a physical therapist right away?</h3></summary><p>No. You need permission to use the professional title first. What is possible until then, we clarify with you case by case before you travel.</p></details>
+    </div>
+  </section>
+
+  <!-- ANSPRECHPARTNER (Platzhalter, versteckt bis Namen, Fotos und Kontaktweg vorliegen: Tabeia Antonio und Madlen) -->
+  <section class="kontakt-person" hidden>
+    <div class="wrap">
+      <h2 class="headline reveal">Your contacts</h2>
+      <div class="personen reveal">
+        <div class="person">
+          <picture><source srcset="images/team-tabeia.webp" type="image/webp"><img src="images/team-tabeia.jpg" width="993" height="1400" loading="lazy" alt="[TODO: Name, Rolle]"></picture>
+          <div>
+            <strong>[TODO: Name]</strong>
+            <span class="rolle">[TODO: Rolle]</span>
+            <a href="kontakt-en.html">[TODO: Telefon, WhatsApp oder Terminbuchung]</a>
+          </div>
+        </div>
+        <div class="person">
+          <picture><source srcset="images/team-tabeia.webp" type="image/webp"><img src="images/team-tabeia.jpg" width="993" height="1400" loading="lazy" alt="[TODO: Name, Rolle]"></picture>
+          <div>
+            <strong>[TODO: Name]</strong>
+            <span class="rolle">[TODO: Rolle]</span>
+            <a href="kontakt-en.html">[TODO: Telefon, WhatsApp oder Terminbuchung]</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

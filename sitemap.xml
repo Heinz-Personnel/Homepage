@@ -453,4 +453,20 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://pflegekraftvermittlung.com/ausbildung-bewerbung-en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pflegekraftvermittlung.com/ausbildung-bewerbung.html"/>
   </url>
+  <url>
+    <loc>https://pflegekraftvermittlung.com/physiotherapie.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pflegekraftvermittlung.com/physiotherapie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pflegekraftvermittlung.com/physiotherapie-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pflegekraftvermittlung.com/physiotherapie.html"/>
+  </url>
+  <url>
+    <loc>https://pflegekraftvermittlung.com/physiotherapie-en.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pflegekraftvermittlung.com/physiotherapie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pflegekraftvermittlung.com/physiotherapie-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pflegekraftvermittlung.com/physiotherapie.html"/>
+  </url>
 </urlset>

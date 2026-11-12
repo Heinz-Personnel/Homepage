@@ -369,6 +369,25 @@
   .faq-item summary::after{content:"+";position:absolute;right:0;top:16px;font-family:var(--display);font-size:1.5rem;color:var(--orange);}
   .faq-item[open] summary::after{content:"\2212";}
   .faq-item p{padding-bottom:20px;max-width:74ch;opacity:.85;}
+  h3.tl-title{margin:0;font-family:inherit;line-height:1.3;}
+  .faq-item summary h3{display:inline;margin:0;font:inherit;line-height:inherit;}
+  .tl-source{margin-top:10px;font-size:.88rem;}
+  .versprechen .quelle{margin:-12px 0 0;font-size:.88rem;opacity:.8;max-width:64ch;}
+  .tl-source a,.quelle a{text-decoration:underline;text-underline-offset:3px;}
+  .kontakt-person,.ivo-wort,.zitat{background:var(--weiss);}
+  .kontakt-person .wrap,.ivo-wort .wrap,.zitat .wrap{padding-top:56px;padding-bottom:56px;}
+  .personen{display:grid;grid-template-columns:1fr;gap:24px;margin-top:24px;}
+  @media(min-width:768px){.personen{grid-template-columns:repeat(2,1fr);}}
+  .person{display:flex;gap:20px;align-items:flex-start;}
+  .person img{width:112px;height:auto;flex:none;}
+  .person strong{display:block;font-weight:800;}
+  .person .rolle{font-size:.9rem;opacity:.75;margin-bottom:8px;}
+  .ivo-wort .ivo-grid{display:grid;grid-template-columns:1fr;gap:28px;align-items:start;}
+  @media(min-width:768px){.ivo-wort .ivo-grid{grid-template-columns:240px 1fr;}}
+  .ivo-wort img{width:100%;max-width:240px;height:auto;}
+  .zitat blockquote{max-width:62ch;font-family:var(--display);font-size:1.6rem;line-height:1.3;}
+  .zitat cite{display:flex;gap:14px;align-items:center;margin-top:20px;font-style:normal;font-size:.95rem;}
+  .zitat cite img{width:56px;height:56px;object-fit:cover;}
   .foto{margin-top:40px;max-width:440px;}
   .foto img{width:100%;}
   .foto figcaption{margin-top:10px;font-size:.85rem;opacity:.65;}
@@ -614,6 +633,20 @@
       <span class="eyebrow reveal">Die Lage</span>
       <h2 class="headline reveal">Die Stelle bleibt offen. Die Patienten warten.</h2>
       <p class="body-text reveal">Physiotherapie zählt in Deutschland zu den Engpassberufen. Nach Angaben des Verbands IFK dauerte es 2024 im Schnitt 280 Tage, bis eine Stelle neu besetzt war. Auf den Philippinen schließen Physiotherapeutinnen und Physiotherapeuten ein mehrjähriges Bachelorstudium mit klinischem Internship ab und legen eine staatliche Lizenzprüfung ab. Heinz bringt diese Fachkräfte mit Einrichtungen in Deutschland zusammen.</p>
+      <p class="quelle reveal">Zur Engpasslage: <a href="https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Interaktive-Statistiken/Fachkraeftebedarf/Engpassanalyse-Nav.html" target="_blank" rel="noopener">Engpassanalyse der Bundesagentur für Arbeit</a></p>
+    </div>
+  </section>
+
+  <!-- WORT VON IVO (Platzhalter, versteckt bis Text und Foto vorliegen: 2 bis 3 Sätze) -->
+  <section class="ivo-wort" hidden>
+    <div class="wrap">
+      <div class="ivo-grid reveal">
+        <picture><source srcset="images/ivo-duotone.webp" type="image/webp"><img src="images/ivo-duotone.jpg" width="1049" height="1400" loading="lazy" alt="Ivo Straßenburg, Geschäftsführer von Heinz"></picture>
+        <div>
+          <h2 class="headline">Warum Heinz jetzt Physiotherapeuten vermittelt</h2>
+          <p class="body-text">[TODO: Text von Ivo, 2 bis 3 Sätze]</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -648,7 +681,7 @@
         <div class="tl-step">
           <div class="tl-num" aria-hidden="true">01</div>
           <div class="tl-body">
-            <span class="tl-title">Auswahl</span>
+            <h3 class="tl-title">Auswahl</h3>
             <p class="tl-text">Wir prüfen Abschluss, PRC-Lizenz und Berufserfahrung und sprechen mit jedem Kandidaten persönlich.</p>
           </div>
         </div>
@@ -656,7 +689,7 @@
         <div class="tl-step">
           <div class="tl-num" aria-hidden="true">02</div>
           <div class="tl-body">
-            <span class="tl-title">Unterlagen</span>
+            <h3 class="tl-title">Unterlagen</h3>
             <span class="tl-time">ca. 1 bis 2 Monate, parallel zum Deutschkurs</span>
             <p class="tl-text">Zeugnisse, Stundennachweise, Apostille, beglaubigte Übersetzungen, Führungszeugnis und ärztliche Bescheinigung. Wir führen durch die Liste, bis alles vollständig ist.</p>
           </div>
@@ -665,7 +698,7 @@
         <div class="tl-step">
           <div class="tl-num" aria-hidden="true">03</div>
           <div class="tl-body">
-            <span class="tl-title">Deutsch</span>
+            <h3 class="tl-title">Deutsch</h3>
             <span class="tl-time">abhängig vom Startniveau</span>
             <p class="tl-text">Ab A2 für das Visum, B2 für die volle Berufserlaubnis. Wir organisieren den Sprachkurs.</p>
           </div>
@@ -674,16 +707,17 @@
         <div class="tl-step">
           <div class="tl-num" aria-hidden="true">04</div>
           <div class="tl-body">
-            <span class="tl-title">Anerkennung</span>
+            <h3 class="tl-title">Anerkennung</h3>
             <span class="tl-time">bis zu 4 Monate, je nach Bundesland</span>
             <p class="tl-text">Antrag bei der zuständigen Landesbehörde, auch aus dem Ausland möglich. Ergebnis ist je nach Abschluss die Gleichwertigkeit oder eine Ausgleichsmaßnahme, also Kenntnisprüfung oder Anpassungslehrgang.</p>
+            <p class="tl-source"><a href="https://www.anerkennung-in-deutschland.de/" target="_blank" rel="noopener">Offizielles Portal: Anerkennung in Deutschland</a></p>
           </div>
         </div>
 
         <div class="tl-step">
           <div class="tl-num" aria-hidden="true">05</div>
           <div class="tl-body">
-            <span class="tl-title">Visum und Ankunft</span>
+            <h3 class="tl-title">Visum und Ankunft</h3>
             <span class="tl-time">beschleunigtes Fachkräfteverfahren</span>
             <p class="tl-text">Wir stellen mit Ihnen das beschleunigte Fachkräfteverfahren auf: Vorabzustimmung, Termin bei der Auslandsvertretung binnen 3 Wochen, danach in der Regel die Entscheidung binnen weiteren 3 Wochen. Ein vertrautes Gesicht wartet am Gate.</p>
           </div>
@@ -692,12 +726,37 @@
         <div class="tl-step">
           <div class="tl-num" aria-hidden="true">06</div>
           <div class="tl-body">
-            <span class="tl-title">Prüfung und Berufserlaubnis</span>
+            <h3 class="tl-title">Prüfung und Berufserlaubnis</h3>
             <span class="tl-time">nach Ankunft</span>
             <p class="tl-text">Wir begleiten die Prüfungsvorbereitung und bleiben ansprechbar, bis die Erlaubnis vorliegt und der Alltag funktioniert.</p>
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ANSPRECHPARTNER (Platzhalter, versteckt bis Namen, Fotos und Kontaktweg vorliegen: Tabeia Antonio und Madlen) -->
+  <section class="kontakt-person" hidden>
+    <div class="wrap">
+      <h2 class="headline reveal">Ihre Ansprechpartner</h2>
+      <div class="personen reveal">
+        <div class="person">
+          <picture><source srcset="images/team-tabeia.webp" type="image/webp"><img src="images/team-tabeia.jpg" width="993" height="1400" loading="lazy" alt="[TODO: Name, Rolle]"></picture>
+          <div>
+            <strong>[TODO: Name]</strong>
+            <span class="rolle">[TODO: Rolle]</span>
+            <a href="kontakt.html">[TODO: Telefon, WhatsApp oder Terminbuchung]</a>
+          </div>
+        </div>
+        <div class="person">
+          <picture><source srcset="images/team-tabeia.webp" type="image/webp"><img src="images/team-tabeia.jpg" width="993" height="1400" loading="lazy" alt="[TODO: Name, Rolle]"></picture>
+          <div>
+            <strong>[TODO: Name]</strong>
+            <span class="rolle">[TODO: Rolle]</span>
+            <a href="kontakt.html">[TODO: Telefon, WhatsApp oder Terminbuchung]</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -755,20 +814,53 @@
     </div>
   </section>
 
+  <!-- ZITAT (Platzhalter, versteckt bis Zitat, Name und Foto vorliegen) -->
+  <section class="zitat" hidden>
+    <div class="wrap">
+      <blockquote class="reveal">[TODO: Zitat]</blockquote>
+      <cite class="reveal"><picture><source srcset="images/team-tabeia.webp" type="image/webp"><img src="images/team-tabeia.jpg" width="56" height="56" loading="lazy" alt="[TODO: Name]"></picture><span>[TODO: Name, Rolle]</span></cite>
+    </div>
+  </section>
+
   <!-- FAQ -->
   <section class="faq-section" id="faq">
     <div class="wrap">
       <span class="eyebrow reveal">FAQ</span>
       <h2 class="headline reveal">Häufige Fragen von Einrichtungen.</h2>
-      <details class="faq-item reveal"><summary>Wie lange dauert es, bis eine Physiotherapeutin bei uns arbeitet?</summary><p>Ca. 6 Monate bis zur Einreise, wenn Deutsch ab A2 und alle Unterlagen vorliegen. Bis zur vollen Berufserlaubnis dauert es deutlich länger, je nach Bundesland, Behörde und Prüfungsterminen. Wir erstellen Ihnen vorab einen Zeitplan.</p></details>
-      <details class="faq-item reveal"><summary>Warum dauert es nicht kürzer?</summary><p>Anerkennung, Sprachniveau und Prüfungstermine liegen bei Behörden und Physiotherapieschulen. Das beschleunigte Fachkräfteverfahren verkürzt das Visum, nicht die Anerkennung.</p></details>
-      <details class="faq-item reveal"><summary>Darf die Fachkraft sofort als Physiotherapeutin behandeln?</summary><p>Nein. Dazu braucht sie die Erlaubnis zum Führen der Berufsbezeichnung. Was bis dahin möglich ist, besprechen wir vor dem Start im Einzelfall mit Ihnen.</p></details>
-      <details class="faq-item reveal"><summary>Was ist eine Kenntnisprüfung?</summary><p>Eine mündliche und praktische Prüfung, die sich auf die Inhalte der staatlichen Abschlussprüfung bezieht. Sie ist nötig, wenn die Landesbehörde wesentliche Unterschiede zur deutschen Ausbildung feststellt. Alternativ ist ein Anpassungslehrgang möglich, der bis zu drei Jahre dauern kann.</p></details>
-      <details class="faq-item reveal"><summary>Welche Deutschkenntnisse sind nötig?</summary><p>Für das Visum zur Anerkennung in der Regel A2. Für die volle Berufserlaubnis normalerweise B2.</p></details>
-      <details class="faq-item reveal"><summary>Was kostet das?</summary><p>Zur Orientierung: 411 Euro für das beschleunigte Fachkräfteverfahren, 75 Euro Visum, Anerkennungsgebühr je nach Bundesland, dazu Sprachkurs und Prüfungsvorbereitung. Unser Honorar besprechen wir im Erstgespräch.</p></details>
-      <details class="faq-item reveal"><summary>Gibt es eine Garantie?</summary><p>Ja, 18 Monate. Kündigt die Fachkraft in dieser Zeit selbst, suchen wir ohne Zusatzkosten neu.</p></details>
-      <details class="faq-item reveal"><summary>Was passiert, wenn die Prüfung nicht bestanden wird?</summary><p>Die Prüfung darf im mündlichen Teil und in jedem nicht bestandenen Fachgebiet einmal wiederholt werden.</p></details>
-      <details class="faq-item reveal"><summary>Für welche Einrichtungen vermitteln Sie?</summary><p>Reha-Kliniken, Krankenhäuser, Therapieverbünde und Praxen: Sprechen Sie uns an, wir klären gemeinsam, ob und wie wir Sie unterstützen können.</p></details>
+      <details class="faq-item reveal"><summary><h3>Wie lange dauert es, bis eine Physiotherapeutin bei uns arbeitet?</h3></summary><p>Ca. 6 Monate bis zur Einreise, wenn Deutsch ab A2 und alle Unterlagen vorliegen. Bis zur vollen Berufserlaubnis dauert es deutlich länger, je nach Bundesland, Behörde und Prüfungsterminen. Wir erstellen Ihnen vorab einen Zeitplan.</p></details>
+      <details class="faq-item reveal"><summary><h3>Warum dauert es nicht kürzer?</h3></summary><p>Anerkennung, Sprachniveau und Prüfungstermine liegen bei Behörden und Physiotherapieschulen. Das beschleunigte Fachkräfteverfahren verkürzt das Visum, nicht die Anerkennung.</p></details>
+      <details class="faq-item reveal"><summary><h3>Darf die Fachkraft sofort als Physiotherapeutin behandeln?</h3></summary><p>Nein. Dazu braucht sie die Erlaubnis zum Führen der Berufsbezeichnung. Was bis dahin möglich ist, besprechen wir vor dem Start im Einzelfall mit Ihnen.</p></details>
+      <details class="faq-item reveal"><summary><h3>Was ist eine Kenntnisprüfung?</h3></summary><p>Eine mündliche und praktische Prüfung, die sich auf die Inhalte der staatlichen Abschlussprüfung bezieht. Sie ist nötig, wenn die Landesbehörde wesentliche Unterschiede zur deutschen Ausbildung feststellt. Alternativ ist ein Anpassungslehrgang möglich, der bis zu drei Jahre dauern kann.</p></details>
+      <details class="faq-item reveal"><summary><h3>Welche Deutschkenntnisse sind nötig?</h3></summary><p>Für das Visum zur Anerkennung in der Regel A2. Für die volle Berufserlaubnis normalerweise B2.</p></details>
+      <details class="faq-item reveal"><summary><h3>Was kostet das?</h3></summary><p>Zur Orientierung: 411 Euro für das beschleunigte Fachkräfteverfahren, 75 Euro Visum, Anerkennungsgebühr je nach Bundesland, dazu Sprachkurs und Prüfungsvorbereitung. Unser Honorar besprechen wir im Erstgespräch.</p></details>
+      <details class="faq-item reveal"><summary><h3>Gibt es eine Garantie?</h3></summary><p>Ja, 18 Monate. Kündigt die Fachkraft in dieser Zeit selbst, suchen wir ohne Zusatzkosten neu.</p></details>
+      <details class="faq-item reveal"><summary><h3>Was passiert, wenn die Prüfung nicht bestanden wird?</h3></summary><p>Die Prüfung darf im mündlichen Teil und in jedem nicht bestandenen Fachgebiet einmal wiederholt werden.</p></details>
+      <details class="faq-item reveal"><summary><h3>Für welche Einrichtungen vermitteln Sie?</h3></summary><p>Reha-Kliniken, Krankenhäuser, Therapieverbünde und Praxen: Sprechen Sie uns an, wir klären gemeinsam, ob und wie wir Sie unterstützen können.</p></details>
+    </div>
+  </section>
+
+  <!-- ANSPRECHPARTNER (Platzhalter, versteckt bis Namen, Fotos und Kontaktweg vorliegen: Tabeia Antonio und Madlen) -->
+  <section class="kontakt-person" hidden>
+    <div class="wrap">
+      <h2 class="headline reveal">Ihre Ansprechpartner</h2>
+      <div class="personen reveal">
+        <div class="person">
+          <picture><source srcset="images/team-tabeia.webp" type="image/webp"><img src="images/team-tabeia.jpg" width="993" height="1400" loading="lazy" alt="[TODO: Name, Rolle]"></picture>
+          <div>
+            <strong>[TODO: Name]</strong>
+            <span class="rolle">[TODO: Rolle]</span>
+            <a href="kontakt.html">[TODO: Telefon, WhatsApp oder Terminbuchung]</a>
+          </div>
+        </div>
+        <div class="person">
+          <picture><source srcset="images/team-tabeia.webp" type="image/webp"><img src="images/team-tabeia.jpg" width="993" height="1400" loading="lazy" alt="[TODO: Name, Rolle]"></picture>
+          <div>
+            <strong>[TODO: Name]</strong>
+            <span class="rolle">[TODO: Rolle]</span>
+            <a href="kontakt.html">[TODO: Telefon, WhatsApp oder Terminbuchung]</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
