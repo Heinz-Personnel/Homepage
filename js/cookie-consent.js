@@ -6,6 +6,8 @@
    - Statistik (nur mit Einwilligung): Google Analytics 4 (G-PB43PKLVEL), ohne Google Signals.
    - Marketing (nur mit Einwilligung): Google Ads Conversion-Tracking (AW-18457911738), kein Remarketing.
      Google Consent Mode v2 im Basis-Modus: Das Google-Tag lädt erst nach Einwilligung.
+   - Unternehmenserkennung (nur mit Einwilligung): Zählpixel „Website Leads“ der Visable GmbH (wer liefert was).
+     Das Pixel wird erst nach Einwilligung geladen (Kategorie "vis").
    Erste Ebene: "Alle akzeptieren" und "Nur notwendige Cookies" gleich groß und gleich gestaltet.
    Einwilligung gilt 12 Monate, danach wird erneut gefragt. Widerruf jederzeit über
    "Cookie-Einstellungen" (Link unten links und im Footer). */
@@ -13,14 +15,15 @@
   var GADS_ID = 'AW-18457911738';
   var GA4_ID = 'G-PB43PKLVEL';
   var KEY = 'heinz_consent';
-  var VERSION = 3; // 3: Statistik (Google Analytics) neu, daher erneute Abfrage
+  var VERSION = 4; // 4: Unternehmenserkennung (Visable Website Leads) neu, daher erneute Abfrage
+  var VISABLE_ID = 'c82c66a155820e7b1e6521a822b4cd06';
   var MAX_AGE_MS = 365 * 24 * 60 * 60 * 1000;
   var lang = document.documentElement.lang === 'en' ? 'en' : 'de';
 
   var T = {
     de: {
       title: 'Cookies',
-      intro: 'Wir nutzen Cookies für Statistik (Google Analytics) und zur Erfolgsmessung unserer Anzeigen (Google Ads). Dabei können Daten in die USA übermittelt werden. Sie entscheiden selbst und können Ihre Auswahl jederzeit über „Cookie-Einstellungen“ ändern.',
+      intro: 'Wir nutzen Cookies und vergleichbare Technologien für Statistik (Google Analytics), zur Erfolgsmessung unserer Anzeigen (Google Ads) und zur Erkennung besuchender Unternehmen (wer liefert was). Dabei können Daten in die USA übermittelt werden. Sie entscheiden selbst und können Ihre Auswahl jederzeit über „Cookie-Einstellungen“ ändern.',
       acceptAll: 'Alle akzeptieren',
       necessaryOnly: 'Nur notwendige Cookies',
       settings: 'Einstellungen',
@@ -34,6 +37,7 @@
       necShort: 'Speichert nur Ihre Auswahl. Keine Cookies, keine Weitergabe.',
       staShort: 'Zeigt uns, wie die Website genutzt wird.',
       mktShort: 'Misst, ob Anzeigen zu Kontaktanfragen führen.',
+      visShort: 'Zeigt uns, welche Unternehmen unsere Website besuchen.',
       necTitle: 'Notwendig',
       necText: 'Speichert ausschließlich Ihre Auswahl in diesem Banner im Speicher Ihres Browsers, damit der Hinweis nicht bei jedem Seitenaufruf erscheint. Es werden dafür keine Cookies gesetzt und keine Daten an Dritte übermittelt. Speicherdauer: 12 Monate.',
       staTitle: 'Statistik',
@@ -41,11 +45,14 @@
       staToggle: 'Google Analytics erlauben',
       mktTitle: 'Marketing',
       mktText: 'Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Zweck: messen, ob Besucher:innen nach dem Klick auf eine Google-Anzeige von Heinz Kontakt aufnehmen. Dafür setzt Google Cookies (z. B. „_gcl_au“) mit einer Speicherdauer von bis zu 90 Tagen. Daten wie Ihre IP-Adresse und Informationen zu Ihrem Besuch können an Google LLC in den USA übermittelt werden. Google LLC ist nach dem EU-US Data Privacy Framework zertifiziert. Personalisierte Werbung (Remarketing) nutzen wir nicht. Rechtsgrundlage: Ihre Einwilligung nach § 25 Abs. 1 TDDDG und Art. 6 Abs. 1 lit. a DSGVO.',
-      toggleLabel: 'Google Ads Conversion-Tracking erlauben'
+      toggleLabel: 'Google Ads Conversion-Tracking erlauben',
+      visTitle: 'Unternehmenserkennung',
+      visText: 'Anbieter: Visable GmbH (Betreiberin von wer liefert was), ABC-Straße 21, 20354 Hamburg. Zweck: erkennen, welche Unternehmen sich für unsere Leistungen interessieren, damit wir sie gezielt ansprechen können. Dafür lädt ein Zählpixel von Visable beim Seitenaufruf und erfasst Nutzungsdaten wie die aufgerufenen Seiten und Ihre IP-Adresse. Daraus wird, soweit möglich, das besuchende Unternehmen ermittelt. Einzelne Personen werden nicht identifiziert, IP-Adressen werden bei Identifizierbarkeit umgehend gelöscht. Das Pixel wird erst nach Ihrer Einwilligung geladen. Rechtsgrundlage: Ihre Einwilligung nach § 25 Abs. 1 TDDDG und Art. 6 Abs. 1 lit. a DSGVO.',
+      visToggle: 'Unternehmenserkennung erlauben'
     },
     en: {
       title: 'Cookies',
-      intro: 'We use cookies for statistics (Google Analytics) and to measure the success of our ads (Google Ads). Data may be transferred to the USA. You decide, and you can change your choice at any time via “Cookie settings”.',
+      intro: 'We use cookies and similar technologies for statistics (Google Analytics), to measure the success of our ads (Google Ads) and to recognise visiting companies (wer liefert was). Data may be transferred to the USA. You decide, and you can change your choice at any time via “Cookie settings”.',
       acceptAll: 'Accept all',
       necessaryOnly: 'Necessary cookies only',
       settings: 'Settings',
@@ -59,6 +66,7 @@
       necShort: 'Only stores your choice. No cookies, nothing shared.',
       staShort: 'Shows us how the website is used.',
       mktShort: 'Measures whether ads lead to contact requests.',
+      visShort: 'Shows us which companies visit our website.',
       necTitle: 'Necessary',
       necText: 'Only stores your choice in this banner in your browser\'s storage, so the notice does not appear on every page. No cookies are set for this and no data is passed to third parties. Storage period: 12 months.',
       staTitle: 'Statistics',
@@ -66,7 +74,10 @@
       staToggle: 'Allow Google Analytics',
       mktTitle: 'Marketing',
       mktText: 'Provider: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Purpose: measuring whether visitors contact Heinz after clicking a Google ad. For this, Google sets cookies (e.g. “_gcl_au”) stored for up to 90 days. Data such as your IP address and information about your visit may be transferred to Google LLC in the USA. Google LLC is certified under the EU-US Data Privacy Framework. We do not use personalised advertising (remarketing). Legal basis: your consent under Section 25(1) TDDDG and Art. 6(1)(a) GDPR.',
-      toggleLabel: 'Allow Google Ads conversion tracking'
+      toggleLabel: 'Allow Google Ads conversion tracking',
+      visTitle: 'Company recognition',
+      visText: 'Provider: Visable GmbH (operator of wer liefert was), ABC-Straße 21, 20354 Hamburg, Germany. Purpose: recognising which companies are interested in our services so that we can contact them in a targeted way. For this, a counting pixel from Visable loads when a page is opened and records usage data such as the pages viewed and your IP address. Where possible, the visiting company is derived from this. Individual persons are not identified, and IP addresses are deleted immediately if they can be linked to a person. The pixel only loads after your consent. Legal basis: your consent under Section 25(1) TDDDG and Art. 6(1)(a) GDPR.',
+      visToggle: 'Allow company recognition'
     }
   }[lang];
 
@@ -78,9 +89,9 @@
       return v;
     } catch (e) { return null; }
   }
-  function write(stats, marketing) {
+  function write(stats, marketing, vis) {
     try {
-      localStorage.setItem(KEY, JSON.stringify({ v: VERSION, ts: Date.now(), stats: !!stats, marketing: !!marketing }));
+      localStorage.setItem(KEY, JSON.stringify({ v: VERSION, ts: Date.now(), stats: !!stats, marketing: !!marketing, vis: !!vis }));
       localStorage.removeItem('heinz_cookie_consent'); // alte Version
     } catch (e) {}
   }
@@ -106,6 +117,16 @@
     s.src = 'https://www.googletagmanager.com/gtag/js?id=' + (stats ? GA4_ID : GADS_ID);
     document.head.appendChild(s);
   }
+  function loadVisable() {
+    if (window.__visableLoaded) return;
+    window.__visableLoaded = true;
+    (function (d, s) {
+      var l = d.createElement(s), e = d.getElementsByTagName(s)[0];
+      l.async = true; l.type = 'text/javascript';
+      l.src = 'https://www.visableleads.com/v1/cp/' + VISABLE_ID;
+      e.parentNode.insertBefore(l, e);
+    })(document, 'script');
+  }
   function deleteCookies(re) {
     var host = location.hostname.replace(/^www\./, '');
     document.cookie.split(';').forEach(function (c) {
@@ -117,7 +138,7 @@
       }
     });
   }
-  function revoke(stats, marketing) {
+  function revoke(stats, marketing, vis) {
     if (window.__gtagLoaded && window.gtag) {
       window.gtag('consent', 'update', {
         analytics_storage: stats ? 'granted' : 'denied',
@@ -128,6 +149,10 @@
     }
     if (!stats) deleteCookies(/^(_ga|_gid|_gat)/);
     if (!marketing) deleteCookies(/^(_gcl_|_gac_|_gads|_gpi)/);
+    if (!vis) {
+      deleteCookies(/visable|wlw/i);
+      try { Object.keys(localStorage).forEach(function (k) { if (/visable/i.test(k)) localStorage.removeItem(k); }); } catch (e) {}
+    }
   }
 
   /* ---------- Darstellung ---------- */
@@ -153,7 +178,8 @@
       '.cc-btn--ghost:hover{background:#fff;color:#1B2B99;}' +
       '.cc-btn:focus-visible,.cc-toggle input:focus-visible+span,.cc-floating:focus-visible,.cc-cat summary:focus-visible{outline:3px solid #FF5A1F;outline-offset:3px;}' +
       '.cc-cats{grid-column:1/-1;display:grid;grid-template-columns:1fr;gap:8px;}' +
-      '@media(min-width:900px){.cc-cats{grid-template-columns:repeat(3,1fr);}}' +
+      '@media(min-width:700px){.cc-cats{grid-template-columns:repeat(2,1fr);}}' +
+      '@media(min-width:1100px){.cc-cats{grid-template-columns:repeat(4,1fr);}}' +
       '.cc-cat{border:1px solid rgba(255,255,255,.35);padding:10px 14px;}' +
       '.cc-cat-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:4px;}' +
       '.cc-cat-head strong{font-size:.88rem;color:#fff;}' +
@@ -192,14 +218,16 @@
     floating();
   }
 
-  function decide(el, stats, marketing) {
+  function decide(el, stats, marketing, vis) {
     var loaded = window.__gtagLoaded;
-    write(stats, marketing);
-    revoke(stats, marketing);
+    var visLoaded = !!window.__visableLoaded;
+    write(stats, marketing, vis);
+    revoke(stats, marketing, vis);
     close(el);
-    // Wurde Google schon mit anderer Auswahl geladen, Seite neu laden, damit genau die neue Auswahl gilt.
-    if (loaded && (loaded.stats !== !!stats || loaded.marketing !== !!marketing)) { location.reload(); return; }
+    // Wurde ein Dienst schon mit anderer Auswahl geladen, Seite neu laden, damit genau die neue Auswahl gilt.
+    if ((loaded && (loaded.stats !== !!stats || loaded.marketing !== !!marketing)) || (visLoaded && !vis)) { location.reload(); return; }
     loadGoogle(stats, marketing);
+    if (vis) loadVisable();
   }
 
   function open(showSettings) {
@@ -228,6 +256,9 @@
           '<div class="cc-cat"><div class="cc-cat-head"><strong>' + T.mktTitle + '</strong>' +
             '<label class="cc-toggle"><input type="checkbox" id="cc-mkt" aria-label="' + T.toggleLabel + '"' + (cur && cur.marketing ? ' checked' : '') + '><span></span></label>' +
           '</div><p>' + T.mktShort + '</p><details><summary>' + T.more + '</summary><p>' + T.mktText + '</p></details></div>' +
+          '<div class="cc-cat"><div class="cc-cat-head"><strong>' + T.visTitle + '</strong>' +
+            '<label class="cc-toggle"><input type="checkbox" id="cc-vis" aria-label="' + T.visToggle + '"' + (cur && cur.vis ? ' checked' : '') + '><span></span></label>' +
+          '</div><p>' + T.visShort + '</p><details><summary>' + T.more + '</summary><p>' + T.visText + '</p></details></div>' +
         '</div>' +
         '<div class="cc-actions cc-actions--main">' +
           '<button type="button" class="cc-btn cc-btn--main" data-cc="all">' + T.acceptAll + '</button>' +
@@ -255,9 +286,9 @@
       var b = e.target.closest('[data-cc]');
       if (!b) return;
       var a = b.getAttribute('data-cc');
-      if (a === 'all') decide(el, true, true);
-      else if (a === 'necessary') decide(el, false, false);
-      else if (a === 'save') decide(el, el.querySelector('#cc-sta').checked, el.querySelector('#cc-mkt').checked);
+      if (a === 'all') decide(el, true, true, true);
+      else if (a === 'necessary') decide(el, false, false, false);
+      else if (a === 'save') decide(el, el.querySelector('#cc-sta').checked, el.querySelector('#cc-mkt').checked, el.querySelector('#cc-vis').checked);
       else if (a === 'settings') settingsView(true);
       else if (a === 'back') settingsView(false);
     });
@@ -274,6 +305,7 @@
     var c = read();
     if (!c) { open(false); return; }
     loadGoogle(c.stats, c.marketing);
+    if (c.vis) loadVisable();
     floating();
   }
 
