@@ -326,6 +326,23 @@
   .mobile-nav a.btn{display:flex;justify-content:center;}
   .mobile-nav a.is-active{color:var(--hbo-dunkel);box-shadow:inset 3px 0 0 var(--orange);}
   :where(img){height:auto;}
+
+  /* -------- Teaser Branchenreport -------- */
+  .report-teaser{background:var(--weiss);}
+  .report-teaser-grid{display:grid;grid-template-columns:1fr;gap:32px;align-items:stretch;}
+  @media(min-width:900px){.report-teaser-grid{grid-template-columns:minmax(240px,320px) 1fr;gap:56px;}}
+  .report-teaser-cover{background:var(--beton);padding:28px;display:flex;align-items:center;justify-content:center;}
+  .report-teaser-cover img{width:100%;max-width:250px;height:auto;box-shadow:0 12px 30px rgba(11,11,11,.2);}
+  .report-teaser-body{display:flex;flex-direction:column;justify-content:center;}
+  .report-teaser .eyebrow{color:var(--hbo-dunkel);}
+  .report-teaser h2.headline{margin-bottom:20px;}
+  .report-teaser .body-text{max-width:62ch;font-size:1.05rem;}
+  .report-teaser ul{margin:18px 0 28px 20px;max-width:62ch;}
+  .report-teaser li{margin-bottom:8px;}
+  .report-teaser .btn{max-width:360px;}
+  .report-teaser-more{margin-top:16px;font-size:.95rem;}
+  .report-teaser-more a{color:var(--hbo-dunkel);font-weight:600;text-decoration:underline;text-underline-offset:3px;}
+  picture{display:contents;}
 </style>
 <script type="application/ld+json">
 {
@@ -673,6 +690,27 @@
     </div>
   </section>
 
+  <!-- INDUSTRY REPORT TEASER -->
+  <section class="report-teaser" id="branchenreport">
+    <div class="wrap">
+      <div class="report-teaser-grid">
+        <div class="report-teaser-cover"><picture><source srcset="images/branchenreport-2026-titel.webp" type="image/webp"><img src="images/branchenreport-2026-titel.jpg" alt="Cover of the Heinz Industry Report 2026/27" width="900" height="1272" loading="lazy"></picture></div>
+        <div class="report-teaser-body reveal">
+          <span class="eyebrow">New: Industry Report 2026/27</span>
+          <h2 class="headline">You recruit nurses. But do they stay?</h2>
+          <p class="body-text">What eight years of international placements have taught us about retention: our report for hospitals and care homes with 80 or more employees shows where integration fails and how to prepare retention in a measurable way. The report is available in German.</p>
+          <ul>
+            <li>The five costliest mistakes and what each one costs</li>
+            <li>How to recognise fair recruitment</li>
+            <li>Three facilities in practice, from a hospital group to a care home in Berlin</li>
+          </ul>
+          <a href="branchenreport-2026.html" class="btn">View the report (German)</a>
+          <p class="report-teaser-more">Or download it directly: <a href="downloads/heinz-branchenreport-2026-27.pdf" target="_blank" rel="noopener">PDF, 6.0 MB, German</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FOOTER CTA -->
   <section class="footer-cta" id="kontakt">
     <div class="wrap">
@@ -702,6 +740,7 @@
         <h5>Employers</h5>
         <a href="fuer-einrichtungen-en.html">Qualified nurses</a>
         <a href="ausbildung-en.html">Trainees</a>
+        <a href="branchenreport-2026.html">Industry Report 2026/27 (German)</a>
       </div>
       <div class="fcol">
         <h5>Talent</h5>

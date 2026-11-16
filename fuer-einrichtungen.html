@@ -325,6 +325,23 @@
   .mobile-nav a.btn{display:flex;justify-content:center;}
   .mobile-nav a.is-active{color:var(--hbo-dunkel);box-shadow:inset 3px 0 0 var(--orange);}
   :where(img){height:auto;}
+
+  /* -------- Teaser Branchenreport -------- */
+  .report-teaser{background:var(--weiss);}
+  .report-teaser-grid{display:grid;grid-template-columns:1fr;gap:32px;align-items:stretch;}
+  @media(min-width:900px){.report-teaser-grid{grid-template-columns:minmax(240px,320px) 1fr;gap:56px;}}
+  .report-teaser-cover{background:var(--beton);padding:28px;display:flex;align-items:center;justify-content:center;}
+  .report-teaser-cover img{width:100%;max-width:250px;height:auto;box-shadow:0 12px 30px rgba(11,11,11,.2);}
+  .report-teaser-body{display:flex;flex-direction:column;justify-content:center;}
+  .report-teaser .eyebrow{color:var(--hbo-dunkel);}
+  .report-teaser h2.headline{margin-bottom:20px;}
+  .report-teaser .body-text{max-width:62ch;font-size:1.05rem;}
+  .report-teaser ul{margin:18px 0 28px 20px;max-width:62ch;}
+  .report-teaser li{margin-bottom:8px;}
+  .report-teaser .btn{max-width:360px;}
+  .report-teaser-more{margin-top:16px;font-size:.95rem;}
+  .report-teaser-more a{color:var(--hbo-dunkel);font-weight:600;text-decoration:underline;text-underline-offset:3px;}
+  picture{display:contents;}
 </style>
 <script type="application/ld+json">
 {
@@ -713,6 +730,27 @@
     </div>
   </section>
 
+  <!-- BRANCHENREPORT-TEASER -->
+  <section class="report-teaser" id="branchenreport">
+    <div class="wrap">
+      <div class="report-teaser-grid">
+        <div class="report-teaser-cover"><picture><source srcset="images/branchenreport-2026-titel.webp" type="image/webp"><img src="images/branchenreport-2026-titel.jpg" alt="Titelseite des Heinz Branchenreports 2026/27" width="900" height="1272" loading="lazy"></picture></div>
+        <div class="report-teaser-body reveal">
+          <span class="eyebrow">Neu: Branchenreport 2026/27</span>
+          <h2 class="headline">Sie rekrutieren Pflegekräfte. Aber bleiben sie auch?</h2>
+          <p class="body-text">Was acht Jahre internationale Vermittlung über Mitarbeiterbindung gelehrt haben: Unser Report für Kliniken und Pflegeheime ab 80 Mitarbeitenden zeigt, wo Integration scheitert und wie sich Bindung messbar vorbereiten lässt.</p>
+          <ul>
+            <li>Die fünf teuersten Fehler und was jeder davon kostet</li>
+            <li>Woran Sie faire Anwerbung erkennen</li>
+            <li>Drei Häuser aus der Praxis, vom Klinikverbund bis zur Berliner Pflegeeinrichtung</li>
+          </ul>
+          <a href="branchenreport-2026.html" class="btn">Report ansehen</a>
+          <p class="report-teaser-more">Oder direkt herunterladen: <a href="downloads/heinz-branchenreport-2026-27.pdf" target="_blank" rel="noopener">PDF, 6,0 MB</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FOOTER CTA -->
   <section class="footer-cta" id="kontakt">
     <div class="wrap">
@@ -743,6 +781,7 @@
         <a href="fuer-einrichtungen.html">Pflegefachkräfte</a>
         <a href="ausbildung.html">Auszubildende</a>
         <a href="pflegefachkraefte-berlin-brandenburg.html">Berlin &amp; Brandenburg</a>
+        <a href="branchenreport-2026.html">Branchenreport 2026/27</a>
       </div>
       <div class="fcol">
         <h5>Zukunftskräfte</h5>
