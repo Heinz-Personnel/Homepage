@@ -118,6 +118,9 @@ Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
 - **Google Ads (AW-18457911738) und Google Analytics (G-PB43PKLVEL)** werden ausschließlich über `js/cookie-consent.js` nach Einwilligung geladen.
   Das Google-Tag nie direkt in eine Seite einbauen. Neue externe Skripte brauchen eine CSP-Anpassung und
   eine Prüfung, ob die Datenschutzerklärung sie abdeckt.
+- **Firmenadresse (Entscheidung Ivo, 17.11.2026):** Straße und PLZ stehen nur in Impressum, AGB und (als Pflichtangabe) Datenschutzerklärung.
+  Sonst nirgends: nicht im sichtbaren Text, nicht in `llms.txt`, nicht in Blogartikeln. Im JSON-LD (`address`) nur `addressLocality` "Berlin"
+  und `addressCountry` "DE", kein `streetAddress`, kein `postalCode`. Im Text höchstens "Berlin" nennen.
 - **Telefon:** Nummer nur auf `fuer-einrichtungen`, `ausbildung`, `pflegefachkraefte-berlin-brandenburg` und `kontakt`
   (jeweils DE/EN), nie in Header, Footer, Fachkräfte-Seiten, Blog, JSON-LD oder `llms.txt`. Sie steht nie im Klartext im Code:
   Baustein `.phone-box` mit Button `data-phone-reveal`, die Nummer liegt verschlüsselt in `js/phone.js` (Liste `D`).
