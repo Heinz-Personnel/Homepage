@@ -97,7 +97,7 @@
   .nav-toggle-input:checked ~ .nav-inner .nav-toggle-bars::after{transform:translateY(-7px) rotate(-45deg);}
   .mobile-nav{max-height:0;overflow:hidden;transition:max-height .25s ease;display:flex;flex-direction:column;}
   @media(min-width:1040px){.mobile-nav{display:none;}}
-  .nav-toggle-input:checked ~ .mobile-nav{max-height:560px;padding-bottom:20px;}
+  .nav-toggle-input:checked ~ .mobile-nav{max-height:720px;padding-bottom:20px;}
   .mobile-nav a{display:block;padding:12px 0;text-decoration:none;color:var(--schwarz);font-weight:600;font-size:.95rem;border-top:1px solid rgba(11,11,11,.1);}
   .mobile-nav a.btn{margin-top:16px;padding:12px 22px;border-top:none;color:var(--weiss);}
   .mobile-nav a.lang-switch{border-top:none;display:inline-flex;width:auto;align-self:flex-start;margin:4px 0 4px;padding:6px 14px;border:1px solid rgba(11,11,11,.25);border-radius:999px;font-size:.8rem;font-weight:600;color:var(--hbo-basis);}
@@ -345,7 +345,15 @@
           </div>
         </div>
         <a href="ueber-uns-en.html">Team</a>
-        <a href="blog-en.html" class="is-active">Insights</a>
+        <div class="nav-drop">
+          <a href="blog-en.html" class="nav-drop-toggle is-active" aria-haspopup="true">Insights<span class="nav-caret" aria-hidden="true"></span></a>
+          <div class="nav-drop-menu">
+            <div class="nav-drop-panel">
+              <a href="blog-en.html" class="is-current"><strong>Blog</strong><span>Articles on recruitment and integration</span></a>
+              <a href="soziale-verantwortung-faire-anwerbung-en.html"><strong>Social responsibility</strong><span>Our contribution at home and in Germany</span></a>
+            </div>
+          </div>
+        </div>
       </nav>
     </div>
     <div class="nav-right">
@@ -365,7 +373,9 @@
     <a href="ausbildung-bewerbung-en.html" class="mobile-sub">Trainees</a>
     <a href="physiotherapie-en.html" class="mobile-sub">Physical therapists</a>
     <a href="ueber-uns-en.html">Team</a>
-    <a href="blog-en.html" class="is-active">Insights</a>
+    <span class="mobile-group">Insights</span>
+    <a href="blog-en.html" class="mobile-sub is-active">Blog</a>
+    <a href="soziale-verantwortung-faire-anwerbung-en.html" class="mobile-sub">Social responsibility</a>
     <a href="blog-post-3.html" class="lang-switch">Deutsch</a>
     <a href="kontakt-en.html" class="btn">Let's talk.</a>
   </nav>
@@ -434,6 +444,7 @@
         <h5>Heinz</h5>
         <a href="ueber-uns-en.html">About us</a>
         <a href="blog-en.html">Insights</a>
+        <a href="soziale-verantwortung-faire-anwerbung-en.html">Social responsibility</a>
         <a href="faq-en.html">FAQ</a>
         <a href="downloads-en.html">Downloads</a>
         <a href="presse-en.html">Press</a>

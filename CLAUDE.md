@@ -87,13 +87,14 @@ Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
   Ausnahmen (nur DE): `wechsel.html`, `pflegefachkraefte-berlin-brandenburg.html` (hat hreflang de und x-default auf sich selbst).
   Inhaltliche Änderungen immer in **beiden** Sprachen.
 - **Hauptseiten:** `index`, `fuer-einrichtungen` (Für Arbeitgeber), `ausbildung` (Ausbildung für Betriebe),
-  `fuer-fachkraefte`, `ueber-uns`, `blog` + `blog-post-1` bis `blog-post-14`, `faq`, `downloads`, `presse`,
+  `fuer-fachkraefte`, `ueber-uns`, `blog` + `blog-post-1` bis `blog-post-15`, `soziale-verantwortung-faire-anwerbung`, `scholarship-pflegestudierende-philippinen`, `faq`, `downloads`, `presse`,
   `kontakt`, `impressum`, `datenschutz`, `beschwerdeformular`.
 - **Navigation** steht in **jeder** HTML-Datei dreimal: `.nav-links` (Desktop), `.mobile-nav` und im Footer.
   Footer (5 Spalten, gleiche Gliederung wie oben): Logo + Kontakt · Arbeitgeber · Zukunftskräfte (inkl. "Stelle wechseln")
   · Heinz (Über uns, Hintergründe, FAQ, Downloads, Presse) · Rechtliches (inkl. Cookie-Einstellungen).
   Neue Menüpunkte in allen Dateien ergänzen. Aktive Seite bekommt `class="is-active"`.
-  Oben genau 4 Punkte: **Arbeitgeber ▾** · **Zukunftskräfte ▾** · Team · Hintergründe (EN: Employers ▾ · Talent ▾ · Team · Insights).
+  Oben genau 4 Punkte: **Arbeitgeber ▾** · **Zukunftskräfte ▾** · Team · **Hintergründe ▾** (EN: Employers ▾ · Talent ▾ · Team · Insights ▾).
+  Hintergründe ist ebenfalls ein Aufklappmenü `.nav-drop` mit "Blog" (`blog`) und "Soziale Verantwortung" (`soziale-verantwortung-faire-anwerbung`, eine eigene Seite, kein Blogartikel; Entscheidung Ivo, 17.11.2026). Im Footer stehen beide Links in der Spalte "Heinz".
   Beide sind Aufklappmenüs `.nav-drop` mit je "Pflegefachkräfte" und "Auszubildende":
   Arbeitgeber → `fuer-einrichtungen` / `ausbildung`; Zukunftskräfte (`data-nav="talent"`) → `fuer-fachkraefte` /
   `ausbildung-bewerbung` (Bewerberseite für Auszubildende). Aktueller Unterpunkt `class="is-current"`.
