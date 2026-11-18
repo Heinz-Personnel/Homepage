@@ -1,6 +1,6 @@
 # Audit-Bericht Website Heinz
 
-Erzeugt von `_werkzeuge/audit.py` (nur lesen). 63 HTML-Dateien im Hauptordner (57 indexierbar, 5 noindex, 1 Weiterleitungsseiten), 16 in Unterordnern.
+Erzeugt von `_werkzeuge/audit.py` (nur lesen). 71 HTML-Dateien im Hauptordner (65 indexierbar, 5 noindex, 1 Weiterleitungsseiten), 16 in Unterordnern.
 
 ## Hosting
 
@@ -17,7 +17,7 @@ Erzeugt von `_werkzeuge/audit.py` (nur lesen). 63 HTML-Dateien im Hauptordner (5
 
 ## Indexierbarkeit und Sitemap
 
-- Sitemap-URLs: 59 · indexierbare Seiten im Hauptordner: 57
+- Sitemap-URLs: 67 · indexierbare Seiten im Hauptordner: 65
 - noindex: 404.html
 - noindex: consass_Angebot_1.html
 - **noindex, steht aber in der Sitemap:** physiotherapie-en.html
@@ -68,49 +68,52 @@ Erzeugt von `_werkzeuge/audit.py` (nur lesen). 63 HTML-Dateien im Hauptordner (5
 
 Gezählt: ganzer sichtbarer Text / nur Inhalt ohne Kopf, Navigation und Footer. Aufgeführt sind Seiten unter 300 Wörtern Inhalt.
 
-- 404.html: 121 / 46
-- beschwerdeformular-en.html: 325 / 234
-- beschwerdeformular.html: 276 / 201
-- blog-en.html: 275 / 184
-- blog-post-1-en.html: 354 / 263
-- blog-post-1.html: 304 / 225
-- blog-post-2-en.html: 347 / 256
-- blog-post-2.html: 326 / 251
-- blog-post-4-en.html: 376 / 285
-- blog-post-4.html: 338 / 263
-- blog-post-5-en.html: 377 / 286
-- blog-post-5.html: 350 / 271
-- blog-post-6-en.html: 340 / 249
-- blog-post-6.html: 301 / 226
-- blog-post-7-en.html: 366 / 275
-- blog-post-7.html: 338 / 259
-- blog-post-8-en.html: 372 / 281
-- blog-post-8.html: 333 / 258
-- blog-post-9-en.html: 335 / 244
-- blog-post-9.html: 300 / 221
-- blog.html: 244 / 169
-- downloads-en.html: 313 / 222
-- downloads.html: 269 / 190
-- kontakt-en.html: 206 / 113
-- kontakt.html: 180 / 101
-- Zur Info index.html: 838 / 763
-- Zur Info ausbildung.html: 1783 / 1704
-- Zur Info ausbildung-bewerbung.html: 1508 / 1433
+- 404.html: 157 / 48
+- beschwerdeformular-en.html: 383 / 234
+- beschwerdeformular.html: 310 / 201
+- blog-en.html: 370 / 221
+- blog-post-1-en.html: 412 / 263
+- blog-post-1.html: 338 / 225
+- blog-post-2-en.html: 405 / 256
+- blog-post-2.html: 360 / 251
+- blog-post-4-en.html: 434 / 285
+- blog-post-4.html: 372 / 263
+- blog-post-5-en.html: 435 / 286
+- blog-post-5.html: 384 / 271
+- blog-post-6-en.html: 398 / 249
+- blog-post-6.html: 335 / 226
+- blog-post-7-en.html: 424 / 275
+- blog-post-7.html: 372 / 259
+- blog-post-8-en.html: 430 / 281
+- blog-post-8.html: 367 / 258
+- blog-post-9-en.html: 393 / 244
+- blog-post-9.html: 334 / 221
+- blog.html: 310 / 201
+- downloads-en.html: 401 / 252
+- downloads.html: 326 / 213
+- kontakt-en.html: 264 / 113
+- kontakt.html: 214 / 101
+- Zur Info index.html: 872 / 763
+- Zur Info ausbildung.html: 1817 / 1704
+- Zur Info ausbildung-bewerbung.html: 1542 / 1433
 
 ## Interne Links (href, src)
 
 - Keine defekten internen Links.
-- Indexierte Seiten mit Link auf wechsel.html (noindex): 57 (z. B. ausbildung-bewerbung-en.html, ausbildung-bewerbung.html, ausbildung-en.html, ausbildung.html)
+- Indexierte Seiten mit Link auf wechsel.html (noindex): 65 (z. B. ausbildung-bewerbung-en.html, ausbildung-bewerbung.html, ausbildung-en.html, ausbildung.html)
 
 ## Bilder
 
+- ohne loading="lazy" (ab 2. Bild): blog-en.html (2)
+- ohne loading="lazy" (ab 2. Bild): blog.html (2)
 - ohne width/height: consass_Angebot_1.html (1)
 - Größte Bilddateien: presse-foto-ivo-hires.jpg (792 KB), images/heinz-ankunft-strasse.jpg (542 KB), images/blog-klinik-pflegeheim-gruppe.jpg (536 KB), images/heinz-team-abflug-philippinen.jpg (534 KB), images/moment-sommerfest-garten.jpg (500 KB), images/heinz-ankunft-selfie-team.jpg (480 KB), images/heinz-team-selfie-flughafen.jpg (465 KB), images/heinz-willkommen-flughafen.jpg (465 KB)
-- WebP-Dateien: 31
+- WebP-Dateien: 36
 
 ## hreflang
 
-- Alle hreflang-Angaben vollständig und gegenseitig.
+- EN-Gegenstück fehlt: blog-post-15.html
+- EN-Gegenstück fehlt: branchenreport-2026.html
 
 ## JSON-LD
 
@@ -134,6 +137,7 @@ Gezählt: ganzer sichtbarer Text / nur Inhalt ohne Kopf, Navigation und Footer. 
 - blog-post-13.html: Article, BreadcrumbList, EmploymentAgency, WebPage
 - blog-post-14-en.html: Article, BreadcrumbList, EmploymentAgency, WebPage
 - blog-post-14.html: Article, BreadcrumbList, EmploymentAgency, WebPage
+- blog-post-15.html: Article, BreadcrumbList, EmploymentAgency, WebPage
 - blog-post-2-en.html: Article, BreadcrumbList, EmploymentAgency, WebPage
 - blog-post-2.html: Article, BreadcrumbList, EmploymentAgency, WebPage
 - blog-post-3-en.html: Article, BreadcrumbList, EmploymentAgency, WebPage
@@ -151,6 +155,7 @@ Gezählt: ganzer sichtbarer Text / nur Inhalt ohne Kopf, Navigation und Footer. 
 - blog-post-9-en.html: Article, BreadcrumbList, EmploymentAgency, WebPage
 - blog-post-9.html: Article, BreadcrumbList, EmploymentAgency, WebPage
 - blog.html: BreadcrumbList, EmploymentAgency, WebPage
+- branchenreport-2026.html: BreadcrumbList, EmploymentAgency, WebPage
 - consass_Angebot_1.html: kein JSON-LD | ohne EmploymentAgency
 - datenschutz-en.html: BreadcrumbList, EmploymentAgency, WebPage
 - datenschutz.html: BreadcrumbList, EmploymentAgency, WebPage
@@ -168,11 +173,17 @@ Gezählt: ganzer sichtbarer Text / nur Inhalt ohne Kopf, Navigation und Footer. 
 - index.html: EmploymentAgency, WebPage, WebSite
 - kontakt-en.html: BreadcrumbList, EmploymentAgency, WebPage
 - kontakt.html: BreadcrumbList, EmploymentAgency, WebPage
+- mta-en.html: BreadcrumbList, EmploymentAgency, FAQPage, WebPage
+- mta.html: BreadcrumbList, EmploymentAgency, FAQPage, Service, WebPage
 - pflegefachkraefte-berlin-brandenburg.html: BreadcrumbList, EmploymentAgency, WebPage
 - physiotherapie-en.html: BreadcrumbList, EmploymentAgency, FAQPage, WebPage
 - physiotherapie.html: BreadcrumbList, EmploymentAgency, FAQPage, WebPage
 - presse-en.html: BreadcrumbList, EmploymentAgency, WebPage
 - presse.html: BreadcrumbList, EmploymentAgency, WebPage
+- scholarship-pflegestudierende-philippinen-en.html: Article, BreadcrumbList, EmploymentAgency, WebPage
+- scholarship-pflegestudierende-philippinen.html: Article, BreadcrumbList, EmploymentAgency, WebPage
+- soziale-verantwortung-faire-anwerbung-en.html: BreadcrumbList, EmploymentAgency, WebPage
+- soziale-verantwortung-faire-anwerbung.html: BreadcrumbList, EmploymentAgency, WebPage
 - ueber-uns-en.html: BreadcrumbList, EmploymentAgency, WebPage
 - ueber-uns.html: BreadcrumbList, EmploymentAgency, WebPage
 - wechsel.html: kein JSON-LD | ohne EmploymentAgency

@@ -77,6 +77,11 @@ Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
   und keine Siegelaussage in der description. Laut Entwurf (KDA, Anforderungskatalog 4.0)
   wird das Gütezeichen ab 1.1.2027 auf Ausbildungssuchende ausgeweitet, aber erst nach bestandener Prüfung nutzbar.
   Die 92 % gelten für Fachkräfte, nie im Azubi-Kontext nennen.
+- **MTA / Medizinische Technologen (seit 18.11.2026, `mta(-en).html`):** aus Indien und von den Philippinen, Schwerpunkt Labor (MTL) und
+  Radiologie (MTR). Laut Ivos Briefing: ca. 5 bis 7 Monate vom ersten Interview bis zum Start, Deutsch B2 vor der Einreise.
+  Wie bei Physiotherapie: KEIN RAL-Gütezeichen und keine Pflege-Kennzahlen (92 %, 400+, 98 %) als MTA-Leistung, nur mit dem Hinweis,
+  dass sie aus der Pflege stammen. Erlaubt ist der Grundsätze-Satz ("dieselben Grundsätze wie bei unseren Pflegefachkräften ...").
+  Zahlung 50/50 und Garantie wie oben (nicht die abweichenden Formulierungen aus dem Briefing). Keine Telefonnummer auf diesen Seiten.
 - **Offizielle Schreibweise:** Gütezeichen „Faire Anwerbung Pflege Deutschland" (auch auf Englisch, nie übersetzen).
 - Kunden (Auswahl): Sana Kliniken, Diakonie, Helios, AWO, DRK, Main-Kinzig-Kliniken
 - Partner: Lingoda, Ankaadia, Akademie der Gesundheit Berlin/Brandenburg, GAPA
@@ -87,6 +92,7 @@ Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
   Ausnahmen (nur DE): `wechsel.html`, `pflegefachkraefte-berlin-brandenburg.html` (hat hreflang de und x-default auf sich selbst).
   Inhaltliche Änderungen immer in **beiden** Sprachen.
 - **Hauptseiten:** `index`, `fuer-einrichtungen` (Für Arbeitgeber), `ausbildung` (Ausbildung für Betriebe),
+  `physiotherapie` (DE für Einrichtungen, EN für Fachkräfte), `mta` (DE für Einrichtungen, EN für Fachkräfte),
   `fuer-fachkraefte`, `ueber-uns`, `blog` + `blog-post-1` bis `blog-post-15`, `soziale-verantwortung-faire-anwerbung`, `scholarship-pflegestudierende-philippinen`, `faq`, `downloads`, `presse`,
   `kontakt`, `impressum`, `datenschutz`, `beschwerdeformular`.
 - **Navigation** steht in **jeder** HTML-Datei dreimal: `.nav-links` (Desktop), `.mobile-nav` und im Footer.
@@ -96,8 +102,10 @@ Für Vergleiche `diff` verwenden. Commit und Push macht immer Ivo.
   Oben genau 4 Punkte: **Arbeitgeber ▾** · **Zukunftskräfte ▾** · Team · **Hintergründe ▾** (EN: Employers ▾ · Talent ▾ · Team · Insights ▾).
   Hintergründe ist ebenfalls ein Aufklappmenü `.nav-drop` mit "Blog" (`blog`) und "Soziale Verantwortung" (`soziale-verantwortung-faire-anwerbung`, eine eigene Seite, kein Blogartikel; Entscheidung Ivo, 17.11.2026). Im Footer stehen beide Links in der Spalte "Heinz".
   Beide sind Aufklappmenüs `.nav-drop` mit je "Pflegefachkräfte" und "Auszubildende":
-  Arbeitgeber → `fuer-einrichtungen` / `ausbildung`; Zukunftskräfte (`data-nav="talent"`) → `fuer-fachkraefte` /
-  `ausbildung-bewerbung` (Bewerberseite für Auszubildende). Aktueller Unterpunkt `class="is-current"`.
+  Arbeitgeber → `fuer-einrichtungen` / `ausbildung` / `physiotherapie` / `mta` (Entscheidung Ivo, 18.11.2026: Physiotherapeuten
+  und MTA gehören zu Arbeitgeber); Zukunftskräfte (`data-nav="talent"`) → `fuer-fachkraefte` / `ausbildung-bewerbung`
+  (Bewerberseite für Auszubildende) / `physiotherapie` (bleibt zusätzlich dort). EN: Employers zeigt Physio und MTA mit Hinweis
+  "in German" auf die DE-Seiten, Talent zeigt `physiotherapie-en` und `mta-en` (Seiten für Fachkräfte). Gleiche Gliederung im Footer und mobil. Aktueller Unterpunkt `class="is-current"`.
   "Zukunftskräfte" ist das eigene Heinz-Wort für Bewerber:innen (statt "Talente"), nur als Oberbegriff, nie als Unterpunkt.
   Mobil: Gruppen `.mobile-group` mit je zwei `.mobile-sub`-Links. Alles bleibt auf pflegekraftvermittlung.com
   (Entscheidung Ivo, Oktober 2026: keine eigene Domain/Seite für Ausbildung).

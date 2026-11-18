@@ -501,7 +501,7 @@
   </url>
   <url>
     <loc>https://pflegekraftvermittlung.com/physiotherapie.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://pflegekraftvermittlung.com/physiotherapie.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pflegekraftvermittlung.com/physiotherapie-en.html"/>
@@ -514,5 +514,21 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://pflegekraftvermittlung.com/physiotherapie.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pflegekraftvermittlung.com/physiotherapie-en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pflegekraftvermittlung.com/physiotherapie.html"/>
+  </url>
+  <url>
+    <loc>https://pflegekraftvermittlung.com/mta.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pflegekraftvermittlung.com/mta.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pflegekraftvermittlung.com/mta-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pflegekraftvermittlung.com/mta.html"/>
+  </url>
+  <url>
+    <loc>https://pflegekraftvermittlung.com/mta-en.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pflegekraftvermittlung.com/mta.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pflegekraftvermittlung.com/mta-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pflegekraftvermittlung.com/mta.html"/>
   </url>
 </urlset>
